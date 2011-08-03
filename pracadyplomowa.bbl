@@ -1,0 +1,139 @@
+\begin{thebibliography}{10}
+
+\bibitem{SCORM}
+ADL.
+\newblock Scorm documentation.
+\newblock http://www.scormsoft.com/scorm
+  http://www.adlnet.gov/Technologies/scorm/SCORMSDocuments/2004%204th%20Editio%
+n/Documentation.aspx.
+
+\bibitem{elearnMoodle}
+A.~Al-Ajlan,  H.~Zedan.
+\newblock E-learning (moodle) based on service oriented architectur.
+\newblock
+  http://www.cse.dmu.ac.uk/STRL/research/publications/pubs/2007/2007-23.pdf.
+
+\bibitem{WebServiceAuthSystem}
+A.~Alkou,  S.~A.El-Seoud.
+\newblock Web services based authentication system for e-learning.
+\newblock {\em International Journal of Computing and Information Sciences},
+  5(2):74--78, 2007.
+
+\bibitem{TeoriaPraktykaELearningu}
+T.~Anderson,  F.~Elloumi.
+\newblock {\em Theory and Practice of Online Learning}.
+\newblock Athabasca University, 2004.
+
+\bibitem{BednarekLubina}
+J.~Bednarek,  E.~Lubina.
+\newblock {\em Kszta³cenie na odleg³oœæ podstawy dydaktyki}.
+\newblock PWN, 2008.
+
+\bibitem{WebServicesSecurity}
+E.~Bertino, L.~D. Martino, F.~Paci, A.~C. Squicciarini.
+\newblock {\em Security for Web Services and Service-Oriented Architectures}.
+\newblock Springer, 2010.
+
+\bibitem{ELearningHandBook}
+S.~Carliner,  P.~Shank.
+\newblock {\em The E-Learning HandBook Past Promises , Present Challenges}.
+\newblock Pfeiffer, 2008.
+
+\bibitem{WebServicesEssentials}
+E.~Cerami.
+\newblock {\em Web Services Essentials - Distributed Applications with XML-RPC,
+  SOAP, UDDI , WSDL}.
+\newblock O'Reilly, 2002.
+
+\bibitem{AClark}
+A.~Clarke.
+\newblock {\em E-learning : nauka na odleg³oœæ}.
+\newblock WK£, 2007.
+
+\bibitem{SoaPatterns}
+T.~Earl.
+\newblock {\em Soa Design Patterns}.
+\newblock Prentice Hall, 2009.
+
+\bibitem{AspNet3.5}
+B.~Evjen, S.~Hanselman, D.~Rader.
+\newblock {\em Asp.Net 3.5 z wykorzystaniem Csharp. Zaawansowane
+  Programowanie}.
+\newblock Helion, 2010.
+
+\bibitem{ArchitekturaWzorceProjektowe}
+M.~Fowler.
+\newblock {\em Architektura systemów zarz¹dzania przedsiêbiorstwem : wzorce
+  projektowe}.
+\newblock Helion, 2005.
+
+\bibitem{UML}
+M.~Fowler.
+\newblock {\em UML w kropelce}.
+\newblock LTP, 2005.
+
+\bibitem{Refactorization}
+M.~Fowler,  K.~Beck.
+\newblock {\em Refaktoryzacja : ulepszanie struktury istniej¹cego kodu}.
+\newblock WNT, 2006.
+
+\bibitem{PodstawyXML}
+Z.~FryŸlewicz,  A.~Salamon.
+\newblock {\em Podstawy architektury i technologii us³ug XML sieci Web}.
+\newblock PWN, 2008.
+
+\bibitem{DesignPatterns}
+E.~Gamma, R.~Helm, R.~Johnson, J.~M. Vissides.
+\newblock {\em Wzorce Projektowe : elementy oprogramowania wielokrotnego
+  u¿ytku}.
+\newblock WNT, 2005.
+
+\bibitem{ElearningLifeCycle}
+A.~Grewal, S.~Rai, R.~Phillips, C.~C. Fung.
+\newblock The e-learning lifecycle and its services: The web services.
+\newblock {\em Proceedings of the Second International Conference on eLearning
+  for Knowledge-Based Society}, 2005.
+
+\bibitem{Gorski}
+J.~Górski.
+\newblock {\em In¿ynieria Oprogramowania w projekcie informatycznym}.
+\newblock MIKOM, 2000.
+
+\bibitem{artLMS}
+M.~A. Jab,  H.~K. Al-Omari.
+\newblock e-learning management system using service oriented architecture.
+\newblock {\em Journal of Computer Science}, 6(3):285--295, 2010.
+
+\bibitem{WcfUnleashed}
+C.~McMurtry, M.~Mercuri, N.~Watling, M.~Winkler.
+\newblock {\em Windows Communication Foundation Unleashed}.
+\newblock Sams, 2007.
+
+\bibitem{WebServiceArchforElearn}
+X.~Qi,  A.~Jooloor.
+\newblock Web service architecture for e-learning.
+\newblock {\em Systemics, Cybernetics and Informatics}, 3(5), 2006.
+
+\bibitem{EssentialWcf}
+S.~Resnick, R.~Crane, C.~Bowen.
+\newblock {\em Essential Windows Communication Foundation with .Net 3.5}.
+\newblock Addison Wesley, 2008.
+
+\bibitem{SoaArchAndDesignStrat}
+M.~Rosen, B.~Lublinsky, K.~T. Smith, M.~J. Baler.
+\newblock {\em Service-Oriented Architecture and Design Strategies}.
+\newblock Wiley, 2008.
+
+\bibitem{SEcurityELearn}
+S.~Schwinge.
+\newblock {\em Intelligent Information Technologies and Applications},
+  rozdzia/l~1.
+\newblock Oakland University, 2008.
+
+\bibitem{WebServicesArchitecture}
+S.~Weerawarana, F.~Curbera, F.~L.~T. Storey, D.~F. Ferguson.
+\newblock {\em Web Services Platform Architecture: SOAP, WSDL, WS-Policy,
+  WS-Addressing, WS-BPEL, WS-Reliable Messaging}.
+\newblock Prentice Hall, 2005.
+
+\end{thebibliography}

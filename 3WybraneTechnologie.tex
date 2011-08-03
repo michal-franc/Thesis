@@ -1,0 +1,205 @@
+\chapter{Wybrane technologie oraz techniki realizacji systemów webowych}
+\section{Formaty danych JSON , XML}
+
+JSON (JavaScript Object Notation) jest formatem danych wykorzystywanym przy transferze danych po sieci. Jest on alternatyw¹ do standardu XML. Jest to nowy format danych opisany w 2006 roku w publikacji RFC4627\cite{JSON} . Jest to lekki format z bardzo prost¹ semantyk¹. Dane przesy³ane w tym formacie sk³adaj¹ siê z pary ci¹gów znaków : nazwa , wartoœæ.
+
+\begin{center}
+ \includegraphics{Jsonschemat.jpg}
+\end{center}
+
+\begin{center}
+	Rys. Schemat formatu JSON
+\end{center}
+
+Semantyka formatu pozwala zdefiniowaæ : \cite{JSON}
+\begin{itemize}
+\item Obiekt
+\item Tablicê obiektów , wartoœci.
+\item Ci¹g Znaków
+\item Liczba
+\item Wartoœæ boolowska
+\end{itemize}
+
+\subsubsection{Cechy formatu JSON}
+
+\begin{itemize}
+\item u³atwione przetwarzanie formatu do obiektów jêzyka javascript przy pomocy funkcji eval
+\item lekki prosty format
+\item szybki proces przetwarzania
+\item ³atwy w modyfikacji
+\end{itemize}
+
+\subsubsection{Porównanie JSON , XML}
+
+W momencie wejœcia na rynek us³ug sieciowych , by³y one g³ównie wykorzystywane w œwiecie biznesowym. Rynek Enterprise zaadoptowa³ na pocz¹tku format XML i protokó³ oparty na tym formacie SOAP. XML by³ idealnym formatem poniewa¿ by³ juz dobrze znany i mia³ spore wsparcie narzêdzi oraz jêzyków.
+
+Wzrost zainteresowania formatem JSON zacz¹³ siê w 2006 roku wraz z powstaniem pierwszego oficjalnego opisu oraz wraz z adopcj¹ tego formatu przez takie firmy jak Google czy Yahoo.
+
+Format XML charakteryzuje wiêkszym poziomem bezpieczeñstwa dziêki bardziej stabilnej i mocno typowanej semantyce. W przypadku formatu JSON istnieje pewne ryzyko pozwalaj¹ce wstrzykn¹æ niepo¿¹dany kod poniewa¿ JSON wykorzystuje funkcje eval.
+
+W porównaniu do XML-a format JSON charakteryzuje siê mniejsz¹ wag¹ przesy³anego ³adunku , jest l¿ejszy i czytelniejszy dla odbiorcy.
+
+\begin{center}
+	\includegraphics[width=7cm,height=8cm]{JsonParsed.JPG}
+	\includegraphics[width=7cm,height=8cm]{XmlExample.JPG}
+\end{center}
+
+\begin{center}
+	Rys.  Porównanie standardów. Json , XML.
+\end{center}
+
+W pracy magisterskiej zastosowa³em zarówno format JSON jak i XML. Dane nie wymagaj¹ce du¿ego poziomu bezpieczeñstwa przesy³ane s¹ w formacie JSON natomiast dane takie jak np. dane adresowe , logowania przesy³ane s¹ formatem XML. 
+
+\newpage
+\section{Architektura REST , SOAP}
+\section{Us³ugi sieciowe}
+
+Us³ugi sieciowe s¹ technologi¹ pozwalaj¹ca inicjowaæ komunikacjê z pomiêdzy dwoma urz¹dzeniami pod³¹czonymi do sieci komputerowej.
+
+Rysunek uslug sieciowych.
+
+client na poczatku odkrywa jakie sa dostepne uslugi nastepnie tworzy wiadomosc i otrzymuje odpowiedz z danymi.
+- podstawowa koncepcja web us³ug co gdzie jak
+- rysunek web us³ug i komunikacji
+
+\newpage
+
+\section{Framework Asp.Net Mvc 3}
+
+Asp.Net Mvc 3 jest platform¹ stworzon¹ przez firmê Microsoft s³u¿¹c¹ do tworzenia aplikacji webowych. Dzia³a jako nak³adka na platformê Asp.Net. Jest odpowiedzi¹ na nowe trendy zdobywaj¹ce coraz to wiêksz¹ popularnoœæ w œrodowisku programistów webowych. Ca³y Framework oparty jest na wzorcu projektowym MVC.
+
+Wraz z ewolucja aplikacji webowych i ich poziomu skomplikowania pojawia³y siê nowe podejœcia oraz sposoby wytwarzania aplikacji webowych pozwalaj¹ce tworzyæ aplikacje. Jednym z takich podejœæ jest wykorzystanie wzorca Model View Controller. Pierwszy opis wzorca mo¿na znaleŸæ w dokumencie z 1979\cite{MVC}.
+
+Od 2004 roku wzorzec ten zacz¹³ zdobywaæ du¿¹ popularnoœæ wraz z pojawieniem siê nowych platform programistycznych : Ruby On Rails oraz Django. 
+
+Wprowadza on podzia³ aplikacji na trzy oddzielne warstwy : Model , Widok , Kontroler.
+
+\begin{center}
+	\includegraphics{MVC.jpg}
+\end{center}
+\begin{center}
+	Rys. Koncepcja MVC
+\end{center}
+
+\subsubsection{Model}
+Reprezentuje warstwê bazy danych. Dostêp do modelu jest jedynie mo¿liwy z poziomu kontrolera , który w wielu aplikacjach do komunikacji z modelem korzysta równie¿ z warstwy us³ug. Warstwa ta wystawia metody zdefiniowane w kontrakcie , z których korzysta kontroler.
+\subsubsection{Widok}
+Reprezentuje warstwê dostêpn¹ dla u¿ytkownika systemu. Buduje siê na podstawie modelu przekazanego przez kontroler.
+\subsubsection{Kontroler}
+Warstwa odpowiedzialna za sterowanie przep³ywem danych i przetwarzaniem tych danych by mog³y byæ wyœwietlone w warstwie widoku.\newline
+
+Zastosowanie wzorca MVC przy projektowaniu aplikacji webowej wymaga wiêkszego nak³adu pracy w pocz¹tkowej fazie projektu. Wymierne korzyœci ze stosowania tego wzorca zaczynaj¹ byæ odczuwane dopiero w póŸniejszych etapach ¿ycia projektu. Przede wszystkim zastosowane konwencje i jawna separacja odpowiedzialnoœci na trzy warstwy pozwala oddzieliæ od siebie logikê biznesowa dostêpn¹ z poziomu klienta od logiki obs³uguj¹cej dostêp do bazy danych. Jest to bardzo wa¿ne poniewa¿ zmiany zachodz¹ce w warstwie modelu tzn bazy danych nie powinny powodowaæ zmian w warstwie widoku. Dziêki takiemu rozdzia³owy powstaje lepszy kod , ³atwiejszy  w rozbudowanie oraz utrzymaniu. Dodatkowo projekt jest bardziej czytelny. Programista wiedz¹cy ze projekt zosta³ stworzony w oparciu o MVC automatyczni wie gdzie szukaæ poszczególnych implementacji systemu w celu przeprowadzenia modyfikacji.
+
+\subsubsection{Opis komunikacji}
+
+\begin{center}
+	\includegraphics{Mvcschemat.jpg}
+\end{center}
+\begin{center}
+	Rys. Schemat komunikacji Mvc.
+\end{center}
+
+Klient realizuje zapytanie , które przechwytuje kontroler. w przypadku aplikacji webowej zapytanie bêdzie po prostu zwyk³ym odnisieniem sie do okreslonego adresu url. Kontroler przejmuje ¿¹danie. Jezeli wygenerowanie odpowiedniego widoku nie wymaga pobrania danych z  bazy danych. Kontroler pobiera dany widok i przekazuje go klientowi w swojej odpowiedzi na zadanie. Jezely widok wymaga pobrania danych z bazy danych , realizowane jest polaczenie z modele pobranie danych i wygenerowanie widoku z danymi i przekazanie go w wiadomosci zwrotnej.
+
+\newpage
+
+\section{Mapowanie obiektowo relacyjne - NHibernate}
+
+Bazy danych s¹ najwa¿niejsz¹ czêœci¹ systemu informatycznego. Stanowi wiêkszoœæ implementacji aplikacji po stronie serwerowej. Przy tworzeniu systemów informatycznych logika dostêpu do bazy danych pochlania bardzo du¿o czasu. Dodatkowo jest podatna na b³êdy. Bezpoœrednie tworzenie zapytañ sta³o siê zbyt kosztowne oraz trudne w utrzymaniu. Z rozwi¹zaniem takim wi¹¿e siê równie¿ inny problem mianowicie dochodzi do niekompatybilnoœci zale¿noœci pomiêdzy obiektami miedzy systemami relacyjna bazodanowymi a systemami opartymi na dziedziczeniu i kompozycji klas znajduj¹cymi siê w je¿yku programowania. 
+
+By u³atwiæ proces tworzenia kodu coraz wiêcej firm wykorzystuje specjalne biblioteki wspomagaj¹ce proces tworzenia warstwy dostêpu do danych. Nazywane one s¹ Obiektowo relacyjnymi maopermai. Na rynku dostêpnych jest wiele amperów najpopularniejszymi w œrodowisku jedna sa. Tworzony przez firmê Microsoft Entity Framework oraz NHibernate który jest implementacja frameworka Hibernate z technologii java na platformê .Net.
+
+Dziêki zastosowaniu orma mo¿na wprowadzaæ bardzo szybko zmiany oraz w du¿o ³atwiejszy sposób wykonywaæ odpowiednie zapytania na bazie danych nie przejmuj¹c siê tak naprawdê warstwa bazodanow¹. Dla programisty oporuj¹cego na tej warstwie cala komunikacja jest schowana pod interfejsami. Dziêki temu programista mo¿e skupiæ siê na implementacji logiki oszczêdzaj¹c czas na implementowaniu dostêpu do bazy danych. Minusem takiego rozwi¹zania jest mniej wydajny proces pobierania danych. Problem ten mo¿na zniwelowaæ poprzez odpowiednie sprofilowanie aplikacji i wyznaczanie najlepszych czêœci systemy wymagaj¹cych optymalizacji. W tym przypadku profilowane s¹ zapytania SQL. Zapytania wymagaj¹ce optymalizacji mo¿na zamieniæ na zwykle zapytani sqlowe. Dziêki takiemu zabiegowi oszczêdza siê czas oraz fundusze przeznaczane na projekt.
+
+\begin{center}
+    \includegraphics{ORM.jpg}
+\end{center}
+\begin{center}
+	 Rysunek przedstawiaj¹cy warstwê dostêpu do danych\newline realizowan¹ za pomoc¹ mappera obiektowo relacyjnego
+\end{center}
+
+Proces mapowania sprowadza siê do okreœlenia mapowañ poprzez wskazanie narzêdziu , które pole z bazy danych ma byæ po³¹czone z obiektem wykorzystywanym w aplikacji. w ten sposób tworzone s¹ specjalne klasy poœrednicz¹ce w komunikacji pomiêdzy baz¹ danych a aplikacj¹.
+
+\begin{center}
+    \includegraphics{ORMmapowanie.jpg}
+\end{center}
+
+
+\begin{center}
+	 Rysunek przedstawiaj¹cy proces mapowania.
+\end{center}
+
+W NHibernacie mo¿na mapowaæ za pomoc¹ plików konfiguracyjnych xml. Jest to wygodne podejœcie jednak¿e podatne na b³êdy i nieczytelne. Dlatego czêsto stosuje siê  rozwi¹zanie typu FluentNHibernate bibliotekê , która pozwala generowaæ pliki XML na podstawie kodu napisanego w je¿yku platformy .Net. Mapowanie takie staje siê bardziej czytelne.
+
+NHibernate dodatkowo wspiera mechanizm cachowania pierwszego oraz drugiego poziomu dziêki którym proces pobierania danych jest bardziej wydajny.
+
+Cache pierwszego poziomu trzyma wartoœci z tabel i w momencie gdy nast¹pi kolejne odwo³anie do danych sprawdzany jest cahec po nazwie tabeli oraz  numerze ID. Je¿eli obiekt znajduje sie na poziomie cachu pierwszego poziomu jest pobierany z tego cachyu bez koniecznoœci wykonywania zapytania do bazy danych.
+
+Cache pierwszego poziomu dostêpny jest w obrêbie tylko jednej sesji. Tzn dla ka¿dego klienta zaczynaj¹cego prace z systemem tworzona jest sesja ka¿dy klient posiada swój w³asny cache z którego korzysta. By wspó³ dzieliæ cache pomiêdzy ro¿nymi klientami i ich sesjami stosuje siê cache drugiego poziomu.
+
+Odpowiednie skonfigurowanie obu sposobów cachowania pozwala zoptymalizowaæ proces zapytañ do bazy danych.
+
+\begin{center}
+	\includegraphics{ORMcache.jpg}
+\end{center}
+\begin{center}
+	Rysunek przedstawiaj¹cy poziomy cachowania
+\end{center}
+
+\newpage
+
+\section{Testy Jednostkowe}
+
+Bran¿a wytawrzania oprogramowania przchodzi przez okrs ciaglych zmian szukajac rozwiazan oraz metodyk najlepiej spelniajacyhj swoje zadanie. Metodyka Waterflass przejeta z innych dziedzin inzynierskich takich jak Automatyka Inzynieria budowala okazala sie nie efektywna. Srodowisko programistow zaczelo poszukiwac innych rozwiazan iw  ten sposob powstala metodyka Extreme Programming. Ktora zaklada nie jeden okres planowania ale wiele okresow planowania nastpeujacych cyklicznie. By mozna bylo taka metodyka tworzyc oprogramowanie zaczeto uzywac wiele narzedzi wspomagajacycht en proces. jednym z takich narzedzi staly sie testy jednostkowe.
+
+Testowanie od pocz¹tku by³o dziedzina która by³a przeprowadzana przez dzia³ testów. Jednak¿e srodowisko prograistyczne odrkylo ze mozna przeprowadzac testy w kodzie podczas tworzenia oprogramowania tym samym polepaszajac jakos twodzoneg kodu. Testy jednostkowe s¹ forma kodu ktory testuje inny kod. Jest to kod napisany w ten sposob ze wykorzystuje stworzony kod i testuje pewne zalozenia. 
+
+\begin{center}
+	\includegraphics{UnitTest.jpg}
+\end{center}
+\begin{center}
+Procedura przeprowadzania testu jednostkowego
+\end{center}
+Pozwalaja ograniczyc ilosc bledow. Powoduja jednak ze marnujemy troche czasu a odpowiedie zdefiniowanie testow ale tak naprawde programista i tka spedzilbym podoba ilosc czasu przeklikujac np aplikacje.
+
+
+\begin{center}
+	\includegraphics{exampleunittest.JPG}
+\end{center}
+\begin{center}
+Przyk³adowy test jednostkowy
+\end{center}
+
+Pisanie testów jednostkowych nie dosc ze daje nam mozliwosc przetestowania najszej apliackji ale roowniej wymyusza sie trzymania lepszych wytyczycn i wzorocow projektowych poniewaz nie wszytkie dane da si latawo zrobic.
+
+\subsection{Mockowanie oraz Stubowanie obiektów}
+
+Aplikacje biznesowe maj¹ czesto bardzo skomplikowana logike wykorzystujaca wiele modulow oraz zaleznosci. Piszac testy jednostkowe powinno testowac sie tylko pojedyczne funkcjonalnosci. w momencie gdy np nasza aplikacja do przeprowadzenia pwnej czynnosci wykorzsytuje zewnetrzne zasoby np dane z bazy danych  w momencie gdy przeprowdzamy taki test musimy wykorzysc baze danych. W tym momencie nie testujemy tylko jednej funkcjonalnosci ale rowniez same polaczenie badz poprawna konfiguracje polaczenia. 
+
+By moc testowac aplikacje wraz z takimi zaleznoscciami musimy badz przeprowadzac testy operujac na prawdziwej bazie danych badz emulowac baze danych. Oba te podejscia wiaza sie z pewnymi ograniczeniami i narzucaja wiele czynnosci.
+
+Innym podejsciem zgola innym jest tworzenie specjalnych klas udajacych polaczenie z baa danych. Klasy takie nazywami Stubami badz mockami w zaleznosci od teotg jak sa skonstruowane.
+
+\subsubsection{Stub}
+Stub jest specjalnym obiektem imitujacym klase. W ten sposob ze posiada te same fkcje oraz testowe dane jak testowana klasa. W przypadku naszej komunikacji do bazy danych. Imitujacy obiekt posiadalby w miejscu fkcji pobierajacej dane fkcje zwracajac stala kolekcje obiektow.
+
+
+
+\subsubsection{Mock}
+
+Dzia³a podobnie jak Stub. Ró¿nica jednak polega na tym , ¿e obiekty typu mock dzia³a na prawdziwej klasie podczepiajaæ siê tylko pod wybrane funkcjonalnosci. Tzn w naszym przyupadku pobierania danych z bazy danych. Bedziemy wykorzystywac nasza normalna klase podniejajc tylko jej fkcje dostepu do bazy danych
+
+
+\subsubsection{Zastosowanie}
+
+
+\begin{center}
+	\includegraphics{ZastosowanieMock.JPG}
+\end{center}
+\begin{center}
+Zastosowanie
+\end{center}
+
+
+
+\newpage

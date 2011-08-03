@@ -1,0 +1,115 @@
+\documentclass[printmode]{mgr}
+%opcje klasy dokumentu mgr.cls zosta³y opisane w do³šczonej instrukcji
+
+%poni¿ej deklaracje u¿ycia pakietów, usunšæ to co jest niepotrzebne
+%\usepackage{polski}       %przydatne podczas sk³adania dokumentów w
+%j. polskim 
+\usepackage[polish]{babel} %alternatywnie do pakietu
+%polski, wybraæ jeden z nich
+\usepackage[cp1250]{inputenc} %kodowanie znaków, zale¿ne od systemu
+\usepackage[T1]{fontenc} %poprawne sk³adanie polskich czcionek
+
+%pakiety do grafiki
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{psfrag}
+\graphicspath{{./Obrazki/}}
+\graphicspath{{./Obrazki/Relacje}}
+
+
+%pakiety dodajšce du¿o dodatkowych poleceñ matematycznych
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+%pakiety wspomagajšce i poprawiajšce sk³adanie tabel
+\usepackage{supertabular}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{hhline}
+
+%pakiet wypisujšcy na marginesie etykiety równañ i rysunków
+%zdefiniowanych przez \label{}, chcšc wygenerowaæ finalnš wersjê
+%dokumentu wystarczy usunšæ poni¿szš liniê
+\usepackage{showlabels}
+
+%definicje w³asnych poleceñ
+\newcommand{\R}{I\!\!R} %symbol liczb rzeczywistych, dzia³a tylko w
+                        %trybie matematycznym
+\newtheorem{theorem}{Twierdzenie}[section] %nowe otoczenie do
+                                           %sk³adania twierdzeñ
+
+%dane do z³o¿enia strony tytu³owej
+\title{Projektowanie systemów zdalnego nauczania z wykorzystaniem us³ug sieciowych w œrodowisku MS .NET}
+\engtitle{Designing distance learning systems using Web Services in MS .NET environment}
+\author{Micha³ Franc}
+\supervisor{dr in¿. Robert Wójcik PWr, I-6}
+\field{Elektronika i telekomunikacja (EIT)}
+%\specialisation{Akustyka (ETA)} \specialisation{Aparatura
+%elektroniczna (EAE)} \specialisation{Elektroniczne i komputerowe
+%\\systemy automatyki (ESA)}
+\specialisation{Zastosowania in¿ynierii komputerowej \\w technice (EZI)} 
+
+%tutaj zaczyna siê w³aœciwa treœæ dokumentu
+\begin{document}
+\bibliographystyle{plabbrv} %tylko gdy u¿ywamy BibTeXa, ustawia polski
+                            %styl bibliografii
+\maketitle %polecenie generujšce stronê tytu³owš 
+
+\dedication{6cm}{Mamie i tacie :D}
+
+\tableofcontents %spis treœci
+
+%poni¿ej znajduje siê przyk³adowa treœæ dalszej czêœci dokumentu,
+%zainteresowanych zachêcam do rozszyfrowania frazy "Lorem ipsum" :)
+\let\cleardoublepage\clearpage
+\include{1Wstep}
+\include{2KsztalcenieNaOdleglosc}
+\include{3WybraneTechnologie}
+\include{WybraAspektyProj4}
+!!
+\include{ProjektSystemu5}
+!!
+\chapter{Implementacja systemu zdalnego naczuania}
+!!
+\section{Realizacja bazy danych}
+!!
+\section{Implementacja systemu zdalnego nauczania w oparciu o us³ugi sieciowe}
+!!
+\subsection{Realizacja mechanizmów przetwarzania danych}
+!!
+\subsection{Realizacja protoko³u komunikacji}
+!!
+\subsection{Realizacja mechanizmów zabezpieczeñ}
+!!
+\section{Implementacja interfejsu uzytkownika}
+!!
+\chapter{Testowanie i ocena efektywnoœci}
+!!
+\section{Wybrane testy funkcjonalne}
+!!
+\section{Testy mechanizmów zabezpieczeñ}
+!!
+\section{Ocena wydajnoœci mechanizmów przetwarzania danych}
+!!
+\section{Ocena wydajnoœæi mechanizmów komunikacji sieciowej}
+!!
+\section{Testy porównawcze z dostêpnymi rozwi¹zaniami}
+!!
+\section{Wnioski z testów i badañ}
+!!
+\chapter{Podsumowanie}
+!!
+\addcontentsline{toc}{chapter}{Bibilografia} %utworzenie w
+                                             %spisietreœci pozycji
+                                             %Bibliografia
+
+\bibliography{bibliografia} % wstawia bibliografiê korzystajšc z pliku
+                            % bibliografia.bib - dotyczy BibTeXa,
+                            % je¿eli nie korzystamy z BibTeXa nale¿y
+                            % u¿yæ otoczenia thebibliography
+
+%opcjonalnie mo¿e siê tu pojawiæ spis rysunków i tabel
+%\listoffigures
+%\listoftables
+\end{document}
+

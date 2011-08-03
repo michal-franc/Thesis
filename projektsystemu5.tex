@@ -1,0 +1,100 @@
+\chapter{Projekt systemu}
+
+Rozproszone modu³y komunikuj¹ce siê za pomoc¹ us³ug sieciowych. Dziêki temu mo¿na np baze danych posrtawic gdzie indziej.
+Jeden modu³ na innym serwerze np uzytkownikow potem np kursy na innym serwerze.
+
+Bedzie mozna stosowa rozne protokoly komunikacyjne. Przetestowany zostanie autorski oraz inne.
+
+Zapewnienie kolaboracji miedzy uzytkownikami roznych platform.
+
+Front end webowy bedzie zrealizowany w formie Asp.Net MVC , Desktopowa aplikacja w formie aplikacji napisanej w WPF. Aplikacja mobilna zostanie stworzona na platformê WP7. Komunikacja us³iug sieciowych bêdzie zrealizowana na podstawie protoko³u Rest . Format danych bêdzie przystosowany do przesy³ania w formacie JSON jak i XML.
+
+\section{Model logiczny i koncepcja systemu}
+\section{Schemat przep³ywu danych}
+\section{Funkcje systemu}
+
+\textbf{Dostêp do materia³ów dydaktycznych}
+
+Podstawow¹ funkcj¹ systemu jest poœredniczenie w przep³ywie materia³ów zdalnego naucznia do u¿ytkownika koñcowego. W zwi¹zku z tym najwa¿niesz¹ i pierwszorzêdnym elementem systemu jest sposób dostaraczania infformacji u¿ytkownikowi koñcowemu. Zastosowanie us³ug sieciowych , obs³uguj¹cych jednolity format danych pozwala zaimplementowaæ wiele sposób komunikacji z uzytkownikiem koñcowym. System wiêc bêdzie uwzglêdnia³ mo¿liwoœæ dostêpu do systemu z poziomu przegl¹darki internetowej , urz¹dzenia moblinego oraz zwyk³ego komputera PC z poziomu programu komputerowego.
+
+\textbf{"Zarz¹dzanie u¿ytkownikami , Role"}
+
+Ka¿dy porz¹dny system e-learningowy oczywiœcie musi posiadaæ mo¿liwoœc zarz¹dzania kontami osób kolaboruj¹cych w systemie. Istotna jest równie¿ implementacja mechanizmu zabezpieczeñ , który z jednej zezwala na dostêp do zasobów tylko dla uprzywilejowanych u¿ytkowników z drugiej jednak strony rozró¿nia role aktorów korzystaj¹cych z systemu i na podstawie ró³ dostarcza sprecifycznych rozwi¹zañ np. Uczeñ ma dostêp do materia³ów natomiast nauczyciel ma dostêp do tworzenia materia³ów i udostêpniania ich.
+
+\textbf{"Chat , Forum (Q A)"}
+
+S¹ to podstawowe funkcje. W procesie nauczania zdalnego wa¿na jest równie¿ kolaboracja miêdzy uczestnikami. Wspólne interakcje  miêdzy u¿ytkownikami systemu mo¿na zapewniæ poprzez stworzenie mechanizmów pozwalaj¹cych w ³atwy sposób wymieniaæ sie informacjami. By spe³niæ takie wymagania system wymaga³ bêdzie implementacji chatu oraz prostego systemu forumowego. WArto tak¿e pomyœleæ nad stworzenieniem wewnêtrzenego protoko³u komunikacyjnego pozwalaj¹cego wysy³aæ prywatne wiadomoœci miêdzy aktorami.
+
+\textbf{"System ocen"}
+
+Istotne z punktu widzenia aktorów systemu bêdzie tak¿e system pozwalaj¹cy z jednej strony ewaluowaæ wyniki osi¹gane przez osoby korzsytaj¹ce z systemu jak równie¿ mo¿liwoœc oceniania dostêpnych materia³ów. Taka funkcjonalnoœc bêdzie wspiera³a poprawianie materia³ów.
+
+\textbf{"Framework Testów"}
+Mo¿liwoœc tworzenia testów 
+
+\textbf{"Hierarchia Kursów"}
+
+\textbf{"Dziennik Ocen"}
+
+\textbf{"Standardy"}
+
+Ostatnim i jednym z najwa¿niejszych funkcjonalnoœci systemu bêdzie mo¿liwoœæ wczytywania oraz tworzenia materia³ów zgodnych ze standardami przyjêetymi na rynku.
+
+\subsection{Diagram przypadków u¿ycia}
+
+Aktorzy:
+
+- Administrator
+- U¿ytkownik Zaawansowany
+- U¿ytkownik
+- Mistrz
+
+Wszyscy:
+- Logowanie i authentykacja
+
+Administrator:
+- Modyfikacja profili (role , wymuszenie resetu hasla , modyfikacja kursów, modyfikacja profili )
+
+Uzytkownik :
+- Czytanie Wyswietlenie danych kursu
+- Wyswietlenie dostepnych materialow
+- Obsluga Forum (dodawanie edycja tematow i postow)
+
+
+U¿ytkownik Zaawansowany :
+-Czytanie, Edytowanie usuwanie topicow i postow.
+- Modyfikacja struktury Forum
+
+Mistrz :
+- Tworzenie kursów 
+- Wrzucanie materia³ów
+- TWorzenie testów
+- Edycja usuwanie kursów
+
+
+\subsection{Sceniariusze wybranych przypadków}
+
+Scenariusz Logowanie i authentykacja:
+
+Ka¿dy u¿ytkownik po wejœciu na serwis poddawany jest procedurze logowania i authentykacji.
+
+1. U¿ytkownik w³¹cza aplikacjê.
+2. Przeprowadza procedurê logowania.
+	- B³êdne logowanie przekierowywuje na stronê logowania.
+3. Identyfikacja Uzytkownika.
+	- Wyœwietla odpowiednie menu w zale¿noœci od ustalonych uprawnieñ.
+4. U¿ytkownik wybiera opcjê wylogowania.
+	- Uzytkownik zostaje wylogowany.
+
+
+\section{Diagram klas systemu}
+\section{Projekt bazy danych}
+\subsection{Model logiczny}
+\subsection{Model fizyczny}
+\subsection{Framework wspomagaj¹cy tworzenie us³ug sieciowych korzystaj¹cych z bazy za pomoc¹ ORM-a}
+\section{Algorytmy i metody przetwarzania danych z wykorzystaniem us³ug sieciowych}
+\section{Protokó³ komunikacyjny w œrodowisku rozproszonych us³ug sieciowych}
+\section{Projekt systemu zabezpieczeñ}
+Projekt systemu zaklada wykorzystanie gotowego frameworka windows forms authentication wraz z roszerzeniem jego mozliwosci
+o mechanizm logowania zgodny z openid
+\section{Mechanizm oparty na us³ugach sieciowych z integrowany z protoko³em OpenID}

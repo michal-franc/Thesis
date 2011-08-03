@@ -1,0 +1,84 @@
+\chapter{Kszta³cenie na odleg³oœæ}
+
+\section{Definicja kszta³cenia na odleg³oœæ}
+\paragraph{}
+Nie ma jednoznacznej definicji w pe³ni okreœlaj¹cej charakter zdalnego nauczania. W literaturze mo¿na znaleŸæ wiele zwrotów próbuj¹cych jednoznacznie okreœliæ to zagadnienie.\newline
+
+\textsl{Terminy czêsto u¿ywane w kontekœcie zdalnego nauczania to e-nauczanie, nauczanie internetowe ,
+nauczanie rozproszone, nauczanie sieciowe, tele-nauczanie, wirtualne nauczanie, nauczanie wspomagane komputerowo, nauczanie webowe, oraz nauczanie na odleg³oœæ}. \cite{TeoriaPraktykaELearningu}\newline
+
+ W wielu opracowaniach naukowych termin ten sprowadza siê po prostu do postaci \textbf{"kszta³cenie na odleg³oœæ"} , w niniejszej pracy bêdê pos³ugiwa³ siê tym terminem.\newline
+
+Wszystkie zwroty ³¹czy jedn¹ wspólna cecha mianowicie zak³adaj¹ one , ¿e podstaw¹ kszta³cenia na odleg³oœæ jest niebezpoœredni proces uczenia siê. Tzn proces w którym osoba ucz¹ca siê nie przebywa w bezpoœrednim kontakcie z nauczycielem. Interesant taki korzysta z dostêpnych zasobów zdalnie. Najczêœciej za pomoc¹ komputera b¹dŸ telefonu komórkowego. Jest to nowoczesny sposób przekazywania wiedzy , który staje siê bardzo popularny na œwiecie, wiêkszoœæ instytucji edukacyjnych stara sie wdra¿aæ taki system.\newline
+
+ Jak s³usznie zauwa¿a " Alan Clarke"
+ \textsl{" E - learning ... Stanowi swoist¹ rewolucjê , której skutki s¹ czêsto porównywalne do wp³ywu , który wczeœniej na kszta³cenie wywar³y wynalezienie druku i masowa produkcja ksi¹¿ek ..."} \cite{AClark}
+
+\paragraph{}
+
+Do kszta³cenia na odleg³oœæ mo¿e zaliczyæ zarówno proces nauczania jak i proces wspomagania nauczania. Do dzia³añ wspomagaj¹cych mo¿emy zaliczyæ przede wszystkim. Sposób prezentacji materia³ów oraz sposób dostarczania kolejnych materia³ów bazuj¹c na wynikach ucz¹cego siê. Za³o¿enia te nie s¹ czêœci¹ tej pracy dyplomowej. W niniejszej pracy skupimy siê na stworzeniu platformy webowej posiadaj¹cej mechanizmy wspieraj¹ce proces zdalnego nauczania zarówno od strony ucz¹cego siê oraz nauczyciela.\newline
+
+
+
+\section{Korzyœci p³yn¹ce z u¿ywania systemów kszta³cenia na odleg³oœæ}
+\paragraph{}
+Proces kszta³cenia do 19 wieku przebiega³ standardowo tzn. odbywa³ siê w bezpoœrednim kontakcie , najczêœciej w specjalnie wydzielonej do tego sali, pomiêdzy nauczycielem oraz uczniami. Rewolucja informatyczna oraz coraz wiêksza znajomoœæ technologii informatycznych wœród spo³eczeñstwa spowodowa³y , ¿e pod koniec 20 wieku dosz³o do ogromnego zainteresowania systemami kszta³cenia na odleg³oœæ. Kszta³cenie na odleg³oœæ posiada wiele cech pozytywnych w porównaniu do starego systemu i podejœcia do nauczania\newline
+
+Alan Clark \cite{AClark} wymienia wiele korzyœci p³yn¹cych z zastosowania e-learningu.
+Zwraca uwagê m.in na:
+\begin{itemize}
+    \item dostêpnoœæ materia³ów. Przewa¿nie otrzymujemy ca³odobowy dostêp do interesuj¹cych nas materia³ów.
+	\item asynchroniczny charakter procesu kszta³cenia tzn. ucz¹cy sam decyduje kiedy  chce korzystaæ z materia³ów.
+	\item swoboda wyboru miejsca , czasu oraz têpa uczenia siê.
+	\item u³atwiony proces dystrybucji materia³ów oraz informacji
+	\item u³atwienie komunikacji z osobami z ca³ego œwiata 
+\end{itemize}
+
+Józef Bednarek \cite{BednarekLubina} zwraca równie¿ uwagê na zwiêkszon¹ efektywnoœæ procesu nauczania. Poprzez zwiêkszony przedzia³ zrozumienia tematu oraz zaanga¿owania ucz¹cych siê. Wa¿nym aspektem przemawiaj¹cym na korzyœæ kszta³cenia na odleg³oœæ jest równie¿ oszczêdnoœæ czasu poprzez u³atwiony dostêp do nauczyciela oraz materia³u dydaktycznego.
+
+\section{Ograniczenia kszta³cenia na odleg³oœæ}
+
+Oczywiœcie jak ka¿de rozwi¹zanie kszta³cenie na odleg³oœæ posiada plusy oraz minusy poza plusami. do najwa¿niejszych problemów jakie nale¿y wymieniæ mo¿emy zaliczyæ.
+
+\begin{itemize}
+    \item koniecznoœæ przeszkolenia personelu dydaktycznego oraz uczniów.
+	 \item wdro¿enie kosztownego systemu informatycznego obs³uguj¹cego proces nauczania
+	 \item wymagana wiêksze zaanga¿owanie i samodzielna inicjatywa od ucz¹cego siê.
+	 \item koniecznoœæ dopasowania obecnego materia³u dydaktycznego do nowych standardów
+	 \item brak typowych dla bezpoœredniego procesu nauczania mechanizmów grupy oraz integracji z grup¹. Mo¿na temu zaradziæ w pewnym stopniu poprzez odpowiednio stworzony system. 
+	 \item anonimowoœæ nauczyciela , który od wieków sta³ na stra¿y zdobywania wiedzy pe³ni¹c funkcjê autorytetu.
+\end{itemize}
+
+
+\section{Klasyfikacja systemów kszta³cenia na odleg³oœæ}
+
+Zgodnie z A. Clarkiem  \cite{AClark}  systemy E-learnignowe mo¿emy sklasyfikowaæ w obrêbie dwóch podstawowych rodzajów.
+
+\subsection{Systemy do zarz¹dzania kursami(CMS)}
+
+RYSUNEK CMS-A
+
+Aplikacje dostarczaj¹ce przede wszystkim funkcji pozwalaj¹cych zarz¹dzaæ materia³ami wspomagaj¹cymi proces nauczania , poprzez dostarczanie funkcji u³atwiaj¹cych zarówno tworzenie nowych materia³ów jak i udostêpnianie materia³ów. W systemach takich mo¿emy wyszczególniæ kilka podstawowych funkcji
+
+\begin{itemize}
+\item katalogowanie dostêpnych materia³ów dydaktycznych
+\item system administracji pozwalaj¹cy zarz¹dzaæ procesem udostêpniania materia³ów
+\item mechanizmy wspomagaj¹ce proces tworzenia oraz publikowania nowych materia³ów
+\end{itemize}
+
+Systemy takie zazwyczaj sprowadzaj¹ siê do postaci katalogów online.
+
+\subsection{Systemy wspomagaj¹ce proces nauczania (LMS)}
+
+RYSUNEK LMS
+
+
+Systemy LMS s¹ bardziej wyspecjalizowanymi systemami wspomagaj¹cymi proces nauczania. Poprzez dostarczanie niektórych funkcjonalnoœci takich jak:
+
+\begin{itemize}
+\item modu³ testów pozwalaj¹cych zdalnie ewaluowaæ umiejêtnoœci kursanta
+\item modu³ ocen pozwalaj¹cy dokumentowaæ postêp oraz wyniki kursanta
+\item modu³ wspomagaj¹cy kolaboracjê oraz komunikacjê pomiêdzy kursantami i nauczycielami
+\item modu³ statystyk oraz raportów pozwalaj¹cych ewaluowaæ skutecznoœæ procesu kszta³cenia 
+\item modu³ autonomicznego agenta  podaj¹cego np sugestie kursantowi kieruj¹c oraz dostosowuj¹c jego tok nauczania
+\end{itemize}

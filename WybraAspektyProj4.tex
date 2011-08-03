@@ -1,0 +1,226 @@
+\chapter{Projekt systemu zdalnego nauczania}
+
+\section{Wymagania Projektowe}
+\subsection{Wymagania funkcyjne}
+Podstawow¹ funkcj¹ systemu jest mo¿liwoœæ zarz¹dzania kursami zdalnego nauczania wraz
+z mo¿liwoœci¹ tworzenia materia³ów , testowania kursantów oraz wystawiania o cen.
+\subsubsection{Tworzenie u¿ytkowników oraz przydzielanie uprawnieñ}
+System musi posiadaæ mechanizm pozwalaj¹cy zarz¹dzaæ u¿ytkownikami systemu wraz z
+mo¿liwoœci¹ przydzielania im odpowiednich poziomów uprawnieñ.
+\subsubsection{Zarz¹dzanie kursami}
+Ka¿dy Autor oraz Administrator mo¿e stworzyæ jeden lub wiêcej kursów , którymi zarz¹dza.
+Kurs opisany jest parametrami 
+\begin{itemize}
+\item Nazwa
+\item Krótki opis
+\item Logo
+\item Rodzaj kursu
+\end{itemize}
+
+Ka¿dy  kurs posiada swoj¹ odrêbn¹ listê materia³ów nauczania , testów , mechanizm wymiany
+krótkich wiadomoœci (Shoutbox) oraz pojedyncz¹ grupê u¿ytkowników przynale¿¹cych do
+danego kursu. Autor ma mo¿liwoœæ edycji tylko i wy³¹cznie kursów , którymi zarz¹dza.
+Administrator mo¿e modyfikowaæ ka¿dy kurs znajduj¹cy siê w systemie.
+
+\subsubsection{Zarz¹dzanie materia³ami nauczania}
+Materia³y nauczania s¹ integraln¹ czêœci¹ kursu. Ka¿dy kurs mo¿e posiadaæ wiêcej ni¿
+jeden lub wiêcej materia³ów nauczania. W sk³ad materia³u nauczania wchodz¹
+parametry opisowe pozwalaj¹ce sklasyfikowaæ obiekt.
+\begin{itemize}
+\item Poziom materia³u {Pocz¹tkuj¹cy , Œrednio-Zaawansowany , Zaawansowany }
+\item Opis
+\item Logo
+
+\end{itemize}
+
+\subsubsection{Materia³y nauczania - proces nauczania}
+Materia³ nauczania prócz parametrów opisowych  podzielony jest na trzy obszary.
+
+\subsubsection{Obszar Informacyjny}
+Zawiera segmenty :
+\begin{itemize}
+\item Informacyjny - parametry kursu
+\item Opisowy - opisuje kontekst kursu
+\item Celów - opisuje cele jakie osi¹gnie kursant bior¹cy udzia³ w kursie
+\end{itemize}
+
+\subsubsection{Obszar nauczania}
+
+W sk³ad obszaru nauczania wchodz¹ sekcje zawieraj¹ce materia³y i wiedz¹ z , której
+korzysta kursant. Materia³ nauczania mo¿e posiadaæ jeden lub wiêcej segmentów. Ka¿dy
+segment opisany jest tytu³em oraz polem zawartoœci , w którym umieszczamy wiedzê oraz
+materia³y , które chcemy przekazaæ w procesie nauczania.
+
+\subsubsection{Obszar podsumowania}
+Zawiera segmenty
+\begin{itemize}
+\item Podsumowania - szybkie podsumowanie zdobytej wiedzy i najwa¿niejszych rzeczy , które zapamiêtujê kursant.
+\item Wiêcej informacji -  posiada zbiór dodatkowych materia³ów linków do nich i pozwala
+nakierowa³ kursanta je¿eli ten chce poszerzyæ wiedzê wykraczaj¹ca poza zakres materia³u nauczania.
+\item Testów - posiada test stworzony na potrzeby materia³u nauczania pozwalaj¹cy
+sprawdziæ wiedzê kursanta
+\end{itemize}
+
+Mechanizm nauczania stworzony jest w sposób liniowy. Kursant po kolei odkrywa
+kolejne segmenty oraz sekcje wchodz¹ce w sk³ad materia³u nauczania. Na koniec kursant
+mo¿e wykonaæ notatki z przeprowadzonego procesu nauczania oraz sprawdziæ swoj¹ wiedzê wykonuj¹c test.
+\subsubsection{Zarz¹dzanie testami}
+Aplikacja pozwala tworzyæ testy bêd¹ce istotnym elementem procesu nauczania. Testy
+mog¹ byæ powi¹zane z kursem lub materia³em nauczania. Kursant posiada mo¿liwoœæ
+wyœwietlenia wszystkich testów wchodz¹cych w sk³ad kursu b¹dŸ materia³u nauczania.
+Mo¿liwoœæ tworzenia oraz edycji testów posiada Administrator oraz Autor kursu 
+posiadaj¹cy odpowiednie uprawnienia.
+\subsubsection{Mechanizm rozwi¹zywania oraz sprawdzani testów}
+Kursant po skoñczeniu procesu nauczania  mo¿e przyst¹piæ do rozwi¹zywania
+testów. Test sk³ada siê z segmentu pytania oraz odpowiedzi.Po rozwi¹zaniu
+testu wyœwietlana jest ocena oraz wiadomoœæ informuj¹ca o zaliczeniu b¹dŸ nie testu. Nastêpnie ocena zapisywana jest do dzienniczka ucznia
+\subsubsection{Zarz¹dzanie ocenami}
+Mazdy kursant mo¿e przegl¹daæ listê swoich ocen otrzymanych po rozwi¹zaniu testu. 
+Kursant ma mo¿liwoœæ tak¿e automatycznego wyliczenia œredniej ocen z danego kursu.
+\subsubsection{Filtrowanie kursów ora z materia³ów}
+Kursant ma mo¿liwoœæ filtrowania kursów na podstawie typu kursu. Mo¿e równie¿ wyœwietliæ listê kursów do , których jest ju¿ zapisany. Kursant ma mo¿liwoœæ filtrowania materia³ów nauczania na podstawie poziomu trudnoœci moce równie¿ sortowaæ materia³y
+na podstawie nazwy materia³u.
+\subsection{Wymagania niefunkcjonalne}
+\subsubsection{£atwoœæ modyfkacji platformy}
+Platforma stworzona zostanie zgodnie z nowoczesnymi trendami oraz zasadami dobrego
+projektowania aplikacji tak by w przysz³oœci proces modyfikacji i utrzymania kodu by³
+jak najtañszy.
+\subsubsection{Bezpieczeñstwo aplikacji}
+Dostêp do poszczególnych funkcjonalnoœci systemu jest ograniczony w obrêbie trzech ról
+przydzielanych do poszczególnych u¿ytkowników platformy. Wyró¿niamy trzy role:
+\subsubsection{Administrator}
+Administrator reprezentuje u¿ytkownika odpowiedzialnego za zarz¹dzanie ca³ym 
+systemem zdalnego nauczania.
+\subsubsection{Autor}
+Autor jest u¿ytkownikiem posiadaj¹cym mo¿liwoœæ tworzenia nowych , edytowania kursów
+, materia³ów nauczania oraz testów.
+\subsubsection{Kursant}
+Kursant jest podstawowym u¿ytkownikiem posiadaj¹cym mo¿liwoœæ przegl¹dania zasobów aplikacji
+ i interakcji z systemem bez mo¿liwoœci wp³ywania na zawartoœæ systemu.Kursanci posiadaj¹ 
+mo¿liwoœæ umieszczania krótkich wiadomoœci tekstowych w module ShoutBox.
+\subsubsection{Bezpieczeñstwo transmisji danych}
+Platforma komunikuje siê z warstw¹ bazodanow¹ za pomoc¹ us³ug sieciowych. Transmisja danych przebiega³a bêdzie na dwóch poziomach zabezpieczeñ. Pierwszy poziom bez szyfrowania i bez zabezpieczeñ bêdzie s³u¿y³ do przesy³ania danych zawieraj¹cych jedynie dane na temat kursów , testów oraz materia³ów nauczania. Dane przesy³ane na tym poziomie bêd¹ w przesy³ane w formacie JSON by zmniejszyæ iloœæ przesy³anych danych oraz u³atwiæ tworzenie aplikacji po stronie klienta. Dane poufne takie jak dane logowania , has³a bêd¹
+przesy³ane bardziej bezpiecznym sposobem transmisji. Komunikacja bêdzie szyfrowana oraz bêdzie implementowa³a mechanizm tokenów pozwalaj¹cy zweryfikowaæ czy nadawca b¹dŸ odbiorca s¹ poprawni i nie dosz³o  do nieuprawnionego przekierowania zapytania b¹dŸ odpowiedzi. Poufne dane 
+bêd¹ przesy³ane w formacie XML z zastosowaniem rozwi¹zañ protoko³u SOAP zdefiniowanych w dokumencie WS-Security.
+\subsubsection{Komunikacja za pomoc¹ us³ug sieciowych}
+Dostêp do bazy danych wystawiony bêdzie w za warstw¹ us³ug sieciowych.
+\subsubsection{Mechanizm dynamicznego odnajdywania serwera bazodanowego}
+By zwiêkszyæ niezawodnoœæ systemu stworzony zostanie system , który w momencie problemów z komunikacj¹ z podstawowym serwerem bazy danych prze³¹czy system na zapasow¹ bazê danych.
+\subsubsection{Tworzenie kopii zapasowych bazy danych}
+Ka¿dego dnia o okreœlonej porze bêdzie tworzona kopia zapasowa bazy danych. Jednorazowo trzymanych bêdzie siedem kopii.
+\subsubsection{Automatyczny mechanizm replikacji danych}
+Poniewa¿ rozwi¹zanie zak³ada mo¿liwoœæ przekierowania na innych serwer us³ug posiadaj¹cy kopiê zapasow¹ bazy danych. Musi zostaæ zapewniony mechanizm replikacji uaktualniaj¹cy bazê danych na zapasowym serwerze. Replikacja taka bêdzie wykonywana raz dziennie.
+\subsubsection{Dostêpnoœæ aplikacji}
+Aplikacja bêdzie dostêpna z poziomu przegl¹darki internetowej.
+Bêdzie dostosowana funkcjonalnie do przegl¹darek :
+\begin{itemize}
+\item Chrome
+\item Firefox 4,5
+\item Internet Explorer 9
+\item Opera
+\end{itemize}
+
+Zostanie zagwarantowany dostêp do funkcjonalnoœæi z poziomu wyumienionych wy¿ej przegl¹darek. Nie zostanie zagwarantowany iealnie taki sam 
+sposób prezentacji aplikacji.
+
+\subsubsection{Obi¹¿alnoœc}
+Aplikacja bêdzie w stanie obs³u¿yæ jednorazowo 100 ¿¹dañ i bêdzie gwarantowaæ czas odpowiedzi w granicach maksymalnie 1 sekundy
+
+\section{Diagramy przep³ywu pracy}
+\section{Diagramy przypadków u¿ycia}
+
+\section{Projekt Bazy Danych}
+\subsection{Model Konceptualny}
+\subsubsection{Kurs}
+Zawiera dane dotycz¹ce kursu : Id , Typ Kursu , Nazwê , Logo , Data Utworzenia , Opis ,  Krótki Opis , Pole Wiadomoœci
+\subsubsection{TypKursu}
+Encja s³ownik zawieraj¹ca , Identyfikator typu , klucz do kursu oraz nazwê typu.
+\subsubsection{UkonczonyTest}
+Encja reprezentuj¹ca ukoñczony test. Zawiera otrzyman¹ ocenê oraz datê ukoñczenia testu. 
+\subsubsection{Test}
+Reprezentuje Test wype³niany przez kursanta nale¿¹cy do  materia³u nauczania.
+\subsubsection{TestType}
+S³ownik opisuj¹cy typ Testu
+\subsubsection{PytanieTestowe}
+Reprezentuje pytanie nale¿¹ce do zbioru pytañ wchodz¹cych w sk³ad testu. Zawiera odpowiedzi , tytu³ oraz treœæ pytania.
+\subsubsection{PytanieTestoweOdpowiedz}
+Reprezentuje odpowiedzi bêd¹ce czêœci¹ pytania. Zawiera treœæ odpowiedzi oraz wskaŸnik czy jest to poprawna odpowiedŸ.
+\subsubsection{ShoutBox}
+Encja reprezentuj¹ca modu³ krótkich wiadomoœci tekstowych zawiera listê wiadomoœci.
+\subsubsection{ShoutBoxWiadomosc}
+Reprezentuje wiadomoœæ wyœwietlan¹ w obrêbie ShoutBoxa. Zawiera treœæ , login u¿ytkownika oraz datê przes³ania.
+\subsubsection{Dziennik}
+Encja reprezentuj¹ca dziennik ocen. Ka¿dy kursant posiada pojedynczy obiekt dziennika dla ka¿dego kursu do którego do³¹czy³.
+\subsubsection{DziennikOcena}
+Encja ocena wchodz¹ca w sk³ad dziennika. Reprezentuje pojedyñcz¹ ocenê otrzymywan¹ po skoñczeniu testu.
+\subsubsection{MaterialNauczania}
+Opisuje pojedyñczy materia³ nauczania bêd¹cy podstawowym œrodkiem przekazu informacji dla kursanta.
+\subsubsection{Section}
+Sekcja jest integraln¹ czêœci¹ materia³u nauczania. Zawiera informacje dydaktyczne. Materia³ nauczania mo¿e posiadaæ wiele sekcji.
+\subsubsection{Profil}
+Reprezentuje u¿ytkownika systemu.
+\subsubsection{GrupaUzytkownikow}
+Encja opsiuj¹ca grupê u¿ytkowników. Ka¿dy kurs posiada pojedyñcz¹ grupê u¿ytkowników. 
+
+\subsection{Opis Relacji}
+
+\begin{center}
+	\includegraphics{/Relacje/KursGrupa.jpg}
+\end{center}
+
+\subsection{Model fizyczny bazy danych}
+
+\begin{center}
+	\includegraphics{/Relacje/fizKurs.jpg}
+\end{center}
+
+\subsection{Diagram}
+
+
+\begin{center}
+	\includegraphics{/Relacje/allDiagram.jpg}
+\end{center}
+
+\section{Architektura Systemu}
+\subsection{Diagram klas}
+\subsection{Diagram sekwencji}
+\subsection{Schemat Przep³ywu Danych}
+\subsection{Komunikacja z us³ugami sieciowymi}
+\subsection{Mechanizmy zabezpieczeñ}
+
+\chapter{Implementacja systemu zdalnego nauczania}
+\section{Realizacja Bazy Danych}
+\section{Wykorzystane narzêdzia}
+\subsection{Mechanizm logowania zdarzeñ - NLog}
+\subsection{Testy Jednostkowe - NUnit}
+\subsection{Dependancy Injection - NInject}
+\subsection{Mockowanie zale¿noœci - RhinoMocks}
+\subsection{Mapowanie obiektowo relacyjne - NHibernate}
+\subsection{Tworzenie mapowañ - FluentNHibernate}
+\section{Realizacja Aplikacji}
+\subsection{Realizacja mechanizmów przetwarzania danych}
+\subsection{Realizacja protoko³u komunikacji}
+\subsection{Realizacja mechanizmów zabezpieczeñ}
+\subsection{Realizacja zewnêtrznego API - przyk³adowe zastosowanie}
+\subsection{Realizacja mechanizmu dynamicznej zmiany serwera}
+\section{Interfejs u¿ytkownika - Modu³y}
+\subsection{Testy}
+\subsection{Kursy}
+\subsection{Dziennik ocen}
+\subsection{Listy}
+
+\chapter{Testowanie i ocena efektywnoœci}
+\section{Wybrane Testy Funkcjonalne}
+\section{Testy Mechanizmów Zabezpieczeñ}
+\section{Testy Zabezpieczeñ}
+\section{Testy wydajnoœci mechanizmów przetwarzania danych}
+\subsection{Analiza zapytañ generowanych przez NHibernate za pomoc¹ NHProfilea}
+\subsection{Przyk³adowa optymalizacja zapytañ}
+\subsection{Testy obci¹¿eniowe}
+\section{Testy wydajnoœci mechanizmów komunikacji sieciowej}
+\subsection{Porównanie formatu Json , Xml}
+\subsection{Badanie czasu odpowiedzi us³ug sieciowych}
+\subsection{Testy konfiguracji roz³o¿enia us³ug sieciowych}
+\section{Wnioski z testów i badañ}
+
+\chapter{Podsumowanie}
