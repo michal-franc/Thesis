@@ -1,8 +1,10 @@
-\chapter{Wstêp}
-\section{Cel pracy}
+\subsubsection{Wstêp}
+WSTEP WSTEP WSTEP WSTEP WSTEP WSTEP WSTEP WSTEP 
 
+\chapter{Cel i zakres pracy}
+\section{Cel pracy}
 Celem niniejszej pracy jest zaprojektowanie , zaimplementowanie oraz przetestowanie systemu informatycznego wspomagaj¹cego proces zdalnego nauczania oparty o technologiê firmy Microsoft z wykorzystaniem mechanizmu us³ug sieciowych do komunikacji z baz¹ danych.
 
 \section{Zakres pracy}
 
-Analiza wymagañ systemu zdalnego nauczania. Projekt systemu w oparciu o mechanizmy us³ug sieciowych.Implementacja w oparciu o Framework Asp.Net Mvc 3 z wykorzystaniem bazy danych MSSql. Testy wydajnoœciowe , funkcjonalne. Analiza proponowanego rozwi¹zania pod wzglêdem wydajnoœciowych oraz praktycznym. Zastosowanie nowoczesnych trendów wytwarzania oprogramowania
+Analiza wymagañ systemu zdalnego nauczania. Projekt systemu w oparciu o mechanizmy us³ug sieciowych.Implementacja w oparciu o Framework Asp.Net Mvc 3 z wykorzystaniem bazy danych MSSql. Testy wydajnoœciowe , funkcjonalne. Analiza proponowanego rozwi¹zania pod wzglêdem wydajnoœciowych oraz praktycznym. Zastosowanie nowoczesnych trendów wytwarzania oprogramowania.

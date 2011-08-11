@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.4.13)  3 AUG 2011 23:51
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2011.4.13)  11 AUG 2011 21:47
 entering extended mode
 **pracadyplomowa.tex
-("C:\Users\LaM\Desktop\Praca Dyplomowa\pracadyplomowa.tex"
+(C:\Users\LaM\Thesis\pracadyplomowa.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, polish, loade
 d.
-("C:\Users\LaM\Desktop\Praca Dyplomowa\mgr.cls"
+(C:\Users\LaM\Thesis\mgr.cls
 Document Class: mgr 2005/12/01 Non-Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\bk12.clo"
 File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
@@ -226,11 +226,10 @@ with amsmath equation tags
 \SL@labelposition=\count110
 )
 \c@theorem=\count111
- ("C:\Users\LaM\Desktop\Praca Dyplomowa\pracadyplomowa.aux"
-("C:\Users\LaM\Desktop\Praca Dyplomowa\1Wstep.aux")
-("C:\Users\LaM\Desktop\Praca Dyplomowa\2KsztalcenieNaOdleglosc.aux")
-("C:\Users\LaM\Desktop\Praca Dyplomowa\3WybraneTechnologie.aux")
-("C:\Users\LaM\Desktop\Praca Dyplomowa\WybraAspektyProj4.aux"))
+ (C:\Users\LaM\Thesis\pracadyplomowa.aux (C:\Users\LaM\Thesis\1Wstepp.aux)
+(C:\Users\LaM\Thesis\2KsztalcenieNaOdleglosc.aux)
+(C:\Users\LaM\Thesis\3WybraneTechnologie.aux)
+(C:\Users\LaM\Thesis\WybraAspektyProj4.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
@@ -291,17 +290,25 @@ Non-PDF special ignored!
 ] [1] [2
 
 
-] ("C:\Users\LaM\Desktop\Praca Dyplomowa\pracadyplomowa.toc")
+] (C:\Users\LaM\Thesis\pracadyplomowa.toc [1
+
+
+]
+Overfull \hbox (2.64268pt too wide) in paragraph at lines 120--120
+ [][] []\T1/cmr/m/n/12 Analiza za-py-ta« ge-ne-ro-wa-nych przez NHi-ber-nate za
+ po-moc¡ NHPro- 
+ []
+
+)
 \tf@toc=\write4
- [1
+ [2] (C:\Users\LaM\Thesis\1Wstepp.tex [3
 
 
-] ("C:\Users\LaM\Desktop\Praca Dyplomowa\1Wstep.tex"
+]
 Rozdzia\l  1.
-) [2
+) [4
 
-
-] ("C:\Users\LaM\Desktop\Praca Dyplomowa\2KsztalcenieNaOdleglosc.tex"
+] (C:\Users\LaM\Thesis\2KsztalcenieNaOdleglosc.tex
 Rozdzia\l  2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
@@ -309,207 +316,531 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
  []
 
 
-LaTeX Warning: Citation `TeoriaPraktykaELearningu' on page 3 undefined on input
- line 9.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
 
-LaTeX Warning: Citation `AClark' on page 3 undefined on input line 16.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Overfull \hbox (0.96646pt too wide) in paragraph at lines 25--26
+\T1/cmr/m/n/12 Re-wo-lu-cja in-for-ma-tyczna oraz co-raz wi¦k-sza zna-jo-mo±¢ t
+ech-no-lo-gii in-for-ma-tycz-nych w±ród
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5592) has occurred while \output is active []
 
- [3
+ [5
 
 
 
 ]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
 
-LaTeX Warning: Citation `AClark' on page 4 undefined on input line 28.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 31.
 ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
-
-
-LaTeX Warning: Citation `BednarekLubina' on page 4 undefined on input line 38.
-
-
-LaTeX Warning: Citation `AClark' on page 4 undefined on input line 56.
-
-[4]
-Overfull \hbox (3.6838pt too wide) in paragraph at lines 83--84
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
+ [6]
+<./Obrazki/CMS.jpg, id=45, 445.665pt x 169.38281pt>
+File: ./Obrazki/CMS.jpg Graphic file (type jpg)
+ <use ./Obrazki/CMS.jpg>
+[7 <C:/Users/LaM/Thesis/Obrazki/CMS.jpg>]
+<./Obrazki/LMS.jpg, id=50, 435.87843pt x 162.6075pt>
+File: ./Obrazki/LMS.jpg Graphic file (type jpg)
+ <use ./Obrazki/LMS.jpg>
+Overfull \hbox (3.6838pt too wide) in paragraph at lines 96--97
 []\T1/cmr/m/n/12 moduª sta-ty-styk oraz ra-por-tów po-zwa-la-j¡-cych ewa-lu-owa
 ¢ sku-tecz-no±¢ pro-cesu ksztaª-
  []
 
-) [5] ("C:\Users\LaM\Desktop\Praca Dyplomowa\3WybraneTechnologie.tex"
+) [8 <C:/Users/LaM/Thesis/Obrazki/LMS.jpg>]
+(C:\Users\LaM\Thesis\3WybraneTechnologie.tex
 Rozdzia\l  3.
 
-LaTeX Warning: Citation `JSON' on page 6 undefined on input line 4.
+LaTeX Warning: Citation `JSON' on page 9 undefined on input line 5.
 
-<./Obrazki/Jsonschemat.jpg, id=43, 347.04657pt x 65.49469pt>
+<./Obrazki/Jsonschemat.jpg, id=54, 347.04657pt x 65.49469pt>
 File: ./Obrazki/Jsonschemat.jpg Graphic file (type jpg)
 
 <use ./Obrazki/Jsonschemat.jpg>
 
-LaTeX Warning: Citation `JSON' on page 6 undefined on input line 14.
-
-[6
+LaTeX Warning: Citation `JSON' on page 9 undefined on input line 15.
 
 
-
- <C:/Users/LaM/Desktop/Praca Dyplomowa/Obrazki/Jsonschemat.jpg>]
-<./Obrazki/JsonParsed.JPG, id=47, 149.05687pt x 289.83281pt>
-File: ./Obrazki/JsonParsed.JPG Graphic file (type jpg)
-
-<use ./Obrazki/JsonParsed.JPG>
-<./Obrazki/XmlExample.JPG, id=48, 285.31593pt x 302.63063pt>
-File: ./Obrazki/XmlExample.JPG Graphic file (type jpg)
-
-<use ./Obrazki/XmlExample.JPG> [7 <C:/Users/LaM/Desktop/Praca Dyplomowa/Obrazki
-/JsonParsed.JPG> <C:/Users/LaM/Desktop/Praca Dyplomowa/Obrazki/XmlExample.JPG>]
-[8]
-
-LaTeX Warning: Citation `MVC' on page 9 undefined on input line 71.
-
-<./Obrazki/MVC.jpg, id=55, 195.73125pt x 190.46156pt>
-File: ./Obrazki/MVC.jpg Graphic file (type jpg)
- <use ./Obrazki/MVC.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
-[9 <C:/Users/LaM/Desktop/Praca Dyplomowa/Obrazki/MVC.jpg>]
-<./Obrazki/Mvcschemat.jpg, id=60, 341.02406pt x 252.945pt>
+[9
+
+
+
+ <C:/Users/LaM/Thesis/Obrazki/Jsonschemat.jpg>]
+
+LaTeX Warning: Citation `XML' on page 10 undefined on input line 38.
+
+<./Obrazki/XmlSchemat.JPG, id=59, 462.97969pt x 48.93282pt>
+File: ./Obrazki/XmlSchemat.JPG Graphic file (type jpg)
+
+<use ./Obrazki/XmlSchemat.JPG>
+Overfull \hbox (7.73447pt too wide) in paragraph at lines 41--42
+ [] 
+ []
+
+<./Obrazki/JsonParsed.JPG, id=60, 149.05687pt x 289.83281pt>
+File: ./Obrazki/JsonParsed.JPG Graphic file (type jpg)
+
+<use ./Obrazki/JsonParsed.JPG>
+<./Obrazki/XmlExample.JPG, id=61, 285.31593pt x 302.63063pt>
+File: ./Obrazki/XmlExample.JPG Graphic file (type jpg)
+
+<use ./Obrazki/XmlExample.JPG> [10 <C:/Users/LaM/Thesis/Obrazki/XmlSchemat.JPG>
+] [11 <C:/Users/LaM/Thesis/Obrazki/JsonParsed.JPG> <C:/Users/LaM/Thesis/Obrazki
+/XmlExample.JPG>]
+<./Obrazki/soapwiadomosc.JPG, id=68, 506.6428pt x 201.75375pt>
+File: ./Obrazki/soapwiadomosc.JPG Graphic file (type jpg)
+
+<use ./Obrazki/soapwiadomosc.JPG>
+File: ./Obrazki/soapwiadomosc.JPG Graphic file (type jpg)
+ <use ./Obrazki/soapwiadomosc.JPG> [12 <C:/Users/LaM/Thesis/Obrazki/soapwiadomo
+sc.JPG>] [13]
+<./Obrazki/RestVsSoap.JPG, id=75, 730.98094pt x 511.9125pt>
+File: ./Obrazki/RestVsSoap.JPG Graphic file (type jpg)
+
+<use ./Obrazki/RestVsSoap.JPG>
+
+LaTeX Warning: Citation `RESTVSSOAP' on page 14 undefined on input line 151.
+
+<./Obrazki/restresponse.JPG, id=76, 291.33844pt x 174.6525pt>
+File: ./Obrazki/restresponse.JPG Graphic file (type jpg)
+
+<use ./Obrazki/restresponse.JPG>
+Underfull \vbox (badness 2503) has occurred while \output is active []
+
+ [14 <C:/Users/LaM/Thesis/Obrazki/RestVsSoap.JPG>] [15 <C:/Users/LaM/Thesis/Obr
+azki/restresponse.JPG>]
+Overfull \hbox (5.23915pt too wide) in paragraph at lines 192--193
+[]\T1/cmr/m/n/12 Zgodnie z de-fi-ni-cja z do-ku-mentu http://www.w3.org/TR/2002
+/WD-ws-arch-20021114/ 
+ []
+
+<./Obrazki/webservicearch.JPG, id=84, 338.01282pt x 289.08pt>
+File: ./Obrazki/webservicearch.JPG Graphic file (type jpg)
+
+<use ./Obrazki/webservicearch.JPG> [16 <C:/Users/LaM/Thesis/Obrazki/webservicea
+rch.JPG>]
+
+LaTeX Warning: Citation `MVC' on page 17 undefined on input line 215.
+
+<./Obrazki/MVC.jpg, id=88, 195.73125pt x 190.46156pt>
+File: ./Obrazki/MVC.jpg Graphic file (type jpg)
+ <use ./Obrazki/MVC.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+[17 <C:/Users/LaM/Thesis/Obrazki/MVC.jpg>]
+<./Obrazki/Mvcschemat.jpg, id=92, 341.02406pt x 252.945pt>
 File: ./Obrazki/Mvcschemat.jpg Graphic file (type jpg)
 
-<use ./Obrazki/Mvcschemat.jpg> [10 <C:/Users/LaM/Desktop/Praca Dyplomowa/Obrazk
-i/Mvcschemat.jpg>] <./Obrazki/ORM.jpg, id=64, 267.24844pt x 332.74312pt>
+<use ./Obrazki/Mvcschemat.jpg> [18 <C:/Users/LaM/Thesis/Obrazki/Mvcschemat.jpg>
+] <./Obrazki/ORM.jpg, id=96, 267.24844pt x 332.74312pt>
 File: ./Obrazki/ORM.jpg Graphic file (type jpg)
 
-<use ./Obrazki/ORM.jpg> [11 <C:/Users/LaM/Desktop/Praca Dyplomowa/Obrazki/ORM.j
-pg>] <./Obrazki/ORMmapowanie.jpg, id=68, 347.79938pt x 145.29282pt>
+<use ./Obrazki/ORM.jpg> [19 <C:/Users/LaM/Thesis/Obrazki/ORM.jpg>]
+<./Obrazki/ORMmapowanie.jpg, id=100, 347.79938pt x 145.29282pt>
 File: ./Obrazki/ORMmapowanie.jpg Graphic file (type jpg)
 
 <use ./Obrazki/ORMmapowanie.jpg>
-<./Obrazki/ORMcache.jpg, id=69, 511.15968pt x 290.58563pt>
+<./Obrazki/ORMcache.jpg, id=101, 511.15968pt x 290.58563pt>
 File: ./Obrazki/ORMcache.jpg Graphic file (type jpg)
 
 <use ./Obrazki/ORMcache.jpg>
-Overfull \hbox (55.91434pt too wide) in paragraph at lines 143--144
+Overfull \hbox (55.91434pt too wide) in paragraph at lines 287--288
  [] 
  []
 
 
 Underfull \vbox (badness 3780) has occurred while \output is active []
 
- [12 <C:/Users/LaM/Desktop/Praca Dyplomowa/Obrazki/ORMmapowanie.jpg>] [13 <C:/U
-sers/LaM/Desktop/Praca Dyplomowa/Obrazki/ORMcache.jpg>]
-<./Obrazki/UnitTest.jpg, id=76, 204.01219pt x 284.56313pt>
+ [20 <C:/Users/LaM/Thesis/Obrazki/ORMmapowanie.jpg>] [21 <C:/Users/LaM/Thesis/O
+brazki/ORMcache.jpg>] <./Obrazki/UnitTest.jpg, id=109, 204.01219pt x 284.56313p
+t>
 File: ./Obrazki/UnitTest.jpg Graphic file (type jpg)
 
 <use ./Obrazki/UnitTest.jpg>
-<./Obrazki/exampleunittest.JPG, id=77, 475.7775pt x 225.84375pt>
+<./Obrazki/exampleunittest.JPG, id=110, 475.7775pt x 225.84375pt>
 File: ./Obrazki/exampleunittest.JPG Graphic file (type jpg)
 
 <use ./Obrazki/exampleunittest.JPG>
-Overfull \hbox (20.53224pt too wide) in paragraph at lines 167--168
+Overfull \hbox (20.53224pt too wide) in paragraph at lines 311--312
  [] 
  []
 
 
 Underfull \vbox (badness 1796) has occurred while \output is active []
 
- [14 <C:/Users/LaM/Desktop/Praca Dyplomowa/Obrazki/UnitTest.jpg>]
-<./Obrazki/ZastosowanieMock.JPG, id=81, 283.81032pt x 310.15875pt>
+ [22 <C:/Users/LaM/Thesis/Obrazki/UnitTest.jpg>]
+<./Obrazki/ZastosowanieMock.JPG, id=114, 283.81032pt x 310.15875pt>
 File: ./Obrazki/ZastosowanieMock.JPG Graphic file (type jpg)
 
-<use ./Obrazki/ZastosowanieMock.JPG> [15 <C:/Users/LaM/Desktop/Praca Dyplomowa/
-Obrazki/exampleunittest.JPG>] [16 <C:/Users/LaM/Desktop/Praca Dyplomowa/Obrazki
-/ZastosowanieMock.JPG>])
-("C:\Users\LaM\Desktop\Praca Dyplomowa\WybraAspektyProj4.tex"
+<use ./Obrazki/ZastosowanieMock.JPG> [23 <C:/Users/LaM/Thesis/Obrazki/exampleun
+ittest.JPG>] [24 <C:/Users/LaM/Thesis/Obrazki/ZastosowanieMock.JPG>])
+(C:\Users\LaM\Thesis\WybraAspektyProj4.tex
 Rozdzia\l  4.
-[17
+[25
 
 
 
-] [18]
-Overfull \hbox (21.97865pt too wide) in paragraph at lines 98--101
+] [26] [27]
+Overfull \hbox (21.97865pt too wide) in paragraph at lines 112--115
 \T1/cmr/m/n/12 bów apli-ka-cji i in-te-rak-cji z sys-te-mem bez mo»-li-wo-±ci w
 pªy-wa-nia na za-war-to±¢ sys-temu.Kursanci
  []
 
-[19] [20] [21]
-<./Obrazki//Relacje/KursGrupa.jpg, id=105, 402.75468pt x 81.30376pt>
-File: ./Obrazki//Relacje/KursGrupa.jpg Graphic file (type jpg)
 
-<use ./Obrazki//Relacje/KursGrupa.jpg>
-<./Obrazki//Relacje/fizKurs.jpg, id=106, 428.35031pt x 136.25906pt>
-File: ./Obrazki//Relacje/fizKurs.jpg Graphic file (type jpg)
+Overfull \hbox (8.72437pt too wide) in paragraph at lines 116--118
+[]\T1/cmr/m/n/12 Mechanizm re-je-stra-cji , lo-go-wa-nia zo-sta-nie zre-ali-zo-
+wany za po-moc¡ Fra-me-worka Asp.Net
+ []
 
-<use ./Obrazki//Relacje/fizKurs.jpg>
-<./Obrazki//Relacje/allDiagram.jpg, id=107, 682.04813pt x 679.78969pt>
-File: ./Obrazki//Relacje/allDiagram.jpg Graphic file (type jpg)
+[28] [29] [30] [31] [32]
+<./Obrazki//Relacje/CDM1.jpg, id=146, 487.8225pt x 319.1925pt>
+File: ./Obrazki//Relacje/CDM1.jpg Graphic file (type jpg)
 
-<use ./Obrazki//Relacje/allDiagram.jpg>
-Overfull \hbox (226.80238pt too wide) in paragraph at lines 181--182
+<use ./Obrazki//Relacje/CDM1.jpg>
+Overfull \hbox (32.57722pt too wide) in paragraph at lines 199--200
  [] 
  []
 
-[22 <C:/Users/LaM/Desktop/Praca Dyplomowa/Obrazki/Relacje/KursGrupa.jpg> <C:/Us
-ers/LaM/Desktop/Praca Dyplomowa/Obrazki/Relacje/fizKurs.jpg>]
-Overfull \vbox (3.71724pt too high) has occurred while \output is active []
+<./Obrazki//Relacje/CDM2.jpg, id=147, 499.11469pt x 286.06876pt>
+File: ./Obrazki//Relacje/CDM2.jpg Graphic file (type jpg)
 
+<use ./Obrazki//Relacje/CDM2.jpg>
+Overfull \hbox (43.86937pt too wide) in paragraph at lines 203--204
+ [] 
+ []
 
-[23 <C:/Users/LaM/Desktop/Praca Dyplomowa/Obrazki/Relacje/allDiagram.jpg>]
-[24]
-Rozdzia\l  5.
+[33 <C:/Users/LaM/Thesis/Obrazki/Relacje/CDM1.jpg> <C:/Users/LaM/Thesis/Obrazki
+/Relacje/CDM2.jpg>]
+<./Obrazki//Relacje/PDM1.jpg, id=152, 433.62pt x 310.91156pt>
+File: ./Obrazki//Relacje/PDM1.jpg Graphic file (type jpg)
+
+<use ./Obrazki//Relacje/PDM1.jpg>
+<./Obrazki//Relacje/PDM2.jpg, id=153, 374.14781pt x 336.50719pt>
+File: ./Obrazki//Relacje/PDM2.jpg Graphic file (type jpg)
+
+<use ./Obrazki//Relacje/PDM2.jpg> [34 <C:/Users/LaM/Thesis/Obrazki/Relacje/PDM1
+.jpg> <C:/Users/LaM/Thesis/Obrazki/Relacje/PDM2.jpg>]
+<./Obrazki/architektura.JPG, id=157, 511.15968pt x 225.84375pt>
+File: ./Obrazki/architektura.JPG Graphic file (type jpg)
+
+<use ./Obrazki/architektura.JPG>
+Overfull \hbox (55.91434pt too wide) in paragraph at lines 217--218
+ [] 
+ []
+
+[35 <C:/Users/LaM/Thesis/Obrazki/architektura.JPG>] [36]
+<./Obrazki//schematwidok.jpg, id=164, 536.75531pt x 332.74312pt>
+File: ./Obrazki//schematwidok.jpg Graphic file (type jpg)
+
+<use ./Obrazki//schematwidok.jpg>
+Overfull \hbox (81.5099pt too wide) in paragraph at lines 246--247
+ [] 
+ []
+
+<./Obrazki//schematlogowanie.jpg, id=165, 487.8225pt x 436.63126pt>
+File: ./Obrazki//schematlogowanie.jpg Graphic file (type jpg)
+
+<use ./Obrazki//schematlogowanie.jpg>
+Overfull \hbox (32.57722pt too wide) in paragraph at lines 253--254
+ [] 
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25
+ [37 <C:/Users/LaM/Thesis/Obrazki/schematwidok.jpg>]
+<./Obrazki//schemattest.jpg, id=169, 514.92375pt x 341.77687pt>
+File: ./Obrazki//schemattest.jpg Graphic file (type jpg)
+
+<use ./Obrazki//schemattest.jpg>
+Overfull \hbox (59.6784pt too wide) in paragraph at lines 260--261
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38 <C:/Users/LaM/Thesis/Obrazki/schematlogowanie.jpg>] [39 <C:/Users/LaM/Thes
+is/Obrazki/schemattest.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
+ []
+
+<./Obrazki/formsauth.jpg, id=177, 396.7322pt x 168.63pt>
+File: ./Obrazki/formsauth.jpg Graphic file (type jpg)
+
+<use ./Obrazki/formsauth.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 289--291
+
+ []
+
+[40 <C:/Users/LaM/Thesis/Obrazki/formsauth.jpg>] [41]
+Rozdzia\l  5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
+
+ []
+
+[42
 
 ]
-Overfull \vbox (25.22382pt too high) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
+
+ []
 
 
-[26]
+Underfull \hbox (badness 10000) in paragraph at lines 333--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+ []
+
+<./Obrazki//Implementacja/sentinel.jpg, id=190, 493.845pt x 228.10219pt>
+File: ./Obrazki//Implementacja/sentinel.jpg Graphic file (type jpg)
+
+<use ./Obrazki//Implementacja/sentinel.jpg>
+Overfull \hbox (38.5997pt too wide) in paragraph at lines 365--366
+ [] 
+ []
+
+[44] <./Obrazki//Implementacja/alert.jpg, id=194, 501.37312pt x 41.4047pt>
+File: ./Obrazki//Implementacja/alert.jpg Graphic file (type jpg)
+
+<use ./Obrazki//Implementacja/alert.jpg>
+Overfull \hbox (46.1278pt too wide) in paragraph at lines 384--385
+ [] 
+ []
+
+[45 <C:/Users/LaM/Thesis/Obrazki/Implementacja/sentinel.jpg> <C:/Users/LaM/Thes
+is/Obrazki/Implementacja/alert.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 399--401
+
+ []
+
+
+<./Obrazki//Implementacja/unittestdodaj.jpg, id=199, 207.77625pt x 243.15843pt>
+File: ./Obrazki//Implementacja/unittestdodaj.jpg Graphic file (type jpg)
+<use ./Obrazki//Implementacja/unittestdodaj.jpg>
+<./Obrazki//Implementacja/unittestpamiec.jpg, id=200, 238.64156pt x 258.9675pt>
+File: ./Obrazki//Implementacja/unittestpamiec.jpg Graphic file (type jpg)
+<use ./Obrazki//Implementacja/unittestpamiec.jpg> [46 <C:/Users/LaM/Thesis/Obra
+zki/Implementacja/unittestdodaj.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+[47 <C:/Users/LaM/Thesis/Obrazki/Implementacja/unittestpamiec.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
+
+ []
+
+
+Overfull \hbox (0.30565pt too wide) in paragraph at lines 444--446
+[]\T1/cmr/m/n/12 Dzi¦iki za-sto-so-wa-niu fra-me-ow-kra Asp.Net Mvc mo»na te-st
+o-wa¢ kon-tro-ler , które mo»na
+ []
+
+
+<./Obrazki//Implementacja/unittestkontroler.JPG, id=207, 201.75375pt x 235.6303
+1pt>
+File: ./Obrazki//Implementacja/unittestkontroler.JPG Graphic file (type jpg)
+ <use ./Obrazki//Implementacja/unittestkontroler.JPG>
+<./Obrazki//Implementacja/unittestzasob.JPG, id=208, 280.04625pt x 248.42813pt>
+File: ./Obrazki//Implementacja/unittestzasob.JPG Graphic file (type jpg)
+<use ./Obrazki//Implementacja/unittestzasob.JPG>
+Underfull \vbox (badness 4193) has occurred while \output is active []
+
+ [48 <C:/Users/LaM/Thesis/Obrazki/Implementacja/unittestkontroler.JPG>]
+<./Obrazki//Implementacja/unittestmock.JPG, id=212, 380.17032pt x 253.69781pt>
+File: ./Obrazki//Implementacja/unittestmock.JPG Graphic file (type jpg)
+
+<use ./Obrazki//Implementacja/unittestmock.JPG>
+<./Obrazki//Implementacja/kodmock.JPG, id=213, 531.48563pt x 303.38344pt>
+File: ./Obrazki//Implementacja/kodmock.JPG Graphic file (type jpg)
+
+<use ./Obrazki//Implementacja/kodmock.JPG>
+Overfull \hbox (76.24025pt too wide) in paragraph at lines 479--480
+ [] 
+ []
+
+
+Underfull \vbox (badness 6110) has occurred while \output is active []
+
+ [49 <C:/Users/LaM/Thesis/Obrazki/Implementacja/unittestzasob.JPG> <C:/Users/La
+M/Thesis/Obrazki/Implementacja/unittestmock.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
+
+ []
+
+[50 <C:/Users/LaM/Thesis/Obrazki/Implementacja/kodmock.JPG>]
+<./Obrazki//Implementacja/nhibernatemaps.JPG, id=220, 469.00218pt x 174.6525pt>
+File: ./Obrazki//Implementacja/nhibernatemaps.JPG Graphic file (type jpg)
+<use ./Obrazki//Implementacja/nhibernatemaps.JPG>
+Overfull \hbox (13.75696pt too wide) in paragraph at lines 497--498
+ [] 
+ []
+
+[51 <C:/Users/LaM/Thesis/Obrazki/Implementacja/nhibernatemaps.JPG>]
+<./Obrazki//Implementacja/kodmapowanie.JPG, id=225, 566.115pt x 325.215pt>
+File: ./Obrazki//Implementacja/kodmapowanie.JPG Graphic file (type jpg)
+
+<use ./Obrazki//Implementacja/kodmapowanie.JPG>
+Overfull \hbox (110.86954pt too wide) in paragraph at lines 508--509
+ [] 
+ []
+
+
+Overfull \hbox (4.79979pt too wide) in paragraph at lines 514--516
+[]\T1/cmr/m/n/12 Mapowanie re-ali-zo-wane jest po-przez dzie-dzi-cze-nie ge-ne-
+rycz-nej klasy Clas-sMap. Wszyst-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
+
+ []
+
+[52 <C:/Users/LaM/Thesis/Obrazki/Implementacja/kodmapowanie.JPG>]
+<./Obrazki//Implementacja/dataaccess.jpg, id=229, 216.05719pt x 148.30406pt>
+File: ./Obrazki//Implementacja/dataaccess.jpg Graphic file (type jpg)
+
+<use ./Obrazki//Implementacja/dataaccess.jpg>
+<./Obrazki//Implementacja/dataaccessusage.JPG, id=230, 375.65344pt x 267.24844p
+t>
+File: ./Obrazki//Implementacja/dataaccessusage.JPG Graphic file (type jpg)
+ <use ./Obrazki//Implementacja/dataaccessusage.JPG>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53 <C:/Users/LaM/Thesis/Obrazki/Implementacja/dataaccess.jpg>]
+<./Obrazki//Implementacja/iRepository.JPG, id=234, 424.58624pt x 178.41656pt>
+File: ./Obrazki//Implementacja/iRepository.JPG Graphic file (type jpg)
+
+<use ./Obrazki//Implementacja/iRepository.JPG>
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
+
+ []
+
+<./Obrazki//Implementacja/hqleasy.JPG, id=235, 367.3725pt x 175.40532pt>
+File: ./Obrazki//Implementacja/hqleasy.JPG Graphic file (type jpg)
+
+<use ./Obrazki//Implementacja/hqleasy.JPG> [54 <C:/Users/LaM/Thesis/Obrazki/Imp
+lementacja/dataaccessusage.JPG> <C:/Users/LaM/Thesis/Obrazki/Implementacja/iRep
+ository.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
+
+ []
+
+<./Obrazki//Implementacja/hqlhard.JPG, id=239, 253.69781pt x 48.18pt>
+File: ./Obrazki//Implementacja/hqlhard.JPG Graphic file (type jpg)
+
+<use ./Obrazki//Implementacja/hqlhard.JPG> [55 <C:/Users/LaM/Thesis/Obrazki/Imp
+lementacja/hqleasy.JPG> <C:/Users/LaM/Thesis/Obrazki/Implementacja/hqlhard.JPG>
+]
+<./Obrazki//Implementacja/SerializacjaXML.JPG, id=243, 419.31656pt x 163.3603pt
+>
+File: ./Obrazki//Implementacja/SerializacjaXML.JPG Graphic file (type jpg)
+ <use ./Obrazki//Implementacja/SerializacjaXML.JPG> [56 <C:/Users/LaM/Thesis/Ob
+razki/Implementacja/SerializacjaXML.JPG>] [57] [58] [59] [60] [61] [62]
+[63] [64]
 Rozdzia\l  6.
-[27
+[65
 
-]
+] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75]
 Rozdzia\l  7.
-) [28
+[76
 
-] ("C:\Users\LaM\Desktop\Praca Dyplomowa\pracadyplomowa.bbl"
+]) (C:\Users\LaM\Thesis\pracadyplomowa.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 []\T1/cmr/m/n/12 ADL.  Scorm do-cu-men-ta-tion.  http://www.scormsoft.com/scorm
 
@@ -521,36 +852,33 @@ Overfull \hbox (57.14992pt too wide) in paragraph at lines 4--9
 ocumentation.aspx. 
  []
 
-[29
+[77
 
 
-]) [30] ("C:\Users\LaM\Desktop\Praca Dyplomowa\pracadyplomowa.aux"
-("C:\Users\LaM\Desktop\Praca Dyplomowa\1Wstep.aux")
-("C:\Users\LaM\Desktop\Praca Dyplomowa\2KsztalcenieNaOdleglosc.aux")
-("C:\Users\LaM\Desktop\Praca Dyplomowa\3WybraneTechnologie.aux")
-("C:\Users\LaM\Desktop\Praca Dyplomowa\WybraAspektyProj4.aux"))
+]) [78] (C:\Users\LaM\Thesis\pracadyplomowa.aux
+(C:\Users\LaM\Thesis\1Wstepp.aux)
+(C:\Users\LaM\Thesis\2KsztalcenieNaOdleglosc.aux)
+(C:\Users\LaM\Thesis\3WybraneTechnologie.aux)
+(C:\Users\LaM\Thesis\WybraAspektyProj4.aux))
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 2944 strings out of 495238
- 38485 string characters out of 3178937
- 96371 words of memory out of 3000000
- 6061 multiletter control sequences out of 15000+200000
+ 3103 strings out of 495238
+ 42819 string characters out of 3178937
+ 98833 words of memory out of 3000000
+ 6187 multiletter control sequences out of 15000+200000
  19740 words of font info for 47 fonts, out of 3000000 for 9000
  34 hyphenation exceptions out of 8191
- 27i,15n,24p,936b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,15n,24p,1000b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\LaM\AppData\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ec
 bx1440.pk> <C:\Users\LaM\AppData\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\d
-pi600\ecbx1095.pk> <C:\Users\LaM\AppData\Local\MiKTeX\2.8\fonts\pk\ljfour\jknap
-pen\ec\dpi600\ecbx1200.pk> <C:\Users\LaM\AppData\Local\MiKTeX\2.8\fonts\pk\ljfo
-ur\jknappen\ec\dpi600\ecsl1200.pk> <C:\Users\LaM\AppData\Local\MiKTeX\2.8\fonts
+pi600\ecsl1200.pk> <C:\Users\LaM\AppData\Local\MiKTeX\2.8\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecbx1728.pk> <C:\Users\LaM\AppData\Local\MiKTeX\2.8\fonts\pk\ljfo
+ur\jknappen\ec\dpi600\ecbx1095.pk> <C:\Users\LaM\AppData\Local\MiKTeX\2.8\fonts
 \pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\LaM\AppData\Local\MiKTeX\2
-.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\LaM\AppData\Local\
+.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\LaM\AppData\Local\
 MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Users\LaM\AppDat
 a\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\La
 M\AppData\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk> <C:\
@@ -559,9 +887,9 @@ pk> <C:\Users\LaM\AppData\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\e
 ccc1728.pk> <C:\Users\LaM\AppData\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\
 dpi600\ecrm2074.pk><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb>
-Output written on pracadyplomowa.pdf (34 pages, 697204 bytes).
+Output written on pracadyplomowa.pdf (82 pages, 1861450 bytes).
 PDF statistics:
- 761 PDF objects out of 1000 (max. 8388607)
+ 966 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 

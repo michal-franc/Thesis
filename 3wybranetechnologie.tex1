@@ -1,35 +1,63 @@
-\chapter{Wybrane technologie oraz techniki realizacji systemów webowych}
-\section{Formaty danych JSON , XML}
+\chapter{Wybrane technologie realizacji systemów webowych}
+\section{Formaty danych JSON oraz XML}
+\subsubsection{JSON}
 
-JSON (JavaScript Object Notation) jest formatem danych wykorzystywanym przy transferze danych po sieci. Jest on alternatyw¹ do standardu XML. Jest to nowy format danych opisany w 2006 roku w publikacji RFC4627\cite{JSON} . Jest to lekki format z bardzo prost¹ semantyk¹. Dane przesy³ane w tym formacie sk³adaj¹ siê z pary ci¹gów znaków : nazwa , wartoœæ.
+JSON (JavaScript Object Notation) jest formatem danych wykorzystywanym przy transferze danych po sieci. Jest on alternatyw¹ do standardu XML. Jest to nowy format danych opisany w 2006 roku w publikacji RFC4627\cite{JSON} . Jest to lekki format z bardzo prost¹ semantyk¹. Zbiór danych sk³ada siê z pary ci¹gów znaków : nazwa , wartoœæ.
 
 \begin{center}
  \includegraphics{Jsonschemat.jpg}
 \end{center}
 
 \begin{center}
-	Rys. Schemat formatu JSON
+	Rys. Uproszczony Schemat formatu JSON
 \end{center}
 
-Semantyka formatu pozwala zdefiniowaæ : \cite{JSON}
+Semantyka formatu pozwala zdefiniowaæ podstawowe typy danych takie jak : \cite{JSON}
 \begin{itemize}
 \item Obiekt
-\item Tablicê obiektów , wartoœci.
+\item Tablicê obiektów
 \item Ci¹g Znaków
-\item Liczba
-\item Wartoœæ boolowska
+\item Liczbê
+\item Wartoœæ bitow¹
 \end{itemize}
+
 
 \subsubsection{Cechy formatu JSON}
 
 \begin{itemize}
-\item u³atwione przetwarzanie formatu do obiektów jêzyka javascript przy pomocy funkcji eval
+\item u³atwione przetwarzanie formatu do obiektów jêzyka Javascript
 \item lekki prosty format
 \item szybki proces przetwarzania
 \item ³atwy w modyfikacji
 \end{itemize}
 
-\subsubsection{Porównanie JSON , XML}
+\subsubsection{XML}
+
+XML jest jednym z najbardziej rozpowszechnionych formatów danych. Wykorzystywany jest nie tylko jako noœnik danych ale równie¿ jest popularny w wielu jako format plików konfiguracyjnych. Niektóre skomplikowane silniki wykorzystuj¹ format XML do definiowania , scenariuszy testowych , interakcji w systemie.
+
+Format ten powsta³ na bazie formatu SGML. Standard XML opisuje zarówno zestaw znaczników pozwalaj¹cych opisaæ dokumenty jak i sposób parsowania formatu.\cite{XML}
+
+\begin{center}
+ \includegraphics{XmlSchemat.JPG}
+\end{center}
+
+\begin{center}
+	Rys. Schemat formatu XML
+\end{center}
+
+XML sk³ada siê z ze znaczników zamykaj¹cych oraz otwieraj¹cych zwanych tagami , wewn¹trz których znajduje siê zawartoœæ danego elementu. W formacie tym istnieje mo¿liwoœæ definiowania atrybutów opisuj¹cych dany tag. Tworzenie drzewiastej hierarchii elementów realizowane jest za pomoc¹ prostego mechanizmu zamykania tagów w tagach.
+
+\subsubsection{Cechy formatu XML}
+
+\begin{itemize}
+\item bardzo du¿e wsparcie narzêdzi i zgodnoœæ z wieloma systemami na rynku
+\item du¿e bezpieczeñstwo wiadomoœci
+\item mo¿liwoœæ definiowania dodatkowych atrybutów
+\item pochodne XML-a takie jak XML Schema  , XSLT wzbogacaj¹ce format o dodatkowe funkcjonalnoœci
+\end{itemize}
+
+
+\subsubsection{Porównanie JSON oraz XML}
 
 W momencie wejœcia na rynek us³ug sieciowych , by³y one g³ównie wykorzystywane w œwiecie biznesowym. Rynek Enterprise zaadoptowa³ na pocz¹tku format XML i protokó³ oparty na tym formacie SOAP. XML by³ idealnym formatem poniewa¿ by³ juz dobrze znany i mia³ spore wsparcie narzêdzi oraz jêzyków.
 
@@ -45,26 +73,142 @@ W porównaniu do XML-a format JSON charakteryzuje siê mniejsz¹ wag¹ przesy³anego 
 \end{center}
 
 \begin{center}
-	Rys.  Porównanie standardów. Json , XML.
+	Rys.  Porównanie standardów (JSON , XML).
 \end{center}
 
-W pracy magisterskiej zastosowa³em zarówno format JSON jak i XML. Dane nie wymagaj¹ce du¿ego poziomu bezpieczeñstwa przesy³ane s¹ w formacie JSON natomiast dane takie jak np. dane adresowe , logowania przesy³ane s¹ formatem XML. 
+W pracy magisterskiej zastosowa³em zarówno format JSON jak i XML. Dane u¿ywane przez serwis przesy³ane s¹ w formacie XML natomiast dane wystawione w API przesy³ane s¹ w formacie JSON.
 
 \newpage
+\section{Protoko³y SOAP oraz REST}
+Wspó³czesne aplikacje webowe udostêpniaj¹ce us³ugi sieciowe zbudowane s¹ w wiêkszoœci na bazie protoko³ów REST b¹dŸ SOAP.
 
+\subsubsection{SOAP}
+
+Protokó³ SOAP jest protoko³em transmisji danych wykorzystuj¹cym format XML. Mo¿e równie¿ wykorzystywaæ inne formaty jednak XML jest najpopularniejszym .Ramki wiadomoœci przesy³ane s¹ standardowo za pomoc¹ protoko³u HTTP przy u¿yciu komend GET,POST,DELETE. Istnieje te¿ mo¿liwoœæ wykorzystania protoko³u RPC.
+
+Standard SOAP opisuje odpowiedni¹ ustandaryzowan¹ strukturê wiadomoœci przesy³anej do serwera.
+
+Wiadomoœæ sk³ada siê z ramek.
+
+\begin{itemize} 
+\item Envelope
+\item Header 
+\item Body
+\end{itemize}
+
+
+\begin{center}
+	\includegraphics[width=14cm,height=8cm]{soapwiadomosc.JPG}
+\end{center}
+
+\begin{center}
+	Rys.  Przyk³adowa wiadomoœæ SOAP
+\end{center}
+
+Element Header zawiera nag³ówek informacji. Na wy¿ej zamieszcoznym przyk³adzie widaæ m.in  adress do którego kierowana jest wiadomoœc oraz wartoœæ uuid przydzielan¹ ka¿dej wiadomoœci. Zapewnia to unikatowoœc wiadomoœci. 
+
+Element Body zawiera nazwe fkcji udostepnianej przez usluge sieciowa oraz jej parametry w tym przypadky  jest to jedno parametrowa funkcja GetByName z parametrem userName.
+
+
+\begin{center}
+	\includegraphics[width=14cm,height=8cm]{soapwiadomosc.JPG}
+\end{center}
+
+\begin{center}
+	Rys.  Przyk³adowa wiadomoœæ zwrotna
+\end{center}
+
+Mo¿na zauwa¿yæ charakterystyczny uuid wiadomoœci który jest taki sam jak w przypadku wiadomoœci wys³anej do serwera. Na tej podstawie server us³ug sieciowych wie jak dopasowaæ wiadomoœci. Jak widzimy w segmencie body zosta³ przes³any wynik wykonania us³ugi.
+
+link do specyfikacji - http://www.w3.org/TR/soap/
+
+
+
+\subsubsection{Zalety SOAP}
+\begin{itemize}
+\item sta³a sk³adnia , mocne typowanie
+\item du¿o narzêdzi na rynku
+\item dojrza³oœæ standardu
+\end{itemize}
+
+\subsubsection{Wady SOAP}
+\begin{itemize}
+\item przesy³anie nag³ówków po¿era du¿o miejsca 
+\item du¿y poziom komplikacji
+\end{itemize}
+
+
+\newpage{}
+\subsubsection{REST}
+
+Soap jest skomplikowany i potrzebuje wielu targów oraz znaczników do przesy³ania danych. W œrodowisku nowych ma³ych firm powsta³ protokó³ REST jego popularnoœæ zaczê³a znacz¹co rosn¹æ wraz pojawieniem siê TWITTER API us³udze bazuj¹cej na formacie danych JSON.
+
+Badania z Maja 2011 roku przeprowadzone przez serwis ProgrammableWeb pokazuj¹ , ¿e prawie 73\% us³ug sieciowych wystawionych w formie API obs³ugiwane jest na podstawie protoko³u typu REST.
+
+\begin{center}
+	\includegraphics[width=14cm,height=8cm]{RestVsSoap.JPG}
+\end{center}
+\cite{RESTVSSOAP}
+
+Architektura typu REST opiera siê na jednym wa¿nym za³o¿eniu. Pobieranie oraz modyfikowanie obiektów jest œciœle powi¹zane z adresem URL. Dziêki zastosowaniu takiego rozwi¹zania mo¿na pobieraæ np zawartoœæ danych z bazy za pomoc¹ komend protoko³u HTTP. Pobieranie mo¿na realizowaæ np za pomoc¹ komendy GET. Modyfikacje b¹dŸ usuwanie danych za pomoc¹ komendy POST.
+
+\begin{center}
+	GET http://codedashservices.mfranc.com/CourseService.svc/json/Get?id=16 HTTP/1.1
+\end{center}
+
+\begin{center}
+	Rys.  Przyk³adowa wiadomoœæ protoko³u REST
+\end{center}
+
+Komenda wysy³ana do serwera HTTP zawiera w sobie nazwê komendy GET oraz Adres. Funkcja oraz parametry zawarte s¹ w treœci adresu URL.
+W tym przypadku segment Get?id=16 zawiera nazwê funkcji oraz parametr id=16
+
+\begin{center}
+		\includegraphics{restresponse.JPG}
+\end{center}
+
+\begin{center}
+	Rys.  Przyk³adowa wiadomoœæ zwrotna protoko³u REST
+\end{center}
+
+W tym przypadku u¿ywamy formatu danych json do zwrócenia danych z bazy danych wystawionej za us³ug¹ sieciow¹.
+
+\subsubsection{Zalety REST}
+\begin{itemize}
+\item prostota i lekkoœæ ,nie ma potrzeby wysy³ania dodatkowych znaczników 
+\item czytelny
+\item prosty generacji i parsowaniu
+\end{itemize}
+\subsubsection{Wady REST}
+\begin{itemize}
+\item prostota powoduje , ¿e nie mo¿na tworzyæ skompilowanych wiadomoœci
+\end{itemize}
+\newpage{}
 \section{Us³ugi sieciowe}
+
 
 Us³ugi sieciowe s¹ technologi¹ pozwalaj¹ca inicjowaæ komunikacjê z pomiêdzy dwoma urz¹dzeniami pod³¹czonymi do sieci komputerowej.
 
-Rysunek uslug sieciowych.
+Zgodnie z definicja z dokumentu  http://www.w3.org/TR/2002/WD-ws-arch-20021114/
 
-client na poczatku odkrywa jakie sa dostepne uslugi nastepnie tworzy wiadomosc i otrzymuje odpowiedz z danymi.
-- podstawowa koncepcja web us³ug co gdzie jak
-- rysunek web us³ug i komunikacji
+[Definition: A Web service is a software system identified by a URI, whose public interfaces and bindings are defined and described using XML. Its definition can be discovered by other software systems. These systems may then interact with the Web service in a manner prescribed by its definition, using XML based messages conveyed by internet protocols.]
+
+\begin{center}
+		\includegraphics{webservicearch.JPG}
+\end{center}
+
+\begin{center}
+	Rys.  Uproszczona architektura us³ug sieciowych
+\end{center}
+
+Klient rozpoczynaj¹c komunikacjê wysy³a pierw zapytanie do katalogu us³ug sieciowych który zawiera informacje na temat dostêpnych us³ug ich nazwy parametry wejœciowe oraz opis. Klient wybiera z katalogu interesuj¹ca go us³ugê nastêpnie tworzy odpowiednio sformatowan¹ wiadomoœæ najcziêœciej w formacie xml i wysy³a do serwera. Serwer interpretuje wiadomoœæ wywo³uje odpowiedni¹ funkcjê i zwraca wynik.
+
+do opisu uslug znajdujacych sie w katalogu uzywany jest format WSDL (Web Service Description Language) ktory jest rozszerzeniem XML-a
+
 
 \newpage
 
-\section{Framework Asp.Net Mvc 3}
+\section{Framework Asp.Net MVC}
 
 Asp.Net Mvc 3 jest platform¹ stworzon¹ przez firmê Microsoft s³u¿¹c¹ do tworzenia aplikacji webowych. Dzia³a jako nak³adka na platformê Asp.Net. Jest odpowiedzi¹ na nowe trendy zdobywaj¹ce coraz to wiêksz¹ popularnoœæ w œrodowisku programistów webowych. Ca³y Framework oparty jest na wzorcu projektowym MVC.
 
@@ -148,7 +292,7 @@ Odpowiednie skonfigurowanie obu sposobów cachowania pozwala zoptymalizowaæ proce
 
 \newpage
 
-\section{Testy Jednostkowe}
+\section{Testy jednostkowe}
 
 Bran¿a wytawrzania oprogramowania przchodzi przez okrs ciaglych zmian szukajac rozwiazan oraz metodyk najlepiej spelniajacyhj swoje zadanie. Metodyka Waterflass przejeta z innych dziedzin inzynierskich takich jak Automatyka Inzynieria budowala okazala sie nie efektywna. Srodowisko programistow zaczelo poszukiwac innych rozwiazan iw  ten sposob powstala metodyka Extreme Programming. Ktora zaklada nie jeden okres planowania ale wiele okresow planowania nastpeujacych cyklicznie. By mozna bylo taka metodyka tworzyc oprogramowanie zaczeto uzywac wiele narzedzi wspomagajacycht en proces. jednym z takich narzedzi staly sie testy jednostkowe.
 
@@ -172,7 +316,7 @@ Przyk³adowy test jednostkowy
 
 Pisanie testów jednostkowych nie dosc ze daje nam mozliwosc przetestowania najszej apliackji ale roowniej wymyusza sie trzymania lepszych wytyczycn i wzorocow projektowych poniewaz nie wszytkie dane da si latawo zrobic.
 
-\subsection{Mockowanie oraz Stubowanie obiektów}
+\subsubsection{Mockowanie oraz Stubowanie obiektów}
 
 Aplikacje biznesowe maj¹ czesto bardzo skomplikowana logike wykorzystujaca wiele modulow oraz zaleznosci. Piszac testy jednostkowe powinno testowac sie tylko pojedyczne funkcjonalnosci. w momencie gdy np nasza aplikacja do przeprowadzenia pwnej czynnosci wykorzsytuje zewnetrzne zasoby np dane z bazy danych  w momencie gdy przeprowdzamy taki test musimy wykorzysc baze danych. W tym momencie nie testujemy tylko jednej funkcjonalnosci ale rowniez same polaczenie badz poprawna konfiguracje polaczenia. 
 

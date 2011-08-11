@@ -14,7 +14,6 @@
 \usepackage{subfigure}
 \usepackage{psfrag}
 \graphicspath{{./Obrazki/}}
-\graphicspath{{./Obrazki/Relacje}}
 
 
 %pakiety dodajšce du¿o dodatkowych poleceñ matematycznych
@@ -66,39 +65,6 @@
 \include{2KsztalcenieNaOdleglosc}
 \include{3WybraneTechnologie}
 \include{WybraAspektyProj4}
-!!
-\include{ProjektSystemu5}
-!!
-\chapter{Implementacja systemu zdalnego naczuania}
-!!
-\section{Realizacja bazy danych}
-!!
-\section{Implementacja systemu zdalnego nauczania w oparciu o us³ugi sieciowe}
-!!
-\subsection{Realizacja mechanizmów przetwarzania danych}
-!!
-\subsection{Realizacja protoko³u komunikacji}
-!!
-\subsection{Realizacja mechanizmów zabezpieczeñ}
-!!
-\section{Implementacja interfejsu uzytkownika}
-!!
-\chapter{Testowanie i ocena efektywnoœci}
-!!
-\section{Wybrane testy funkcjonalne}
-!!
-\section{Testy mechanizmów zabezpieczeñ}
-!!
-\section{Ocena wydajnoœci mechanizmów przetwarzania danych}
-!!
-\section{Ocena wydajnoœæi mechanizmów komunikacji sieciowej}
-!!
-\section{Testy porównawcze z dostêpnymi rozwi¹zaniami}
-!!
-\section{Wnioski z testów i badañ}
-!!
-\chapter{Podsumowanie}
-!!
 \addcontentsline{toc}{chapter}{Bibilografia} %utworzenie w
                                              %spisietreœci pozycji
                                              %Bibliografia
