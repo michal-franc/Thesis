@@ -347,7 +347,7 @@ Analiza narzêdziem \textbf{NHProf} wykaza³a , ¿e niezoptymalizowane operacje na 
 
 \begin{table}[h]
 \centering
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|c|c|c|c}
 	\hline
 	& Przed & Poprawki mapowañ & Cache\\
 \hline

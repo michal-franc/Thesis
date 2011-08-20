@@ -1,6 +1,8 @@
+\chapter*{Wstêp}
 
-WSTEP WSTEP WSTEP WSTEP WSTEP WSTEP WSTEP WSTEP 
+1.Dlaczego realizuje te prace aspekt badawczy/naukow
 
+\newpage{}
 \chapter{Cel i zakres pracy}
 \section{Cel pracy}
 Celem niniejszej pracy jest zaprojektowanie , zaimplementowanie oraz przetestowanie systemu informatycznego wspomagaj¹cego proces zdalnego nauczania oparty o technologiê firmy Microsoft z wykorzystaniem mechanizmu us³ug sieciowych do komunikacji z baz¹ danych.
