@@ -2,312 +2,264 @@
 \section{Formaty danych JSON oraz XML}
 \subsubsection{JSON}
 
-JSON (JavaScript Object Notation) jest lekkim formatem danych wykorzystywanym przy transferze danych po sieci. Jest to stosunkowo m³ody format danych opisany w 2006 roku w publikacji RFC4627\cite{JSON} . Charakteryzuje siê bardzo prost¹ ale zarazem czyteln¹ reprezentacj¹ danych. Zbiór danych sk³ada siê z pary ci¹gów znaków : nazwa , wartoœæ.
+JSON (JavaScript Object Notation) jest lekkim formatem danych wykorzystywanym przy transferze danych po sieci. Jest to stosunkowo m³ody format danych opisany w 2006 roku w publikacji RFC4627 \cite{JSON}. Charakteryzuje siê on bardzo prost¹, ale zarazem czyteln¹ reprezentacj¹ danych. Zbiór danych sk³ada siê z pary ci¹gów znaków: nazwa, wartoœæ.
 
-\begin{center}
- \includegraphics{Jsonschemat.jpg}
-\end{center}
+\begin{figure}[H]
+\centering
+	\includegraphics{Jsonschemat.jpg}
+\caption{Uproszczony Schemat formatu JSON}
+\end{figure}
 
-\begin{center}
-	Rys. Uproszczony Schemat formatu JSON
-\end{center}
 
-Najwa¿niejsz¹ cech¹ przemawiaj¹c¹ za u¿ywaniem formatu JSON jest jego prostota , czytelnoœæ oraz co najwa¿niejsze u³atwione przetwarzanie danych w formacie JSON na obiekty jêzyka Javascript za pomoc¹ funkcji "eval()". Cecha ta pozwala usprawniæ proces tworzenia aplikacji webowych po stronie klienta tzn. z przegl¹darki.
+Najwa¿niejsz¹ cech¹ przemawiaj¹c¹ za u¿ywaniem formatu JSON jest jego prostota, czytelnoœæ oraz co najwa¿niejsze u³atwione przetwarzanie danych w formacie JSON na obiekty jêzyka Javascript za pomoc¹ funkcji \textbf{eval()}. Cecha ta pozwala usprawniæ proces tworzenia aplikacji webowych po stronie klienta, tj. z przegl¹darki.
 
 \subsubsection{Cechy formatu JSON}
 
 \begin{itemize}
-\item u³atwione przetwarzanie formatu do obiektów jêzyka Javascript
-\item lekki prosty format
-\item szybki proces przetwarzania
-\item ³atwy w modyfikacji
+\item u³atwione przetwarzanie formatu do obiektów jêzyka Javascript,
+\item prosty format,
+\item szybki proces przetwarzania,
+\item ³atwy sposób modyfikowania.
 \end{itemize}
 
 \newpage{}
 
 \subsubsection{XML}
 
-XML jest jednym z najbardziej rozpowszechnionych formatów danych. Wykorzystywany jest nie tylko jako noœnik danych ale równie¿ jako popularny format m.in plików konfiguracyjnych. Wiele skomplikowanych aplikacji wykorzystuj¹ format XML do definiowania ,m.in: scenariuszy testowych , interakcji w systemie ,przep³ywów danych. Na bazie tego formatu powsta³ równie¿ format XHTML , który ³¹czy cechy formatu HTML oraz XML.\newline{}
+XML jest jednym z najbardziej rozpowszechnionych formatów danych. Wykorzystywany jest nie tylko jako noœnik danych, ale równie¿ jako popularny format m.in plików konfiguracyjnych. Wiele skomplikowanych aplikacji wykorzystuje format XML do definiowania, m.in. : scenariuszy testowych, interakcji w systemie, przep³ywów danych. Na bazie tego formatu powsta³ równie¿ format XHTML, który ³¹czy cechy formatu HTML oraz XML.\newline{}
 
-Format XML powsta³ na bazie formatu SGML , jest jego rozwiniêciem. Dokument standaryzuj¹cy opisuje nie tylko sposób formatowania danych ale równie¿ opis u-standaryzowanego sposobu przetwarzania dokumentu.\cite{XML}
+Format XML powsta³ na bazie formatu SGML, jest jego rozszerzeniem. Dokument standaryzuj¹cy opisuje nie tylko sposób formatowania danych, ale równie¿ standardow¹ metodê przetwarzania plików \cite{XML}.
 
-\begin{center}
- \includegraphics{XmlSchemat.JPG}
-\end{center}
-
-\begin{center}
-	Rys. Uproszczony Schemat formatu XML
-\end{center}
+\begin{figure}[H]
+\centering
+	\includegraphics{XmlSchemat.JPG}
+\caption{Uproszczony schemat formatu XML}
+\end{figure}
 
 \subsubsection{Cechy formatu XML}
 
-XML sk³ada siê z ze znaczników zamykaj¹cych oraz otwieraj¹cych zwanych tagami , wewn¹trz których znajduje siê zawartoœæ danego elementu. W formacie tym istnieje mo¿liwoœæ definiowania atrybutów opisuj¹cych dany tag.\newline
+XML sk³ada siê ze znaczników zamykaj¹cych oraz otwieraj¹cych zwanych tagami, wewn¹trz których znajduje siê zawartoœæ danego elementu. W formacie tym istnieje mo¿liwoœæ definiowania atrybutów opisuj¹cych dany tag. Standard XML charakteryzuj¹:\newline
 
 \begin{itemize}
-\item bardzo du¿e wsparcie narzêdzi i zgodnoœæ z wieloma systemami na rynku
-\item du¿e bezpieczeñstwo przesy³anej wiadomoœci
-\item mo¿liwoœæ definiowania dodatkowych atrybutów
-\item pochodne XML-a takie jak XML Schema , XSLT wzbogacaj¹ce format o dodatkowe funkcjonalnoœci
+\item bardzo du¿e wsparcie narzêdzi i zgodnoœæ z wieloma systemami na rynku,
+\item du¿e bezpieczeñstwo przesy³anej wiadomoœci,
+\item mo¿liwoœæ definiowania dodatkowych atrybutów,
+\item pochodne XML-a, takie jak XML Schema, XSLT, wzbogacaj¹ce format o dodatkowe funkcjonalnoœci.
 \end{itemize}
 
 \subsubsection{Porównanie JSON oraz XML}
 
-W momencie wejœcia na rynek us³ug sieciowych , by³y one g³ównie wykorzystywane w œwiecie biznesowym. Rynek Enterprise zaadoptowa³ na pocz¹tku format XML i protokó³ oparty na tym formacie SOAP. XML by³ idealnym kandydatem , by³ juz dobrze znany i mia³ spore wsparcie narzêdzi oraz œrodowisk programistycznych.
+W momencie wejœcia na rynek us³ug sieciowych, by³y one g³ównie wykorzystywane w œwiecie biznesowym. Rynek Enterprise zaadoptowa³ na pocz¹tku standard XML i protokó³ oparty na formacie SOAP \cite{SOAP}. XML by³ idealnym kandydatem, by³ ju¿ dobrze znany i mia³ spore wsparcie narzêdzi oraz œrodowisk programistycznych.\newline
 
-Wzrost zainteresowania formatem JSON zacz¹³ siê w 2006 roku wraz z powstaniem pierwszego oficjalnego opisu oraz wraz z adopcj¹ tego formatu przez takie firmy jak Google czy Yahoo w swoich zewnêtrznych API.
+Wzrost zainteresowania formatem JSON zacz¹³ siê w 2006 roku wraz z powstaniem pierwszego oficjalnego opisu oraz, wraz z adopcj¹ tego formatu przez takie firmy jak \textbf{Google} czy \textbf{Yahoo} w swoich zewnêtrznych API.\newline
 
-Format XML charakteryzuje siê wiêkszym poziomem bezpieczeñstwa dziêki bardziej stabilnej i mocno typowanej semantyce. W przypadku formatu JSON nie ma mo¿liwoœci okreœlenia typu danych wartoœci poniewa¿ w jego specyfikacji brakuje mo¿liwoœci definiowania atrybutów. Problem ten mo¿na pominiêæ dziêki zastosowaniu JSON schema okreœlaj¹cego typy danych w oddzielnym dokumencie.\newline
+Format XML charakteryzuje siê wiêkszym poziomem bezpieczeñstwa dziêki bardziej stabilnej i mocno typowanej semantyce. W przypadku formatu JSON nie ma mo¿liwoœci okreœlenia typu danych wartoœci poniewa¿ w jego specyfikacji brakuje mo¿liwoœci definiowania atrybutów. Problem ten mo¿na pominiêæ dziêki zastosowaniu JSON schema, okreœlaj¹cego typy danych w oddzielnym dokumencie.\newline
 
-Format JSON mo¿e zostaæ bardzo ³atwo przetworzony za pomoc¹ funkcji eval dostêpnej w jêzyku programowania Javascript. W zwi¹zku z tym przypadku aplikacji nadmiernie wykorzystuj¹cych ten sposób przetwarzania istnieje zwiêkszone ryzyko wstrzykniêcia niepo¿¹danych skryptów.\newline
+Format JSON mo¿e zostaæ bardzo ³atwo przetworzony za pomoc¹ funkcji eval dostêpnej w jêzyku programowania Javascript. W zwi¹zku z tym w przypadku aplikacji nadmiernie wykorzystuj¹cych ten sposób przetwarzania istnieje zwiêkszone ryzyko wstrzykniêcia niepo¿¹danych skryptów.\newline
 
-Najwa¿niejsz¹ ró¿nic¹ pomiêdzy oboma formatami jest jednak iloœæ bajtów potrzebna do przes³ania danych.
+Najwa¿niejsz¹ ró¿nic¹ pomiêdzy oboma formatami jest jednak iloœæ bajtów wymagana do przes³ania reprezentacji odpowiednich danych.
 
+\begin{figure}[H]
 \begin{center}
 	\includegraphics[width=7cm,height=8cm]{JsonParsed.JPG}
 	\includegraphics[width=7cm,height=8cm]{XmlExample.JPG}
 \end{center}
+\caption{Porównanie standardów (JSON , XML)}
+\end{figure}
 
-\begin{center}
-	Rys.  Porównanie standardów (JSON , XML).
-\end{center}
+W pracy magisterskiej zastosowa³em zarówno format JSON jak i XML. Dane u¿ywane przez serwis przesy³ane s¹ w formacie XML, natomiast dane udostêpniane przez API przesy³ane s¹ w formacie JSON.
 
-W pracy magisterskiej zastosowa³em zarówno format JSON jak i XML. Dane u¿ywane przez serwis przesy³ane s¹ w formacie XML natomiast dane wystawione w API przesy³ane s¹ w formacie JSON.
-
-\newpage
+\newpage{}
 \section{Protoko³y SOAP oraz REST}
-Wspó³czesne aplikacje webowe udostêpniaj¹ce us³ugi sieciowe zbudowane s¹ w wiêkszoœci na bazie protoko³ów REST oraz SOAP.
+Wspó³czesne aplikacje webowe, udostêpniaj¹ce us³ugi sieciowe, zbudowane s¹ w wiêkszoœci na bazie protoko³ów REST oraz SOAP.
 
 \subsubsection{SOAP}
 
-Protokó³ SOAP jest protoko³em transmisji danych wykorzystuj¹cym g³ównie format XML (Mo¿e równie¿ wykorzystywaæ inne formaty jednak XML jest tym najpopularniejszym). Wiadomoœci przesy³ane s¹ standardowo za pomoc¹ protoko³u HTTP przy u¿yciu komend GET,POST,DELETE. Istnieje te¿ mo¿liwoœæ wykorzystania protoko³u RPC.
+Protokó³ SOAP jest protoko³em transmisji danych wykorzystuj¹cym g³ównie format XML (mo¿e równie¿ wykorzystywaæ inne formaty jednak XML jest tym najpopularniejszym). Wiadomoœci przesy³ane s¹ standardowo za pomoc¹ protoko³u HTTP przy u¿yciu komend \textbf{GET, POST, DELETE}. Istnieje te¿ mo¿liwoœæ wykorzystania protoko³u RPC. Standard SOAP definiuje strukturê wiadomoœci przesy³anej do serwera. Jego opis zosta³ zawarty w dokumencie sporz¹dzonym przez konsorcjum W3C \cite{SOAP}. \newline
 
-Standard SOAP opisuje odpowiedni¹ u-standaryzowan¹ strukturê wiadomoœci przesy³anej do serwera.
-
-Wiadomoœæ sk³ada siê z segmentów.
+Wiadomoœæ SOAP sk³ada siê z nastêpuj¹cych segmentów:
 
 \begin{itemize} 
-\item Envelope
-\item Header 
-\item Body
+\item Envelope,
+\item Header ,
+\item Body.
 \end{itemize}
 
 
+\begin{figure}[H]
 \begin{center}
 	\includegraphics[width=14cm,height=8cm]{soapwiadomosc.JPG}
 \end{center}
+\caption{Przyk³adowa wiadomoœæ SOAP}
+\end{figure}
 
-\begin{center}
-	Rys.  Przyk³adowa wiadomoœæ SOAP
-\end{center}
 
-Segment Header zawiera nag³ówek informacji. Na wy¿ej zamieszczonym przyk³adzie widaæ m.in  adress do którego kierowana jest wiadomoœæ oraz wartoœæ uuid przydzielan¹ ka¿dej wiadomoœci , która unikatowym identyfikatorem wiadomoœci.
-Segment Body zawiera przesy³ane dane. W tym przypadku m.in nazwê funkcji udostêpnianej przez us³ugê sieciowa wraz z parametrami. 
+Segment Header zawiera nag³ówek informacji. W przedstawionym przyk³adzie  na rysunku (Rysunek 3.4) widaæ m.in. adres, do którego kierowana jest wiadomoœæ oraz wartoœæ \textbf{uuid} przydzielana ka¿dej wiadomoœci, bêd¹ca unikatowym identyfikatorem wiadomoœci.
+Segment Body zawiera przesy³ane dane, w tym przypadku m.in nazwê funkcji udostêpnianej przez us³ugê sieciow¹ wraz z parametrami. 
 
+\begin{figure}[H]
 \begin{center}
 	\includegraphics[width=14cm,height=8cm]{soapwiadomosc.JPG}
 \end{center}
+\caption{Przyk³adowa wiadomoœæ zwrotna}
+\end{figure}
 
-\begin{center}
-	Rys.  Przyk³adowa wiadomoœæ zwrotna
-\end{center}
 
-Mo¿na zauwa¿yæ charakterystyczny uuid wiadomoœci który jest taki sam jak w przypadku wiadomoœci wys³anej do serwera. Na tej podstawie server us³ug sieciowych dopasowuje obie wiadomoœci i wie , ¿e serwer odpowiedzia³ na ¿¹danie. Jak widzimy w tym przyk³adzie w segmencie body zosta³ przes³any wynik wykonania us³ugi.
+Mo¿na zauwa¿yæ charakterystyczny \textbf{uuid} wiadomoœci, który jest taki sam jak w przypadku wiadomoœci wys³anej do serwera. Na tej podstawie serwer udostêpniaj¹cy us³ugi sieciowe dopasowuje obie wiadomoœci i wie , ¿e serwer odpowiedzia³ na ¿¹danie. Jak widzimy (Rysunek 3.5) w tym przyk³adzie w segmencie body zosta³ przes³any wynik wykonania us³ugi.
 
 
 \subsubsection{Zalety SOAP}
 \begin{itemize}
-\item sta³a sk³adnia , mocne typowanie
-\item du¿o narzêdzi na rynku
-\item dojrza³oœæ standardu
+\item sta³a sk³adnia oraz mocne typowanie,
+\item du¿o narzêdzi na rynku,
+\item dojrza³oœæ standardu.
 \end{itemize}
 
 \subsubsection{Wady SOAP}
 \begin{itemize}
-\item przesy³anie nag³ówków zwiêksza iloœæ przesy³anych danych
-\item du¿y poziom komplikacji
+\item przesy³anie nag³ówków zwiêksza iloœæ przesy³anych danych,
+\item du¿y poziom komplikacji.
 \end{itemize}
 
 
 \newpage{}
 \subsubsection{REST}
 
-SOAP i jego rozszerzenia powoduj¹ , ¿e staje siê on doœæ skomplikowany poza tym wysy³a wraz z zapytaniem do serwera dodatkowe dane w formie segmentów. W œrodowisku nowych ma³ych firm zaistnia³a potrzeba na bardziej "lekki"  protokó³. Odpowiedz¹ na oczekiwania rynku sta³ siê protokó³ REST. Popularnoœæ tego protoko³u zaczê³a znacz¹co rosn¹æ wraz pojawieniem siê us³ugi mikro blogów Twitter oraz wystawienia przez tê us³ugê rozbudowanego API. Api Twittera u¿ywa Resta oraz formatu JSON do wystawiania wielu danych.\newline
+SOAP i jego rozszerzenia powoduj¹, ¿e staje siê on doœæ skomplikowany, poza tym wysy³a wraz z zapytaniem do serwera dodatkowe dane w formie segmentów. W œrodowisku nowych, ma³ych firm zaistnia³a potrzeba na \textit{l¿ejszy} protokó³. Odpowiedz¹ na oczekiwania rynku sta³ siê protokó³ REST \cite{REST}. Popularnoœæ tego protoko³u zaczê³a znacz¹co rosn¹æ wraz pojawieniem siê us³ugi mikro-blogów oferowanej przez serwis \textbf{Twitter} oraz wystawienia przez tê us³ugê rozbudowanego API. Interfejs API \textbf{Twitter-a} u¿ywa protoko³u REST oraz formatu JSON do udostêpniania danych na temat u¿ytkowników.\newline
 
-Badania z Maja 2011 roku przeprowadzone przez serwis ProgrammableWeb pokazuj¹ , ¿e prawie 73\% us³ug sieciowych wystawionych w formie API obs³ugiwane jest na bazie protoko³u REST.
+Badania z Maja 2011 \cite{RESTVSSOAP} roku przeprowadzone przez serwis \textbf{ProgrammableWeb} pokazuj¹, ¿e prawie 73\% us³ug sieciowych wystawionych w formie API obs³ugiwane jest na bazie protoko³u REST.
 
+\begin{figure}[H]
 \begin{center}
 	\includegraphics[width=14cm,height=8cm]{RestVsSoap.JPG}
 \end{center}
-\cite{RESTVSSOAP}
+\caption{Porównanie protoko³ów Rest / Soap \cite{RESTVSSOAP}}
+\end{figure}
 
-Architektura typu REST opiera siê na jednym wa¿nym za³o¿eniu. Pobieranie oraz modyfikowanie obiektów jest œciœle powi¹zane z adresem URL. Dziêki zastosowaniu takiego rozwi¹zania mo¿na pobieraæ np zawartoœæ danych z bazy za pomoc¹ komend protoko³u HTTP. Pobieranie mo¿na realizowaæ np za pomoc¹ komendy GET. Modyfikacje b¹dŸ usuwanie danych za pomoc¹ komendy POST.
+
+
+
+Architektura typu REST opiera siê na jednym wa¿nym za³o¿eniu. Pobieranie oraz modyfikowanie obiektów jest œciœle powi¹zane z adresem URL. Dziêki zastosowaniu takiego rozwi¹zania mo¿na pobieraæ, np zawartoœæ bazy danych za pomoc¹ komend protoko³u HTTP. Pobieranie mo¿na realizowaæ np za pomoc¹ komendy GET. Modyfikacje b¹dŸ usuwanie danych za pomoc¹ komendy POST.
 
 \begin{center}
 	GET http://codedashservices.mfranc.com/CourseService.svc/json/Get?id=16 HTTP/1.1
 \end{center}
 
 \begin{center}
-	Rys.  Przyk³adowa wiadomoœæ protoko³u REST
+	Przyk³adowa wiadomoœæ protoko³u REST
 \end{center}
 
-Komenda wysy³ana do serwera HTTP zawiera w sobie nazwê komendy GET oraz Adres. Funkcja oraz parametry zawarte s¹ w treœci adresu URL.
-W tym przypadku segment Get?id=16 zawiera nazwê funkcji oraz parametr id=16 . Jak widaæ jest to zwyk³e zapytanie bez dodatkowych informacji w przeciwieñstwie do protoko³u SOAP , który potrzebuje wysy³aæ ca³¹ wiadomoœæ w formacie XML. W przypadku protoko³u REST wszystkie istotne dane jak nazwa funkcji oraz parametr zawarte s¹ w adresie URL.
+Komenda wysy³ana do serwera \textbf{HTTP} zawiera w sobie nazwê komendy \textbf{GET} oraz Adres. Funkcja oraz parametry zawarte s¹ w treœci adresu \textbf{URL}. W tym przypadku segment \textbf{Get?id=16} zawiera nazwê funkcji oraz parametr \textbf{id=16}. Jak widaæ jest to zwyk³e zapytanie bez dodatkowych informacji w przeciwieñstwie do protoko³u \textbf{SOAP}, w którym nale¿y wysy³aæ ca³¹ wiadomoœæ w formacie XML. W przypadku protoko³u \textbf{REST} wszystkie istotne dane, jak nazwa funkcji oraz parametr, zawarte s¹ w adresie \textbf{URL}.
 
+\begin{figure}[H]
 \begin{center}
 		\includegraphics{restresponse.JPG}
 \end{center}
+\caption{Przyk³adowa wiadomoœæ zwrotna protoko³u REST}
+\end{figure}
 
-\begin{center}
-	Rys.  Przyk³adowa wiadomoœæ zwrotna protoko³u REST
-\end{center}
-
-W tym przypadku u¿ywamy formatu danych JSON do zwrócenia danych z bazy danych wystawionej za us³ug¹ sieciow¹.
+W tym przypadku (Rysunek 3.7) u¿ywamy formatu danych JSON do zwrócenia danych z bazy danych wystawionej za us³ug¹ sieciow¹.
 
 \subsubsection{Zalety REST}
 \begin{itemize}
-\item prostota i lekkoœæ ,nie ma potrzeby wysy³ania dodatkowych danych 
-\item czytelny
+\item prostota i lekkoœæ, nie ma potrzeby wysy³ania dodatkowych danych,
+\item czytelnoœæ.
 \end{itemize}
 \subsubsection{Wady REST}
 \begin{itemize}
-\item prostota powoduje , ¿e nie mo¿na tworzyæ skompilowanych wiadomoœci
-\item dostêpnych mniej opcji
-\item zmniejszone bezpieczeñstwo
+\item prostota powoduje, ¿e nie mo¿na tworzyæ skompilowanych wiadomoœci,
+\item dostêpnych mniej opcji,
+\item zmniejszone bezpieczeñstwo.
 \end{itemize}
 \newpage{}
 
-\section{Us³ugi sieciowe}
-
-Us³ugi sieciowe s¹ technologi¹ pozwalaj¹ca przeprowadzaæ komunikacjê z pomiêdzy dwoma urz¹dzeniami pod³¹czonymi do sieci komputerowej.
-
-\begin{center}
-		\includegraphics{webservicearch.JPG}
-\end{center}
-
-\begin{center}
-	Rys.  Uproszczona architektura us³ug sieciowych
-\end{center}
-
-W systemach rozproszonych mo¿emy wyszczególniæ dwa typy urz¹dzeñ : klient oraz serwer. Klient rozpoczynaj¹c komunikacjê wysy³a zapytanie do katalogu us³ug sieciowych , który zawiera informacje na temat dostêpnych us³ug ich nazwy parametry wejœciowe oraz opis. Klient wybiera z katalogu interesuj¹ca go us³ugê nastêpnie tworzy odpowiednio sformatowan¹ wiadomoœæ najczêœciej i wysy³a do serwera. Serwer interpretuje wiadomoœæ wywo³uje odpowiedni¹ funkcjê i zwraca wynik.
-
-Dostêpne us³ugi w katalogu opisane s¹ w formacie WSDL (Web Service Description Language) , który bazuje na formacie XML.
-
-
-\newpage
-
 \section{Framework Asp.Net MVC}
+\textbf{Asp.Net Mvc} jest platform¹ stworzon¹ przez firmê Microsoft, s³u¿¹c¹ do tworzenia aplikacji webowych. Dzia³a ona jako nak³adka na platformê \textbf{Asp.Net}. Jest odpowiedzi¹ na nowe trendy, zdobywaj¹ce coraz to wiêksz¹ popularnoœæ w œrodowisku oprogramowania webowego. G³ówn¹ zalet¹ tego rozwi¹zania jest fakt, ¿e jest ono oparte na wzorcu projektowym \textbf{MVC}.\newline
 
-Asp.Net Mvc jest platform¹ stworzon¹ przez firmê Microsoft s³u¿¹c¹ do tworzenia aplikacji webowych. Dzia³a jako nak³adka na platformê Asp.Net. Jest odpowiedzi¹ na nowe trendy zdobywaj¹ce coraz to wiêksz¹ popularnoœæ w œrodowisku oprogramowania webowego. G³ówn¹ zalet¹ tego rozwi¹zania jest fakt ¿e jest ono oparte na wzorcu projektowym MVC.\newline
+Wraz z ewolucj¹ aplikacji webowych i ich poziomu skomplikowania pojawia³y siê nowe podejœcia oraz sposoby wytwarzania aplikacji webowych pozwalaj¹ce tworzyæ wielowarstwowe aplikacje internetowe, np systemy zdalnego nauczania. Jednym z takich podejœæ jest wykorzystanie wzorca \textit{Model View Controller}. Pierwszy opis wzorca mo¿na znaleŸæ w dokumencie z 1979 \cite{MVC}. Prawdziwa rewolucja zaczê³a siê w 2004 roku wraz z pojawieniem siê nowych platform developerskich takich jak : \textbf{Ruby on Rails} \cite{RubyOnRails} na jêzyku \textbf{Ruby} oraz \textbf{Django} \cite{Django} zwi¹zanego z jêzykiem \textbf{Python}.\newline
 
-Wraz z ewolucja aplikacji webowych i ich poziomu skomplikowania pojawia³y siê nowe podejœcia oraz sposoby wytwarzania aplikacji webowych pozwalaj¹ce tworzyæ aplikacje. Jednym z takich podejœæ jest wykorzystanie wzorca "Model View Controller". Pierwszy opis wzorca mo¿na znaleŸæ w dokumencie z 1979\cite{MVC}. Prawdziwa rewolucja zaczê³a siê w 2004 roku wraz z pojawieniem siê nowych platform developerskich takich jak : Ruby on Rails na jêzyku Ruby oraz Django zwi¹zanego z jêzykiem Python\newline
+Wzorzec ten wprowadza podzia³ aplikacji na trzy oddzielne warstwy : Model, Widok, Kontroler, które umo¿liwiaj¹ niezale¿ny rozwój aplikacji w warstwach oraz zapewnia zwiêkszon¹ skalowalnoœæ systemu.
 
-Wzorzec ten wprowadza on podzia³ aplikacji na trzy oddzielne warstwy : Model , Widok , Kontroler.
-
+\begin{figure}[H]
 \begin{center}
 	\includegraphics{MVC.jpg}
 \end{center}
-\begin{center}
-	Rys. Uproszczona koncepcja wzorca MVC
-\end{center}
+\caption{Uproszczona koncepcja wzorca MVC}
+\end{figure}
+
 
 \newpage
 \subsubsection{Model}
-Reprezentuje warstwê danych , które mog¹ byæ zarówno w formie m.in. bazy danych , pliku. Warstwa ta jako jedyna ma dostêp do Ÿród³a danych.  Dostêp do modelu jest jedynie mo¿liwy z poziomu kontrolera , który korzysta z metod zdefiniowanych w warstwie modelu. W wielu aplikacjach poœrednio do komunikacji u¿ywa siê dodatkowo warstwy us³ug.\newline
+Reprezentuje warstwê danych, która mo¿e byæ w postaci m.in. bazy danych, pliku. Warstwa ta jako jedyna ma dostêp do Ÿród³a danych.  Dostêp do modelu jest jedynie mo¿liwy z poziomu kontrolera, który korzysta z metod zdefiniowanych w warstwie modelu. W wielu aplikacjach poœrednio do komunikacji z warstw¹ Ÿród³a danych u¿ywa siê dodatkowo warstwy us³ug.\newline
 
 \subsubsection{Kontroler}
-Warstwa odpowiedzialna za sterowanie przep³ywem danych i przetwarzaniem tych danych do postaci wyœwietlanej w warstwie widoku. Kontroler decyduje , który widok zostanie wyœwietlony.\newline
+Warstwa odpowiedzialna za sterowanie przep³ywem danych i przetwarzanie tych danych do postaci wyœwietlanej w warstwie widoku. Kontroler decyduje, który widok zostanie wyœwietlony.\newline
 
 \subsubsection{Widok}
-Reprezentuje warstwê bezpoœrednio dostêpn¹ dla u¿ytkownika systemu. Tworzony jest na podstawie modelu przekazanemu przez kontroler.\newline
+Reprezentuje warstwê bezpoœrednio dostêpn¹ dla u¿ytkownika systemu. Tworzony jest na podstawie modelu przekazanego mu przez kontrolera.\newline\newline
 
-Zastosowanie wzorca MVC przy projektowaniu aplikacji webowej wymaga wiêkszego nak³adu pracy w pocz¹tkowej fazie projektu. Wymierne korzyœci ze stosowania tego wzorca zaczynaj¹ byæ zauwa¿ane dopiero w póŸniejszych etapach ¿ycia projektu. Przede wszystkim zastosowane konwencje i separacja odpowiedzialnoœci na trzy warstwy pozwala oddzieliæ od siebie logikê biznesowa dostêpn¹ z poziomu klienta od logiki obs³uguj¹cej dostêp do bazy danych. Jest to bardzo wa¿ne poniewa¿ zmiany zachodz¹ce w warstwie modelu tzn. bazy danych nie powinny powodowaæ zmian w warstwie widoku. Dziêki takiemu rozdzia³owy powstaje lepszy kod , ³atwiejszy  w rozbudowanie oraz utrzymaniu. Dodatkowo projekt jest bardziej czytelny. Programista wiedz¹cy ze projekt zosta³ stworzony w oparciu o MVC automatyczni wie gdzie szukaæ poszczególnych implementacji systemu w celu przeprowadzenia modyfikacji.
+Zastosowanie wzorca MVC przy projektowaniu aplikacji webowych wymaga wiêkszego nak³adu pracy w pocz¹tkowej fazie projektu. Wymierne korzyœci ze stosowania tego wzorca zaczynaj¹ byæ zauwa¿ane dopiero w póŸniejszych etapach ¿ycia projektu. Przede wszystkim zastosowane konwencje i separacja odpowiedzialnoœci na trzy warstwy pozwala oddzieliæ od siebie logikê biznesow¹ dostêpn¹ z poziomu klienta od logiki obs³uguj¹cej dostêp do bazy danych. Jest to bardzo wa¿ne poniewa¿ zmiany zachodz¹ce w warstwie modelu, tzn. bazy danych, nie powinny powodowaæ zmian w warstwie widoku. Dziêki takiemu rozdzia³owi powstaje lepszy kod, ³atwiejszy  w rozbudowanie oraz utrzymaniu. Dodatkowo projekt jest bardziej czytelny. Programista wiedz¹cy, ¿e projekt zosta³ stworzony w oparciu o MVC automatycznie wie gdzie szukaæ poszczególnych implementacji systemu w celu przeprowadzenia modyfikacji.
 
 \subsubsection{Opis komunikacji}
 
-Komunikacja w architekturze MVC rozpoczyna siê od klienta zg³aszaj¹cego ¿¹danie (np. o wyœwietlenie danej strony www .¯¹danie to jest przechwytywane przez kontroler. Je¿eli wygenerowanie strony www nie wymaga pobrania danych z Ÿród³a danych. Kontroler pobiera dany widok i przekazuje go klientowi. Je¿eli natomiast widok wymaga pobrania danych z bazy danych , realizowane jest po³¹czenie z modelem za poœrednictwem , którego pobrane s¹ dane i przekazany jest odpowiedni widok w formie wiadomoœci zwrotnej.
+Komunikacja w architekturze \textbf{MVC} rozpoczyna siê od klienta zg³aszaj¹cego ¿¹danie (np. o wyœwietlenie danej strony \textbf{WWW}. ¯¹danie to jest przechwytywane przez kontroler. Je¿eli wygenerowanie strony www nie wymaga pobrania danych ze Ÿród³a danych, kontroler pobiera dany widok i przekazuje go klientowi. Je¿eli natomiast widok wymaga pobrania danych z bazy danych, realizowane jest po³¹czenie z modelem za poœrednictwem, którego pobierane s¹ dane i przekazywany jest odpowiedni widok w formie wiadomoœci zwrotnej.
 
 \newpage
+\section{Technologia WCF - Windows communication foundation}
 
-\section{Mapowanie obiektowo relacyjne - NHibernate}
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=8cm]{WCF1.jpg}
+\end{center}
+\caption{Framework WCF}
+\end{figure}
 
-Bazy danych s¹ najwa¿niejsz¹ czêœci¹ systemu informatycznego. Implementacja dostêpu do bazy jest jednym z bardziej czasoch³onnych elementów realizacji projektu po stronie serwera. Dodatkowo logika ta jest szczególnie podatna na b³êdy. Bezpoœrednie tworzenie zapytañ sta³o siê zbyt kosztowne oraz trudne w utrzymaniu. Z rozwi¹zaniami takimi wi¹¿e siê równie¿ inny problem , mianowicie dochodzi do niekompatybilnoœci pomiêdzy sposobem przedstawiania zale¿noœci pomiêdzy obiektami miedzy systemami relacyjna bazodanowymi a systemami opartymi na dziedziczeniu i kompozycji klas znajduj¹cymi siê w wspó³czesnych platformach programistycznych. 
+WCF \cite{WCF} jest nowym frameworkiem stworzonym przez firmê Microsoft, wykorzystywanym do tworzenia rozproszonych systemów informatycznych. Rysunek 3.10 przedstawia ogólny zarys frameworka, w którego wchodz¹ wszystkie poprzednie rozwi¹zania stosowane na platformie wspieranej przez Microsoft.  Mimo tego, ¿e framework ten wprowadza wiele usprawnieñ, zapewnia on kompatybilnoœæ z wczeœniejszymi rozwi¹zaniami.\newline
 
-By u³atwiæ proces tworzenia kodu coraz wiêcej firm wykorzystuje specjalne biblioteki wspomagaj¹ce proces tworzenia warstwy dostêpu do danych. Nazywane s¹ one Obiektowo relacyjnymi maperami (dalej zwanymi ORM-ami) . Na rynku dostêpnych jest wiele rozwi¹zañ tego typu. Do najpopularniejszych w œrodowisku .Net nale¿¹ m.in: Entity Framework oraz NHibernate.
+Do zalet WCF mo¿na zaliczyæ m.in: 
+\begin{itemize}
+	\item{kompatybilnoœæ ze starymi technologiami firmy Microsoft,}
+	\item{³atwoœæ konfiguracji, modyfikacji oraz tworzenia rozszerzeñ}
+	\item{obszerny zestaw klas i metod, wspomagaj¹cych i u³atwiaj¹cych proces implementacji.}
+\end{itemize}
 
+Do wad WCF zaliczyæ mo¿na przede wszystkim, koniecznoœæ wiêkszego nak³adu pracy w przypadku tworzenia po³¹czenia z platform¹ nie zwi¹zan¹ z technologiami firmy Microsoft.
+
+\begin{figure}[H]
+\begin{center}
+	\includegraphics{WCF2.jpg}
+\end{center}
+\caption{Framework WCF}
+\end{figure}
+
+Dzia³anie WCF opiera siê na odpowiednim zdefiniowaniu ednpointów, bêd¹cych swego rodzaju adresami wskazuj¹cymi na dane us³ugi sieciowe oferowane przez serwer. Serwer ma mo¿liwoœæ udostêpnienia wielu endpointów charakteryzuj¹cych siê ró¿nymi parametrami, dziêki takiemu rozwi¹zaniu mo¿na zapewniæ komunikacjê z serwerem dla ró¿nych rodzajów klientów komunikuj¹cych siê za pomoc¹ ró¿nych protoko³ów, i technologii. WCF chowa ca³¹ logikê pod ''fasad¹'' kontraktów posiadaj¹cych nag³ówki metod udostêpnianych w ramach danej us³ugi.
+
+\section{Mapowanie obiektowo-relacyjne - NHibernate}
+
+Bazy danych s¹ najwa¿niejsz¹ czêœci¹ systemu informatycznego. Implementacja dostêpu do bazy jest jednym z bardziej czasoch³onnych elementów realizacji projektu po stronie serwera. Dodatkowo logika ta jest szczególnie podatna na b³êdy. Bezpoœrednie tworzenie zapytañ sta³o siê zbyt kosztowne oraz trudne w utrzymaniu. Z rozwi¹zaniami takimi wi¹¿e siê równie¿ inny problem, mianowicie dochodzi do niekompatybilnoœci pomiêdzy sposobem przedstawiania powi¹zañ obiektów w relacyjnych systemach bazodanowych, a odpowiednimi mechanizmami opartymi na dziedziczeniu i kompozycji klas, znajduj¹cymi siê w wspó³czesnych platformach programistycznych.\newline
+
+By u³atwiæ proces tworzenia kodu coraz wiêcej firm wykorzystuje specjalne biblioteki wspomagaj¹ce proces tworzenia warstwy dostêpu do danych. Nazywane s¹ one Obiektowo Relacyjnymi Maperami (dalej zwanymi ORM-ami). Na rynku dostêpnych jest wiele rozwi¹zañ tego typu. Do najpopularniejszych w œrodowisku .Net nale¿¹ m.in: \textbf{Entity Framework} \cite{EntityFramework}  oraz \textbf{NHibernate} \cite{NHibernate}.
+
+\begin{figure}[H]
 \begin{center}
     \includegraphics{ORM.jpg}
 \end{center}
-\begin{center}
-	 ORM obs³uguj¹cy bazê danych
-\end{center}
+\caption{ORM obs³uguj¹cy bazê danych}
+\end{figure}
 
-Dziêki zastosowaniu ORM-a mo¿na wprowadzaæ bardzo szybko zmiany oraz w du¿o ³atwiejszy sposób wykonywaæ odpowiednie zapytania na bazie danych nie przejmuj¹c siê tak naprawdê warstwa bazodanow¹. Z punktu widzenia programisty pos³uguj¹cego siê warstw¹ danych opart¹ na mapperze cala komunikacja jest schowana pod interfejsami. Dziêki temu mo¿na skupiæ siê na implementacji konkretnej logiki zwi¹zanej z funkcjonalnoœci¹ aplikacji oszczêdzaj¹c czas na implementowaniu dostêpu do bazy danych. Minusem takiego rozwi¹zania jest mniej wydajny proces pobierania danych. Problem ten mo¿na zniwelowaæ poprzez odpowiednie sprofilowanie aplikacji i wyznaczanie czêœci systemy wymagaj¹cych optymalizacji. W tym przypadku profilowane s¹ zapytania SQL. Zapytania wymagaj¹ce optymalizacji mo¿na zamieniæ na zwykle zapytania jêzyka SQL. Dziêki takiemu rozwi¹zaniu oszczêdza siê czas oraz fundusze przeznaczane na projekt.
 
-Proces mapowania sprowadza siê do okreœlenia , które pole z bazy danych ma byæ powi¹zane z pola obiektu wykorzystywanego w aplikacji. W ten sposób tworzone s¹ specjalne klasy poœrednicz¹ce w komunikacji pomiêdzy baz¹ danych a aplikacj¹.
+Dziêki zastosowaniu ORM-a mo¿na wprowadzaæ bardzo szybko zmiany oraz w du¿o ³atwiejszy sposób wykonywaæ odpowiednie zapytania na bazie danych, nie przejmuj¹c siê tak naprawdê warstw¹ bazodanow¹. Z punktu widzenia programisty pos³uguj¹cego siê warstw¹ danych opart¹ na mapperze ca³a komunikacja jest realizowana z wykorzystaniem interfejsów. Dziêki temu mo¿na skupiæ siê na implementacji konkretnej logiki zwi¹zanej z funkcjonalnoœci¹ aplikacji, oszczêdzaj¹c czas na implementowaniu dostêpu do bazy danych. Minusem takiego rozwi¹zania jest mniej wydajny proces pobierania danych. Problem ten mo¿na zniwelowaæ poprzez odpowiednie sprofilowanie aplikacji i wyznaczenie czêœci systemu wymagaj¹cych optymalizacji. W tym przypadku profilowane s¹ zapytania SQL. Zapytania wymagaj¹ce optymalizacji mo¿na zamieniæ na zwyk³e zapytania jêzyka SQL. Dziêki takiemu rozwi¹zaniu oszczêdza siê czas oraz fundusze przeznaczane na projekt.\newline
 
+Proces mapowania sprowadza siê do okreœlenia, które pole z bazy danych ma byæ powi¹zane z polem obiektu wykorzystywanego w aplikacji. W ten sposób tworzone s¹ specjalne klasy poœrednicz¹ce w komunikacji pomiêdzy baz¹ danych a aplikacj¹.
+
+\begin{figure}[H]
 \begin{center}
     \includegraphics{ORMmapowanie.jpg}
 \end{center}
+\caption{Rysunek przedstawiaj¹cy proces mapowania.}
+\end{figure}
 
 
-\begin{center}
-	 Rysunek przedstawiaj¹cy proces mapowania.
-\end{center}
-
-W pracy dyplomowej zdecydowa³em siê zastosowaæ framework NHibernate. Jest to rozwi¹zanie bêd¹ce implementacj¹ frameworka Hibernate dostêpnego w œrodowisku Javy na potrzeby œrodowiska .Net.
-W NHibernacie mo¿na mapowaæ za pomoc¹ plików konfiguracyjnych xml. Jest to wygodne podejœcie jednak¿e podatne na b³êdy i nieczytelne. Dlatego czêsto stosuje siê  rozwi¹zanie typu FluentNHibernate bibliotekê , która pozwala generowaæ pliki XML na podstawie kodu napisanego w je¿yku platformy .Net. Mapowanie takie staje siê bardziej czytelne.
-\newpage
-
-\section{Testy jednostkowe}
-
-Testowanie od pocz¹tku by³o dziedzin¹ œciœle powi¹zan¹ z dzia³ami testów. Jednak¿e srodowisko prograistyczne odrkylo ze mozna przeprowadzac testy w kodzie podczas tworzenia oprogramowania tym samym polepaszajac jakos twodzoneg kodu. Testy jednostkowe s¹ forma kodu ktory testuje inny kod. Jest to kod napisany w ten sposob ze wykorzystuje stworzony kod i testuje pewne zalozenia. 
-
-\begin{center}
-	\includegraphics{UnitTest.jpg}
-\end{center}
-\begin{center}
-Procedura przeprowadzania testu jednostkowego
-\end{center}
-Pozwalaja ograniczyc ilosc bledow. Powoduja jednak ze marnujemy troche czasu a odpowiedie zdefiniowanie testow ale tak naprawde programista i tka spedzilbym podoba ilosc czasu przeklikujac np aplikacje.
-
-
-\begin{center}
-	\includegraphics{exampleunittest.JPG}
-\end{center}
-\begin{center}
-Przyk³adowy test jednostkowy
-\end{center}
-
-Pisanie testów jednostkowych nie dosc ze daje nam mozliwosc przetestowania najszej apliackji ale roowniej wymyusza sie trzymania lepszych wytyczycn i wzorocow projektowych poniewaz nie wszytkie dane da si latawo zrobic.
-
-\subsubsection{Mockowanie oraz Stubowanie obiektów}
-
-Aplikacje biznesowe maj¹ czesto bardzo skomplikowana logike wykorzystujaca wiele modulow oraz zaleznosci. Piszac testy jednostkowe powinno testowac sie tylko pojedyczne funkcjonalnosci. w momencie gdy np nasza aplikacja do przeprowadzenia pwnej czynnosci wykorzsytuje zewnetrzne zasoby np dane z bazy danych  w momencie gdy przeprowdzamy taki test musimy wykorzysc baze danych. W tym momencie nie testujemy tylko jednej funkcjonalnosci ale rowniez same polaczenie badz poprawna konfiguracje polaczenia. 
-
-By moc testowac aplikacje wraz z takimi zaleznoscciami musimy badz przeprowadzac testy operujac na prawdziwej bazie danych badz emulowac baze danych. Oba te podejscia wiaza sie z pewnymi ograniczeniami i narzucaja wiele czynnosci.
-
-Innym podejsciem zgola innym jest tworzenie specjalnych klas udajacych polaczenie z baa danych. Klasy takie nazywami Stubami badz mockami w zaleznosci od teotg jak sa skonstruowane.
-
-\subsubsection{Stub}
-Stub jest specjalnym obiektem imitujacym klase. W ten sposob ze posiada te same fkcje oraz testowe dane jak testowana klasa. W przypadku naszej komunikacji do bazy danych. Imitujacy obiekt posiadalby w miejscu fkcji pobierajacej dane fkcje zwracajac stala kolekcje obiektow.
-
-
-
-\subsubsection{Mock}
-
-Dzia³a podobnie jak Stub. Ró¿nica jednak polega na tym , ¿e obiekty typu mock dzia³a na prawdziwej klasie podczepiajaæ siê tylko pod wybrane funkcjonalnosci. Tzn w naszym przyupadku pobierania danych z bazy danych. Bedziemy wykorzystywac nasza normalna klase podniejajc tylko jej fkcje dostepu do bazy danych
-
-
-\subsubsection{Zastosowanie}
-
-
-\begin{center}
-	\includegraphics{ZastosowanieMock.JPG}
-\end{center}
-\begin{center}
-Zastosowanie
-\end{center}
-
-
-
-\newpage
+W pracy dyplomowej zdecydowano siê zastosowaæ framework \textbf{NHibernate} \cite{NHibernate}. Jest to rozwi¹zanie bêd¹ce implementacj¹ frameworka \textbf{Hibernate} dostêpnego w œrodowisku \textbf{Javy} na potrzeby œrodowiska \textbf{.NET}.
+W \textbf{NHibernacie} odpowiednie mapowania mo¿na zdefiniowaæ za pomoc¹ plików konfiguracyjnych XML. Jest to wygodne podejœcie jednak¿e podatne na b³êdy i nieczytelne. Dlatego czêsto stosuje siê  rozwi¹zanie typu \textbf{FluentNHibernate} bêd¹ce bibliotek¹, która pozwala generowaæ pliki XML na podstawie kodu napisanego w jêzyku platformy .Net. Mapowanie takie staje siê bardziej czytelne m.in. dziêki zastosowaniu wzorca projektowego FluentInterface \cite{FluentInterface} pozwalaj¹cego ³¹czyæ sekwencyjnie wywo³ywanie metod.
+\newpage{}

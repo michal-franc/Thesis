@@ -5,10 +5,17 @@
 	YEAR         = "2007",
 	VOLUME       = "",
 	SERIES       = "",
-	ADDRESS      = "",
+	ADDRESS      = "Warszawa",
 	EDITION      = "",
 	MONTH        = "",
 	NOTE         = ""
+}
+
+@MISC{REST,
+author = {Roy Thomas Fielding},
+title = {Representational State Transfer (REST)},
+year = {2000},
+howpublished = "\url{http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm}"
 }
 
 @BOOK{BednarekLubina,
@@ -18,7 +25,7 @@
 	YEAR         = "2008",
 	VOLUME       = "",
 	SERIES       = "",
-	ADDRESS      = "",
+	ADDRESS      = "£Ûdü",
 	EDITION      = "",
 	MONTH        = "",
 	NOTE         = ""
@@ -31,7 +38,7 @@
 	YEAR         = "2000",
 	VOLUME       = "",
 	SERIES       = "",
-	ADDRESS      = "",
+	ADDRESS      = "Warszawa",
 	EDITION      = "",
 	MONTH        = "",
 	NOTE         = ""
@@ -44,7 +51,7 @@
 	YEAR         = "2010",
 	VOLUME       = "",
 	SERIES       = "",
-	ADDRESS      = "",
+	ADDRESS      = "Gliwice",
 	EDITION      = "",
 	MONTH        = "",
 	NOTE         = ""
@@ -70,7 +77,7 @@
 	YEAR         = "2005",
 	VOLUME       = "",
 	SERIES       = "",
-	ADDRESS      = "",
+	ADDRESS      = "Warszawa",
 	EDITION      = "",
 	MONTH        = "",
 	NOTE         = ""
@@ -83,33 +90,7 @@
 	YEAR         = "2006",
 	VOLUME       = "",
 	SERIES       = "",
-	ADDRESS      = "",
-	EDITION      = "",
-	MONTH        = "",
-	NOTE         = ""
-}
-
-@BOOK{EssentialWcf,
-	AUTHOR       = "Steve Resnick and Richard Crane and Chris Bowen ",
-	TITLE        = "Essential Windows Communication Foundation with .Net 3.5",
-	PUBLISHER    = "Addison Wesley",
-	YEAR         = "2008",
-	VOLUME       = "",
-	SERIES       = "",
-	ADDRESS      = "",
-	EDITION      = "",
-	MONTH        = "",
-	NOTE         = ""
-}
-
-@BOOK{WcfUnleashed,
-	AUTHOR       = "Craig McMurtry and Marc Mercuri and Nigel Watling and Matt Winkler",
-	TITLE        = "Windows Communication Foundation Unleashed",
-	PUBLISHER    = "Sams",
-	YEAR         = "2007",
-	VOLUME       = "",
-	SERIES       = "",
-	ADDRESS      = "",
+	ADDRESS      = "Warszawa",
 	EDITION      = "",
 	MONTH        = "",
 	NOTE         = ""
@@ -135,7 +116,7 @@
 	YEAR         = "2004",
 	VOLUME       = "",
 	SERIES       = "",
-	ADDRESS      = "",
+	ADDRESS      = "Athabasca",
 	EDITION      = "",
 	MONTH        = "",
 	NOTE         = ""
@@ -154,11 +135,11 @@
 	NOTE         = ""
 }
 
-@BOOK{WebServicesEssentials,
-	AUTHOR       = "Ethan Cerami",
-	TITLE        = "Web Services Essentials - Distributed Applications with XML-RPC, SOAP, UDDI , WSDL  ",
-	PUBLISHER    = "O'Reilly",
-	YEAR         = "2002",
+@BOOK{WCF,
+	AUTHOR       = "Craig McMurty and Merc Mercuri and Nigel Waiting and Matt Winkler",
+	TITLE        = "Windows Communication Foundation Unleashed ",
+	PUBLISHER    = "SAMS",
+	YEAR         = "2007",
 	VOLUME       = "",
 	SERIES       = "",
 	ADDRESS      = "",
@@ -219,15 +200,6 @@
 	NOTE         = ""
 }
 
-@MISC{SCORM,
-	AUTHOR       = "ADL",
-	TITLE        = "Scorm Documentation",
-	HOWPUBLISHED = "http://www.scormsoft.com/scorm http://www.adlnet.gov/Technologies/scorm/SCORMSDocuments/2004%204th%20Edition/Documentation.aspx",
-	MONTH        = "",
-	YEAR         = "",
-	NOTE         = "",
-}
-
 @ARTICLE{WebServiceAuthSystem,
 	AUTHOR       = "Akram Alkou and Samir A.El-Seoud",
 	TITLE        = "Web Services Based Authentication System for E-Learning",
@@ -251,68 +223,6 @@
 	MONTH        = "",
 	NOTE         = ""
 }
-@INBOOK{SEcurityELearn,
-	AUTHOR       = "Simon Schwinge",
-	TITLE        = "Intelligent Information  Technologies  and Applications",
-	CHAPTER      = "1",
-	PUBLISHER    = "Oakland University",
-	YEAR         = "2008",
-	VOLUME       = "",
-	SERIES       = "",
-	ADDRESS      = "",
-	EDITOR       = "",
-	MONTH        = "",
-	NOTE         = ""
-}
-
-@MISC{elearnMoodle,
-	AUTHOR       = "Ajlan Al-Ajlan and Hussein Zedan",
-	TITLE        = "E-Learning (MOODLE) Based on Service Oriented Architectur",
-	HOWPUBLISHED = "http://www.cse.dmu.ac.uk/STRL/research/publications/pubs/2007/2007-23.pdf",
-	MONTH        = "",
-	YEAR         = "",
-	NOTE         = ""
-}
-
-@BOOK{SoaArchAndDesignStrat,
-	AUTHOR       = "Mike Rosen and Boris Lublinsky and Kevin T. Smith and Marc J. Baler",
-	TITLE        = "Service-Oriented Architecture and Design Strategies",
-	PUBLISHER    = "Wiley",
-	YEAR         = "2008",
-	VOLUME       = "",
-	SERIES       = "",
-	ADDRESS      = "",
-	EDITION      = "",
-	MONTH        = "",
-	NOTE         = ""
-}
-
-
-@BOOK{SoaPatterns,
-	AUTHOR       = "Thomas Earl",
-	TITLE        = "Soa Design Patterns",
-	PUBLISHER    = "Prentice Hall",
-	YEAR         = "2009",
-	VOLUME       = "",
-	SERIES       = "",
-	ADDRESS      = "",
-	EDITION      = "",
-	MONTH        = "",
-	NOTE         = ""
-}
-
-@BOOK{WebServicesSecurity,
-	AUTHOR       = "Elisa Bertino and Lorenzo D. Martino and Federica Paci and Anna C. Squicciarini",
-	TITLE        = "Security for Web Services and Service-Oriented Architectures ",
-	PUBLISHER    = "Springer",
-	YEAR         = "2010",
-	VOLUME       = "",
-	SERIES       = "",
-	ADDRESS      = "",
-	EDITION      = "",
-	MONTH        = "",
-	NOTE         = ""
-}
 
 
 @MISC{JSON,
@@ -320,15 +230,15 @@ author = {Douglas, Crockford},
 title = {The application/json Media Type for JavaScript Object Notation (JSON)},
 month = July ,
 year = {2006},
-url = {http://tools.ietf.org/html/rfc4627}
+howpublished = "\url{http://tools.ietf.org/html/rfc4627}"
 }
 
-@MISC{JSON,
-author = {W3C,
-title = {Extensible Markup Language (XML) 1.0 (Fifth Edition)},
+@MISC{XML,
+author = {W3C},
+title = {Extensible Markup Language XML 1.0 Fifth Edition},
 month = November ,
 year = {2008},
-url = {http://www.w3.org/TR/xml/}
+howpublished = "\url{http://www.w3.org/TR/xml/}"
 }
 
 
@@ -337,13 +247,96 @@ author = {Trygve , Reenskaug},
 title = {MODELS - VIEWS ñ CONTROLLER},
 month = December ,
 year = {1979},
-url = {http://heim.ifi.uio.no/~trygver/2007/MVC_Originals.pdf}
+howpublished = "\url{http://heim.ifi.uio.no/~trygver/2007/MVC_Originals.pdf}"
 }
 @MISC{RESTVSSOAP,
 author = {Clay , Loveless},
 title = {Lessons from the failures of Soap},
-month = Mai ,
+month = May ,
 year = {2011},
-url = {http://public.iwork.com/document/pl/?d=LessonsLearnedFromFailureOfSOAP.key&a=p1355173147f}
+howpublished = "\url{http://public.iwork.com/document/pl/?d=LessonsLearnedFromFailureOfSOAP.key&a=p1355173147f}"
 }
+@MISC{SOAP,
+author = {W3C},
+title = {Simple Object Access Protocol},
+month = May ,
+year = {2000},
+howpublished = "\url{http://www.w3.org/TR/soap/}"
+}
+
+@MISC{FluentInterface,
+author = {Martin , Fowler},
+title = {FluentInterface},
+month = December ,
+year = {2005},
+howpublished = "\url{http://www.martinfowler.com/bliki/FluentInterface.html}"
+}
+
+@MISC{SQLINJECTION,
+author = {J.D., Meier and Alex, Mackman and Blaine, Wastell and Prashant Bansode and Andy Wigley},
+title = {Microsoft Patterns and Practices},
+month = May ,
+year = {2005},
+howpublished = "\url{http://msdn.microsoft.com/en-us/library/ff648339.aspxl}"
+}
+
+@MISC{RubyOnRails,
+howpublished = "\url{http://rubyonrails.org/}"
+}
+@MISC{Django,
+howpublished = "\url{https://www.djangoproject.com/}"
+}
+
+@MISC{EntityFramework,
+title = {The ADO.NET Entity Framework Overview},
+howpublished = "\url{http://msdn.microsoft.com/en-us/library/aa697427(v=vs.80).aspx}"
+}
+
+@MISC{NHibernate,
+howpublished = "\url{http://nhforge.org/}"
+}
+
+@MISC{WordPress,
+howpublished = "\url{http://wordpress.org/}"
+}
+@MISC{SqlServer,
+title = {SQL Server Books Online},
+author = {Microsoft},
+howpublished = "\url{http://msdn.microsoft.com/en-us/library/ms130214.aspx}"
+}
+@MISC{HQL,
+title = {HQL: The Hibernate Query Language},
+author = {Hiberante Community Documnetation},
+howpublished = "\url{http://docs.jboss.org/hibernate/core/3.3/reference/en/html/queryhql.html}"
+}
+@MISC{SENTINEL,
+title = {Sentinel - Log Viewer},
+howpublished = "\url{http://sentinel.codeplex.com/}"
+}
+
+@MISC{SQLITE,
+title = {SQLite},
+howpublished = "\url{http://www.sqlite.org/}"
+}
+@MISC{WCAT,
+title = {WCat 6.3 (x86)},
+howpublished = "\url{http://www.iis.net/community/default.aspx?tabid=34&i=1466&g=6}"
+}
+
+@MISC{ANTS,
+title = {ANTS Memory Profiler},
+howpublished = "\url{http://www.red-gate.com/products/dotnet-development/ants-memory-profiler/}"
+}
+
+@MISC{NINJECT,
+title = {Ninject},
+howpublished = "\url{http://ninject.org/}"
+}
+
+@MISC{NHProf,
+title = {NHProf},
+howpublished = "\url{http://nhprof.com/}"
+}
+
+
 

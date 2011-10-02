@@ -4,6 +4,7 @@
 %poni¿ej deklaracje u¿ycia pakietów, usunšæ to co jest niepotrzebne
 %\usepackage{polski}       %przydatne podczas sk³adania dokumentów w
 %j. polskim 
+
 \usepackage[polish]{babel} %alternatywnie do pakietu
 %polski, wybraæ jeden z nich
 \usepackage[cp1250]{inputenc} %kodowanie znaków, zale¿ne od systemu
@@ -12,6 +13,7 @@
 %pakiety do grafiki
 \usepackage{graphicx}
 \usepackage{subfigure}
+\usepackage[titles,subfigure]{tocloft}
 \usepackage{psfrag}
 \graphicspath{{./Obrazki/}}
 
@@ -25,6 +27,8 @@
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{hhline}
+\usepackage{float}
+\usepackage{url}
 
 %pakiet wypisujšcy na marginesie etykiety równañ i rysunków
 %zdefiniowanych przez \label{}, chcšc wygenerowaæ finalnš wersjê
@@ -41,7 +45,7 @@
 \title{Projektowanie systemów zdalnego nauczania z wykorzystaniem us³ug sieciowych w œrodowisku MS .NET}
 \engtitle{Designing distance learning systems using Web Services in MS .NET environment}
 \author{Micha³ Franc}
-\supervisor{dr in¿. Robert Wójcik PWr, I-6}
+\supervisor{dr in¿. Robert Wójcik, W4|I-6}
 \field{Elektronika i telekomunikacja (EIT)}
 %\specialisation{Akustyka (ETA)} \specialisation{Aparatura
 %elektroniczna (EAE)} \specialisation{Elektroniczne i komputerowe
@@ -54,18 +58,43 @@
                             %styl bibliografii
 \maketitle %polecenie generujšce stronê tytu³owš 
 
-\dedication{6cm}{Mamie i tacie :D}
+\dedication{6cm}{Pracê tê dedykujê kochaj¹cej Mamie, która nauczy³a mnie jak byæ dobrym cz³owiekiem oraz wspania³emu Tacie, który pokaza³ mi œwiat techniki.}
 
-\tableofcontents %spis treœci
+%przeciazenie nazw listy rabel i rysunkow
+\renewcommand\listfigurename{Spis rysunków}
+\renewcommand\listtablename{Spis tabel}
+%dodanie do list tabel i rysunkow wyrazow przed
+
+\renewcommand{\cfttabpresnum}{Tabela } 
+\renewcommand{\cftfigpresnum}{Rysunek } 
+\setlength{\cfttabnumwidth}{70pt} 
+\setlength{\cftfignumwidth}{75pt}
+%spis treœci
+\tableofcontents
 
 %poni¿ej znajduje siê przyk³adowa treœæ dalszej czêœci dokumentu,
 %zainteresowanych zachêcam do rozszyfrowania frazy "Lorem ipsum" :)
 \let\cleardoublepage\clearpage
+%\addcontentsline{toc}{section}{Spis rysunków}
+
+
+\listoffigures
+%\addcontentsline{toc}{chapter}{Spis rysunków}
+\addtocontents{toc}{\protect\contentsline{chapter}{Spis rysunków}{3}}
+
+%\addcontentsline{toc}{section}{Spis tabel}
+\listoftables
+\addtocontents{toc}{\protect\contentsline{chapter}{Spis tabel}{5}}
+%\addcontentsline{toc}{chapter}{Spis tabel}
+
+%\addtocontents{toc}{\protect\contentsline{chapter}{Wstêp}}
 \addcontentsline{toc}{chapter}{Wstêp}
 \include{1Wstepp}
+
 \include{2KsztalcenieNaOdleglosc}
 \include{3WybraneTechnologie}
 \include{WybraAspektyProj4}
+\include{projektsystemu5}
 \addcontentsline{toc}{chapter}{Bibilografia} %utworzenie w
                                              %spisietreœci pozycji
                                              %Bibliografia

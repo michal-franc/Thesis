@@ -1,49 +1,50 @@
 \chapter{Projekt systemu zdalnego nauczania}
 
 \section{Wymagania projektowe}
+
+W niniejszym punkcie zawarto opis podstawowych elementów projektu.
+
 \subsection{Wymagania funkcjonalne}
 
-Tworzony system ³¹czy w sobie pewne wybrane cechy systemów klasy CMS oraz LMS. Do najwa¿niejszych funkcji nale¿y mo¿liwoœæ edytowania oraz publikowania kursów , testów , materia³ów zdalnego nauczania oraz mechanizm dzienników ocen. Aplikacja wspiera proces tworzenia materia³ów oraz testów poprzez prosty ale funkcjonalny system edycji.
-
-Do poszczególnych funkcjonalnoœci mo¿emy zaliczyæ :
+Tworzony system ³¹czy w sobie pewne wybrane cechy systemów klasy CMS oraz LMS. Do najwa¿niejszych funkcji nale¿y mo¿liwoœæ edytowania oraz publikowania kursów, testów, materia³ów zdalnego nauczania oraz mechanizm dzienników ocen. Aplikacja wspiera proces tworzenia materia³ów oraz testów poprzez prosty, ale funkcjonalny system edycji.\newline
 
 \subsubsection{Tworzenie u¿ytkowników oraz przydzielanie uprawnieñ}
 
-System posiada mechanizm pozwalaj¹cy zarz¹dzaæ u¿ytkownikami aplikacji wraz z mo¿liwoœci¹ przydzielania im odpowiednich poziomów uprawnieñ. Dostêpny jest panel administracyjny zawieraj¹cy listê u¿ytkowników oraz udostêpniaj¹cy  funkcje :
+System posiada mechanizm pozwalaj¹cy zarz¹dzaæ u¿ytkownikami aplikacji wraz z mo¿liwoœci¹ przydzielania im odpowiednich poziomów uprawnieñ. Dostêpny jest panel administracyjny zawieraj¹cy listê u¿ytkowników oraz udostêpniaj¹cy funkcje:
 
 \begin{itemize}
-\item Dodaj/Usuñ u¿ytkownika
-\item Aktywuj/Dezaktywuj u¿ytkownika
-\item Modyfikacja uprawnieñ
+\item Dodaj/Usuñ u¿ytkownika,
+\item Aktywuj/Dezaktywuj u¿ytkownika,
+\item Modyfikacja uprawnieñ,
 \item Dodaj/Usuñ u¿ytkownika z grupy.
 \end{itemize}
 
-Usuniêcie u¿ytkownika równoznaczne jest z usuniêciem wszystkich danych powi¹zanych z tym u¿ytkownikiem. Szczególnym przypadkiem usuwania u¿ytkownika jest usuwanie u¿ytkownika posiadaj¹cego uprawnienia umo¿liwiaj¹ce tworzenie kursów oraz materia³ów e-learningowych. W przypadku usuniêcia takiego u¿ytkownika kursy zarz¹dzane przez usuwanego u¿ytkownika przechodz¹ na w³asnoœæ administratora systemu , który mo¿e przydzieliæ uprawnienia autorskie innemu u¿ytkownikowi.
-
+Usuniêcie u¿ytkownika równoznaczne jest z usuniêciem wszystkich danych powi¹zanych z tym u¿ytkownikiem. Szczególnym przypadkiem usuwania u¿ytkownika jest usuwanie u¿ytkownika posiadaj¹cego uprawnienia umo¿liwiaj¹ce tworzenie kursów oraz materia³ów e-learningowych. W przypadku usuniêcia takiego u¿ytkownika kursy zarz¹dzane przez usuwanego u¿ytkownika przechodz¹ na w³asnoœæ administratora systemu, który mo¿e przydzieliæ uprawnienia autorskie innemu u¿ytkownikowi.
+\newpage{}
 \subsubsection{Zarz¹dzanie kursami}
 Ka¿dy u¿ytkownik posiadaj¹cy uprawnienia autorskie oraz administrator mo¿e stworzyæ jeden lub wiêcej kursów.
-Kurs opisany jest parametrami 
+Kurs opisany jest parametrami:
 \begin{itemize}
-\item Nazwa
-\item Krótki opis
-\item Logo
-\item Rodzaj kursu
+\item Nazwa,
+\item Krótki opis,
+\item Logo,
+\item Rodzaj kursu.
 \end{itemize}
 
-Ka¿dy  kurs posiada swoj¹ odrêbn¹ listê materia³ów nauczania , testów , mechanizm wymiany
-krótkich wiadomoœci (Shoutbox) oraz pojedyncz¹ grupê u¿ytkowników przynale¿¹cych do
-danego kursu. Autor ma mo¿liwoœæ edycji tylko i wy³¹cznie kursów , którymi zarz¹dza.
+Ka¿dy  kurs posiada swoj¹ odrêbn¹ listê materia³ów nauczania, testów, mechanizm wymiany
+krótkich wiadomoœci \textbf{Shoutbox} oraz pojedyncz¹ grupê u¿ytkowników przynale¿¹cych do
+danego kursu. Autor ma mo¿liwoœæ edycji tylko i wy³¹cznie kursów, którymi zarz¹dza.
 Administrator mo¿e modyfikowaæ ka¿dy kurs znajduj¹cy siê w systemie.
 
 \subsubsection{Zarz¹dzanie materia³ami nauczania}
 Materia³y nauczania s¹ integraln¹ czêœci¹ kursu. Ka¿dy kurs mo¿e posiadaæ
 jeden lub wiêcej materia³ów nauczania. W sk³ad materia³u nauczania wchodz¹
-parametry opisowe pozwalaj¹ce sklasyfikowaæ dany materia³ :
+parametry opisowe pozwalaj¹ce sklasyfikowaæ dany materia³:
 
 \begin{itemize}
-\item Poziom materia³u {Pocz¹tkuj¹cy , Œrednio-Zaawansowany , Zaawansowany }
-\item Opis
-\item Logo
+\item Poziom materia³u \textit{Pocz¹tkuj¹cy, Œrednio-Zaawansowany, Zaawansowany},
+\item Opis,
+\item Logo.
 \end{itemize}
 
 Uprawnienia do edycji materia³ów posiada administrator oraz autor kursu , do którego nale¿y dany materia³.
@@ -53,11 +54,11 @@ Uprawnienia do edycji materia³ów posiada administrator oraz autor kursu , do któ
 Materia³ nauczania prócz parametrów opisowych  podzielony jest na trzy obszary.
 
 \subsubsection{Obszar informacyjny}
-Zawiera segmenty :
+Zawiera segmenty:
 \begin{itemize}
-\item Informacyjny - parametry kursu
-\item Opisowy - opisuje kontekst kursu
-\item Celów - opisuje cele jakie osi¹gnie kursant bior¹cy udzia³ w kursie
+\item Informacyjny - parametry kursu,
+\item Opisowy - opisuje kontekst kursu,
+\item Celów - opisuje cele jakie osi¹gnie kursant bior¹cy udzia³ w kursie.
 \end{itemize}
 
 \subsubsection{Obszar nauczania}
@@ -68,35 +69,35 @@ sekcja opisana jest tytu³em oraz polem zawartoœci , w którym umieszczamy treœæ o
 materia³y.
 
 \subsubsection{Obszar podsumowania}
-Zawiera segmenty
+Zawiera segmenty:
 \begin{itemize}
-\item Podsumowania - szybkie podsumowanie zdobytej wiedzy i najwa¿niejszych rzeczy
-\item Wiêcej informacji -  posiada zbiór dodatkowych materia³ów poszerzaj¹cym zawartoœæ kursu
+\item Podsumowania - szybkie podsumowanie zdobytej wiedzy i najwa¿niejszych rzeczy,
+\item Wiêcej informacji -  posiada zbiór dodatkowych materia³ów poszerzaj¹cym zawartoœæ kursu,
 \item Testów - posiada test stworzony na potrzeby materia³u nauczania pozwalaj¹cy
-sprawdziæ wiedzê kursanta
+sprawdziæ wiedzê kursanta,
 \end{itemize}
 Mechanizm nauczania stworzony jest w sposób liniowy. Kursant po kolei odkrywa
 kolejne segmenty oraz sekcje wchodz¹ce w sk³ad materia³u nauczania. Po skoñczeniu procesu nauczania 
 kursant mo¿e  sprawdziæ swoj¹ wiedzê wykonuj¹c test.
 \subsubsection{Zarz¹dzanie testami}
-Aplikacja pozwala tworzyæ testy bêd¹ce istotnym elementem procesu nauczania. Testy
+Aplikacja pozwala tworzyæ testy, bêd¹ce istotnym elementem procesu nauczania. Testy
 mog¹ byæ powi¹zane z materia³em nauczania.
-Mo¿liwoœæ tworzenia oraz edycji testów posiada Administrator oraz Autor kursu 
+Mo¿liwoœæ tworzenia oraz edycji testów posiada Administrator, oraz Autor kursu, 
 posiadaj¹cy odpowiednie uprawnienia.
 \subsubsection{Mechanizm rozwi¹zywania oraz sprawdzania testów}
 Kursant po skoñczeniu procesu nauczania  mo¿e przyst¹piæ do rozwi¹zywania
-testu. Test sk³ada siê z  dwóch obszarów : treœci pytania oraz przydzielonych odpowiedzi.Po rozwi¹zaniu
-testu wyœwietlana jest ocena oraz wiadomoœæ informuj¹ca o zaliczeniu/nie zaliczeniu testu. Nastêpnie ocena zapisywana jest do dziennika ocen danego ucznia.
+testu. Test sk³ada siê z  dwóch obszarów : treœci pytania oraz przydzielonych odpowiedzi. Po rozwi¹zaniu
+testu wyœwietlana jest ocena oraz wiadomoœæ informuj¹ca o zaliczeniu b¹dŸ nie zaliczeniu testu. Nastêpnie ocena zapisywana jest do dziennika ocen danego ucznia.
 \subsubsection{Zarz¹dzanie ocenami}
-Mazdy kursant mo¿e przegl¹daæ listê swoich ocen otrzymanych w procesie nauczania po rozwi¹zaniu testu. 
-Kursant ma mo¿liwoœæ tak¿e automatycznego wyliczenia œredniej ocen z danego kursu.
-\subsubsection{Filtrowanie kursów ora z materia³ów}
-Kursant ma mo¿liwoœæ filtrowania kursów na podstawie typu kursu. Mo¿e równie¿ wyœwietliæ listê kursów do , których jest ju¿ zapisany. Kursant ma mo¿liwoœæ filtrowania materia³ów nauczania na podstawie poziomu trudnoœci oraz mo¿e sortowaæ materia³y
-na podstawie jego nazwy.
+Ka¿dy kursant mo¿e przegl¹daæ listê swoich ocen otrzymanych w procesie nauczania po rozwi¹zaniu testu. 
+Kursant ma tak¿e mo¿liwoœæ automatycznego wyliczenia œredniej ocen z danego kursu.
+\subsubsection{Filtrowanie kursów oraz materia³ów}
+Kursant ma mo¿liwoœæ filtrowania kursów na podstawie typu kursu. Mo¿e równie¿ wyœwietliæ listê kursów, do których jest ju¿ zapisany. Kursant ma mo¿liwoœæ filtrowania materia³ów nauczania na podstawie poziomu trudnoœci oraz mo¿e sortowaæ materia³y
+na podstawie ich nazwy.
 \newpage{}
 \subsection{Wymagania niefunkcjonalne}
 \subsubsection{Bardzo dobra jakoœæ kodu i projektu}
-Platforma stworzona zostanie zgodnie z nowoczesnymi trendami oraz zasadami dobrego
+Platforma zdalnego nauczania stworzona zostanie zgodnie z nowoczesnymi trendami oraz zasadami dobrego
 projektowania aplikacji tak by w przysz³oœci nak³ad pracy w³o¿ony w proces modyfikacji i utrzymania kodu by³
 jak najmniejszy.
 \subsubsection{Bezpieczeñstwo aplikacji}
@@ -106,80 +107,78 @@ przydzielanych do poszczególnych u¿ytkowników platformy. Wyró¿niamy trzy role:
 Administrator reprezentuje u¿ytkownika odpowiedzialnego za zarz¹dzanie ca³ym 
 systemem zdalnego nauczania.
 \subsubsection{Autor}
-Autor jest u¿ytkownikiem posiadaj¹cym mo¿liwoœæ tworzenia nowych , edytowania kursów
-, materia³ów nauczania oraz testów.
+Autor jest u¿ytkownikiem posiadaj¹cym mo¿liwoœæ tworzenia nowych kursów, edytowania kursów, materia³ów nauczania oraz testów.
 \subsubsection{Kursant}
 Kursant jest podstawowym u¿ytkownikiem posiadaj¹cym mo¿liwoœæ przegl¹dania zasobów aplikacji
- i interakcji z systemem bez mo¿liwoœci wp³ywania na zawartoœæ systemu.Kursanci posiadaj¹ 
-mo¿liwoœæ umieszczania krótkich wiadomoœci tekstowych w module ShoutBox wchodz¹cym w sk³ad ka¿dego kursu.
+ i interakcji z systemem bez mo¿liwoœci wp³ywania na zawartoœæ systemu. Kursanci posiadaj¹ 
+mo¿liwoœæ umieszczania krótkich wiadomoœci tekstowych w module ShoutBox, wchodz¹cym w sk³ad ka¿dego kursu.
 
-Mechanizm rejestracji oraz logowania zostanie zrealizowany za pomoc¹ frameworka Asp.Net Membership zapewniaj¹cego rozbudowane i bezpieczne funkcjonalnoœci. W tym celu powstanie druga baza danych , zawieraj¹ca dane wymaganie w procesie logowania , powi¹zana z g³ówn¹ baz¹ danych.
+Mechanizm rejestracji oraz logowania do systemu zostanie zrealizowany za pomoc¹ frameworka Asp.Net Membership \cite{AspNet3.5}. W tym celu powstanie druga baza danych, zawieraj¹ca dane wymaganie w procesie logowania, powi¹zana z g³ówn¹ baz¹ danych.
 
 \subsubsection{Bezpieczeñstwo transmisji danych}
-Platforma komunikuje siê z warstw¹ bazodanow¹ za pomoc¹ us³ug sieciowych. Transmisja danych przebiega³a bêdzie na dwóch poziomach zabezpieczeñ. Pierwszy poziom bez szyfrowania i bez zabezpieczeñ bêdzie s³u¿y³ do przesy³ania danych zawieraj¹cych jedynie dane na temat kursów , testów oraz materia³ów nauczania. Dane przesy³ane na tym poziomie bêd¹ w przesy³ane w niezaszyfrowanej postaci . Dane poufne takie jak dane logowania , has³a bêd¹
-przesy³ane bardziej bezpiecznym sposobem transmisji z u¿yciem rozszerzeñ WS-Security. 
+Platforma zdalnego nauczania komunikuje siê z warstw¹ bazodanow¹ za pomoc¹ us³ug sieciowych. Transmisja danych przebiega³a bêdzie na dwóch poziomach zabezpieczeñ. Pierwszy poziom bez szyfrowania i bez zabezpieczeñ bêdzie s³u¿y³ do przesy³ania danych zawieraj¹cych jedynie dane na temat kursów, testów oraz materia³ów nauczania. Dane przesy³ane na tym poziomie bêd¹ przesy³ane w niezaszyfrowanej postaci. Dane poufne, takie jak dane logowania i has³a, bêd¹ przesy³ane bardziej bezpiecznym sposobem transmisji.
 \subsubsection{Komunikacja za pomoc¹ us³ug sieciowych}
-Dostêp do bazy danych wystawiony bêdzie za warstw¹ us³ug sieciowych zrealizowanych w technologii WCF. Poszczególne funkcjonalnoœci bazy danych wystawione bêd¹ w formie szeœciu us³ug sieciowych :
+Dostêp do bazy danych wystawiony bêdzie za warstw¹ us³ug sieciowych zrealizowanych w technologii \textbf{WCF(Windows Communication Foundation)} \cite{WCF}. Poszczególne funkcjonalnoœci bazy danych bêd¹ udostêpnione w postaci szeœciu us³ug sieciowych:
 \begin{itemize}
-\item Kursy
-\item Testy
-\item Profile
-\item Materia³y nauczania
-\item Grupy
-\item Dziennik
+\item Kursy,
+\item Testy,
+\item Profile,
+\item Materia³y nauczania,
+\item Grupy,
+\item Dziennik.
 \end{itemize}
 
-Dodatkowo czêœæ funkcji zostanie udostêpniona w formacie JSON na protokole REST zapewniaj¹c dostêp do wybranych danych aplikacj¹ nie powi¹zanym z platform¹. By zaprezentowaæ tê funkcjonalnoœæ zostanie stworzony dodatek do popularnej platformy "WordPress" pozwalaj¹cy wyœwietliæ kursy danego autora na blogu.
+Dodatkowo czêœæ funkcji zostanie udostêpniona w formacie JSON na protokole REST, zapewniaj¹c dostêp do wybranych danych aplikacjom nie powi¹zanym z platform¹. By zaprezentowaæ tê funkcjonalnoœæ zostanie stworzony dodatek do popularnej platformy \textbf{WordPress} \cite{WordPress}, pozwalaj¹cy wyœwietliæ kursy danego autora na blogu.
  
 \subsubsection{Mechanizm dynamicznego przekierowania na serwer zapasowy}
-By zwiêkszyæ niezawodnoœæ systemu stworzony zostanie system , który w momencie problemów z komunikacj¹ z podstawowym serwerem bazy danych prze³¹czy system na zapasow¹ bazê danych. Co jakiœ czas generowane bêdzie zapytanie o dostêpnoœæ serwera i w momencie braku odpowiedzi b¹dŸ b³êdu wysy³anego protoko³em soap nast¹pi automatyczne przekierowanie na us³ugi sieciowe serwera zapasowego. 
+By zwiêkszyæ niezawodnoœæ systemu stworzony zostanie system, który w momencie problemów z komunikacj¹ z podstawowym serwerem bazy danych prze³¹czy system na zapasow¹ bazê danych. Co jakiœ czas generowane bêdzie zapytanie o dostêpnoœæ serwera i w momencie braku odpowiedzi b¹dŸ b³êdu wysy³anego protoko³em SOAP nast¹pi automatyczne przekierowanie na us³ugi sieciowe serwera zapasowego. 
 \subsubsection{Tworzenie kopii zapasowych bazy danych}
 Ka¿dego dnia o okreœlonej porze bêdzie tworzona kopia zapasowa bazy danych. Jednorazowo trzymanych bêdzie siedem kopii.
 \subsubsection{Automatyczny mechanizm replikacji danych}
-Poniewa¿ rozwi¹zanie zak³ada mo¿liwoœæ przekierowania na innych serwer us³ug posiadaj¹cy kopiê zapasow¹ bazy danych. Musi zostaæ zapewniony mechanizm replikacji uaktualniaj¹cy bazê danych na zapasowym serwerze. Replikacja taka bêdzie wykonywana raz dziennie.
+Poniewa¿ rozwi¹zanie zak³ada mo¿liwoœæ przekierowania na innych serwer us³ug, posiadaj¹cy kopiê zapasow¹ bazy danych. Musi zostaæ zapewniony mechanizm replikacji uaktualniaj¹cy bazê danych na zapasowym serwerze. Replikacja taka bêdzie wykonywana raz dziennie.
 \subsubsection{Dostêpnoœæ aplikacji}
 Aplikacja bêdzie dostêpna z poziomu przegl¹darki internetowej.
-Bêdzie dostosowana funkcjonalnie do przegl¹darek :
+Bêdzie dostosowana funkcjonalnie do przegl¹darek:
 \begin{itemize}
-\item Chrome
-\item Firefox 4+
-\item Internet Explorer 9+
-\item Opera
+\item Chrome,
+\item Firefox 4+,
+\item Internet Explorer 9+,
+\item Opera.
 \end{itemize}
 
 Zostanie zagwarantowany dostêp do funkcjonalnoœci z poziomu wymienionych wy¿ej przegl¹darek. Nie zostanie zagwarantowany "idealnie" taki sam sposób prezentacji aplikacji.
 
-\subsubsection{Obi¹¿alnoœc}
-Aplikacja bêdzie w stanie obs³u¿yæ jednorazowo 1000 ¿¹dañ i bêdzie gwarantowaæ czas odpowiedzi w granicach maksymalnie 1 sekundy
+\subsubsection{Obi¹¿alnoœæ}
+Aplikacja bêdzie w stanie obs³u¿yæ jednorazowo 100 ¿¹dañ i bêdzie gwarantowaæ czas odpowiedzi z serwera us³ug w granicach maksymalnie 1 sekundy
 \newpage{}
 \section{Projekt bazy danych}
 
 \subsection{Opis encji}
 \subsubsection{Kurs}
-Zawiera dane dotycz¹ce kursu : Id , Typ Kursu , Nazwê , Logo , Data Utworzenia , Opis ,  Krótki Opis , Pole Wiadomoœci
+Zawiera dane dotycz¹ce kursu : Id, Typ Kursu, Nazwê, Logo, Data Utworzenia, Opis,  Krótki Opis, Pole Wiadomoœci
 \subsubsection{TypKursu}
 S³ownik opisuj¹cy typ kursu.
 \subsubsection{UkonczonyTest}
 Encja reprezentuj¹ca ukoñczony test. Zawiera m.in otrzyman¹ ocenê oraz datê ukoñczenia testu. 
 \subsubsection{Test}
-Reprezentuje Test wype³niany przez kursanta nale¿¹cy do  materia³u nauczania. Zawiera dane opisowe oraz sekcje zawieraj¹ce merytoryczn¹ treœæ kursu.
+Reprezentuje Test wype³niany przez kursanta, nale¿¹cy do  materia³u nauczania. Zawiera dane opisowe oraz sekcje zawieraj¹ce merytoryczn¹ treœæ kursu.
 \subsubsection{TypTestu}
-S³ownik opisuj¹cy typ testu
+S³ownik opisuj¹cy typ testu.
 \subsubsection{PytanieTestowe}
-Reprezentuje pytanie nale¿¹ce do zbioru pytañ wchodz¹cych w sk³ad testu. Zawiera listê odpowiedzi , tytu³ oraz treœæ pytania.
+Reprezentuje pytanie nale¿¹ce do zbioru pytañ wchodz¹cych w sk³ad testu. Zawiera listê odpowiedzi, tytu³ oraz treœæ pytania.
 \subsubsection{PytanieTestoweOdpowiedz}
-Reprezentuje odpowiedzi bêd¹ce czêœci¹ pytania. Zawiera treœæ odpowiedzi oraz wskaŸnik czy jest to poprawna odpowiedŸ.
+Reprezentuje odpowiedzi bêd¹ce czêœci¹ pytania. Zawiera treœæ odpowiedzi oraz wskaŸnik, okreœlaj¹cy czy jest to poprawna odpowiedŸ.
 \subsubsection{ShoutBox}
 Encja reprezentuj¹ca modu³ krótkich wiadomoœci tekstowych. Zawiera listê wiadomoœci.
 \subsubsection{ShoutBoxWiadomosc}
-Reprezentuje wiadomoœæ wyœwietlan¹ w obrêbie ShoutBoxa. Zawiera treœæ , login u¿ytkownika oraz datê przes³ania wiadomoœci.
+Reprezentuje wiadomoœæ wyœwietlan¹ w obrêbie ShoutBoxa. Zawiera treœæ, login u¿ytkownika oraz datê przes³ania wiadomoœci.
 \subsubsection{Dziennik}
-Encja reprezentuj¹ca dziennik ocen. Ka¿dy kursant posiada pojedynczy obiekt dziennika dla ka¿dego kursu do którego do³¹czy³.
-Posiada listê ocen przypisanych do danego u¿ytkownika oraz kursu.
+Encja reprezentuj¹ca dziennik ocen. Ka¿dy kursant posiada pojedynczy obiekt dziennika dla ka¿dego kursu, do którego do³¹czy³.
+Zawiera listê ocen przypisanych do danego u¿ytkownika oraz kursu.
 \subsubsection{DziennikOcena}
 Encja ocena wchodz¹ca w sk³ad dziennika. Reprezentuje pojedyncz¹ ocenê otrzymywan¹ po skoñczeniu testu.
 \subsubsection{MaterialNauczania}
-Opisuje pojedynczy materia³ nauczania bêd¹cy podstawowym œrodkiem przekazu merytorycznej zawartoœci dla kursanta.
+Opisuje pojedynczy materia³ nauczania, bêd¹cy podstawowym œrodkiem przekazu merytorycznej zawartoœci dla kursanta.
 \subsubsection{Section}
 Sekcja jest integraln¹ czêœci¹ materia³u nauczania. Zawiera informacje dydaktyczne. Materia³ nauczania mo¿e posiadaæ wiele sekcji.
 \subsubsection{Profil}
@@ -189,340 +188,357 @@ Encja opisuj¹ca grupê u¿ytkowników. Ka¿dy kurs posiada pojedyncz¹ grupê u¿ytkown
 \newpage{}
 \subsection{Uproszczony model konceptualny (CDM) - struktura tabel i relacje}
 
-\begin{center}
+\paragraph{}
+Zaprezentowane diagramy przedstawiaj¹ zwi¹zki zachodz¹ce pomiêdzy poszczególnymi encjami. Ca³y diagram zosta³ podzielony na dwie czêœci, zwi¹zane z najwa¿niejszymi encjami tzn. encj¹ reprezentuj¹c¹ Profil u¿ytkownika, oraz encj¹ reprezentuj¹c¹ pojedynczy Kurs.
+
+\begin{figure}[H]
+\centering
 	\includegraphics{/Relacje/CDM1.jpg}
-\end{center}
-\begin{center}
-	Rys.  Relacje pomiêdzy tabelami opisuj¹cymi profil
-\end{center}
+\caption{Diagram CDM cz. 1}
+\end{figure}
 
-\begin{center}
+Rysunek 4.1 przedstawia uproszczony diagram \textbf{CDM} opisuj¹cy zwi¹zki encji w obrêbie Profilu. Zgodnie z wymaganiami funkcjonalnymi, ka¿dy profil posiada dzienniki ocen, okreœlon¹ rolê, zbiór zakoñczonych testów oraz przynale¿y do wielu grup. Profil u¿ytkownika jest powi¹zany z Kursem przez Grupê oraz Dziennik Ocen, który posiada oceny zwi¹zane z danym kursem. Przynale¿noœæ do okreœlonej Grupy powi¹zanej z Kursem, pozwala okreœliæ czy u¿ytkownik posiada podstawowe uprawnienia dostêpu do zasobów Kursu. Dziennik ocen posiada zbiór ocen, oraz nale¿y do Kursu. Dziêki takiemu rozwi¹zaniu mo¿na szeregowaæ oceny w zale¿noœci od Kursu. Profil jest opisany m.in przez encjê Rola, która pozwala okreœliæ poziom uprawnieñ danego u¿ytkownika w obrêbie aplikacji.  
+
+\begin{figure}[H]
+\centering
 	\includegraphics{/Relacje/CDM2.jpg}
-\end{center}
-\begin{center}
-	Rys.  Relacje pomiêdzy tabelami opisuj¹cymi kurs
-\end{center}
+\caption{Diagram CDM cz. 2}
+\end{figure}
 
+Rysunek 4.2 przedstawia uproszczony diagram \textbf{CDM} opisuj¹cy zwi¹zki encji w obrêbie Kursu. Zgodnie z wymaganiami funkcjonalnymi ka¿dy kurs posiada, ShoutBox, zbiór Testów, oraz zbiór Materia³ów Nauczania. By zapewniæ mechanizm filtrowania Kurs jest opisany m.in przez s³ownik okreœlaj¹cy Typ Kursu. Test sk³ada siê z Pytañ, które z kolei posiadaj¹ odpowiednie odpowiedzi. Jest on œciœle powi¹zany z Materia³em Nauczania. W sk³ad materia³u nauczania wchodz¹ Sekcje zawieraj¹ce informacje dydaktyczne.
 \newpage{}
-
 \subsection{Model fizyczny bazy danych PDM}
-\begin{center}
-	\includegraphics{/Relacje/PDM1.jpg}
-\end{center}
-\begin{center}
-	\includegraphics{/Relacje/PDM2.jpg}
-\end{center}
+\paragraph{}
+Diagramy zaprezentowane poni¿ej prezentuj¹ uproszczony model fizyczny bazy danych prezentuj¹cy m.in tablice pomocnicze, potrzebne przy realizacji zwi¹zków typu "Wiele do Wielu", oraz klucze obce i g³ówne realizuj¹ce zwi¹zki encji, przedstawione w modelu logicznym.
 
-\newpage{}
+\begin{figure}[H]
+\centering
+	\includegraphics[width=17cm]{/Relacje/PDM1.jpg}
+\caption{Diagram PDM cz. 1}
+\end{figure}
+
+Rysunek 4.3 przedstawia pierwsz¹ czeœæ modelu fizycznego bazy danych powsta³ego z modelu logicznego. By zrealizowaæ relacjê ''wielu do wielu'' pomiêdzy encjami \textbf{Grupa} oraz \textbf{Profil}, wprowadzono pomocnicz¹ tabelê \textbf{GrupaProfil}, zawieraj¹c¹ klucze obu encji. Realizacjê zwi¹zku ''wiele do jednego'', mo¿na zaobserwowaæ w przypadku zwi¹zku pomiêdzy encjami \textbf{Grupa} oraz \textbf{TypGrupy}. Encja \textbf{Grupa} posiada klucz obcy skierowany na encjê \textbf{TypGrupy}.
+
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=17cm]{/Relacje/PDM2.jpg}
+\caption{Diagram PDM cz. 2}
+\end{figure}
+
+Rysunek 4.4 przedstawia drug¹ czeœæ modelu fizycznego bazy danych powsta³ego z modelu logicznego. Wprowadzono klucze obce podobnie jak w przypadku pierwszej czêœci diagramu. Wprowadzono miêdzy innymi klucze obce realizuj¹ce zwi¹zek jeden do wielu w przypadku powi¹zania pomiêdzy encj¹ ''ShoutBoxWiadomosc'' oraz ''ShoutBox''. ''Wiadomoœæ'' zawiera klucz obcy powi¹zany z ''ShoutBoxem''.
+\paragraph{}
+
 \section{Architektura Systemu}
-\begin{center}
-	\includegraphics{architektura.JPG}
-\end{center}
 
-\begin{center}
-	Rys. Schemat proponowanego rozwi¹zania
-\end{center}
+\begin{figure}[H]
+\centering
+	\includegraphics[width=16cm]{architektura.JPG}
+\caption{Schemat proponowanego rozwi¹zania}
+\end{figure}
 
-Proponowane rozwi¹zanie zak³ada dwa sposoby dostêpu do danych i aplikacji. Pierwszym z nich jest wykorzystanie aplikacji stworzonej w technologii Asp.Net Mvc postawionej na serwerze IIS. Dostêp taki realizowany jest za pomoc¹ przegl¹darki internetowej. Warstwa dostêpu do bazy danych oraz us³ugi sieciowe s¹ transparentne dla klienta korzystaj¹cego z przegl¹darki internetowej. Po wykonaniu akcji przez klienta generowany jest odpowiednia strona www korzystaj¹ca z bazy danych. Nim taka strona zostanie wygenerowana serwer wysy³a zapytanie do us³ugi sieciowej wykorzystuj¹c protokó³ HTTP jako warstwê transportow¹ i protokó³ SOAP w formacie XML jako warstwê formatu wiadomoœci.  Zapytanie jest przetwarzane przez serwer us³ug sieciowych , który wykorzystuj¹c framework NHibernate realizuje zapytanie do bazy danych. Dane nastêpnie zwracane s¹ zgodnie z protoko³em SOAP do serwera i po przetworzeniu do klienta w formie odpowiedniej strony www.\newline
+\paragraph{}
+Proponowane rozwi¹zanie zak³ada dwa sposoby dostêpu do danych i aplikacji. Pierwszym z nich jest wykorzystanie aplikacji stworzonej w technologii \textbf{Asp.Net MVC} postawionej na serwerze \textbf{IIS}. Dostêp taki realizowany jest za pomoc¹ przegl¹darki internetowej. Warstwa dostêpu do bazy danych oraz us³ugi sieciowe s¹ transparentne dla klienta korzystaj¹cego z przegl¹darki internetowej. Po wykonaniu akcji przez klienta generowana jest odpowiednia strona \textbf{WWW}, korzystaj¹ca z bazy danych. Zanim taka strona zostanie wygenerowana serwer wysy³a zapytanie do us³ugi sieciowej, wykorzystuj¹c protokó³ \textbf{HTTP} jako warstwê transportow¹ i protokó³ SOAP w formacie XML, jako warstwê formatu wiadomoœci. Zapytanie jest przetwarzane przez serwer us³ug sieciowych, który wykorzystuj¹c aplikacjê zrealizowan¹ w technologii WCF, oraz framework NHibernate realizuje zapytania do bazy danych. Dane nastêpnie zwracane s¹ zgodnie z protoko³em SOAP do serwera, i po przetworzeniu do klienta w formie odpowiedniej strony WWW.\newline
 
-Drugim sposobem dostêpu do danych jest skorzystanie z API wystawionego w formie protoko³u REST. Zapytanie takie realizowane jest przy pomocy protoko³u HTTP i zwyk³ej komendy np Get. Klient taki otrzymuje dane w postaci formatu JSON.\newline
+Drugim sposobem dostêpu do danych jest skorzystanie \textbf{API} wystawionego w formie protoko³u \textbf{REST}. Zapytanie takie realizowane jest przy pomocy protoko³u \textbf{HTTP} i zwyk³ej komendy, np \textbf{GET}. Klient taki otrzymuje dane w postaci formatu \textbf{JSON}.\newline
 
-Komunikacja jest zrealizowana za pomoc¹ frameworka WCF firmy Microsoft.
-Us³ugi sieciowe realizuj¹ dostêp do bazy danych s¹ podzielone na szeœæ us³ug dostêpnych pod ró¿nymi adresami URL\newline
+Komunikacja z us³ugami sieciowymi jest zrealizowana za pomoc¹ frameworka \textbf{WCF} firmy \textbf{Microsoft}.
+Funkcjonalnoœci umo¿liwiaj¹ce dostêp do bazy danych z wykorzystaniem us³ug sieciowych s¹ podzielone na szeœæ us³ug znajduj¹cych siê pod ró¿nymi adresami \textbf{URL}.\newline
 
-Rozwi¹zanie zak³ada postawienie zapasowego serwera us³ug sieciowych realizuj¹cego dostêp do zapasowej bazy danych. By zapewniæ synchronizacjê danych pomiêdzy tymi bazami projekt zak³ada stworzenie prostego mechanizmu replikacji danych. W momencie odebrania zapytania od klienta serwer podejmuje próbê nawi¹zania po³¹czenia z serwerem g³ównym gdy nie otrzyma odpowiedzi prze³¹cza siê na serwer zapasowy .
-
-\newpage{}
-\subsection{Wybrane diagramy sekwencji funkcjonalnoœci}
-
-\begin{center}
-	\includegraphics{/schematwidok.jpg}
-\end{center}
-\begin{center}
-    Rys. Diagram sekwencji generowania strony www
-\end{center}
-
-\begin{center}
-	\includegraphics{/schematlogowanie.jpg}
-\end{center}
-\begin{center}
-    Rys. Diagram sekwencji logowania do aplikacji
-\end{center}
-
-\begin{center}
-	\includegraphics{/schemattest.jpg}
-\end{center}
-\begin{center}
-    Rys. Diagram sekwencji procesu nauczania
-\end{center}
+Rozwi¹zanie zak³ada postawienie zapasowego serwera us³ug sieciowych, realizuj¹cego dostêp do zapasowej bazy danych. By zapewniæ synchronizacjê danych pomiêdzy tymi bazami projekt zak³ada stworzenie prostego mechanizmu replikacji danych. W momencie odebrania zapytania od klienta aplikacja wystawiona na serwerze \textbf{IIS/WWW} podejmuje próbê nawi¹zania po³¹czenia z g³ównym serwerem us³ug sieciowych gdy nie otrzyma odpowiedzi prze³¹cza siê na serwer zapasowy .
 
 \newpage{}
+\subsection{Diagramy sekwencji wybranych funkcjonalnoœci}
+\paragraph{}
+Na kolejnych rysunkach pokazano diagramy sekwencji ilustruj¹ce sposób dzia³ania wybranych operacji systemu zdalnego nauczania.
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=12cm]{/schematwidok.jpg}
+\caption{Diagram sekwencji generowania strony WWW}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=12cm]{/schematlogowanie.jpg}
+\caption{Diagram sekwencji logowania do aplikacji}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=12cm]{/schemattest.jpg}
+\caption{Diagram sekwencji procesu nauczania}
+\end{figure}
+
 \subsection{Mechanizmy zabezpieczeñ}
 
-Wiadomoœci przesy³ane w formacie JSON wystawione w formie protoko³u REST do których ma dostêp u¿ytkownik korzystaj¹cy z API nie s¹ w ogóle zabezpieczone. S¹ to dane ogólnie dostêpne. Jedyn¹ form¹ zabezpieczenia API bêdzie wystawienie funkcji i dostêpu do bazy danych tylko dla wybranych danych. Ograniczenie dostêpu zostanie zrealizowane poprzez odpowiednie parametry funkcji. Tzn pobieraj¹c np listê kursów klient nie bêdzie móg³ jedynie podaæ ID u¿ytkownika którego kursy ma wyœwietliæ.\newline
+Wiadomoœci przesy³ane w formacie \textbf{JSON} wystawione w formie protoko³u \textbf{REST}, do których ma dostêp u¿ytkownik korzystaj¹cy z API, nie s¹ w ogóle zabezpieczone. S¹ to dane ogólnie dostêpne. Jedyn¹ form¹ zabezpieczenia \textbf{API} bêdzie wystawienie funkcji i dostêpu do bazy danych tylko dla wybranych danych. Ograniczenie dostêpu zostanie zrealizowane poprzez odpowiednie parametry funkcji. Tzn pobieraj¹c np listê kursów klient nie bêdzie móg³ jedynie podaæ \textbf{ID} u¿ytkownika, którego kursy ma wyœwietliæ.\newline
 
-Wiadomoœci przesy³ane protoko³em SOAP z wykorzystaniem formatu danych XML bêd¹ ju¿ mia³y wiêkszy zakres zastosowanych zabezpieczeñ. 
-Wiadomoœci zawieraj¹ce dane poufne jak dane logowania , has³a dane na temat u¿ytkownika bêd¹ szyfrowane oraz przesy³ane protoko³em HTTPS po porcie 443 tzn pierw zostanie sprawdzona poprawnoœæ certyfikatom a dopiero po tym prawdziwa komunikacja po http,  zapewni to dodatkowe bezpieczeñstwo.\newline
+Wiadomoœci przesy³ane protoko³em \textbf{SOAP}, z wykorzystaniem formatu danych \textbf{XML}, bêd¹ ju¿ mia³y wiêkszy zakres zastosowanych zabezpieczeñ. 
+Wiadomoœci zawieraj¹ce dane poufne, jak dane: logowania, has³a, dane na temat u¿ytkownika bêd¹ szyfrowane oraz przesy³ane protoko³em \textbf{HTTPS} z u¿yciem portu \textbf{443}. W ten sposób najpierw zostanie sprawdzona poprawnoœæ certyfikatów a dopiero po tym nast¹pi prawdziwa komunikacja zgodnie z protoko³em \textbf{HTTP}, co zapewni dodatkowy poziom bezpieczeñstwa.\newline
 
-Dane zwykle bez poufnej zawartoœci jak dane kursów materia³ów nauczania nie bêd¹ zabezpieczone.\newline
+Dane bez poufnej zawartoœci, jak dane kursów lub materia³ów nauczania, nie bêd¹ zabezpieczone.\newline
 
-Aplikacja odporna jest na ataki skryptowe. Nie ma mo¿liwoœci wstrzykniêcia skryptu do aplikacji wywo³uj¹c tym samym dzia³ania niepo¿¹dane. Ka¿de pole tekstowe analizowane jest przez serwer pod punktem zawartoœci.\newline
+Aplikacja odporna jest na ataki skryptowe. Nie ma mo¿liwoœci wstrzykniêcia skryptu do aplikacji, wywo³uj¹c tym samym dzia³ania niepo¿¹dane. Ka¿de pole tekstowe analizowane jest przez serwer pod k¹tem zawartoœci.\newline
 
-Dziêki zastosowaniu Mappera obiektowo relacyjnego warstwa dostêpu do danych oddzielona jest od u¿ytkownika mocno typowana warstwa która znacznie ogranicza mo¿liwoœæ wykonania ataku SQL Injection. Dodatkowo wprowadzane dane s¹ sprawdzane pod wzglêdem mo¿liwych ataków.\newline 
+Dziêki zastosowaniu Mappera obiektowo relacyjnego \textbf{(ORM-NHibernate)} warstwa dostêpu do danych jest oddzielona od u¿ytkownika i mocno typowan¹ warstw¹, która znacznie ogranicza mo¿liwoœæ wykonania ataku \textbf{SQL Injection} \cite{SQLINJECTION}. Dodatkowo wprowadzane dane s¹ sprawdzane pod wzglêdem mo¿liwych ataków.\newline 
 
-Poniewa¿ dostêp do aplikacji realizowany jest w sposób przypominaj¹cy protokó³ REST tzn . Akcje dostêpne s¹ z poziomu adresu URL. Akcje opatrzone s¹ dodatkowymi mechanizmami zabezpieczeñ które przed sprawdzeniem sprawdzaj¹ poziom uprawnieñ u¿ytkownika. Dziêki temu anonimowy u¿ytkownik po próbie wywo³ania takiej akcji zostanie prze kierowany do panelu logowania natomiast zwyk³y u¿ytkownik otrzyma informacje ze nie posiada odpowiedniego poziomu uprawnieñ.\newline
+Poniewa¿ dostêp do aplikacji realizowany jest w sposób przypominaj¹cy dzia³anie protoko³u \textbf{REST}, tzn. akcje s¹ dostêpne z poziomu adresu \textbf{URL}, wykonywanie operacje s¹ opatrzone dodatkowymi zabezpieczeniami, które sprawdzaj¹ poziom uprawnieñ u¿ytkownika. Dziêki temu anonimowy u¿ytkownik po próbie wywo³ania takiej niedozwolonej akcji zostanie przekierowany do panelu logowania, natomiast zwyk³y u¿ytkownik otrzyma informacjê, ¿e nie posiada odpowiedniego poziomu uprawnieñ.\newline
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	\includegraphics{formsauth.jpg}
-\end{center}
-\begin{center}
-    Rys. Rozdzielenie mechanizmu logowania na dwie bazy danych
-\end{center}
+\caption{Rozdzielenie mechanizmu logowania na dwie bazy danych}
+\end{figure}
 
-Mechanizm logowania oparty jest o framework Forms authentication zapewniaj¹cy podstawowe funkjconalnoœci zarz¹dzania u¿ytkownikami.
-Forms authentication wymaga oddzielnej bazy danych. Us³uga profili wi¹¿e ze sob¹ profile w g³ównej bazie danych oraz profile z Forms Authentication.\newline
 
-Podzia³ baz zosta³ wprowadzony po to by nie mieszaæ obu baz jedna baza jest typowo przystosowana do trzymania danych u¿ytkowników oraz spe³nia wytyczne firmy Microsfot jest to ich produkt. Dodatkowo bazê profili mo¿na umieœciæ w pliku dodatkowo zwiêkszaj¹c bezpieczeñstwo systemu b¹dŸ zmniejszaj¹c u¿ycie zasobów. Przy hostingu na , którym wystawi³em aplikacjê mam okreœlony limit iloœci obs³ugiwanych baz danych MSSQL 2008 wiêc by zmniejszyæ iloœæ baz mogê przenieœæ bez problemowo tê bazê do pliku.
-\newpage{}
+Mechanizm logowania do systemu oparty jest na bazie frameworka Microsoft Forms Authencitacion \cite{AspNet3.5} zapewniaj¹cj¹cego podstawowe funkjconalnoœci zarz¹dzania u¿ytkownikami. Forms authentication wymaga oddzielnej bazy danych. Us³uga profili wi¹¿e ze sob¹ profile w g³ównej bazie danych oraz profile z bazy zwi¹zanej z Forms Authentication.\newline
+
+Podzia³ zwi¹zany z mechanizmem uwierzytelniania u¿ytkowników zosta³ wprowadzony po to by nie mieszaæ obu baz. Baza powi¹zana z mechanizmem \textbf{Forms Authentication} firmy \textbf{Microsoft} jest przystosowana do trzymania danych u¿ytkowników oraz spe³nia wytyczne firmy \textbf{Microsoft}, jest to ich produkt. Dodatkowo bazê profili mo¿na umieœciæ w pliku, zwiêkszaj¹c dziêki temu bezpieczeñstwo systemu oraz zmniejszaj¹c u¿ycie zasobów. Przy hostingu na, którym wystawi³em aplikacjê jest okreœlony limit iloœci obs³ugiwanych baz danych \textbf{MSSQL 2008}, wiêc by zmniejszyæ iloœæ baz mogê przenieœæ bez problemowo tê bazê do pliku.
 
 \chapter{Implementacja systemu zdalnego nauczania}
 \section{Zewnêtrzny hosting}
 \paragraph{}
-Aplikacja zosta³a uruchomiona pod adresem \textbf{http://www.codedash.mfranc.com/} . Przestrzeni hostingowej dostarcza firma \textbf{http://www.webio.pl/} . Na serwerze wystawione s¹:\newline
-Dwie bazy danych jedna zawieraj¹ca dane logowania wspieraj¹ca framework Asp.Net Membership provider oraz druga baza danych zawieraj¹ca dane aplikacji czyli m.in. dane o kursach , materia³ach nauczania.\newline
+Na serwerze zainstalowano:\newline
+\begin{itemize}
+\item{dwie bazy danych; jedna zawieraj¹ca dane logowania, wspieraj¹ca framework \textbf{Asp.Net Membership} provider oraz druga baza danych, zawieraj¹ca dane aplikacji, czyli m.in. dane o kursach, materia³ach nauczania.}
 
-Oraz dwie aplikacje:\newline
-Aplikacja g³ówna stworzon¹ w oparciu o framework Aep.Net Mvc 3 bêd¹ca systemem e-learningowym oraz aplikacja z us³ugami sieciowymi.
+\item{dwie aplikacje;
+aplikacja g³ówna stworzona w oparciu o framework \textbf{ASP.Net MVC 3} bêd¹ca systemem e-learningowym oraz aplikacja z us³ugami sieciowymi zrealizowanymi z wykorzystaniem frameworka \textbf{WCF} .}
+\end{itemize}
+Platforma systemowa zosta³a skonfigurowana by sk³adowaæ logi zdarzeñ oraz b³êdów aplikacji, w odpowiednich katalogach. Dziêki temu istnieje mo¿liwoœæ szybkiego zdiagnozowania i poprawienia problemów aplikacji.\newline
 
-Platforma zosta³a skonfigurowana by sk³adowaæ logi ,wydarzeñ oraz b³êdów aplikacji, w odpowiednich katalogach. Dziêki temu istnieje mo¿liwoœæ szybkiego zdiagnozowania i poprawienia problemów aplikacji.\newline
+Modu³ testuj¹cy us³ugê \textbf{API}, udostêpniaj¹c¹ dane po protokole \textbf{REST}, zosta³ uruchomiony pod adresem http://www.mfranc.com/codedash-test/.\newline
 
-Modu³ testuj¹cy us³ugê API udostêpniaj¹c¹ dane po protokole REST zosta³ uruchomiony pod adresem http://www.mfranc.com/codedash-test/.\newline
-
-Do testów skonfigurowano równie¿ lokalny serwer us³ug sieciowych , bêdzie on wykorzystany przy testach mechanizmu dynamicznej zmiany serwera w momencie zerwania po³¹czenia.
+Do testów skonfigurowano równie¿ lokalny serwer us³ug sieciowych, bêdzie on wykorzystany przy testach mechanizmu dynamicznej zmiany serwera w momencie zerwania po³¹czenia.
 \section{Realizacja bazy danych}
 
-Baza danych zosta³a zrealizowania na silniku bazodanowym MSSQL 2008 R2. Na serwerze wystawione s¹ dwie bazy danych. Jedna odpowiedzialna za przechowywanie danych o u¿ytkownikach , druga z zawartoœci¹ danych aplikacji. Dostêp do obu baz realizowany jest za pomoc¹ frameworka NHibernate , który jest mapperem relacyjno obiektowym , zapewniaj¹cym dostêp do bazy danych z poziomu klas i obiektów. Wystawiono równie¿ na lokalnym serwerze zapasow¹ bazê danych.  Jest ona u¿ywana przy mechanizmie dynamicznej zmiany serwera us³ug sieciowych. Baza ta o ustalonej godzinê synchronizuje siê z baz¹ g³ówn¹.
+Baza danych zosta³a zrealizowania na silniku bazodanowym \textbf{MSSQL 2008 R2} \cite{SqlServer}. Na serwerze wystawione s¹ dwie bazy danych. Jedna odpowiedzialna za przechowywanie danych o u¿ytkownikach, druga z zawartoœci¹ danych aplikacji. Dostêp do obu baz realizowany jest za pomoc¹ frameworka \textbf{NHibernate}, który jest mapperem relacyjno obiektowym, zapewniaj¹cym dostêp do bazy danych z poziomu klas i obiektów. Wystawiono równie¿ na lokalnym serwerze zapasow¹ bazê danych.  Jest ona u¿ywana przez mechanizm dynamicznej zmiany serwera us³ug sieciowych. Baza ta, o ustalonej godzinie synchronizuje siê z baz¹ g³ówn¹.
 \newpage{}
 \section{Realizacja aplikacji}
-\subsection{Realizacja mechanizmów dostêpu do bazy danych}
+\subsection{Mechanizmy dostêpu do bazy danych}
 \paragraph{}
-Dostep do bazy danych opiera siê na frameworku NHibernate. Ca³a komunikacja oraz inicjalizacja opakowana jest wewn¹trz klasy DataAccess. Klasa ta wykorzystywana jest na serwerach udostêpniaj¹cych us³ugi sieciowe. Jest odpowiedzialna przede wszystkim za konfigurowanie po³¹czenia z baz¹ danych poprzez maper obiektowo relacyjny NHibernate. Poniewa¿ testy jednostkowe pokrywaj¹ce bazê danych wykorzystuj¹ bazê danych generowan¹ w pamiêci istnieje posiada mo¿liwoœæ wstrzykniêcia odpowiedniej konfiguracji zmieniaj¹cej Ÿród³o danych na pamiêæ serwera testowego.
+Dostêp do bazy danych opiera siê na frameworku \textbf{NHibernate}. Ca³a komunikacja oraz inicjalizacja opakowana jest wewn¹trz klasy \textbf{DataAccess}. Klasa ta wykorzystywana jest na serwerach udostêpniaj¹cych us³ugi sieciowe. Jest ona odpowiedzialna przede wszystkim za konfigurowanie po³¹czenia z baz¹ danych poprzez mapper obiektowo relacyjny \textbf{NHibernate}. Poniewa¿ testy jednostkowe, pokrywaj¹ce bazê danych, wykorzystuj¹ bazê danych generowan¹ w pamiêci, istnieje mo¿liwoœæ wstrzykniêcia odpowiedniej konfiguracji zmieniaj¹cej Ÿród³o danych na pamiêæ serwera testowego.
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/dataaccess.jpg}
-\end{center}
-\begin{center}
-    Rys. Diagram klasy DataAccess
-\end{center}
+\caption{Diagram klasy DataAccess}
+\end{figure}
 
-Klasa ta zawiera metody pozwalaj¹ce zresetowaæ bazê danych tzn. usun¹æ wszystkie tabele oraz dane i wygenerowaæ now¹ strukturê bazy wraz z danymi testowymi. Posiada ona równie¿ metodê \textbf{InTransaction()} która pozwala przeprowadziæ operacjê na bazie w obrêbie transakcji. Metoda ta jako parametr przyjmuje wskaŸnik do funkcji opakowany w specjalnej klasie dostêpnej na platformie .Net. Jêzyk Csharp nie posiada jawnego wsparcia dla wskaŸników (istnieje mo¿liwoœæ uruchomienia wsparcia kosztem wy³¹czenia pewnego segmentu kodu z automatycznego zarz¹dzania stert¹ poprzez mechanizm "garbage collectora") dlatego stosuje siê klasy opakowywuj¹ce. Istnieje równie¿ mo¿liwoœæ przes³ania funkcji anonimowej podobnie jak w jêzyku programowania Javascript. Podobny mechanizm zosta³ zastosowany w parametrze \textbf{OpenSession} który równie¿ zwraca opakowany wskaŸnik do funkcji. Dziêki takiemu rozwi¹zania istnieje mo¿liwoœæ podmienienia logiki otwarcia sesji. Szczególnie jest to przydatne w przypadku implementacji testów jednostkowych operuj¹cych na bazie danych w pamiêci.\newline 
 
-Do otwarcia po³¹czenia z serwerem wymagany jest ci¹g znaków zwany "connection stringiem". Ci¹g  ten zawiera adres serwera bazodanowego , nazwê bazy danych oraz informacje wymagane w procesie logowania do serwera. Domyœlnie zdefiniowany jest ci¹g przekierowywuj¹cy na testow¹  bazê danych. By dostarczyæ inny ci¹g nale¿y zmodyfikowaæ odpowiednio plik konfiguracyjny aplikacji webowej ("web.config").
+Klasa \textbf{DataAcces} (Rysunek 5.1) zbudowana jest na bazie wzorca projektowego \textbf{Singleton} \cite{DesignPatterns}. Zawiera ona metody pozwalaj¹ce zresetowaæ bazê danych, tzn. usun¹æ wszystkie tabele oraz dane i wygenerowaæ now¹ strukturê bazy wraz z danymi testowymi. Klasa ta posiada równie¿ metodê \textbf{InTransaction()}, która pozwala przeprowadziæ operacjê na bazie w obrêbie transakcji. Metoda ta jako parametr przyjmuje wskaŸnik do funkcji opakowany w specjalnej klasie dostêpnej na platformie \textbf{.Net}. Jêzyk \textbf{Csharp} nie posiada jawnego wsparcia dla wskaŸników (istnieje mo¿liwoœæ uruchomienia wsparcia kosztem wy³¹czenia pewnego segmentu kodu z automatycznego zarz¹dzania stert¹ poprzez mechanizm ''garbage collectora'') dlatego stosuje siê klasy opakowywuj¹ce. Istnieje równie¿ mo¿liwoœæ przes³ania funkcji anonimowej podobnie jak w jêzyku programowania \textbf{Javascript}. Podobny mechanizm zosta³ zastosowany w parametrze \textbf{OpenSession}, który równie¿ zwraca opakowany wskaŸnik do funkcji. Dziêki takiemu rozwi¹zania istnieje mo¿liwoœæ podmienienia logiki otwarcia sesji. Szczególnie jest to przydatne w przypadku implementacji testów jednostkowych, operuj¹cych na bazie danych w pamiêci.\newline 
 
-\begin{center}
+Do otwarcia po³¹czenia z serwerem wymagany jest ci¹g znaków zwany ''connection stringiem''. Ci¹g  ten zawiera adres serwera bazodanowego, nazwê bazy danych oraz informacje wymagane w procesie logowania do serwera. Domyœlnie zdefiniowany jest ci¹g przekierowywuj¹cy na testow¹  bazê danych. By dostarczyæ inny ci¹g nale¿y zmodyfikowaæ odpowiednio plik konfiguracyjny aplikacji webowej (''web.config'').
+
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/dataaccessusage.JPG}
-\end{center}
-\begin{center}
-    Rys. Mechanizm dostêpu do bazy przy u¿yciu klasy DataAccess
-\end{center}
+\caption{Mechanizm dostêpu do bazy przy u¿yciu klasy DataAccess}
+\end{figure}
 
-Rozpoczêcie operacji na bazie danych wymaga otwarcia sesji. Operacjê tê realizuje siê poprzez wykonanie metody \textbf{OpenSession()}. Funkcja ta zwraca wskaŸnik do funkcji , która zwraca klasê sesji frameworka \textbf{NHibernate}. Obiekt sesji wymagany jest do przeprowadzania wszystkich operacji na bazie danych. Klasa ta jest implementacj¹ wzorca projektowego \textbf{Unit Of Work} , który jest bardzo wygodnym sposobem zarz¹dzania takim zasobem jak sesja.\newline
 
-\begin{center}
+Rozpoczêcie operacji na bazie danych wymaga otwarcia sesji. Operacjê tê realizuje siê poprzez wykonanie metody \textbf{OpenSession()}. Funkcja ta zwraca wskaŸnik do funkcji, która zwraca klasê sesji frameworka \textbf{NHibernate}. Obiekt sesji wymagany jest do przeprowadzania wszystkich operacji na bazie danych. Klasa ta jest implementacj¹ wzorca projektowego \textbf{Unit Of Work}, który jest bardzo wygodnym sposobem zarz¹dzania takim zasobem jak sesja(Rysunek 5.2).\newline
+
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/iRepository.JPG}
-\end{center}
-\begin{center}
-    Rys. Klasa Repository oraz QueryObject
-\end{center}
+\caption{Klasa Repository oraz QueryObject}
+\end{figure}
 
-Korzystanie bezpoœrednio z obiektem sesji jest bardzo wygodnym rozwi¹zaniem. Jednak¿e w przypadku bazy danych wystawionej za warstw¹ us³ug sieciowych zarz¹dzanie sesj¹ dostêpu do bazy danych jest bardzo skomplikowanym zagadnieniem. Po próbach przesy³ania obiektu sesji m.in przy wykorzystaniu rozwi¹zania \textbf{NHibernate Remoting} zdecydowa³em siê opakowaæ wykorzystywanie sesji w klasach bêd¹cych implementacj¹ wzorca projektowego \textbf{Repozytorium}.\newline
 
-Operacje wykonywane na bazie danych opakowane s¹ w formie generycznej klasy Repository<T>. Dostarcza ona podstawowych metod pozwalaj¹cych realizowaæ operacjê z zakresu \textbf{CRUD} (Tworzenie , Czytanie , Modyfikacja , Usuwanie). Wykonywanie bardziej skomplikowanych zadañ  mo¿na  zrealizowaæ za pomoc¹ metody \textbf{GetByQuery} b¹dŸ \textbf{GetByQueryObject} . Pierwsza metoda przyjmuje jako parametr ci¹g znaków bêd¹cy zapytaniem jêzyka HQL. Druga metoda przyjmuje klasê implementuj¹c¹ interfejs \textbf{IQueryObject}. Jest to specjalny interfejs pozwalaj¹cy zdefiniowaæ obiekty opakowywuj¹ce zapytania jêzyka HQL w œciœle typowanych klasach. Dziêki takiemu zabiegowi programista nie operuje bezpoœrednio na znakach  ale na klasach. Rozwi¹zanie to pozwala stworzyæ kod lepszej jakoœci.\newline
+Korzystanie bezpoœrednio z obiektu sesji jest bardzo wygodnym rozwi¹zaniem. Jednak¿e w przypadku bazy danych wystawionej za warstw¹ us³ug sieciowych zarz¹dzanie sesj¹ dostêpu do bazy danych jest bardzo skomplikowanym zagadnieniem. Po próbach przesy³ania obiektu sesji, m.in przy wykorzystaniu rozwi¹zania \textbf{NHibernate Remoting}, zdecydowano siê opakowaæ parametry sesji w klasach, bêd¹cych implementacj¹ wzorca projektowego \textbf{Repozytorium}.\newline
 
-\begin{center}
+Operacje wykonywane na bazie danych opakowane s¹ w formie generycznej klasy \textbf{Repository<T>}. Dostarcza ona podstawowych metod pozwalaj¹cych realizowaæ operacje z zakresu \textbf{CRUD} (Tworzenie, Czytanie, Modyfikacja, Usuwanie). Wykonywanie bardziej skomplikowanych zadañ  mo¿na  zrealizowaæ za pomoc¹ metody \textbf{GetByQuery}, b¹dŸ \textbf{GetByQueryObject}. Pierwsza metoda przyjmuje jako parametr ci¹g znaków, bêd¹cy zapytaniem jêzyka \textbf{HQL} \cite{HQL}. Druga metoda przyjmuje klasê implementuj¹c¹ interfejs \textbf{IQueryObject}. Jest to specjalny interfejs pozwalaj¹cy zdefiniowaæ obiekty opakowuj¹ce zapytania jêzyka \textbf{HQL} w œciœle typowanych klasach. Dziêki takiemu zabiegowi programista nie operuje bezpoœrednio na znakach, ale na klasach. Rozwi¹zanie to pozwala stworzyæ kod lepszej jakoœci. Jest to luŸna implementacja wzorca \textbf{Strategia} \cite{DesignPatterns}\newline
+
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/hqleasy.JPG}
-\end{center}
-\begin{center}
-    Rys. Klasa QueryCourseByName opakowywuj¹ca zapytanie jêzyka HQL
-\end{center}
+\caption{Klasa QueryCourseByName opakowuj¹ca zapytanie jêzyka HQL}
+\end{figure}
 
-Jêzyk HQL jest jêzykiem przypominaj¹cym sk³adni¹ standardowy jêzyk zapytañ SQL. Wprowadza trochê uproszczeñ ale zarazem usprawnia dzia³anie zapytañ poprzez mechanizmy pozwalaj¹ce operowaæ na obiektach i ich kolekcjach. SQL operuje na tabelach i modelu relacyjnym natomiast HQL opiera swoje operacje na obiektach i ich kolekcjach zorientowanych obiektowo.Przyk³ad powy¿ej pozwala pobraæ encje kursu na podstawie jego nazwy. Jest to zapytanie podobne do prostego zapytania typu \textbf{SELECT} z klauzul¹ \textbf{WHERE} w przypadku jêzyka SQL.\newline 
 
-\begin{center}
+Jêzyk \textbf{HQL} \cite{HQL} jest jêzykiem przypominaj¹cym sk³adni¹ standardowy jêzyk zapytañ \textbf{SQL}. Wprowadza on trochê uproszczeñ, ale zarazem usprawnia dzia³anie zapytañ poprzez mechanizmy pozwalaj¹ce operowaæ na obiektach i ich kolekcjach. \textbf{SQL} operuje na tabelach i modelu relacyjnym, natomiast \textbf{HQL} opiera swoje operacje na obiektach i ich kolekcjach zorientowanych obiektowo. Przyk³ad powy¿ej(Rysunek 5.4) pozwala pobraæ encje kursu na podstawie jego nazwy. Jest to zapytanie podobne do prostego zapytania typu \textbf{SELECT} z klauzul¹ \textbf{WHERE} w przypadku jêzyka \textbf{SQL}.\newline 
+
+
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/hqlhard.JPG}
-\end{center}
-\begin{center}
-    Rys. Skomplikowane zapytanie HQL
-\end{center}
+\caption{Skomplikowane zapytanie HQL}
+\end{figure}
 
-HQL pozwala równie¿ przeprowadzaæ bardziej skomplikowane operacje. Kod zaprezentowany na rysunku powy¿ej pozwala znaleŸæ numer ID rodzica podanego obiektu. W tym przypadku wykorzystywana jest funkcja "in elements" która pozwala przeszukiwaæ kolekcjê danego elementu.
+
+
+\textbf{HQL} pozwala równie¿ przeprowadzaæ bardziej skomplikowane operacje. Kod zaprezentowany na rysunku 5.5 pozwala znaleŸæ numer ID rodzica podanego obiektu. W tym przypadku wykorzystywana jest funkcja \textit{in elements}, która pozwala przeszukiwaæ kolekcjê elementów.
 \newpage{}
-\subsection{Realizacja mechanizmów przetwarzania danych}
+\subsection{Mechanizmy przetwarzania danych}
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/SerializacjaXML.JPG}
-\end{center}
-\begin{center}
-    Rys. Przyk³ad przekszta³cenia do formatu XML
-\end{center}
+\caption{Przyk³ad przekszta³cenia do formatu XML}
+\end{figure}
 
 
-Przed wys³aniem danych pobranych z bazy danych do aplikacji musza byæ one przetworzone do odpowiedniego formatu. W przypadku us³ug sieciowych wystawionych na protokole SOAP korzystaj¹cych z formatu XML , wykorzystywany jest mechanizm "serializowania" wszystkich publicznych parametrów klasy. Element g³ówny tworzony jest na podstawie nazwy klasy. Elementy nale¿¹ce do elementu g³ównego "zwane jego dzieæmi" zawieraj¹ odpowiednio nazwê parametru oraz jego wartoœæ. W projekcie u¿yto standardowego serializera dostêpnego wraz z platform¹ .Net. Konfiguracja serializacji sprowadza siê do oznaczenia specjalnymi atrybutami parametrów danej klasy. 
+Przed wys³aniem danych pobranych z bazy danych do aplikacji musz¹ byæ one przetworzone do odpowiedniego formatu. W przypadku us³ug sieciowych wystawionych na protokole SOAP, korzystaj¹cych z formatu XML, wykorzystywany jest mechanizm \textit{serializowania} wszystkich publicznych parametrów klasy. Element g³ówny tworzony jest na podstawie nazwy klasy. Elementy nale¿¹ce do elementu g³ównego, \textit{zwane jego dzieæmi}, zawieraj¹ odpowiednio nazwê parametru oraz jego wartoœæ. W projekcie u¿yto standardowego serializera dostêpnego wraz z platform¹ .NET. Konfiguracja serializacji sprowadza siê do oznaczenia specjalnymi atrybutami parametrów danej klasy. 
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/SerializacjaJson.JPG}
-\end{center}
-\begin{center}
-    Rys. Przyk³ad przekszta³cenia do formatu JSON
-\end{center}
+\caption{Przyk³ad przekszta³cenia do formatu JSON}
+\end{figure}
 
-Dane wystawione na zewn¹trz aplikacji przy u¿yciu protoko³u \textbf{REST} , przetwarzanie s¹ do formatu danych \textbf
-{JSON}. Jest to lekki i bardzo czytelny  format.\newline
 
-Przed przetworzeniem danych do odpowiedniego formatu , wykonywany jest proces "odchudzania" klas tzn. przetwarzania klasy ogólnej na klasê szczególn¹ zawieraj¹c¹ tylko wymagane parametry oraz dane.Proces ten jest bardzo wa¿ny w przypadku dostêpu do bazy danych realizowanego za pomoc¹ mappera obiektowo relacyjnego takiego jak \textbf{NHibernate}.Framework ten pobierane dane opakowuje w specjalne klasy implementuj¹cej wzorzec projektowy \textbf{"Klasa proxy"}. Wzorzec ten rozszerza mo¿liwoœci klasy dodaje dodatkowe funkcjonalnoœci takie jak mo¿liwoœæ przeprowadzenia póŸnej inicjalizacji. Klasa generowana przez NHibernate zawiera wiele dodatkowych metod oraz pól.Dodatkowo wszelkie kolekcje .Netowe przekszta³cane s¹ w specjalne kontenery dostêpne jedynie z poziomu aplikacji maj¹cej dostêp do biblioteki NHibernate. Zgodnie z za³o¿eniami jedynie serwer ma mieæ powi¹zanie z tym frameworkiem. Zadaniem klienta jest jedynie wywo³ywanie metod wykorzystuj¹cych podstawowe obiekty frameworka .Net Klient nie mo¿e zale¿eæ od implementacji warstwy bazodanowej.\newline
+Dane wystawione na zewn¹trz aplikacji przy u¿yciu protoko³u \textbf{REST}, przetwarzane s¹ do formatu danych \textbf
+{JSON}. Jest to lekki i bardzo czytelny  format (Rysunek 5.7).\newline
 
-\begin{center}
+Przed przetworzeniem danych do odpowiedniego formatu, wykonywany jest proces \textit{odchudzania} klas tzn. przetwarzania klasy ogólnej na klasê szczególn¹, zawieraj¹c¹ tylko wymagane parametry oraz dane. Proces ten jest bardzo wa¿ny w przypadku dostêpu do bazy danych realizowanego za pomoc¹ mappera obiektowo relacyjnego takego jak \textbf{NHibernate}. Framework ten pobierane dane opakowuje w specjalne klasy implementuj¹ce wzorzec projektowy \textbf{"Klasa proxy"}. Wzorzec ten rozszerza mo¿liwoœci klasy, dodaj¹c dodatkowe funkcjonalnoœci, np. mo¿liwoœæ przeprowadzenia póŸnej inicjalizacji. Klasa generowana przez NHibernate zawiera wiele dodatkowych metod oraz pól. Ponadto wszelkie kolekcje dostêpne na platformie .NET. przekszta³cane s¹ w specjalne kontenery, widoczne jedynie z poziomu aplikacji maj¹cej dostêp do biblioteki NHibernate. Zgodnie z za³o¿eniami jedynie serwer ma mieæ powi¹zanie z tym frameworkiem. Zadaniem klienta jest jedynie wywo³ywanie metod wykorzystuj¹cych podstawowe obiekty frameworka .NET. Klient nie mo¿e zale¿eæ od implementacji warstwy bazodanowej.\newline
+
+\begin{figure}[H]
+\centering
 	\includegraphics{/Implementacja/przetwarzaniedanych.JPG}
-\end{center}
-\begin{center}
-    Rys. Graficzne przedstawienie procesu przetwarzania danych.
-\end{center}
-
-Proces przetwarzania obiektów generowanych przez framework NHibernate na obiekty przesy³ane po sieci tzw. DTO ("Data Transport Object") realizowany jest przy pomocy biblioteki \textbf{AutoMapper}. Dostarcza ona funkcjonalnoœci usprawniaj¹cych ¿mudny proces przetwarzania jednego typu danych w drugi. By móc korzystaæ z \textbf{AutomMappera} na pocz¹tku konfiguruje siê mapowania (podobnie jak w przypadku mapowañ powi¹zanych z framworkiem \textbf{NHibernate}).\newline
-
-W aplikacji ka¿dy model reprezentuj¹cy encje bazodanow¹ posiada klasê odpowiedni¹ klasê \textbf{DTO}. Klasy \textbf{DTO} dziedzicz¹ po jednej wspólnej generycznej klasie bazowej dostarczaj¹cej metody pozwalaj¹ce w ³atwy sposób wywo³ywaæ metody dostarczane przez framework \textbf{AutoMapper} przekszta³caj¹ce jedn¹ klasê w drug¹.
+\caption{Graficzne przedstawienie procesu przetwarzania danych}
+\end{figure}
 
 
-\begin{center}
+Proces przetwarzania obiektów generowanych przez framework NHibernate na obiekty przesy³ane po sieci, tzw. \textbf{DTO - Data Transport Object}, realizowany jest przy pomocy biblioteki \textbf{AutoMapper}. Dostarcza ona funkcjonalnoœci usprawniaj¹cych ¿mudny proces przetwarzania jednego typu danych w drugi. By móc korzystaæ z \textbf{AutomMappera} na pocz¹tku konfiguruje siê mapowania (podobnie jak w przypadku mapowañ powi¹zanych z framworkiem \textbf{NHibernate}).\newline
+
+W aplikacji ka¿dy model reprezentuj¹cy encjê bazodanow¹ posiada odpowiedni¹ klasê \textbf{DTO}. Klasy \textbf{DTO} dziedzicz¹ po jednej, wspólnej generycznej klasie bazowej, dostarczaj¹cej metody pozwalaj¹ce w ³atwy sposób wywo³ywaæ metody dostarczane przez framework \textbf{AutoMapper}, przekszta³caj¹ce jedn¹ klasê w drug¹.
+
+
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/viewmodel.JPG}
-\end{center}
-\begin{center}
-    Rys. Przekszta³canie obiektów typu ViewModel.
-\end{center}
+\caption{Przekszta³canie obiektów typu ViewModel}
+\end{figure}
 
-Niemniej istotnym czynnikiem przemawiaj¹cym za "odchudzaniem" klas jest iloœæ danych przesy³ana po sieci. Przesy³anie ca³ych obiektów z danymi , z których nie bêdziemy korzystaæ by³oby bardzo niewydajnym i kosztownym rozwi¹zaniem. Rozwa¿my przypadek wyœwietlania listy kursów. Kurs jest rozbudowanym obiektem posiadaj¹cym wiele parametrów nie tylko opisuj¹cych kurs ale równie¿ zawieraj¹cych kolekcje Materia³ów Nauczania , Grupê itd. Do wyœwietlenia listy kursów potrzebujemy jedynie jego parametrów opisowych . W takim przypadku przesy³anie ca³ej zawartoœæ kursu by³oby ma³o wydajne. By ograniczyæ iloœæ przesy³anych danych stosuje siê tzw ViewModele (Modele Widoku). S¹ to klasy specjalnie dopasowane do widoku , w którym zostan¹ wyœwietlone. View Modele mog¹ dodatkowo ³¹czyæ wiele ró¿nych encji.
+Niemniej istotnym czynnikiem przemawiaj¹cym za \textit{odchudzaniem} klas jest iloœæ danych przesy³ana po sieci. Przesy³anie ca³ych obiektów z danymi, z których nie bêdziemy korzystaæ by³oby bardzo niewydajnym i kosztownym rozwi¹zaniem. Rozwa¿my przypadek wyœwietlania listy kursów. Kurs jest rozbudowanym obiektem posiadaj¹cym wiele parametrów nie tylko opisuj¹cych kurs, ale równie¿ zawieraj¹cych kolekcje Materia³ów Nauczania, Grupê itd. Do wyœwietlenia listy kursów potrzebujemy jedynie jego parametrów opisowych. W takim przypadku przesy³anie ca³ej zawartoœæ kursu by³oby ma³o wydajne. By ograniczyæ iloœæ przesy³anych danych stosuje siê tzw \textbf{ViewModele - Modele Widoku}. S¹ to klasy specjalnie dopasowane do widoku, w którym zostan¹ wyœwietlone. View Modele mog¹ dodatkowo ³¹czyæ wiele ró¿nych encji.
 
 \subsection{Realizacja protoko³u komunikacji}
-Komunikacja pomiêdzy aplikacj¹ a baz¹ danych oparta jest na rozwi¹zaniu \textbf{WCF (Windows Communication Foundation)}. Jest to najnowszy framework firmy Microsoft pozwalaj¹cy tworzyæ aplikacje wykorzystuj¹ce us³ugi sieciowe. Dziêki zastosowaniu tej technologii mo¿na tworzyæ bardzo ³atwo konfigurowalne mechanizmy przetwarzania danych przy wykorzystaniu us³ug sieciowych. \textbf{WCF} nie tylko jest nowym frameworkiem ale równie¿ pozwala korzystaæ z wczeœniejszych rozwi¹zañ dostêpnych na platformie .Net : ASMX , COM+ , .Net Remoting.\newline
+Komunikacja pomiêdzy aplikacj¹ udostêpniaj¹c¹ us³ugi sieciowe, a baz¹ danych oparta jest na rozwi¹zaniu \textbf{WCF (Windows Communication Foundation)}. Jest to najnowszy framework firmy Microsoft pozwalaj¹cy tworzyæ aplikacje wykorzystuj¹ce us³ugi sieciowe. Dziêki zastosowaniu tej technologii mo¿na tworzyæ bardzo ³atwo konfigurowalne mechanizmy przetwarzania danych przy wykorzystaniu us³ug sieciowych. \textbf{WCF} nie tylko jest nowym frameworkiem, ale równie¿ pozwala korzystaæ z wczeœniejszych rozwi¹zañ dostêpnych na platformie .NET : ASMX, COM+, .Net Remoting.\newline
 
-Konfiguracja frameworka \textbf{WCF} odbywa siê poprzez zdefiniowanie bindigów oraz endpointów. 
+Konfiguracja frameworka \textbf{WCF}, w celu realizacji us³ug sieciowych, odbywa siê poprzez zdefiniowanie odpowiednich bindigów oraz endpointów. 
 
-\begin{center}
-	 \includegraphics{/WCF/Serwer.JPG}
-\end{center}
-\begin{center}
-    Rys. Ustawienia us³ugi po stronie serwera.
-\end{center}
+\begin{figure}[H]
+\centering
+	 \includegraphics[width=17cm]{/WCF/Serwer.JPG}
+\caption{Ustawienia us³ugi po stronie serwera}
+\end{figure}
 
-Us³uga po stronie serwera zdefiniowana jest za pomoc¹ endpointów. S¹ to wêz³y pozwalaj¹ce konfigurowaæ sposób ,adres oraz protokó³ pod jakim bêd¹ dostêpne us³ugi sieciowe. W zaprezentowanym przyk³adzie zdefiniowane s¹ trzy endpointy.\newline
+\newpage{}
+Us³uga po stronie serwera zdefiniowana jest za pomoc¹ endpointów. S¹ to wêz³y pozwalaj¹ce konfigurowaæ sposób, adres oraz protokó³ pod jakim bêd¹ dostêpne us³ugi sieciowe. W zaprezentowanym przyk³adzie zdefiniowane s¹ trzy endpointy.\newline
 
-Pierwszy nazwany JsonP jest ednpiointem wystawiaj¹cym dan¹ us³ugê po protokole REST w formacie JSON. Konfiguracja tego endpointa ustawia brak zabezpieczeñ tzn dane nie s¹ szyfrowane. Jako binding u¿ywany jest \textbf{webHttpBinding} jest to binding wystawiaj¹cy us³ugê sieciow¹ dostêpna z poziomu zwyk³ych zapytañ protoko³u HTTP bez opakowywania ¿¹dañ w ramki SOAP.\newline
+Pierwszy, nazwany JsonP, jest ednpointem wystawiaj¹cym dan¹ us³ugê po protokole REST w formacie JSON. Konfiguracja tego endpointa ustawia brak zabezpieczeñ, tzn dane nie s¹ szyfrowane. Jako binding u¿ywany jest \textbf{webHttpBinding}. Jest to binding wystawiaj¹cy us³ugê sieciow¹, dostêpn¹ z poziomu zwyk³ych zapytañ protoko³u HTTP, bez opakowywania ¿¹dañ w ramki SOAP.\newline
 
-Drugi endpoint definiuje dostêp z poziomu protoko³u SOAP. Mechanizm ten realizowany jest poprzez binding  \textbf{basicHttpBindig}\newline
-Trzecim endpointem jest wystawienie katalogu us³ug w postaci wiadomoœci WS-MEX (WS-MetadataExchange). Jest to endpoint do , którego zwraca siê klient w momencie gdy chce zbadaæ jakie us³ugi s¹ dostêpne na danym serwerze\newline
+Drugi endpoint definiuje dostêp z poziomu protoko³u SOAP. Mechanizm ten realizowany jest poprzez binding  \textbf{basicHttpBindig}.\newline\newline
+Trzecim endpointem jest wystawienie katalogu us³ug w postaci wiadomoœci WS-MEX (WS-MetadataExchange). Jest to endpoint, do którego zwraca siê klient w momencie gdy chce zbadaæ jakie us³ugi s¹ dostêpne na danym serwerze.\newline
 
 Po stronie klienta definiujemy w³asny binding i ustawiamy odpowiedni endpoint.
-\begin{center}
-	 \includegraphics{/WCF/bindingclient.JPG}
-\end{center}
-\begin{center}
-    Rys. Ustawienia bindingu po stronie klienta.
-\end{center}
 
-Binding po stronie klienta pozwala zdefiniowaæ szereg opcji , konfiguruj¹cymi wygl¹d ¿¹dañ s³anych do serwera z us³ugami sieciowymi.
-
-\begin{center}
-	 \includegraphics{/WCF/endpointclient.JPG}
-\end{center}
-\begin{center}
-    Rys. Ustawienia endpoint po stronie klienta.
-\end{center}
-
-Najwa¿niejszymi czêœciami definicji endpointa po stronie klienta jest wskazanie adresu oraz bindingu , który okreœla w jakiej postaci oczekujemy danych.\newline
+\begin{figure}[H]
+\centering
+	 \includegraphics[width=17cm]{/WCF/bindingclient.JPG}
+\caption{Ustawienia bindingu po stronie klienta}
+\end{figure}
 
 
-Przy komunikacji SOAP , która w tym przypadku jest œciœle powi¹zana typami. Tzn serializer po stronie serwera i deserializer po stornie klienta operuj¹ na tych samych typach i musza byæ zgodne w wersji. Klasami tymi s¹ obiekty DTO. Takie rozwi¹zanie wprowadza pewne ograniczenia ale za to usprawnia proces tworzenia systemu. Obiekty DTO s¹ prostymi klasami kontenerowymi s³u¿¹cymi jedynie do transferu danych wiêc uzna³em , ¿e takie rozwi¹zanie bêdzie przynosi³o wiêcej plusów ni¿ minusów.\newline
+
+Binding po stronie klienta pozwala zdefiniowaæ szereg opcji, konfiguruj¹cych wygl¹d ¿¹dañ wysy³anych do serwera z us³ugami sieciowymi.
+
+\begin{figure}[H]
+\centering
+	 \includegraphics[width=17cm]{/WCF/endpointclient.JPG}
+\caption{Ustawienia endpointu po stronie klienta}
+\end{figure}
 
 
-\begin{center}
-	 \includegraphics{/WCF/restclient.JPG}
-\end{center}
-\begin{center}
-    Rys. Ustawienia endpoint po stronie klienta korzystaj¹cego z API.
-\end{center}
 
-W przypadku danych wystawionych przez protokó³ REST dostêpnych dla innych klientów sytuacja jest trochê inna. Klient nie posiada informacji do jakiœ obiektów deserializowaæ dane. Nie musi posiadaæ biblioteki z obiektami DTO. Klient nie potrzebuje specjalnej konfiguracji i nie potrzebuje byæ nawet powi¹zany z technologi¹ .Net. W tym przypadku dane otrzymywane przez klienta przekazywane s¹ w czystej nie przetworzonej postaci. Jedynie co jest potrzebne do konfiguracji to adres serwera z us³ugami sieciowymi. W zaprezentowanym kodzie wykorzystuje funkcjê popularnej biblioteki \textbf{JQuery} wspomagaj¹cej funkcjonalnoœci jêzyka \textbf{JavaScript}.
+Najwa¿niejszymi czêœciami definicji endpointu po stronie klienta jest wskazanie adresu oraz bindingu, który okreœla w jakiej postaci oczekujemy danych.\newline
+
+
+Przy komunikacji SOAP, która w tym przypadku jest œciœle powi¹zana typami, serializer po stronie serwera i deserializer po stornie klienta operuj¹ na tych samych typach i musz¹ byæ zgodne w wersji. Klasami tymi s¹ obiekty DTO. Takie rozwi¹zanie wprowadza pewne ograniczenia, ale za to usprawnia proces tworzenia systemu. Obiekty DTO s¹ prostymi klasami kontenerowymi, s³u¿¹cymi jedynie do transferu danych, a wiêc uznano, ¿e takie rozwi¹zanie bêdzie przynosi³o wiêcej plusów ni¿ minusów.\newline
+
+
+\begin{figure}[H]
+\centering
+ \includegraphics{/WCF/restclient.JPG}
+\caption{Ustawienia endpointu po stronie klienta korzystaj¹cego z API}
+\end{figure}
+
+
+W przypadku danych wystawionych przez protokó³ REST, dostêpnych dla innych klientów, sytuacja jest trochê inna. Klient nie posiada informacji jak deserializowaæ dane obiektów. Nie musi posiadaæ biblioteki z obiektami DTO. Klient nie potrzebuje specjalnej konfiguracji i nie potrzebuje byæ nawet powi¹zany z technologi¹ .Net. W tym przypadku dane otrzymywane przez klienta przekazywane s¹ w czystej, nie przetworzonej postaci. Jedyne co jest potrzebne do konfiguracji to adres serwera z us³ugami sieciowymi. W zaprezentowanym kodzie wykorzystywana jest funkcja popularnej biblioteki \textbf{JQuery} wspomagaj¹cej funkcjonalnoœci jêzyka \textbf{JavaScript}.
 
 
 \newpage{}
 \section{Wykorzystane narzêdzia}
 \subsection{Mechanizm logowania zdarzeñ - NLog}
 
-W procesie wytwarzania oprogramowania bardzo wa¿nym aspektem zwiêkszaj¹cym znacz¹c powodzenie projektu jest zapewnienie odpowiedniego mechanizmu logowania zdarzeñ oraz b³êdów wystêpuj¹cych wewn¹trz aplikacji. Dziêki zaimplementowaniu takiego mechanizmu , przyspieszamy proces naprawy oraz identyfikacji b³êdów. Dodatkowo mo¿emy analizowaæ poprawnoœæ dzia³ania aplikacji poprzez analizê wiadomoœci zwracanych przez system. Przyczynia siê to znacz¹co do zmniejszenia kosztów utrzymania oraz wprowadzania zmian i poprawek w aplikacji.\newline
+W procesie wytwarzania oprogramowania bardzo wa¿nym aspektem, zwiêkszaj¹cym znacz¹co powodzenie projektu, jest zapewnienie odpowiedniego mechanizmu logowania zdarzeñ oraz b³êdów wystêpuj¹cych wewn¹trz aplikacji. Dziêki zaimplementowaniu takiego mechanizmu, przyspieszamy proces naprawy oraz identyfikacji b³êdów. Dodatkowo mo¿emy analizowaæ poprawnoœæ dzia³ania aplikacji poprzez analizê wiadomoœci zwracanych przez system. Przyczynia siê to znacz¹co do zmniejszenia kosztów utrzymania oraz wprowadzania zmian i poprawek w aplikacji.\newline
 
-W niniejszej pracy do stworzenia mechanizmu logowania zastosowa³em popularn¹ darmow¹ bibliotekê \textbf{NLog} stworzon¹ przez Jaros³awa Kowalskiego.Jest to stosunkowa prosta a zarazem rozbudowana biblioteka pozwalaj¹ca tworzyæ mechanizmy logowania.\newline
+W niniejszej pracy do stworzenia mechanizmu logowania zastosowano popularn¹, darmow¹ bibliotekê \textbf{NLog}, stworzon¹ przez Jaros³awa Kowalskiego. Jest to stosunkowo prosta, a zarazem rozbudowana biblioteka, pozwalaj¹ca tworzyæ mechanizmy logowania.\newline
 
-By podczepiæ mechanizm logowania do danej klasy wystarczy stworzyæ wewn¹trz niej element statyczny bêd¹cy instancj¹ klasy \textbf{NLog.Logger}. Dla ka¿dej klasy , która chcemy obj¹æ mechanizmem logowania tworzymy oddzieln¹ instancjê loggera.\newline
+By ''podczepiæ'' mechanizm logowania do danej klasy wystarczy stworzyæ wewn¹trz niej element statyczny, bêd¹cy instancj¹ klasy \textbf{NLog.Logger}. Dla ka¿dej klasy, któr¹ chcemy obj¹æ mechanizmem logowania, tworzymy oddzieln¹ instancjê loggera.\newline
 \begin{center}
  \textit{private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();}
 \end{center}
 
-Po zainicjalizowaniu klasy Loggera wystarczy , ¿e w interesuj¹cym nas miejscu wywo³amy okreœlon¹ metodê reprezentuj¹ca rodzaj logowanej wiadomoœci.\newline
+Po zainicjalizowaniu klasy Loggera wystarczy, ¿e w interesuj¹cym nas miejscu wywo³amy okreœlon¹ metodê reprezentuj¹c¹ rodzaj logowanej wiadomoœci.\newline
 \begin{center}
 \textit{logger.Debug("Starting Add Mark [Get] with : journalId {0}",id);}
 \end{center}
 
-Nlog udostpênia m.in rodzaje wiadomoœci typu:
+Nlog udostpênia m.in wiadomoœci typu:
 \begin{itemize}
-\item Informacja
-\item Debugowanie
-\item B³¹d
-\item B³¹d Krytyczny
+\item Informacja,
+\item Debugowanie,
+\item B³¹d,
+\item B³¹d Krytyczny.
 \end{itemize}
 
 Prócz wywo³ania NLoga bardzo istotn¹ rzecz¹ jest odpowiednie skonfigurowanie pliku konfiguracyjnego aplikacji.
-W pliku konfiguracyjnym mo¿emy bowiem ustaliæ miejsce do którego chcemy zapisywaæ logi. Do wybory mamy m.in:
+W pliku konfiguracyjnym mo¿emy bowiem ustaliæ miejsce, do którego chcemy zapisywaæ logi. Do wyboru mamy m.in:
 
 \begin{itemize}
-\item Plik
-\item Adres E-mail
-\item Wys³anie danych po porcie
-\item Konsola
-\item Baza Danych
+\item Plik,
+\item Adres E-mail,
+\item Wys³anie danych po porcie,
+\item Konsola,
+\item Baza Danych.
 \end{itemize}
 Dla ka¿dego Ÿród³a istnieje mo¿liwoœæ skonfigurowania rodzaju informacji jakie ma zapisywaæ.\newline
 
-W aplikacji zastosowa³em mechanizm zrzucania logów informacyjnych oraz zwi¹zanych z procesem logowania do pliku oraz wysy³anie protoko³em UDP na port 9999. Na tym porcie lokalnie nas³uchuje darmowa aplikacja \textbf{Sentinel} ,  która pozwala analizowaæ wysy³ane logi. Dziêki takiej konfiguracji przyspieszy³ siê proces implementacji poniewa¿ mia³em wgl¹d w proces wykonywania akcji wewn¹trz aplikacji.\newline
+W aplikacji zastosowano mechanizm zrzucania logów informacyjnych zwi¹zanych z procesem logowania do pliku oraz wysy³anie protoko³em UDP na port 9999. Na tym porcie lokalnie nas³uchuje darmowa aplikacja \textbf{Sentinel} \cite{SENTINEL},  która pozwala analizowaæ wysy³ane logi. Dziêki takiej konfiguracji przyspieszy³ siê proces implementacji poniewa¿ by³ wgl¹d w proces wykonywania akcji wewn¹trz aplikacji.\newline
 
-\begin{center}
-	\includegraphics{/Implementacja/sentinel.jpg}
-\end{center}
-\begin{center}
-    Rys. Przyk³adowy log z programu Sentinel
-\end{center}
+\begin{figure}[H]
+\centering
+	\includegraphics[width=12cm]{/Implementacja/sentinel.jpg}
+\caption{Przyk³adowy log z programu Sentinel \cite{SENTINEL}}
+\end{figure}
 
 
-Dodatkowo by zapewniæ szybszy czas reakcji na poprawki , logi oznaczone jako krytyczne skonfigurowane zosta³y tak by by³y wysy³ane w formie wiadomoœci email z logiem na okreœlony adres Dziêki temu administrator otrzymuje szybko informacjê o tym , ¿e dzieje siê coœ naprawdê wa¿nego powoduj¹cego b³êdne dzia³anie aplikacji w stopniu którym aplikacja nie mo¿e dzia³aæ stabilnie.
+Dodatkowo by zapewniæ szybszy czas reakcji na poprawki, logi oznaczone jako krytyczne skonfigurowane zosta³y tak by by³y wysy³ane w formie wiadomoœci email z logiem na okreœlony adres. Dziêki takiemu zabiegowi administrator otrzymuje szybko informacjê o tym, ¿e dzieje siê coœ naprawdê wa¿nego, powoduj¹cego b³êdne dzia³anie aplikacji w stopniu, w którym aplikacja nie mo¿e dzia³aæ stabilnie.
 
-Logami objête zosta³y :
+Logami objête zosta³y:
 \begin{itemize}
-\item Operacje wykonywane na bazie danych
-\item Akcje wywo³ywane w aplikacji po stronie serwera 
+\item Operacje wykonywane na bazie danych,
+\item Akcje wywo³ywane w aplikacji po stronie serwera.
 \end{itemize}
 
-\begin{center}
-	\includegraphics{/Implementacja/alert.jpg}
-\end{center}
-\begin{center}
-    Rys. Przyk³adowy alert
-\end{center}
+\begin{figure}[H]
+\centering
+	\includegraphics[width=12cm]{/Implementacja/alert.jpg}
+\caption{Przyk³adowy alert}
+\end{figure}
 
-Prócz generowania logów po stronie serwera w aplikacji zaimplementowany jest mechanizm wyœwietlania alertów z informacjami po stronie u¿ytkownika przegl¹darki. Zadaniem alertów jest informowanie u¿ytkownika o zachodz¹cych akcjach takich jak np zapisanie danych do systemu b¹dŸ wyst¹pienie problemu z po³¹czeniem.
+
+Prócz generowania logów po stronie serwera w aplikacji zaimplementowany jest mechanizm wyœwietlania alertów z informacjami po stronie u¿ytkownika przegl¹darki. Zadaniem alertów jest informowanie u¿ytkownika o zachodz¹cych akcjach takich jak np. zapisanie danych do systemu, b¹dŸ wyst¹pienie problemu z po³¹czeniem.
 
 \newpage{}
 \subsection{Testy jednostkowe - NUnit}
 
-Testy jednostkowe s¹ nowoczesnym narzêdziem pozwalaj¹cym testowaæ pojedyncze "jednostkowe" funkcjonalnoœci aplikacji.
+Testy jednostkowe s¹ nowoczesnym narzêdziem pozwalaj¹cym testowaæ pojedyncze, \textit{jednostkowe} funkcjonalnoœci aplikacji.
 Do przeprowadzenia testów w aplikacji u¿y³em frameworka \textbf{NUnit}. Testami jednostkowymi zosta³a pokryta logika bazodanowa oraz czêœæ akcji wywo³ywanych przez kontrolery.
 
 \subsubsection{Testy dostêpu do bazy danych}
@@ -531,189 +547,141 @@ Testowanie jednostkowe bazy danych jest doœæ skomplikowanym zagadnieniem. Testow
 Procedura przeprowadzenia takiego testu polega na:\newline
 
 \begin{itemize}
-	\item Wywo³anie metody dodawania rekordu do bazy danych.
-	\item Wywo³anie metody pobierania rekordu z bazy danych.
-	\item Operacja porównania rekordu pobranego z rekordem dodanym
+	\item Wywo³aniu metody dodawania rekordu do bazy danych,
+	\item Wywo³aniu metody pobierania rekordu z bazy danych,
+	\item Operacji porównania rekordu pobranego z rekordem dodanym.
 \end{itemize}
 
-\begin{center}
+
+\begin{figure}[H]
+\centering
 	\includegraphics{/Implementacja/unittestdodaj.jpg}
-\end{center}
-\begin{center}
-    Rys. Prosty test jednostkowy bazy danych
-\end{center}
+\caption{Prosty test jednostkowy bazy danych}
+\end{figure}
 
+By przeprowadziæ taki test potrzebujemy dostêpu do bazy danych. Dostêp do bazy mo¿na zrealizowaæ na kilka sposobów. Mianowicie mo¿na przeprowadzaæ testy na fizycznej, istniej¹cej bazie danych. W takim przypadku jednak nale¿y pamiêtaæ by rekord testowy po teœcie usun¹æ. Innym wyjœciem jest stworzenie oddzielnej bazy danych i przeprowadzanie testów na niej. W tym przypadku wystarczy, ¿e za ka¿dym razem odtworzymy pust¹, b¹dŸ domyœln¹ bazê danych. Testowanie na prawdziwej bazie danych jest czasoch³onne. Lepszym rozwi¹zaniem jest przeprowadzanie testów na bazie danych generowanej w pamiêci. W tym przypadku mo¿na skorzystaæ z bazy danych opartej na silniku \textbf{SQLLite} \cite{SQLITE}, która jest bardzo popularnym darmowym rozwi¹zaniem.
 
-By przeprowadziæ taki test potrzebujemy dostêpu do bazy danych. Dostêp do bazy mo¿na zrealizowaæ na kilka sposobów. Mianowicie mo¿na przeprowadzaæ testy na prawdziwej istniej¹cej bazie danych. W takim przypadku jednak nale¿y pamiêtaæ by rekord testowy po teœcie usun¹æ. Innym wyjœciem jest stworzenie oddzielnej bazy danych i przeprowadzanie testów na niej. W tym przypadku wystarczy , ¿e za ka¿dym razem odtworzymy pust¹ b¹dŸ domyœln¹ bazê danych. Testowanie na prawdziwej bazie danych jest czasoch³onne. Lepszym rozwi¹zaniem jest przeprowadzanie testów na bazie danych generowanej w pamiêci. W tym przypadku mo¿na skorzystaæ z bazy danych opartej na silniku \textbf{SQLLite} , która jest bardzo popularnym darmowym rozwi¹zaniem.
-
-
-\begin{center}
+\begin{figure}[H]
+\centering
 	\includegraphics{/Implementacja/unittestpamiec.jpg}
-\end{center}
-\begin{center}
-    Rys. Test jednostkowy z baz¹ danych w pamiêci
-\end{center}
+\caption{Test jednostkowy z baz¹ danych w pamiêci}
+\end{figure}
 
-Przed ka¿dym rozpoczêciem testu generowana jest baza danych oraz wype³niana jest danymi potrzebnymi przy testach. W przypadku np. testowania elementu "Kurs" posiadaj¹cego listê elementów "Test". Generowany jest kurs w przyk³adow¹ list¹ testów. Poniewa¿ wykorzystujê mapper relacyjno obiektowy \textbf{"NHibernate"} , przed rozpoczêciem testów bazy danych przeprowadzany jest test konfiguracji frameworka.\newline
+Przed ka¿dym rozpoczêciem testu generowana jest baza danych oraz wype³niana danymi potrzebnymi przy testach. W przypadku np. testowania elementu ''Kurs'',  posiadaj¹cego listê elementów \textit{Test}, generowany jest kurs z przyk³adow¹ list¹ testów. Poniewa¿ wykorzystywany jest mapper relacyjno obiektowy \textbf{NHibernate}, przed rozpoczêciem testów bazy danych przeprowadzany jest test konfiguracji frameworka.\newline
 
 Testy bazy danych obejmuj¹ :
 \begin{itemize}
-\item Testy generycznej klasy repozytorium
-\item Testy zapytañ wykorzystuj¹cych jêzyk HQL
+\item Testy generycznej klasy repozytorium,
+\item Testy zapytañ wykorzystuj¹cych jêzyk HQL.
 \end{itemize}
 
 Baza danych pokryta jest ³¹cznie ponad 90 testami jednostkowymi.
 
 \subsubsection{Testy kontrolerów - RhinoMocks}
-Testy jednostkowe kontrolerów s¹ bardziej z³o¿one ni¿ testy wykonywane na warstwie dostêpu do bazy danych. Kontroler bardzo czêsto komunikuje siê z warstw¹ bazodanow¹ wyci¹gaj¹c dane potrzebne do wygenerowania widoku. Baza danych jest ich zewnêtrzn¹ zale¿noœci¹. Testowanie dostêpu do bazy danych nie jest sensem testów kontrolera. Test kontrolera musi testowaæ jedynie proces przetwarzania danych pozyskiwanych z bazy danych. W tym przypadku najlepszym rozwi¹zaniem by³oby w ogóle pominiêcie bazy danych i wstrzykniêcie danych testowych na których przetestujemy zachowanie kontrolera. Na szczêœcie istnieje taka mo¿liwoœæ i do tego celu stosuje siê specjalne obiekty zwane \textbf{Mockami/Stubami}. W niniejszej pracy wybra³em pierwszy rodzaj obiektów i pos³u¿y³em siê frameworkiem RhinoMocks do ich generacji.\newline
+Testy jednostkowe kontrolerów s¹ bardziej z³o¿one ni¿ testy wykonywane na warstwie dostêpu do bazy danych. Kontroler bardzo czêsto komunikuje siê z warstw¹ bazodanow¹ wyci¹gaj¹c dane potrzebne do wygenerowania widoku. Baza danych jest ich zewnêtrzn¹ zale¿noœci¹. Testowanie dostêpu do bazy danych nie jest sensem testów kontrolera. Test kontrolera musi testowaæ jedynie proces przetwarzania danych pozyskiwanych z bazy danych. W tym przypadku najlepszym rozwi¹zaniem by³oby w ogóle pominiêcie bazy danych i wstrzykniêcie danych testowych, na których przetestujemy zachowanie kontrolera. Na szczêœcie istnieje taka mo¿liwoœæ i do tego celu stosuje siê specjalne obiekty zwane \textbf{Mockami/Stubami}. W niniejszej pracy wybrano pierwszy rodzaj obiektów i pos³u¿ono siê frameworkiem RhinoMocks do ich generacji.\newline
 
 Test kontrolera realizowany jest podobnie jak test bazodanowy.
 \begin{itemize}
 	\item Tworzymy dany kontroler wywo³uj¹c jego konstruktor.
-	\item Wywo³ujemy metodê ("Akcjê") na kontrolerze podaj¹c odpowiednie parametry.
+	\item Wywo³ujemy metodê (''Akcje'') na kontrolerze podaj¹c odpowiednie parametry.
 	\item Weryfikujemy otrzymany wynik.
 \end{itemize}
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	\includegraphics{/Implementacja/unittestkontroler.JPG}
-\end{center}
-\begin{center}
-    Rys. Test jednostkowy kontrolera bez zewnêtrznych zasobów
-\end{center}
+\caption{Test jednostkowy kontrolera bez zewnêtrznych zasobów}
+\end{figure}
 
-W przypadku kontrolera korzystaj¹cego z zewnêtrznych zasobów takich jak baza danych b¹dŸ globalna sesja , przed stworzeniem kontrolera nale¿y zainicjowaæ obiekt typu \textbf{MOCK} imituj¹cy zasób i wstrzykn¹æ go do œrodka kontrolera.
+W przypadku kontrolera korzystaj¹cego z zewnêtrznych zasobów takich jak baza danych, b¹dŸ globalna sesja, przed stworzeniem kontrolera nale¿y zainicjowaæ obiekt typu \textbf{MOCK}, imituj¹cy zasób, i wstrzykn¹æ go do œrodka kontrolera.
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/unittestzasob.JPG}
-\end{center}
-\begin{center}
-    Rys. Test kontrolera z zewnêtrznymi zasobami
-\end{center}
+\caption{Test kontrolera z zewnêtrznymi zasobami}
+\end{figure}
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/unittestmock.JPG}
-\end{center}
-\begin{center}
-    Rys. Test z kontrolera przy wykorzystaniu mocka
-\end{center}
+\caption{Test kontrolera przy wykorzystaniu mocka}
+\end{figure}
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/kodmock.JPG}
-\end{center}
-\begin{center}
-    Rys. Przyk³adowy kod testu z mockiem
-\end{center}
-
+\caption{Przyk³adowy kod testu z mockiem}
+\end{figure}
 \newpage{}
 
-W powy¿szym kodzie testowany jest kontroler Kursów i jego metoda \textbf{Create}. Test testuje okolicznoœæ gdy kontroler kursów pobieraj¹c dane z bazy danych otrzyma wartoœæ \textbf{null}. W tym przypadku ma zwróciæ widok b³êdu. Linijka tworzenia \textbf{Mocka} po pierwsze definiuje , ¿e oczekuje wywo³ania danej funkcji nastêpnie okreœla jakich oczekujemy parametrów i na koñcu okreœla jakie dane maj¹ byæ zwrócone.\newline
+W powy¿szym kodzie testowany jest kontroler Kursów i jego metoda \textbf{Create}. Test weryfikuje przypadek, gdy kontroler kursów pobieraj¹c dane z bazy danych otrzyma wartoœæ \textbf{null}. W tym przypadku ma zwróciæ widok b³êdu. Linijka tworzenia \textbf{Mocka} po pierwsze definiuje, ¿e oczekuje wywo³ania danej funkcji, nastêpnie okreœla jakich oczekujemy parametrów, i na koñcu okreœla jakie dane maj¹ byæ zwrócone.\newline
 
-Po zdefiniowaniu \textbf{MOCK-a} uruchamiane jest odtwarzanie jego zachowana.W momencie przeprowadzania testu  podczas wywo³ywania metody \textbf{Create} po natrafieniu na podmienion¹ metodê  (w przypadku przedstawionym w zamieszczonym kodzie Ÿród³owym \textbf{AddCourse}), test nie skorzysta z bazy danych ale z udawanego obiektu otrzymuj¹c wartoœæ null.  
+Po zdefiniowaniu \textbf{MOCK-a} uruchamiane jest odtwarzanie jego zachowania. W momencie przeprowadzania testu  podczas wywo³ywania metody \textbf{Create}, po natrafieniu na podmienion¹ metodê  (w przypadku przedstawionym w zamieszczonym kodzie Ÿród³owym \textbf{AddCourse}), test nie skorzysta z bazy danych, ale z udawanego obiektu, otrzymuj¹c wartoœæ null.\newline
 
 Logika kontrolerów pokryta jest ³¹cznie ponad 50 testami jednostkowymi.
 
 \subsection{Mapowanie obiektowo relacyjne - NHibernate}
 
-Dostêp do bazy danych realizowany zrealizowany jest za pomoc¹ mappera obiektowo relacyjnego "NHibernate". Jest to open sourcowa implementacja frameworka Hibernate popularnego na platformie Java.
+Dostêp do bazy danych jest realizowany za pomoc¹ mappera obiektowo relacyjnego ''NHibernate''. Jest to open sourcowa implementacja frameworka Hibernate popularnego na platformie Java. Na rysunku 5.22 pokazano proces mapowania realcyjno obiektowego.
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	 \includegraphics{/Implementacja/nhibernatemaps.JPG}
-\end{center}
-\begin{center}
-    Rys. Proces mapowania relacyjngo obiektowego
-\end{center}
+\caption{Proces mapowania relacyjngo-obiektowego}
+\end{figure}
+
 \subsubsection{Tworzenie mapowañ - FluentNHibernate}
 
-Standardowo mapowania w \textbf{NHibernacie} definiuje siê w plikach konfiguracyjnych \textbf{XML}. Jest to doœæ problematyczna metoda podatna na b³êdy oraz tworzony kod nie jest do koñca czytelny. Innym sposobem generowania mapowañ jest zastosowanie frameworka \textbf{FluentNhibernate} pozwalaj¹cego definiowaæ mapowania wykorzystuj¹c mocno typowany i kompilowany kod jednego z jêzyków \textbf{CLR}.
+Standardowo mapowania w \textbf{NHibernacie} definiuje siê w plikach konfiguracyjnych \textbf{XML}. Jest to doœæ problematyczna metoda podatna na b³êdy, a tworzony kod nie jest do koñca czytelny. Innym sposobem generowania mapowañ jest zastosowanie frameworka \textbf{FluentNhibernate}, pozwalaj¹cego definiowaæ mapowania w oparciu o mocno typowany i kompilowany kod jednego z jêzyków zgodnych ze specyfikacj¹ CLR - Common Language Runtime.
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	 \includegraphics[width=14cm]{/Implementacja/kodmapowanie.JPG}
-\end{center}
-\begin{center}
-    Rys. Przyk³adowe mapowanie klasy Kurs
-\end{center}
-
+\caption{Przyk³adowe mapowanie klasy Kurs}
+\end{figure}
 Mapowanie realizowane jest poprzez dziedziczenie generycznej klasy \textbf{ClassMap} dostêpnej w bibliotece \textbf{FluentNHibernate}.
-Wszystkie parametry mapowanej klasy musz¹ byæ publiczne oraz oznaczone s³owem kluczowym virtual. Na pocz¹tku nale¿y zdefiniowaæ parametr które bêdzie zmapowany na pole bêd¹ce kluczem bazy danych. Jest to wymagane parametr bez , którego nie mo¿na przeprowadziæ procesu mapowania. Nastêpnie poprzez u¿ycie Funkcji \textbf{Map()} definiuje siê mapowania parametrów do okreœlonych wierszy tabel. Kolejn¹ istotn¹ rzecz¹ do zdefiniowania s¹ relacje. Metoda \textbf{Reference()} mapuje relacje jeden do jednego natomiast \textbf{HasMany()} pozwala zdefiniowaæ relacjê  jeden do wielu. Przy ka¿dej funkcji mapuj¹cej mo¿na ustawiæ dodatkowe opcje jak np wiersz przechowuj¹cy klucz do elementu referencyjnego b¹dŸ mo¿na zdefiniowaæ czy danie powinny byæ póŸno wi¹zane czy nie.\newline
+Wszystkie parametry mapowanej klasy musz¹ byæ publiczne oraz oznaczone s³owem kluczowym virtual. Na pocz¹tku nale¿y zdefiniowaæ parametr, który bêdzie zmapowany na pole, bêd¹ce kluczem bazy danych. Jest to wymagany parametr bez, którego nie mo¿na przeprowadziæ procesu mapowania. Nastêpnie poprzez u¿ycie Funkcji \textbf{Map()} definiuje siê mapowania parametrów do okreœlonych wierszy tabel. Kolejn¹ istotn¹ rzecz¹ do zdefiniowania s¹ relacje. Metoda \textbf{Reference()} mapuje relacje jeden do jednego, natomiast \textbf{HasMany()} pozwala zdefiniowaæ relacjê  jeden do wielu. Przy ka¿dej funkcji mapuj¹cej mo¿na ustawiæ dodatkowe opcje, jak np wiersz przechowuj¹cy klucz do elementu referencyjnego, b¹dŸ mo¿na zdefiniowaæ czy dane powinny byæ póŸno wi¹zane, czy nie.\newline
 
-Identyfikacja tabeli do której nale¿y dana klasa realizowana jest poprzez nazwê klasy która jest mapowana. Istnieje oczywiœcie mo¿liwoœæ przeci¹¿enia tej nazwy poprzez u¿ycie metody \textbf{Table()} podaj¹c jako parametr ci¹g znaków okreœlaj¹cy nazwê tabeli.
+Identyfikacja tabeli, do której nale¿y dana klasa, realizowana jest poprzez nazwê klasy, która jest mapowana. Istnieje oczywiœcie mo¿liwoœæ przeci¹¿enia tej nazwy poprzez u¿ycie metody \textbf{Table()}, podaj¹c jako parametr ci¹g znaków okreœlaj¹cy nazwê tabeli.
 \newpage{}
 \section{Interfejs u¿ytkownika}
-\begin{center}
+\paragraph{}
+Do komunikacji z u¿ytkownikiem systemu zdalnego nauczania wykorzystywany jest odpowiedni interfejs, którego wybrane elementy pokazano na kolejnych rysunkach. 
+\begin{figure}[H]
+\centering
 	\includegraphics{/UI/Logowanie.JPG}
-\end{center}
-\begin{center}
-    Rys. Widok logowania
-\end{center}
+\caption{Widok logowania}
+\end{figure}
 
-\begin{center}
+
+\begin{figure}[H]
+\centering
 	\includegraphics[width=14cm]{/UI/mainpage.JPG}
-\end{center}
-\begin{center}
-    Rys. Widok strony g³ównej
-\end{center}
+\caption{Widok strony g³ównej}
+\end{figure}
 
-\begin{center}
+
+\begin{figure}[H]
+\centering
 	\includegraphics[width=14cm]{/UI/course.JPG}
-\end{center}
-\begin{center}
-    Rys. Widok kursu
-\end{center}
+\caption{Widok kursu}
+\end{figure}
 
-\begin{center}
+
+\begin{figure}[H]
+\centering
 	\includegraphics[width=14cm]{/UI/lmdisplay.JPG}
-\end{center}
-\begin{center}
-    Rys. Widok materia³u nauczania
-\end{center}
+\caption{Widok materia³u nauczania}
+\end{figure}
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	\includegraphics[width=14cm]{/UI/testdisplay.JPG}
-\end{center}
-\begin{center}
-    Rys. Widok testu
-\end{center}
+\caption{Widok testu}
+\end{figure}
 
-\begin{center}
+\begin{figure}[H]
+\centering
 	\includegraphics[width=14cm]{/UI/testedit.JPG}
-\end{center}
-\begin{center}
-    Rys. Widok edycji testu
-\end{center}
-
-\chapter{Testowanie i ocena efektywnoœci}
-\section{Wybrane Testy Mechanizmów Zabezpieczeñ}
-Sprawdzenie czy wiadomosci przesylane sa szyfrowane
-Sprawdzenie dzialania logowania i blokad dostepu do aplikacji
-\newpage{}
-\section{Analiza wydajnoœci NHibernate-a w porównaniu do zwyk³ych zapytañ SQL}
-proste zapytania
-skomplikowane zaytanie i porownanie czasow oraz ilosci zaoytan tgenerowanych
-\newpage{}
-\section{Testy wydajnoœci mechanizmów przetwarzania danych}
-\newpage{}
-\newpage{}
-\newpage{}
-\subsection{Analiza zapytañ generowanych przez NHibernate za pomoc¹ NHProfilea}
-\newpage{}
-\newpage{}
-\subsection{Przyk³adowa optymalizacja zapytañ}
-\newpage{}
-\subsection{Testy obci¹¿eniowe}
-\newpage{}
-\section{Testy wydajnoœci mechanizmów komunikacji sieciowej}
-\subsection{Porównanie formatu Json , Xml}
-\newpage{}
-\subsection{Badanie czasu odpowiedzi us³ug sieciowych}
-\newpage{}
-\subsection{Testy mechanizmu zmiany serwera}
-\newpage{}
-\subsection{Testy konfiguracji roz³o¿enia us³ug sieciowych}
-\newpage{}
-\newpage{}
-\section{Wnioski z testów i badañ}
-\newpage{}
-
-\chapter{Podsumowanie}
-\newpage{}
-\newpage{}
+\caption{Widok edycji testu}
+\end{figure}

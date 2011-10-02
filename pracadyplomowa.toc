@@ -1,128 +1,187 @@
 \select@language {polish}
-\contentsline {chapter}{Wst\k ep}{2}
-\contentsline {chapter}{\numberline {1}Cel i zakres pracy}{4}
-\contentsline {section}{\numberline {1.1}Cel pracy}{4}
-\contentsline {section}{\numberline {1.2}Zakres pracy}{4}
-\contentsline {chapter}{\numberline {2}Kszta\IeC {\l }cenie na odleg\IeC {\l }o\'s\'c}{5}
-\contentsline {section}{\numberline {2.1}Definicja kszta\IeC {\l }cenia na odleg\IeC {\l }o\'s\'c}{5}
-\contentsline {paragraph}{}{5}
-\contentsline {paragraph}{}{5}
-\contentsline {section}{\numberline {2.2}Korzy\'sci p\IeC {\l }yn\k ace z u\.zywania system\'ow kszta\IeC {\l }cenia na odleg\IeC {\l }o\'s\'c}{6}
+\contentsline {chapter}{Spis rysunk\'ow}{3}
+\contentsline {chapter}{Spis tabel}{5}
+\contentsline {chapter}{Wst\k ep}{6}
 \contentsline {paragraph}{}{6}
-\contentsline {section}{\numberline {2.3}Ograniczenia kszta\IeC {\l }cenia na odleg\IeC {\l }o\'s\'c}{6}
-\contentsline {section}{\numberline {2.4}Klasyfikacja system\'ow kszta\IeC {\l }cenia na odleg\IeC {\l }o\'s\'c}{7}
-\contentsline {subsection}{\numberline {2.4.1}Systemy do zarz\k adzania kursami(CMS)}{7}
-\contentsline {subsection}{\numberline {2.4.2}Systemy wspomagaj\k ace proces nauczania (LMS)}{8}
-\contentsline {chapter}{\numberline {3}Wybrane technologie realizacji system\'ow webowych}{9}
-\contentsline {section}{\numberline {3.1}Formaty danych JSON oraz XML}{9}
-\contentsline {subsubsection}{JSON}{9}
-\contentsline {subsubsection}{Cechy formatu JSON}{9}
-\contentsline {subsubsection}{XML}{10}
-\contentsline {subsubsection}{Cechy formatu XML}{10}
-\contentsline {subsubsection}{Por\'ownanie JSON oraz XML}{10}
-\contentsline {section}{\numberline {3.2}Protoko\IeC {\l }y SOAP oraz REST}{12}
-\contentsline {subsubsection}{SOAP}{12}
-\contentsline {subsubsection}{Zalety SOAP}{13}
-\contentsline {subsubsection}{Wady SOAP}{13}
-\contentsline {subsubsection}{REST}{14}
-\contentsline {subsubsection}{Zalety REST}{15}
-\contentsline {subsubsection}{Wady REST}{15}
-\contentsline {section}{\numberline {3.3}Us\IeC {\l }ugi sieciowe}{16}
-\contentsline {section}{\numberline {3.4}Framework Asp.Net MVC}{17}
-\contentsline {subsubsection}{Model}{18}
-\contentsline {subsubsection}{Kontroler}{18}
-\contentsline {subsubsection}{Widok}{18}
-\contentsline {subsubsection}{Opis komunikacji}{18}
-\contentsline {section}{\numberline {3.5}Mapowanie obiektowo relacyjne - NHibernate}{19}
-\contentsline {chapter}{\numberline {4}Projekt systemu zdalnego nauczania}{21}
-\contentsline {section}{\numberline {4.1}Wymagania projektowe}{21}
-\contentsline {subsection}{\numberline {4.1.1}Wymagania funkcjonalne}{21}
-\contentsline {subsubsection}{Tworzenie u\.zytkownik\'ow oraz przydzielanie uprawnie\'n}{21}
-\contentsline {subsubsection}{Zarz\k adzanie kursami}{21}
-\contentsline {subsubsection}{Zarz\k adzanie materia\IeC {\l }ami nauczania}{22}
-\contentsline {subsubsection}{Materia\IeC {\l }y nauczania - proces nauczania}{22}
-\contentsline {subsubsection}{Obszar informacyjny}{22}
-\contentsline {subsubsection}{Obszar nauczania}{22}
-\contentsline {subsubsection}{Obszar podsumowania}{22}
-\contentsline {subsubsection}{Zarz\k adzanie testami}{23}
-\contentsline {subsubsection}{Mechanizm rozwi\k azywania oraz sprawdzania test\'ow}{23}
-\contentsline {subsubsection}{Zarz\k adzanie ocenami}{23}
-\contentsline {subsubsection}{Filtrowanie kurs\'ow ora z materia\IeC {\l }\'ow}{23}
-\contentsline {subsection}{\numberline {4.1.2}Wymagania niefunkcjonalne}{24}
-\contentsline {subsubsection}{Bardzo dobra jako\'s\'c kodu i projektu}{24}
-\contentsline {subsubsection}{Bezpiecze\'nstwo aplikacji}{24}
-\contentsline {subsubsection}{Administrator}{24}
-\contentsline {subsubsection}{Autor}{24}
-\contentsline {subsubsection}{Kursant}{24}
-\contentsline {subsubsection}{Bezpiecze\'nstwo transmisji danych}{24}
-\contentsline {subsubsection}{Komunikacja za pomoc\k a us\IeC {\l }ug sieciowych}{24}
-\contentsline {subsubsection}{Mechanizm dynamicznego przekierowania na serwer zapasowy}{25}
-\contentsline {subsubsection}{Tworzenie kopii zapasowych bazy danych}{25}
-\contentsline {subsubsection}{Automatyczny mechanizm replikacji danych}{25}
-\contentsline {subsubsection}{Dost\k epno\'s\'c aplikacji}{25}
-\contentsline {subsubsection}{Obi\k a\.zalno\'sc}{25}
-\contentsline {section}{\numberline {4.2}Projekt bazy danych}{26}
-\contentsline {subsection}{\numberline {4.2.1}Opis encji}{26}
-\contentsline {subsubsection}{Kurs}{26}
-\contentsline {subsubsection}{TypKursu}{26}
-\contentsline {subsubsection}{UkonczonyTest}{26}
-\contentsline {subsubsection}{Test}{26}
-\contentsline {subsubsection}{TypTestu}{26}
-\contentsline {subsubsection}{PytanieTestowe}{26}
-\contentsline {subsubsection}{PytanieTestoweOdpowiedz}{26}
-\contentsline {subsubsection}{ShoutBox}{26}
-\contentsline {subsubsection}{ShoutBoxWiadomosc}{26}
-\contentsline {subsubsection}{Dziennik}{26}
-\contentsline {subsubsection}{DziennikOcena}{27}
-\contentsline {subsubsection}{MaterialNauczania}{27}
-\contentsline {subsubsection}{Section}{27}
-\contentsline {subsubsection}{Profil}{27}
-\contentsline {subsubsection}{GrupaUzytkownikow}{27}
-\contentsline {subsection}{\numberline {4.2.2}Uproszczony model konceptualny (CDM) - struktura tabel i relacje}{28}
-\contentsline {subsection}{\numberline {4.2.3}Model fizyczny bazy danych PDM}{29}
-\contentsline {section}{\numberline {4.3}Architektura Systemu}{30}
-\contentsline {subsection}{\numberline {4.3.1}Wybrane diagramy sekwencji funkcjonalno\'sci}{31}
-\contentsline {subsection}{\numberline {4.3.2}Mechanizmy zabezpiecze\'n}{34}
-\contentsline {chapter}{\numberline {5}Implementacja systemu zdalnego nauczania}{36}
-\contentsline {section}{\numberline {5.1}Zewn\k etrzny hosting}{36}
+\contentsline {chapter}{\numberline {1}Cel i zakres pracy}{7}
+\contentsline {chapter}{\numberline {2}Kszta\IeC {\l }cenie na odleg\IeC {\l }o\'s\'c}{8}
+\contentsline {section}{\numberline {2.1}Definicja kszta\IeC {\l }cenia na odleg\IeC {\l }o\'s\'c}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {section}{\numberline {2.2}Korzy\'sci p\IeC {\l }yn\k ace z u\.zywania system\'ow kszta\IeC {\l }cenia na odleg\IeC {\l }o\'s\'c}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {section}{\numberline {2.3}Ograniczenia kszta\IeC {\l }cenia na odleg\IeC {\l }o\'s\'c}{9}
+\contentsline {section}{\numberline {2.4}Klasyfikacja system\'ow kszta\IeC {\l }cenia na odleg\IeC {\l }o\'s\'c}{10}
+\contentsline {subsection}{\numberline {2.4.1}Systemy do zarz\k adzania kursami(CMS)}{10}
+\contentsline {subsection}{\numberline {2.4.2}Systemy wspomagaj\k ace proces nauczania (LMS)}{11}
+\contentsline {chapter}{\numberline {3}Wybrane technologie realizacji system\'ow webowych}{12}
+\contentsline {section}{\numberline {3.1}Formaty danych JSON oraz XML}{12}
+\contentsline {subsubsection}{JSON}{12}
+\contentsline {subsubsection}{Cechy formatu JSON}{12}
+\contentsline {subsubsection}{XML}{13}
+\contentsline {subsubsection}{Cechy formatu XML}{13}
+\contentsline {subsubsection}{Por\'ownanie JSON oraz XML}{13}
+\contentsline {section}{\numberline {3.2}Protoko\IeC {\l }y SOAP oraz REST}{15}
+\contentsline {subsubsection}{SOAP}{15}
+\contentsline {subsubsection}{Zalety SOAP}{16}
+\contentsline {subsubsection}{Wady SOAP}{16}
+\contentsline {subsubsection}{REST}{17}
+\contentsline {subsubsection}{Zalety REST}{18}
+\contentsline {subsubsection}{Wady REST}{18}
+\contentsline {section}{\numberline {3.3}Framework Asp.Net MVC}{19}
+\contentsline {subsubsection}{Model}{20}
+\contentsline {subsubsection}{Kontroler}{20}
+\contentsline {subsubsection}{Widok}{20}
+\contentsline {subsubsection}{Opis komunikacji}{20}
+\contentsline {section}{\numberline {3.4}Technologia WCF - Windows communication foundation}{21}
+\contentsline {section}{\numberline {3.5}Mapowanie obiektowo-relacyjne - NHibernate}{22}
+\contentsline {chapter}{\numberline {4}Projekt systemu zdalnego nauczania}{24}
+\contentsline {section}{\numberline {4.1}Wymagania projektowe}{24}
+\contentsline {subsection}{\numberline {4.1.1}Wymagania funkcjonalne}{24}
+\contentsline {subsubsection}{Tworzenie u\.zytkownik\'ow oraz przydzielanie uprawnie\'n}{24}
+\contentsline {subsubsection}{Zarz\k adzanie kursami}{25}
+\contentsline {subsubsection}{Zarz\k adzanie materia\IeC {\l }ami nauczania}{25}
+\contentsline {subsubsection}{Materia\IeC {\l }y nauczania - proces nauczania}{25}
+\contentsline {subsubsection}{Obszar informacyjny}{25}
+\contentsline {subsubsection}{Obszar nauczania}{25}
+\contentsline {subsubsection}{Obszar podsumowania}{26}
+\contentsline {subsubsection}{Zarz\k adzanie testami}{26}
+\contentsline {subsubsection}{Mechanizm rozwi\k azywania oraz sprawdzania test\'ow}{26}
+\contentsline {subsubsection}{Zarz\k adzanie ocenami}{26}
+\contentsline {subsubsection}{Filtrowanie kurs\'ow oraz materia\IeC {\l }\'ow}{26}
+\contentsline {subsection}{\numberline {4.1.2}Wymagania niefunkcjonalne}{27}
+\contentsline {subsubsection}{Bardzo dobra jako\'s\'c kodu i projektu}{27}
+\contentsline {subsubsection}{Bezpiecze\'nstwo aplikacji}{27}
+\contentsline {subsubsection}{Administrator}{27}
+\contentsline {subsubsection}{Autor}{27}
+\contentsline {subsubsection}{Kursant}{27}
+\contentsline {subsubsection}{Bezpiecze\'nstwo transmisji danych}{27}
+\contentsline {subsubsection}{Komunikacja za pomoc\k a us\IeC {\l }ug sieciowych}{27}
+\contentsline {subsubsection}{Mechanizm dynamicznego przekierowania na serwer zapasowy}{28}
+\contentsline {subsubsection}{Tworzenie kopii zapasowych bazy danych}{28}
+\contentsline {subsubsection}{Automatyczny mechanizm replikacji danych}{28}
+\contentsline {subsubsection}{Dost\k epno\'s\'c aplikacji}{28}
+\contentsline {subsubsection}{Obi\k a\.zalno\'s\'c}{28}
+\contentsline {section}{\numberline {4.2}Projekt bazy danych}{29}
+\contentsline {subsection}{\numberline {4.2.1}Opis encji}{29}
+\contentsline {subsubsection}{Kurs}{29}
+\contentsline {subsubsection}{TypKursu}{29}
+\contentsline {subsubsection}{UkonczonyTest}{29}
+\contentsline {subsubsection}{Test}{29}
+\contentsline {subsubsection}{TypTestu}{29}
+\contentsline {subsubsection}{PytanieTestowe}{29}
+\contentsline {subsubsection}{PytanieTestoweOdpowiedz}{29}
+\contentsline {subsubsection}{ShoutBox}{29}
+\contentsline {subsubsection}{ShoutBoxWiadomosc}{29}
+\contentsline {subsubsection}{Dziennik}{29}
+\contentsline {subsubsection}{DziennikOcena}{30}
+\contentsline {subsubsection}{MaterialNauczania}{30}
+\contentsline {subsubsection}{Section}{30}
+\contentsline {subsubsection}{Profil}{30}
+\contentsline {subsubsection}{GrupaUzytkownikow}{30}
+\contentsline {subsection}{\numberline {4.2.2}Uproszczony model konceptualny (CDM) - struktura tabel i relacje}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {subsection}{\numberline {4.2.3}Model fizyczny bazy danych PDM}{33}
+\contentsline {paragraph}{}{33}
+\contentsline {paragraph}{}{34}
+\contentsline {section}{\numberline {4.3}Architektura Systemu}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {subsection}{\numberline {4.3.1}Diagramy sekwencji wybranych funkcjonalno\'sci}{36}
 \contentsline {paragraph}{}{36}
-\contentsline {section}{\numberline {5.2}Realizacja bazy danych}{36}
-\contentsline {section}{\numberline {5.3}Realizacja aplikacji}{37}
-\contentsline {subsection}{\numberline {5.3.1}Realizacja mechanizm\'ow dost\k epu do bazy danych}{37}
-\contentsline {paragraph}{}{37}
-\contentsline {subsection}{\numberline {5.3.2}Realizacja mechanizm\'ow przetwarzania danych}{40}
-\contentsline {subsection}{\numberline {5.3.3}Realizacja protoko\IeC {\l }u komunikacji}{42}
-\contentsline {section}{\numberline {5.4}Wykorzystane narz\k edzia}{45}
-\contentsline {subsection}{\numberline {5.4.1}Mechanizm logowania zdarze\'n - NLog}{45}
-\contentsline {subsection}{\numberline {5.4.2}Testy jednostkowe - NUnit}{47}
-\contentsline {subsubsection}{Testy dost\k epu do bazy danych}{47}
-\contentsline {subsubsection}{Testy kontroler\'ow - RhinoMocks}{48}
-\contentsline {subsection}{\numberline {5.4.3}Mapowanie obiektowo relacyjne - NHibernate}{51}
-\contentsline {subsubsection}{Tworzenie mapowa\'n - FluentNHibernate}{51}
-\contentsline {section}{\numberline {5.5}Interfejs u\.zytkownika}{53}
-\contentsline {chapter}{\numberline {6}Testowanie i ocena efektywno\'sci}{56}
-\contentsline {section}{\numberline {6.1}Wybrane Testy Mechanizm\'ow Zabezpiecze\'n}{56}
-\contentsline {subsection}{\numberline {6.1.1}Sprawdzenie mechanizm\'ow szyfrowania wiadomo\'sci}{56}
-\contentsline {subsection}{\numberline {6.1.2}Sprawdzenie mechanizmu logowania oraz poziom\'ow uprawnie\'n}{56}
-\contentsline {subsection}{\numberline {6.1.3}Zabezpieczenie przed atakami typu wstrzykiwanie skrypt\'ow}{56}
-\contentsline {section}{\numberline {6.2}Testy wydajno\'sci mechanizm\'ow przetwarzania danych}{58}
-\contentsline {subsection}{\numberline {6.2.1}Wybrane testy funkcjonalne}{59}
-\contentsline {subsubsection}{Tworzenie materia\IeC {\l }\'ow nauczania}{59}
-\contentsline {subsubsection}{Tworzenie test\'ow}{59}
-\contentsline {subsubsection}{Rozwi\k azywanie test\'ow}{60}
-\contentsline {subsubsection}{Tworzenie kursu}{60}
-\contentsline {subsection}{\numberline {6.2.2}Analiza oraz optymalizacja zapyta\'n generowanych przez NHibernate za pomoc\k a narz\k edzia NHProf}{61}
-\contentsline {subsubsection}{Pobieranie danych}{62}
-\contentsline {subsubsection}{Zapisywanie danych}{63}
-\contentsline {subsection}{\numberline {6.2.3}Testy obci\k a\.zeniowe}{63}
-\contentsline {subsubsection}{script.txt}{63}
-\contentsline {subsubsection}{distribution.txt}{63}
-\contentsline {subsubsection}{config.txt}{64}
-\contentsline {subsubsection}{Ustawienia}{64}
-\contentsline {subsubsection}{Scenariusz testowy}{64}
-\contentsline {subsubsection}{Przeprowadzenie testu}{64}
-\contentsline {subsection}{\numberline {6.2.4}Badanie czasu odpowiedzi us\IeC {\l }ug sieciowych}{67}
-\contentsline {subsection}{\numberline {6.2.5}Testy konfiguracji roz\IeC {\l }o\.zenia us\IeC {\l }ug sieciowych}{68}
-\contentsline {section}{\numberline {6.3}Wnioski z test\'ow i bada\'n}{69}
-\contentsline {chapter}{\numberline {7}Podsumowanie}{70}
-\contentsline {chapter}{Bibilografia}{71}
+\contentsline {subsection}{\numberline {4.3.2}Mechanizmy zabezpiecze\'n}{37}
+\contentsline {chapter}{\numberline {5}Implementacja systemu zdalnego nauczania}{39}
+\contentsline {section}{\numberline {5.1}Zewn\k etrzny hosting}{39}
+\contentsline {paragraph}{}{39}
+\contentsline {section}{\numberline {5.2}Realizacja bazy danych}{39}
+\contentsline {section}{\numberline {5.3}Realizacja aplikacji}{40}
+\contentsline {subsection}{\numberline {5.3.1}Mechanizmy dost\k epu do bazy danych}{40}
+\contentsline {paragraph}{}{40}
+\contentsline {subsection}{\numberline {5.3.2}Mechanizmy przetwarzania danych}{43}
+\contentsline {subsection}{\numberline {5.3.3}Realizacja protoko\IeC {\l }u komunikacji}{45}
+\contentsline {section}{\numberline {5.4}Wykorzystane narz\k edzia}{48}
+\contentsline {subsection}{\numberline {5.4.1}Mechanizm logowania zdarze\'n - NLog}{48}
+\contentsline {subsection}{\numberline {5.4.2}Testy jednostkowe - NUnit}{50}
+\contentsline {subsubsection}{Testy dost\k epu do bazy danych}{50}
+\contentsline {subsubsection}{Testy kontroler\'ow - RhinoMocks}{51}
+\contentsline {subsection}{\numberline {5.4.3}Mapowanie obiektowo relacyjne - NHibernate}{54}
+\contentsline {subsubsection}{Tworzenie mapowa\'n - FluentNHibernate}{54}
+\contentsline {section}{\numberline {5.5}Interfejs u\.zytkownika}{56}
+\contentsline {paragraph}{}{56}
+\contentsline {chapter}{\numberline {6}Testowanie i ocena efektywno\'sci}{59}
+\contentsline {section}{\numberline {6.1}Wybrane testy funkcjonalne}{59}
+\contentsline {paragraph}{}{59}
+\contentsline {subsection}{\numberline {6.1.1}Test procedury tworzenia nowego materia\IeC {\l }u nauczania}{59}
+\contentsline {subsubsection}{Przej\'scie do panelu edycji kursu}{59}
+\contentsline {subsubsection}{Dodanie nowego materia\IeC {\l }u nauczania}{60}
+\contentsline {subsubsection}{Przej\'scie do panelu edycji materia\IeC {\l }u nauczania}{61}
+\contentsline {subsubsection}{Modyfikacja opisu, sprawdzenie formatowania}{62}
+\contentsline {subsubsection}{Dodanie sekcji nauczania}{63}
+\contentsline {subsection}{\numberline {6.1.2}Test procedury tworzenia nowego testu}{63}
+\contentsline {subsection}{\numberline {6.1.3}Test procedury rozwi\k azywania testu}{64}
+\contentsline {subsection}{\numberline {6.1.4}Test procedury tworzenia nowego kursu}{64}
+\contentsline {section}{\numberline {6.2}Testy zabezpiecze\'n przed atakiem poprzez wstrzykiwanie skrypt\'ow}{65}
+\contentsline {paragraph}{}{65}
+\contentsline {subsubsection}{Scenariusz testowy - w\IeC {\l }\k aczony domy\'slny mechanizm zabezpieczaj\k acy }{65}
+\contentsline {subsubsection}{Scenariusz testowy - wy\IeC {\l }\k aczony domy\'slny mechanizm zabezpieczaj\k acy}{66}
+\contentsline {section}{\numberline {6.3}Testy oraz optymalizacja zapyta\'n generowanych przez framework NHibernate}{67}
+\contentsline {paragraph}{}{67}
+\contentsline {paragraph}{}{67}
+\contentsline {paragraph}{}{68}
+\contentsline {paragraph}{}{68}
+\contentsline {paragraph}{}{68}
+\contentsline {paragraph}{}{68}
+\contentsline {subsubsection}{Testowanie operacji pobierania danych}{68}
+\contentsline {paragraph}{}{68}
+\contentsline {paragraph}{}{68}
+\contentsline {paragraph}{}{68}
+\contentsline {subsubsection}{Optymalizacja operacji pobierania danych}{69}
+\contentsline {paragraph}{}{69}
+\contentsline {paragraph}{}{69}
+\contentsline {paragraph}{}{69}
+\contentsline {paragraph}{}{69}
+\contentsline {subsubsection}{Testowanie operacji zapisywania danych}{70}
+\contentsline {paragraph}{}{70}
+\contentsline {paragraph}{}{70}
+\contentsline {paragraph}{}{70}
+\contentsline {subsubsection}{Optymalizacja operacji zapisywania danych}{70}
+\contentsline {paragraph}{}{70}
+\contentsline {paragraph}{}{70}
+\contentsline {section}{\numberline {6.4}Ocena wydajno\'sci aplikacji oraz proces optymalizacji mechanizm\'ow przetwarzania danych }{71}
+\contentsline {paragraph}{}{71}
+\contentsline {paragraph}{}{71}
+\contentsline {subsubsection}{Ustawienia skryptu generuj\k acego zapytania}{71}
+\contentsline {paragraph}{}{71}
+\contentsline {paragraph}{}{71}
+\contentsline {subsubsection}{Ustawienia konfiguracji roz\IeC {\l }o\.zenia test\'ow}{71}
+\contentsline {paragraph}{}{71}
+\contentsline {paragraph}{}{72}
+\contentsline {subsubsection}{Ustawienia symulacji}{72}
+\contentsline {paragraph}{}{72}
+\contentsline {subsubsection}{Scenariusz testowy}{72}
+\contentsline {subsubsection}{Przeprowadzenie testu}{72}
+\contentsline {paragraph}{}{72}
+\contentsline {subsubsection}{Wyniki pierwszego testu}{73}
+\contentsline {subsubsection}{Analiza dzia\IeC {\l }ania aplikacji}{73}
+\contentsline {paragraph}{}{73}
+\contentsline {subsubsection}{Analiza dzia\IeC {\l }ania aplikacji po wprowadzeniu poprawki}{74}
+\contentsline {paragraph}{}{74}
+\contentsline {subsubsection}{Analiza generowanych zapyta\'n przez framework NHibernate}{75}
+\contentsline {subsubsection}{Analiza dzia\IeC {\l }ania us\IeC {\l }ug sieciowych}{75}
+\contentsline {section}{\numberline {6.5}Ocena wp\IeC {\l }ywu konfiguracji roz\IeC {\l }o\.zenia us\IeC {\l }ug sieciowych na czas odpowiedzi}{77}
+\contentsline {subsubsection}{Scenariusz testowy}{77}
+\contentsline {subsubsection}{Lokalny serwer us\IeC {\l }ug sieciowych}{77}
+\contentsline {subsubsection}{Zdalny serwer us\IeC {\l }ug sieciowych}{77}
+\contentsline {paragraph}{}{78}
+\contentsline {section}{\numberline {6.6}Ocena wydajno\'sci mechanizmu przekierowania na zapasowy serwer us\IeC {\l }ug sieciowych}{78}
+\contentsline {subsubsection}{Scenariusz testowy}{78}
+\contentsline {subsubsection}{Analiza dzia\IeC {\l }ania aplikacji z wy\IeC {\l }\k aczonym mechanizmem przekierowania}{79}
+\contentsline {paragraph}{}{79}
+\contentsline {subsubsection}{Analiza dzia\IeC {\l }ania aplikacji z w\IeC {\l }\k aczonym mechanizmem przekierowania - 150ms}{79}
+\contentsline {subsubsection}{Analiza dzia\IeC {\l }ania aplikacji z w\IeC {\l }\k aczonym mechanizmem przekierowania - 100ms}{79}
+\contentsline {paragraph}{}{79}
+\contentsline {section}{\numberline {6.7}Wnioski z test\'ow i bada\'n}{80}
+\contentsline {paragraph}{}{80}
+\contentsline {paragraph}{}{81}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{82}
+\contentsline {paragraph}{}{82}
+\contentsline {chapter}{Bibilografia}{84}

@@ -1,234 +1,361 @@
-
 \chapter{Testowanie i ocena efektywnoœci}
-\section{Wybrane Testy Mechanizmów Zabezpieczeñ}
-\subsection{Sprawdzenie mechanizmów szyfrowania wiadomoœci}
-Do sprawdzenia zawartoœci przesy³anych wiadomoœci u¿yjê testowej aplikacji \textbf{(WcfTestClient)} pozwalaj¹cej wysy³aæ zapytania do us³ugi sieciowej. Aplikacja ta jest udostêpniana wraz z pakietem \textbf{Visual Studio}. 
-
-\subsection{Sprawdzenie mechanizmu logowania oraz poziomów uprawnieñ}
-Sprawdzenie dzialania logowania i blokad dostepu do aplikacji
-
-\subsection{Zabezpieczenie przed atakami typu wstrzykiwanie skryptów}
-
-W tym teœcie przetestujemy odpornoœæ aplikacji na próby wstrzykniêcia skryptów do pól tekstowych. Po wpisaniu skryptu aplikacja powinna zwróciæ b³¹d informuj¹cy o próbie przeprowadzenia takiego ataku.
-
-\begin{center}
- \includegraphics{/Tests/scriptinject.jpg}
-\end{center}
-
-\begin{center}
-	Rys. Atak poprzez wstrzykiwanie skryptów.
-\end{center}
-
-W tym przypadku serwer zwróci³ odpowiedni b³¹d informuj¹cy o próbie wstrzykniêcia skryptu. Zabezpieczenie to jest domyœlnym ustawieniem w frameworku \textbf{Asp.Net Mvc}. Dane zwracane z widoku przed przetworzeniem i wys³aniem do odpowiedniego kontrolera odpowiedzialnego za uaktualnienie danych w bazie s¹ sprawdzane w celu wykrycia potencjalnie niebezpiecznych skryptów. Istnieje mo¿liwoœæ jawnego wy³¹czenia tego zabezpieczenia. Opcja ta zosta³a u¿yta w przypadku edycji materia³ów nauczania oraz testów. Pola tekstowe w tym przypadku mo¿liwoœæ umieszczania fragmentów kodu , które zosta³yby zinterpretowane jako potencjalne zagro¿enie.\newline
-
-\begin{center}
- \includegraphics{/Tests/scriptinject2.jpg}
-\end{center}
-\begin{center}
-	Rys. Atak poprzez wstrzykiwanie skryptów wy³¹czony mechanizm.
-\end{center}
-\begin{center}
-  \includegraphics{/Tests/sucessfullscriptinject.jpg}
-\end{center}
-\begin{center}
-	Rys. Udany atak typu script inject.
-\end{center}
-
-W trakcie testów odkry³em , ¿e istnieje mo¿liwoœæ strzykniêcia skryptu , który  odpala³ siê po prze³adowaniu strony. W zaprezentowanym przyk³adzie wyœwietlany jest jedynie prosty alert z testow¹ informacj¹ , jednak¿e taka luka pozwala wrzucaæ najrozmaitsze skrypty pozwalaj¹ce wyrz¹dziæ spore szkody. Dobrym przyk³adem mo¿e byæ chocia¿by wstrzykniêcie keyloggera przechwytuj¹cego wszystkie znaki wprowadzane przez u¿ytkownika.\newline
-Do oczyszczenia wprowadzanych danych stworzy³em prosty mechanizm oparty na wyra¿eniach regularnych. Standardowe rozwi¹zanie koduj¹ce odpowiednie znaki  by³o doœæ problematyczne poniewa¿ czêœæ wyœwietlanych wartoœci by³a dodatkowo przetwarzana po stronie klienta. Po wprowadzeniu poprawek serwer pozwala zapisaæ takie dane jednak¿e zabezpieczenie odpowiednio oczyszcza zapisywany tekst.
-
-\newpage{}
-
-\section{Testy wydajnoœci mechanizmów przetwarzania danych}
-\newpage{}
-\newpage{}
-\newpage{}
-\subsection{Wybrane testy funkcjonalne}
-\subsubsection{Tworzenie materia³ów nauczania}
-Scenariusz testowy obejmuje:
+\section{Wybrane testy funkcjonalne}
+\paragraph{}
+W niniejszym punkcie przedstawiono testy weryfikuj¹ce poprawnoœæ dzia³ania wybranych funkcjonalnoœci systemu. 
+\subsection{Test procedury tworzenia nowego materia³u nauczania}
+Scenariusz testowy zak³ada wykonanie czynnoœci:
 \begin{itemize}
-	\item stworzenie nowego materia³u nauczania
-	\item stworzenie parametrów opisowych
-   \item stworzenie sekcji nauczania
+	\item stworzenie nowego materia³u nauczania,
+	\item uaktualnienie parametrów materia³u nauczania,
+   \item stworzenie sekcji z odpowiedni¹ zawartoœci¹.
 \end{itemize}
 
+
+\subsubsection{Przejœcie do panelu edycji kursu}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=10cm]{/Functional/CourseEdit.jpg}
+\caption{Panel edycji kursu}
+\end{figure}
+
+Dane zosta³y poprawnie pobrane z bazy. Widaæ wype³nione pola tekstowe oraz stworzon¹ listê dostêpnych materia³ów nauczania, przynale¿¹cych do danego kursu.
+
+\subsubsection{Dodanie nowego materia³u nauczania}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=12cm]{/Functional/CourseEditLM.jpg}
+\caption{Lista materia³ów nauczania}
+\end{figure}
+
+Poni¿ej wygenerowanej listy znajduje siê przycisk \textit{Dodaj}.
+Przyciœniêcie tego przycisku spowodowa³o wygenerowanie nowego materia³u nauczania w bazie danych oraz dodanie stworzonego materia³u do listy.
+
+\begin{figure}[H]
+\centering
+  \includegraphics{/Functional/DBprzedLM.jpg}
+\caption{Baza danych przed dodaniem materia³u}
+\end{figure}
+
+
+Przed procedur¹ dodania materia³u nauczania w bazie znajduj¹ siê 23 rekordy.
+
+\begin{figure}[H]
+\centering
+  \includegraphics{/Functional/DBpoLM.jpg}
+\caption{Baza danych po dodaniu materia³u}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+  \includegraphics{/Functional/NewLM.jpg}
+\caption{Nowy element na liœcie}
+\end{figure}
+
+Po wykonaniu operacji dodawania w bazie pojawi³ siê kolejny rekord o numerze ID: 24.
+Pojawi³ siê równie¿ nowy element na liœcie materia³ów.
+
+\subsubsection{Przejœcie do panelu edycji materia³u nauczania}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=12cm]{/Functional/EditLM.jpg}
+\caption{Panel edycji materia³u nauczania}
+\end{figure}
+
+Zosta³ wygenerowany odpowiedni formularz z pustymi polami tekstowymi.
+
+\subsubsection{Modyfikacja opisu, sprawdzenie formatowania}
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=12cm]{/Functional/formatowanie.jpg}
+\caption{Test formatowania tekstu}
+\end{figure}
+
+Poni¿ej pola tekstowego generowany jest podgl¹d tekstu przepuszczonego przez parser. Widaæ, ¿e wybrane komendy dzia³aj¹  i odpowiednio formatuj¹ tekst. 
+
+ \begin{figure}[H]
+\centering
+  \includegraphics[width=12cm]{/Functional/LMalert.jpg}
+\caption{Alert informuj¹cy o poprawnym zapisie danych}
+\end{figure}
+
+Po zapisaniu danych wyœwietla siê alert informacyjny.
+
+ \begin{figure}[H]
+\centering
+  \includegraphics[width=12cm]{/Functional/bazadescadded.jpg}
+\caption{Baza danych po dodaniu opisu}
+\end{figure}
+
+W bazie danych poprawnie zosta³o zaktualizowane pole \textit{Description} dla elementu o numerze ID: 24
+
+\subsubsection{Dodanie sekcji nauczania}
+
+ \begin{figure}[H]
+\centering
+  \includegraphics[width=12cm]{/Functional/alertSection.jpg}
+\caption{Alert informuj¹cy o poprawnym stworzeniu nowej sekcji}
+\end{figure}
+
+ \begin{figure}[H]
+\centering
+  \includegraphics[width=8cm]{/Functional/NoSection.jpg}
+\caption{Tabela zawieraj¹ca rekordy sekcji przed dodaniem}
+\end{figure}
+
+ \begin{figure}[H]
+\centering
+  \includegraphics[width=8cm]{/Functional/newSection.jpg}
+\caption{Tabela zawieraj¹ca rekordy sekcji po dodaniu nowej sekcji}
+\end{figure}
+
+Przyciœniêcie przycisku dodaj sekcjê spowodowa³o dodanie nowego rekordu do bazy oraz wyœwietlenie alertu informuj¹cego.
+W bazie danych pojawi³ siê nowy wpis o numerze ID: 17.
 \begin{table}[h]
-\begin{tabular}{|r|c|l|}
+\caption{Testy funkcjonalne operacji tworzenia materia³ów nauczania}
+\begin{tabular}{|l|l|c|}
   \hline
-  Akcja  & Oczekiwany rezultat & Wynik \\
+  Krok  & Oczekiwany rezultat & Wynik \\
   \hline
-  Przejœcie do panelu edycji & Wygenerowanie odpowiedniego widoku & OK\\
+  1. Przejœcie do panelu edycji & Dane pobrane z bazy& OK\\
+  Kursu & Wygenerowanie widoku & OK\\
   \hline
-  Dodanie materia³u nauczania & Wygenerowanie nowego materia³u w bazie danych & OK\\
+  2. Dodanie materia³u nauczania &  Nowy rekord dodany do tabeli& OK\\
   & Przejœcie do widoku edycji & OK\\
   \hline
+  3. Edycja parametrów & Poprawne formatowanie tekstu & OK\\
+	Zatwierdzenie zmian& Uaktualnienie rekordu w bazie danych &OK\\
+  & Wyœwietlenie alertu  informacyjnego& OK\\
   \hline
-  Edycja pól opisowych & Uaktualnienie danych w bazie & OK\\
-  & Wyœwietlenie alerta informuj¹cego o powodzeniu akcji & OK\\
-  \hline
-  \hline
-  Dodawanie Sekcji nauczania& Dodanie sekcji w bazie& OK\\
-  & Wyœwietlenie alerta informuj¹cego o powodzeniu akcji & OK\\
-  \hline
-  \hline
-  Edytowanie Sekcji nauczania& Uaktualnienie sekcji w bazie e& OK\\
-  & Wyœwietlenie alerta informuj¹cego o powodzeniu akcji & OK\\
+  4. Dodawanie Sekcji nauczania& Dodanie rekordu w bazie& OK\\
+  & Wyœwietlenie alertu  informacyjnego & OK\\
   \hline
 \end{tabular}
-\caption{Testy funkcjonalne tworzenie materia³ów nauczania}
 \end{table}
 
-
-\subsubsection{Tworzenie testów}
-Scenariusz testowy obejmuje:
-
+Kolejne testy s¹ przeprowadzane przy u¿yciu analogicznej procedury testowej.
+\subsection{Test procedury tworzenia nowego testu}
+Scenariusz testowy zak³ada wykonanie czynnoœci:
 \begin{itemize}
-	\item stworzenie nowego testu
-	\item stworzenie nowego pytania z odpowiedziami
+	\item stworzenie nowego testu,
+	\item stworzenie pytañ z odpowiedziami.
 \end{itemize}
 
 \begin{table}[h]
-\begin{tabular}{|r|c|l|}
+\caption{Testy funkcjonalne operacji tworzenie testu}
+\begin{tabular}{|l|l|c|}
   \hline
-  Akcja  & Oczekiwany rezultat & Wynik \\
+  Krok  & Oczekiwany rezultat & Wynik \\
   \hline
-  Przejœcie do panelu tworzenia testu & Wygenerowanie odpowiedniego widoku & OK\\
+  1. Przejœcie do panelu tworzenia testu &Wygenerowanie odpowiedniego widoku & OK\\
   \hline
-  Dodanie Testu & Wygenerowanie nowego testu  & OK\\
-  & Dodanie testu do bazy danych& OK\\
-  & Przejœcie do widoku edycji & OK\\
+  2. Dodanie Testu & Dodanie nowego rekordu do bazy& OK\\
+  & Przejœcie do widoku edycji testu & OK\\
   \hline
-  \hline
-  Dodanie nowego pytania & Wyœwietlenie okna modalnego  & \\
+  3. Dodanie nowego pytania & Wyœwietlenie modalnego okna  & \\
   &z formularzem edycji pytania& OK\\
-  & Dodanie opisu oraz dodanie odpowiedzi & OK\\
   \hline
-  Zatwierdzenie pytania & Dodanie pytania do bazy danych & OK\\
+  4. Stworzenie pytania & Poprawne formatowanie tekstu& OK\\
+  \hline
+  5. Zatwierdzenie pytania & Dodanie pytania do bazy danych & OK\\
+& Zamkniêcie modalnego okna& OK\\
   \hline
 \end{tabular}
-\caption{Testy funkcjonalne tworzenie testu}
+
 \end{table}
 
-
-\subsubsection{Rozwi¹zywanie testów}
-Scenariusz testowy obejmuje:
+\subsection{Test procedury rozwi¹zywania testu}
+Scenariusz testowy zak³ada wykonanie czynnoœci:
 \begin{itemize}
-	\item uruchomienie testu
-	\item rozwi¹zanie testu
-	\item sprawdzenie wyniku
+	\item uruchomienie testu,
+	\item rozwi¹zanie testu,
+	\item sprawdzenie wyniku.
 \end{itemize}
 
 \begin{table}[h]
-\begin{tabular}{|r|c|l|}
+\caption{Testy funkcjonalne operacji rozwi¹zywanie  testu}
+\begin{tabular}{|l|l|c|}
   \hline
-  Akcja  & Oczekiwany rezultat & Wynik \\
+  Krok  & Oczekiwany rezultat & Wynik \\
   \hline
-  Przejœcie do panelu   & Pobranie danych z bazy danych& OK\\
-  rozwi¹zywania testu &&\\
-   &Wygenerowanie widoku& OK\\
+  1. Przejœcie do panelu   & Pobranie danych z bazy danych& OK\\
+  rozwi¹zywania testu &Wygenerowanie widoku& OK\\
   \hline
-  Zatwierdzenie testu & Wyliczenie wyniku & OK\\
+  2. Zatwierdzenie testu & Wyliczenie wyniku & OK\\
   & Dodanie rekordu do bazy danych& OK\\
   & Wygenerowanie widoku z wynikiem & OK\\
   \hline
 \end{tabular}
-\caption{Testy funkcjonalne rozwi¹zywania  testu}
+
 \end{table}
 
-\subsubsection{Tworzenie kursu}
+\subsection{Test procedury tworzenia nowego kursu}
 Scenariusz testowy obejmuje:
 \begin{itemize}
-	\item Stworzenie kursu
+	\item stworzenie nowego kursu
 \end{itemize}
 
 \begin{table}[h]
-\begin{tabular}{|r|c|l|}
+\caption{Testy funkcjonalne operacji tworzenie kursu}
+\begin{tabular}{|l|l|c|}
   \hline
-  Akcja  & Oczekiwany rezultat & Wynik \\
+  Krok  & Oczekiwany rezultat & Wynik \\
   \hline
-  Przejœcie widoku tworzenia kurs&Wygenerowanie widoku z formularzem& OK\\
+  1. Przejœcie do  widoku tworzenia kursu&Wygenerowanie widoku z formularzem& OK\\
   \hline
-  Zatwierdzenie danych& Stworzenie kursu w bazie danych & OK\\
-  & Stworzenie grupy w bazie danych& OK\\
-  & Stworzenie shoutboxa w bazie danych& OK\\
-  & Dodanie aktualnego u¿ytkownika &\\
-  & jako autora kursu& OK\\
+  2. Zatwierdzenie danych& Stworzenie kursu w bazie danych & OK\\
+  & Stworzenie rekordu w tabeli ''Grupa''& OK\\
+  & Stworzenie rekordu w tabeli ''Shoutbox''& OK\\
   \hline
 \end{tabular}
-\caption{Testy funkcjonalne Tworzenie kursu}
+
 \end{table}
 
-
 \newpage{}
-\subsection{Analiza oraz optymalizacja zapytañ generowanych przez NHibernate za pomoc¹ narzêdzia NHProf}
-Nhibernate jest bardzo dobrym i popularnym mapperem obiektowo relacyjnym. Prócz samej biblioteki dostêpne s¹ ró¿ne narzêdzia pozwalaj¹ce analizowaæ dzia³anie frameworka. Jednym z takich narzêdzi jest \textbf{NHProf}. Produkt \textbf{Ayende Rahien-a} znanego bloggera oraz jednej z najbardziej aktywnych osób w zespole odpowiedzialnym za przeniesienie Hibernate-a z Javy na platformê .Net.\newline
 
-Aplikacja ta jest niestety p³atna ale istnieje mo¿liwoœæ przetestowania , w ¿aden sposób nieograniczonej wersji aplikacji , w terminie do 30 dni.
+\section{Testy zabezpieczeñ przed atakiem poprzez wstrzykiwanie skryptów}
+\paragraph{}
 
-\begin{center}
-  \includegraphics[width=14cm]{/Tests/nhprof.jpg}
-\end{center}
-\begin{center}
-	Rys. G³ówny widok aplikacji NHProf.
-\end{center}
+Test ten ma na celu sprawdzenie odpornoœci aplikacji na próby wstrzykniêcia skryptów do pól tekstowych. Dobrze zabezpieczona aplikacja w przypadku próby wys³ania tekstu zawieraj¹cego ró¿nego rodzaju skrypty (np. fragmenty kodu jêzyka \textbf{Javascript}) powinna odrzuciæ, b¹dŸ zmodyfikowaæ dane tak, by by³y one bezpieczne w momencie wyœwietlania strony \textbf{WWW} z poziomu przegl¹darki internetowej.\newline
 
-\textbf{NHprof} jest aplikacj¹ pozwalaj¹c¹ analizowaæ zapytania generowane poprzez framework \textbf{NHibernate}. Prócz mechanizmu przechwytywania zapytañ posiada œwietne narzêdzia analizuj¹ce dzia³anie \textbf{ORM-a}. Potrafi wykryæ najczêstsze problemy wynikaj¹ce z b³êdnej konfiguracji , b³êdnych mapowañ b¹dŸ b³êdnych mechanizmów przetwarzania.\newline
+B³êdnie zabezpieczona aplikacja pozwoli ''wrzuciæ'' taki skrypt w niezmienionej formie do bazy danych. W momencie, gdy skrypt ten zostanie pobrany z bazy i wrzucony na wygenerowan¹ stronê WWW, przegl¹darka podejmie próbê uruchomienia podrzuconego skryptu.  
 
-Korzystanie z tego narzêdzia jest stosunkowo proste. Wystarczy podczepiæ odpowiedni¹ bibliotekê i za inicjalizowaæ okreœlon¹ statyczn¹ klasê. \textbf{NHprof} korzysta z biblioteki \textbf{log4net} (alternatywna biblioteka upraszczaj¹ca mechanizmy logowania) i równie¿ nale¿y j¹ do³¹czyæ do projektu. W przypadku omawianych testów. Inicjalizacja mechanizmu profilowania jest uruchamiana w momencie startu us³ugi sieciowej.\newline
+\begin{figure}[H]
+\centering
+ \includegraphics{/Tests/scriptinject.jpg}
+\caption{Przyk³adowe wstrzykniêcie skryptu do edytora tekstowego}
+\end{figure}
+W przypadku zaprezentowanym na powy¿szym rysunku, dane wpisane do edytora tekstu, po odtworzeniu i wyœwietleniu na sronie \textbf{WWW}, zostan¹ zinterpretowane jako skrypt jêzyka \textbf{Javascript}. Wyœwietlony zostanie komunikat z wiadomoœci¹ test. Jest to nieszkodliwy skrypt, jednak¿e taka luka w aplikacji pozwala wrzuciæ skrypty mog¹ce wyrz¹dziæ spore szkody w systemie, b¹dŸ wygenerowaæ straty dla u¿ytkownika aplikacji. Przyk³adem niebezpiecznego skryptu mo¿e byæ wstrzykniêcie mechanizmu przechwytuj¹cego znaki wprowadzane przez u¿ytkownika do pól tekstowych. Dziêki temu osoba przeprowadzaj¹ca atak mog³aby pozyskaæ np. informacje dotycz¹ce konta u¿ytkownika, a nawet has³a dostêpu.\newline
 
+\subsubsection{Scenariusz testowy - w³¹czony domyœlny mechanizm zabezpieczaj¹cy }
 
-\textbf{NHProf} pozwala wyznaczyæ trzy istotne parametry , na których oprzemy ca³¹ analizê i proces optymalizacji. 
-
+Scenariusz testowy:
 \begin{itemize}
-	\item Czas zapytania - okreœla ca³kowity czas jaki jest potrzebny na wykonanie danej operacji.
-	\item Iloœæ generowanych zapytañ - okreœla liczbê zapytañ potrzebnych do wykonania danej operacji. 
-	\item Iloœæ pobieranych encji - okreœla iloœæ zwróconych obiektów 
+	\item Otwarcie widoku edycji kursu,
+	\item Wpisanie skryptu pokazanego na rysunku 6.13 do jednego z edytorów tekstowych,
+	\item Wys³anie formularza do serwera.
 \end{itemize}
 
-\begin{center}
-  \includegraphics[width=14cm]{/Tests/nhprofwynik.jpg}
-\end{center}
-\begin{center}
-	Rys. Przyk³adowy widok prezentuj¹cy wynik profilowania.
-\end{center}
-\subsubsection{Pobieranie danych}
-Przeanalizujmy proces pobierania pojedynczego obiektu typu Kurs.
+Przeprowadzenie testu spowodowa³o wyst¹pienie wyj¹tku \textbf{HttpRequestValidationException}. Jest to wiadomoœæ zwrotna domyœlnego zabezpieczenia dostêpnego na platformie Asp.Net \cite{AspNet3.5}. Mechanizm ten analizuje dane wysy³ane w postaci ¿¹dania do serwera \textbf{HTTP}, wyszukuj¹c niebezpiecznych ci¹gów znaków.\newline
 
-\begin{table}[h]
+
+\subsubsection{Scenariusz testowy - wy³¹czony domyœlny mechanizm zabezpieczaj¹cy}
+
+Istnieje mo¿liwoœæ wy³¹czenia domyœlnego zabezpieczenia dla poszczególnych stron, b¹dŸ dla ca³ej aplikacji. Zaimplementowana aplikacja posiada rozbudowany edytor tekstu dostêpny m.in z poziomu formularza edycyjnego materia³u nauczania. Dla tego konkretnego widoku edytora, zabezpieczenie to zosta³o wy³¹czone. Dziêki temu bêdzie istnia³a mo¿liwoœæ przes³ania fragmentów kodu, które w tym przypadku s¹ materia³em dydaktycznym. W przypadku pozostawienia w³¹czonego zabezpieczenia sprawdzaj¹cego zawartoœæ wysy³anych danych, wyst¹pi³by odpowiedni wyj¹tek.\newline
+
+Scenariusz testowy:
+\begin{itemize}
+	\item Otwarcie widoku edycji materia³u nauczania,
+	\item Wpisanie skryptu do jednego z edytorów tekstowych,
+	\item Wys³anie formularza do serwera,
+   \item Otwarcie widoku wyœwietlaj¹cego materia³ nauczania.
+\end{itemize}
+
+\begin{figure}[H]
 \centering
-\begin{tabular}{|r|l|}
+  \includegraphics{/Tests/scriptinject2.jpg}
+\caption{Przyk³ad testowego skryptu}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+  \includegraphics{/Tests/sucessfullscriptinject.jpg}
+\caption{Udany atak typu script injection}
+\end{figure}
+
+Po przeprowadzeniu podpunktu czwartego wyœwietli³ siê alert. Oznacza to, ¿e w tym przypadku po wy³¹czeniu domyœlnego zabezpieczenia wys³ane dane nie zosta³y zabezpieczone. Po przeanalizowaniu kodu okaza³o siê, ¿e w testowanej wersji aplikacji nie istnia³ ¿aden dodatkowy mechanizm zabezpieczaj¹cy wprowadzany tekst. Poniewa¿ edytor ten musi zezwoliæ na wrzucenie zawartoœci, która jest interpretowana jako niebezpieczna nie mo¿emy zastosowaæ domyœlnego mechanizmu. Jedn¹ z opcji pozwalaj¹cych zabezpieczyæ aplikacjê, a jednoczeœnie zezwalaj¹c¹ na dodanie bardziej rozbudowanych tekstów, jest oczyszczenie wprowadzanych danych.\newline
+\newpage{}
+
+\section{Testy i optymalizacja zapytañ generowanych przez framework NHibernate}
+\paragraph{}
+W projekcie warstwa dostêpu do danych wykorzystuje mechanizm mapowania relacyjno-obiektowego przy u¿yciu framework-a \textbf{Nhibernate}. Jest to bardzo rozbudowane narzêdzie posiadaj¹ce wiele mechanizmów pozwalaj¹cych usprawniæ proces komunikacji z baz¹ danych. Niestety jest on równie¿ bardzo z³o¿ony. Konfiguracja mechanizmów przetwarzania danych wymaga szczegó³owego testowania i usprawniania. Narzêdziem u³atwiaj¹cym ten proces jest aplikacja \textbf{NHProf} Jest to narzêdzie  pozwalaj¹ce analizowaæ proces przetwarzania danych z wykorzystaniem \textbf{NHibernate-a}.\newline
+
+\begin{figure}[H]
+\centering
+  \includegraphics[width=12cm]{/Tests/nhprof.jpg}
+\caption{G³ówny widok aplikacji NHProf.}
+\end{figure}
+\paragraph{}
+Jedn¹ z zalet wykorzystania mechanizmu  mapowania relacyjno obiektowego jest wyeliminowanie koniecznoœci rêcznego tworzenia zapytañ jêzyka \textbf{SQL}. Dobry framework mapuj¹cy zapewni mechanizm generowania zapytañ do bazy danych pod fasad¹ prostych interfejsów. Generowane zapytania mo¿na zaobserwowaæ u¿ywaj¹c darmowego narzêdzia \textbf{SqlProfile} dostêpnego wraz z serwerem \textbf{MSSQL}. Lepszym jednak rozwi¹zaniem jest wykorzystanie narzêdzia \textbf{NHProf}, które pozwala w prosty i przejrzysty sposób przeanalizowaæ generowane zapytania. Prócz mechanizmu przechwytywania zapytañ posiada œwietne narzêdzia analizuj¹ce dzia³anie \textbf{ORM-a}. Potrafi wykryæ najczêstsze problemy wynikaj¹ce z b³êdnej konfiguracji, b³êdnych mapowañ b¹dŸ b³êdnie zaprojektowanego mechanizmów przetwarzania danych. Podczepienie profilera pod testowan¹ aplikacjê jest stosunkowo proste. Ca³a procedura sprowadza siê do dodania jednej linijki kodu odpowiedzialnej za podczepienie naszej aplikacji do mechanizmu logowania u¿ywanego przez \textbf{NHProf}. Inicjalizacja mechanizmu profilowania jest uruchamiana w momencie startu us³ugi sieciowej.\newline
+
+\newpage{}
+
+\paragraph{}
+\paragraph{}
+\begin{figure}[H]
+\centering
+  \includegraphics[width=14cm]{/Tests/nhprofwynik.jpg}
+\caption{Przyk³adowy widok prezentuj¹cy wynik profilowania.}
+\end{figure}
+
+\paragraph{}
+\textbf{NHProf} pozwala wyznaczyæ trzy istotne parametry, na których oprzemy analizê i proces optymalizacji mechanizmu przetwarzania danych. \newline
+
+\begin{itemize}
+	\item Czas zapytania - okreœla ca³kowity czas potrzebny na wykonanie danej operacji,
+	\item Iloœæ generowanych zapytañ - okreœla liczbê zapytañ potrzebnych do wykonania danej operacji,
+	\item Iloœæ pobieranych encji - okreœla iloœæ zwróconych obiektów,
+	\item Iloœæ operacji zapisu - okreœla iloœæ operacji zapisuj¹cych do bazy danych.
+\end{itemize}
+\paragraph{}
+
+\subsubsection{Testowanie operacji pobierania danych}
+\paragraph{}
+Pobieranie danych realizowanie przy pomocy frameworka \textbf{NHibernate} zostanie przetestowane poprzez wykonanie procedury pobrania danych na temat jednego kursu. 
+\paragraph{}
+\begin{table}[h]
+\caption{Parametry generowanych zapytañ - wstêpna próba}
+\centering
+\begin{tabular}{|r|r|}
 	\hline
   Czas zapytania & 1.608s\\
   Iloœæ zapytañ & 75 \\
   Iloœæ encji & 100\\
   \hline
 \end{tabular}
-\caption{Pierwsza próba}
-\end{table}
 
-Pierwsza próba nie wygl¹da najlepiej. Po pierwsze pobierane jest ³¹cznie 100 encji. Jest to za du¿a liczba oznaczaj¹ca , ¿e podczas pobierania danych odwo³ujemy siê do wielu niepotrzebnych danych. Najprawdopodobniej jest to spowodowane nieoptymaln¹ konfiguracj¹ mapowañ oraz mechanizmów póŸnej inicjalizacji. Kolejnym  parametrem rzucaj¹cym siê w oczy jest iloœæ zapytañ. Idealnie powinno byæ generowane jedno zapytanie. W tym przypadku jednak mamy ich naprawdê sporo. Iloœæ generowanych zapytañ jest szczególnie wa¿na w przypadku skalowalnoœci aplikacji. Zbyt du¿a iloœæ zapytañ mo¿e bardzo szybko wyczerpaæ pulê dostêpnych po³¹czeñ. W tym przypadku tak du¿a liczba zapytañ najprawdopodobniej spowodowana jest niepotmyaln¹ implementacj¹ mechanizmu zarz¹dzania sesj¹. Czas potrzebny an wygenerowanie zapytañ jest wprost proporcjonalny do iloœci encji i zapytañ wobec tego równie¿ jest zbyt du¿y. \newline
+\end{table}
+\paragraph{}
+Wstêpna próba wykaza³a kilka problemów. Po pierwsze pobierane jest ³¹cznie 100 encji. Jest stosunkowo du¿a liczba oznaczaj¹ca, ¿e podczas pobierania jednego rodzaju danych z powodu nieoptymalnej konfiguracji mapowañ oraz mechanizmów póŸnej inicjalizacji pobieramy du¿o niepotrzebnych danych, które nie zostan¹ wykorzystane w procesie tworzenia strony \textbf{WWW}. Kolejnym  parametrem rzucaj¹cym siê w oczy jest iloœæ generowanych zapytañ. Idealny przypadek zak³ada generacjê tylko jednego zapytana dla wszystkich operacji. W moim przypadku jednak mamy 75 zapytañ. Iloœæ generowanych zapytañ jest szczególnie wa¿na w przypadku skalowalnoœci aplikacji. Zbyt du¿a iloœæ zapytañ mo¿e bardzo szybko wyczerpaæ pulê dostêpnych po³¹czeñ zmuszaj¹c innych u¿ytkowników do oczekiwania na zwolnienie siê po³¹czenia. Tak du¿a liczba zapytañ najprawdopodobniej spowodowana jest b³êdn¹ implementacj¹ mechanizmu zarz¹dzania sesj¹. Czas potrzebny na przeprowadzenie zapytañ nie spe³nia za³o¿eñ projektowych, które oczekuj¹ czasu odpowiedzi nie wiêkszego ni¿ 1s. \newline
+
+\subsubsection{Optymalizacja operacji pobierania danych}
+
+\paragraph{}
+\paragraph{}
+Proces wprowadzania poprawek zaczniemy od analizy danych wymaganych  do generacji testowanego widoku. Widok przedstawiaj¹cy szczegó³y kursu  zawiera informacje na temat kursu: tytu³, opis, logo, typ itd. oraz zawiera listê dostêpnych materia³ów nauczania. Generacja tego widoku dodatkowo wymaga pobrania danych na temat grupy przynale¿¹cej do danego kursu. Encja ta jest wykorzystywana do okreœlenia czy dany u¿ytkownik nale¿y do grupy.\newline
+
+Po przeanalizowaniu w programie \textbf{NHProf} listy generowanych zapytañ  okaza³o siê , ¿e generowanych jest bardzo du¿o niepotrzebnych encji tzn. takich które nie zostan¹ wykorzystane w procesie generowania strony \textbf{WWW}. By poprawiæ ten b³¹d przede wszystkim nale¿y sprawdziæ konfiguracjê mapowañ. Bardzo wa¿ne s¹ ustawienia póŸnej inicjalizacji. W tym przypadku wy³¹czenie póŸnej inicjalizacji dla kolekcji powi¹zanych z pobieranych kursem spowodowa³o automatyczne pobranie tych kolekcji.\newline
+
+Kolejna poprawka dotyczy³a odchudzenia pobieranych encji. Kurs posiada listê materia³ów nauczania. Na liœcie wyœwietlana jest tylko nazwa  oraz typ materia³u nauczania. Przed poprawk¹ w momencie pobierania kursu pobierane by³y ca³e obiekty materia³ów nauczania wraz z ich kolekcjami. By poprawiæ ten stan stworzy³em specjaln¹ klasê zawieraj¹c¹ tylko dane niezbêdne do wyœwietlenia materia³u nauczania na liœcie.
+\paragraph{}
 \begin{table}[h]
+\caption{Parametry generowanych zapytañ - po wprowadzeniu poprawek}
 \centering
-\begin{tabular}{|r|l|}
+\begin{tabular}{|l|r|r|}
 	\hline
-  Czas zapytania & 0.308s\\
-  Iloœæ zapytañ & 8 \\
-  Iloœæ encji & 25\\
+	&Przed poprawk¹&Po poprawce\\
+	\hline
+  Czas zapytania & 1.608s& 0.308s\\
+  Iloœæ zapytañ &75 & 8 \\
+  Iloœæ encji & 100& 25\\
   \hline
 \end{tabular}
-\caption{Po wprowdzeniu poprawek}
+
 \end{table}
+\paragraph{}
 
-
-Proces wprowadzania poprawek warto zacz¹æ od analizy danych wymaganych  do generacji tego konkretnego widoku. Widok Kursu prezentuje dane na temat kursu oraz listê dostêpnych materia³ów nauczania. Dodatkowo wymaga pobrania encji grupy przynale¿¹cej do danego kursu by okreœliæ czy dany u¿ytkownik nale¿y do grupy. Po przeanalizowaniu generowanych zapytañ okaza³o siê , ¿e pobieram du¿o niepotrzebnych danych.  Poprawki objê³y m.in . Modyfikacje mapowañ oraz odpowiednie skonfigurowanie procesu póŸnej inicjalizacji.
+Po wprowadzeniu widaæ znaczn¹ poprawê zarówno w czasie trwania zapytania , iloœci generowanych zapytañ jak i iloœci pobieranych encji.
 \newpage{}
-
-\subsubsection{Zapisywanie danych}
-
-Analizê zapisu do bazy danych przeprowadzimy na obiekcie materia³ nauczania. Encja ta sk³ada siê z wielu parametrów opisowych. Scenariusz testowy przewiduje modyfikacje jednej sekcji nauczania i zapis zmian do bazy danych.
-W tym przypadku nie otrzymamy parametru iloœci pobranych encji poniewa¿ jest to zapytanie , które nic nie zwraca z bazy danych.
-Podobnie z parametrem iloœci zapytañ w tym przypadku bêdziemy analizowaæ iloœæ generowanych zapisów do bazy danych.
+\subsubsection{Testowanie operacji zapisywania danych}
+\paragraph{}
+Analizê operacji zapisu do bazy danych przeprowadzimy na przyk³adzie edytowania obiektu materia³ nauczania. Encja ta sk³ada siê przede wszystkim z parametrów opisowych oraz wielu sekcji nauczania. Scenariusz testowy przewiduje modyfikacje jednej sekcji nauczania i zapis zmian do bazy danych.W przypadku tego testu nie otrzymamy parametrów liczby pobranych encji oraz liczby generowanych zapytañ poniewa¿ jest to operacja generuj¹ca jedynie operacje uaktualniana bazy danych.
+\paragraph{}
 \begin{table}[h]
+\caption{Parametry generowanych zapisów - wstêpna próba}
 \centering
 \begin{tabular}{|r|l|}
 	\hline
@@ -236,62 +363,105 @@ Podobnie z parametrem iloœci zapytañ w tym przypadku bêdziemy analizowaæ iloœæ g
   Iloœæ zapisów & 60 \\
   \hline
 \end{tabular}
-\caption{Pierwsza próba}
+
 \end{table}
+\paragraph{}
+Wstêpna próba wykaza³a , ¿e zarówno czas operacji jak i iloœæ zapytañ s¹ zbyt du¿e i nale¿y je poprawiæ. Scenariusz testowy zak³ada³ modyfikacje jednego pola sekcji. Tak wysoka liczba operacji zapisu  Jak widaæ coœ tu jest nie tak skoro wykonujemy a¿ 60 operacji zapisu. Po analizie logów generowanych przez aplikacjê \textbf{NHProf} okaza³o siê , ¿e podczas uaktualniania danych materia³u nauczania automatycznie wykonywane by³y operacje uaktualniania elementów z nim powi¹zanych.
 
-Próba wykaza³a , ¿e zarówno czas operacji jak i iloœæ zapytañ s¹ zbyt du¿e i nale¿y je poprawiæ tym bardziej , ¿e scenariusz testowy zak³ada³ modyfikacje tak naprawdê jednego wiersza tabeli. Jak widaæ coœ tu jest nie tak skoro wykonujemy a¿ 60 operacji zapisu. Po analizie logów generowanych przez aplikacjê \textbf{NHProf} okaza³o siê , ¿e podczas uaktualniania danych materia³u nauczania automatycznie wykonywane by³y operacje uaktualniania elementów z nim powi¹zanych. G³ówny problem by³ z testem nale¿¹cym do materia³u. Test posiada wiele pytañ i odpowiedzi. W pierwszej próbie dochodzi³o do aktualizacji ka¿dego pytania i odpowiedzi mimo tego , ¿e te dane nie by³y zmieniane. \newline
 
+\subsubsection{Optymalizacja operacji zapisywania danych}
+\paragraph{}
+Analiza generowanych operacji zapisu wykaza³a , ¿e g³ówny problem z t¹ procedur¹ wynika³ by³y spowodowane b³êdnym mapowaniem wewn¹trz materia³u nauczania. B³¹d ten powodowa³ przy ka¿dej operacji zapisu zmian do tabeli materia³u nauczania jednoczesne uaktualnianie tabeli testów oraz pytañ i odpowiedzi. \newline
+\paragraph{}
 
 \begin{table}[h]
+\caption{Parametry generowanych zapisów - po wprowadzeniu poprawek}
 \centering
-\begin{tabular}{|r|l|}
+\begin{tabular}{|r|r|r|}
 	\hline
-  Czas operacji & 0.571s\\
-  Iloœæ zapisów & 13 \\
+	&Przed poprawk¹&Po poprawce\\
+	\hline
+  Czas operacji & 3.668s&0.571s\\
+  Iloœæ zapisów & 60&13 \\
   \hline
 \end{tabular}
-\caption{Po wprowadzeniu poprawek}
+
 \end{table}
+Wprowadzone poprawki wy³¹czy³y kaskadowe uaktualnianie danych powoduj¹ce niepotrzebne uaktualnianie tabel testów , pytañ i odpowiedzi . Widaæ wyraŸn¹ poprawê zarówno w czasie potrzebnym na wykonanie operacji jak i w liczbie generowanych zapytañ.
+\newpage{}
+\section{Ocena wydajnoœci aplikacji oraz proces optymalizacji mechanizmów przetwarzania danych }
+\paragraph{}
 
-Po poprawie mapowañ oraz mechanizmu uaktualniania danych mo¿na zauwa¿yæ wyraŸn¹ poprawê zarówno w czasie potrzebnym na wykonanie operacji jak i iloœci generowanych zapytañ. Najwiêksz¹ zmian¹ by³o wy³¹czenie kaskadowego uaktualniania danych w przypadku testu powi¹zanego z uaktualnianym materia³em nauczania.
-\subsection{Testy obci¹¿eniowe}
+Za³o¿enia projektowe zak³adaj¹ czas odpowiedzi dla 100 u¿ytkowników korzystaj¹cych z aplikacji nie wiêkszy od 1 sekundy. Przeprowadzenie odpowiednich testów wydajnoœciowych pozwoli sprawdziæ, czy aplikacja spe³nia te wymagania. Do przeprowadzenia testów obci¹¿eniowych zostanie u¿yte darmowe narzêdzie firmy Microsoft \textbf{WCAT - Web Capacity Analysis Tool } \cite{WCAT} dostêpne z pakietem narzêdzi serwera \textbf{IIS}. Jest to aplikacja konsolowa, pozwalaj¹ca generowaæ zapytania protoko³u HTTP, a tak¿e pozwala zasymulowaæ proces korzystania z aplikacji webowej przez wielu u¿ytkowników jednoczeœnie.\newline
 
-Zgodnie z projektem. Aplikacja powinna obs³u¿yæ co najmniej 100 u¿ytkowników jednoczeœnie w czasie nie wiêkszym ni¿ 1 sekunda. Testy obci¹¿eniowe zostan¹ wykonane wraz z u¿yciem darmowej aplikacji \textbf{WCAT} dostêpnej w pakiecie narzêdzi do serwera IIS.
-Aplikacja ta w doœæ ³atwy sposób pozwala zasymulowaæ operacje wielu u¿ytkowników wykonuj¹c wiele zapytañ na raz do serwera. Konfiguracja przypadków testowych odbywa siê poprzez zdefiniowanie testów w trzech plikach tekstowych.
+Silnik narzêdzia u¿ywa do przeprowadzania symulacji prostego jêzyka skryptowego. Do poprawnego dzia³ania wymaga trzech plików, zawieraj¹cych odpowiednie instrukcje.\newline
 
-\subsubsection{script.txt}
-Pozwala definiowaæ konkretne zapytania tzn. gdzie i jak wykonaæ zapytanie
 
-\subsubsection{distribution.txt}
-Pozwala definiowaæ niesymetryczne roz³o¿enie testów na ró¿ne strony np. jedna strona bêdzie ³adowana z czêœtoœæia 70% druga natomiast z 30%
+\begin{itemize}
+	\item script.txt - zawiera instrukcje potrzebne do wygenerowania zapytania,
+	\item distribution.txt - pozwala skonfigurowaæ symulacje, rozk³adaj¹c proporcjonalnie testy na ró¿ne strony www,
+	\item config.txt -  zawiera parametry konfiguracyjne symulacji.
+\end{itemize}
 
-\subsubsection{config.txt}
-Pozwala ustaliæ opcje testów takie jak : Czas testu , czas oczekiwania na test , iloœæ symulowanych klientów , iloœæ symulowanych w¹tków itd.
+\paragraph{}
 
-\subsubsection{Ustawienia}
+\subsubsection{Ustawienia skryptu generuj¹cego zapytania}
 
-\begin{table}[h]
+\begin{figure}[H]
 \centering
-\begin{tabular}{|r|l|}
-	\hline
-Warmuptime & 5s \\
-Duration & 60s \\
-CooldownTime & 5s \\
-NumClientMachines & 1 \\
-NumClientThreads & 100\\
-  \hline
-\end{tabular}
-\caption{Konfiguracja symulowanych u¿ytkowników}
-\end{table}
+ \includegraphics{/Tests/scripttxt.jpg}
+\caption{Zawartoœæ pliku script.txt}
+\end{figure}
 
-Aplikacja zosta³a skonfigurowana tak by symulowaæ dzia³anie 100 u¿ytkowników na raz. Czas dzia³ania aplikacji ustawiony na 60s.
-Dodatkowa analiza dzia³ania aplikacji zostanie przeprowadzona przez profiler \textbf{ANTS Performance Profiler} firmy RedGate. Narzêdzie to pozwala monitorowaæ wykorzystywane zasoby oraz szczegó³owo przeanalizowaæ jakie metody zosta³y wywo³ane.
+\paragraph{}
+Skrypt konfiguruje aplikacjê \textbf{WCAT} \cite{WCAT} tak by wykonywa³a zapytanie typu \textbf{GET}, wykorzystuj¹c protokó³ HTTP. Ka¿dy symulowany u¿ytkownik wyœle ¿¹danie do lokalnego serwera \textbf{IIS}  z proœb¹ o wygenerowanie widoku, zawieraj¹cego listê dostêpnych kursów.
+\paragraph{}
+\subsubsection{Ustawienia konfiguracji roz³o¿enia testów}
+
+\begin{figure}[H]
+\centering
+ \includegraphics{/Tests/distributiontxt.jpg}
+\caption{Zawartoœæ pliku distribution.txt}
+\end{figure}
+\paragraph{}
+Plik ten zawiera jedynie informacjê, ¿e wszystkie zapytania powinny zostaæ wygenerowane na podstawie skryptu numer jeden znajduj¹cego siê w pliku script.txt.
+
+
+\paragraph{}
+\subsubsection{Ustawienia symulacji}
+
+\begin{figure}[H]
+\centering
+ \includegraphics{/Tests/configtxt.jpg}
+\caption{Zawartoœæ pliku config.txt}
+\end{figure}
+\paragraph{}
+Test zosta³ skonfigurowany tak by symulowaæ dzia³anie 100 u¿ytkowników jednoczeœnie. Czas dzia³ania symulacji zosta³ ustawiony na 60s. W ci¹gu tego okresu ka¿dy symulowany u¿ytkownik bêdzie wykonywa³ zapytania do serwera  \textbf{WWW}.
 
 \subsubsection{Scenariusz testowy}
 
-Scenariusz testowy zak³ada wys³anie zapytania w formie komendy \textbf{GET} do serwera \textbf{IIS}. Zapytanie bêdzie odwo³ywa³o siê do widoku wyœwietlaj¹cego wszystkie kursy. By móc wykonaæ ten test zosta³y wy³¹czone wszelkie zabezpieczenia aplikacji by daæ dostêp symulowanym u¿ytkownikom testowym.
+Symulowany scenariusz zak³ada wys³anie zapytania w formie komendy \textbf{GET} do serwera \textbf{IIS}. Zapytanie bêdzie odwo³ywa³o siê do widoku wyœwietlaj¹cego listê dostêpnych kursów. By umo¿liwiæ wykonanie testu zosta³y wy³¹czone wszelkie zabezpieczenia aplikacji. Pozwoli to symulowanym u¿ytkownikom, którzy s¹ anonimowi, korzystaæ z zasobów serwera.
 
 \subsubsection{Przeprowadzenie testu}
+\paragraph{}
+Narzêdzie \textbf{WCAT} sk³ada siê z dwóch aplikacji, klienta oraz kontrolera. By przeprowadziæ test nale¿y przede wszystkim uruchomiæ kontroler, który jest odpowiedzialny za przeprowadzanie symulacji. Analizuje on dostarczone pliki konfiguracyjne i odpowiednio ustawia œrodowisko, w którym przeprowadzimy test.
+
+
+\begin{figure}[H]
+\centering
+ \includegraphics{/Tests/wcatcontroller.jpg}
+\caption{WCAT ekran kontrolera}
+\end{figure}
+
+Po uruchomieniu kontrolera uruchamiamy aplikacjê klienck¹, która bêdzie odpowiedzialna za wykonywanie zapytañ.
+
+\begin{figure}[H]
+\centering
+ \includegraphics{/Tests/WcatClient.jpg}
+\caption{WCAT ekran klienta}
+\end{figure}
+
+\subsubsection{Wyniki pierwszego testu}
 
 \begin{table}[h]
 \centering
@@ -302,67 +472,76 @@ Minimalny & 3.120s \\
 Maksymalny & 5.600s \\
   \hline
 \end{tabular}
-\caption{Œrednie Czasy odpowiedzi}
+\caption{Test wstêpny - œredni czas odpowiedzi}
 \end{table}
-Wyniki nie spe³niaj¹ za³o¿eñ. Czasy odpowiedzi s¹ zbyt du¿e. Nale¿y podj¹æ próbê poprawy tego stanu.
 
-\begin{center}
- \includegraphics[width=14cm]{/Tests/antsprofiler.jpg}
-\end{center}
+Otrzymane wyniki nie spe³niaj¹ za³o¿eñ projektowych, zak³adaj¹cych czas odpowiedzi nie wiêkszy ni¿ 1 sekunda.
 
-\begin{center}
-	Rys. Wynik programu profiluj¹cego
-\end{center}
+\subsubsection{Analiza dzia³ania aplikacji}
+\paragraph{}
 
-Po analizie logów programu profiluj¹cego mo¿emy zauwa¿yæ , ¿e wiêkszoœæ czasu u¿ytkownik poœwiêca oczekuj¹c na dane z bazy danych.
- 
-Bardzo du¿o czasu marnowane jest na wykorzystywanie mechanizmów biblioteki \textbf{Ninject} do wstrzykiwania zale¿noœci. Biblioteka ta pozwala odseparowaæ inicjalizacjê odpowiednich klas, w tym przypadku klas obs³uguj¹cych us³ugi, do innej warstwy. Dziêki temu nie trzeba w w wielu miejscach kodu inicjalizowaæ obiektów.\newline
+Do przeprowadzenia analizy dzia³ania aplikacji u¿yto narzêdzia \textbf{Ants Performance Profiler} \cite{ANTS}. Jest to narzêdzie pozwalaj¹ce analizowaæ dzia³anie aplikacji na poziomie kodu Ÿród³owego. Dziêki niemu mo¿na wyznaczyæ fragmenty aplikacji, które by³y u¿ywane najczêœciej, i które wymaga³y najwiêcej mocy obliczeniowej, b¹dŸ czasu dzia³ania aplikacji. 
 
-\textbf{Ninject} pozwala definiowaæ zasiêg tworzenia obiektów. W powy¿szym przypadku gdzie widaæ jak du¿o czasu poœwiêcamy na tworzenie obiektów by³a ustawiona opcja tworzenia nowej instancji klasy dla ka¿dego ¿¹dania  tzn. ka¿dy zapytanie do serwera generowane przez symulowanego klienta powodowa³o tworzenie nowej instancji klasy us³ug kursów. \textbf{Ninject} opiera inicjalizacjê obiektów na kosztownych mechanizmach. Po zastosowaniu opcji tworzenia jednej globalnej instancji klasy poziom wykorzystania biblioteki znacznie zmala³.
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{/Tests/antsprofiler.jpg}
+\caption{Statystyka dzia³ania aplikacja otrzymana w programie Ants Performance Profiler}
+\end{figure}
 
-\begin{center}
- \includegraphics[width=14cm]{/Tests/antsprofilerpoprawka.jpg}
-\end{center}
+Po analizie logów programu profiluj¹cego mo¿emy zauwa¿yæ, ¿e wiêkszoœæ czasu dzia³ania aplikacji jest poœwiêcane na oczekiwanie na wiadomoœæ zwrotn¹ z bazy danych ukrytej za warstw¹ us³ug sieciowych. Bardzo du¿o czasu jest równie¿ marnowane na wykorzystywanie mechanizmów biblioteki \textbf{Ninject} \cite{NINJECT}, zapewniaj¹cej implementacjê wstrzykiwania zale¿noœci. Biblioteka ta pozwala odseparowaæ inicjalizacjê odpowiednich klas, w tym przypadku klas obs³uguj¹cych us³ugi. Dziêki temu mo¿na w bardzo prosty sposób podmieniæ implementacjê danego interfejsu bez koniecznoœci zmieniana kodu w wielu miejscach.\newline
 
-\begin{center}
-	Rys. Wynik programu profiluj¹cego
-\end{center}
+\textbf{Ninject} \cite{NINJECT} pozwala definiowaæ zasiêg dostêpnoœci tworzonych obiektów. W powy¿szym przypadku bardzo du¿o czasu poœwiêcanego jest na tworzenie instancji obiektów. Ustawiona by³a opcja tworzenia ka¿dorazowo nowej instancji klasy dla ka¿dego ¿¹dania realizowanego przez u¿ytkownika. \textbf{Ninject} \cite{NINJECT} opiera inicjalizacjê obiektów na kosztownym mechanizmie refleksji dlatego nale¿y ograniczyæ iloœæ tworzonych obiektów. W przypadku naszej aplikacji jedynymi tworzonymi obiektami przez bibliotekê \textbf{Ninject} s¹ konkretne implementacje interfejsów udostêpniaj¹cych us³ugi sieciowe. Nie potrzebujemy tworzyæ tych klas w momencie wykonywania ¿¹dania. Lepszym wyjœciem bêdzie tworzenie jednej globalnej, statycznej klasy, wykorzystywanej przez wszystkich symulowanych u¿ytkowników. \textbf{Ninject} pozwala zdefiniowaæ takie zachowanie.
+
+\subsubsection{Analiza dzia³ania  aplikacji po wprowadzeniu poprawki}
+\paragraph{}
+
+Pierwsza poprawka modyfikuje sposób inicjalizowana obiektów przez bibliotekê \textbf{Ninject}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=14cm]{/Tests/antsprofilerpoprawka.jpg}
+\caption{Wynik programu profiluj¹cego - po poprawce}
+\end{figure}
 
 \begin{table}[h]
 \centering
+\caption{Œrednie czasy odpowiedzi - po wprowadzeniu modyfikacji}
 \begin{tabular}{|r|l|}
 	\hline
-Minimalny & 3.120s \\
-Œredni & 3.773s \\
-Maksymalny & 5.600s \\
+Minimalny & 3.020s \\
+Œredni & 3.673s \\
+Maksymalny & 5.300s \\
   \hline
 \end{tabular}
-\caption{Œrednie Czasy odpowiedzi}
+
 \end{table}
 
-Analiza czasów odpowiedzi pokaza³a , ¿e nie tu tkwi problem i nale¿y zoptymalizowaæ dzia³anie aplikacji po stronie serwera z dostêpem do bazy danych wystawionym za us³ugami sieciowymi.\newline
+Analiza otrzymanych czasów odpowiedzi wykaza³a, ¿e wprowadzona poprawka nie spowodowa³a znacznego poprawienia wydajnoœci aplikacji. Poprawka dotyczy³a czêœci klienckiej tzn. serwera \text{WWW}. Proces analizy i optymalizacji nale¿y przeprowadziæ   po stronie us³ug sieciowych, zapewniaj¹cych dostêp do bazy danych.\newline
 
-Analiza narzêdziem \textbf{NHProf} wykaza³a , ¿e niezoptymalizowane operacje na bazie danych wymagaj¹ 200 milisekund czasu do pobrania danych. NHProf wykaza³ , ¿e wykonujemy za du¿o zapytañ do bazy pobieraj¹c niepotrzebne dane. Dodatkowo uruchomimy cache drugiego poziomu.
+\subsubsection{Analiza generowanych zapytañ przez framework NHibernate}
+Analiza narzêdziem \textbf{NHProf} \cite{NHProf} wykaza³a, ¿e niezoptymalizowane operacje na bazie danych zajmuj¹ 200 milisekund czasu do pobrania danych. NHProf wykaza³, ¿e wykonujemy za du¿o zapytañ do bazy, pobieraj¹c niepotrzebne dane. By poprawiæ tê sytuacjê nale¿y zmodyfikowaæ mapowania i ''odchudziæ'' pobierane encje, podobnie jak w przypadku optymalizacji generowanych zapytañ. Dodatkowo uruchomiony zostanie mechanizm cachowania zapytañ. Poniewa¿ scenariusz testowy zak³ada równoleg³y dostêp wielu u¿ytkowników nale¿y uruchomiæ cache drugiego poziomu, który udostêpnia zawartoœæ globalnie dla wszystkich u¿ytkowników. 
 
 
 \begin{table}[h]
 \centering
+\caption{Operacje na bazie danych}
 \begin{tabular}{|c|c|c|c|}
 	\hline
-	& Przed & Poprawki mapowañ & Cache\\
+	& Pierwszy Test & Poprawki mapowañ & Cache 2 poziomu\\
 \hline
 Iloœæ encji & 36 &20 &0\\
 Iloœæ zapytañ & 21&5 &0 \\
 Czas zapytania & 200ms&18ms &13ms \\
   \hline
 \end{tabular}
-\caption{Operacje na bazie danych}
+
 \end{table}
 
-Po wprowadzeniu poprawek w mapowañ widaæ poprawê w czasie dostêpu do bazy danych/
+Poprawienie mapowañ oraz uruchomienie cache-u drugiego poziomu pozwoli³o znacznie ograniczyæ czas potrzebny na wykonanie zapytania.
 
 \begin{table}[h]
 \centering
+\caption{Œrednie czasy odpowiedzi}
 \begin{tabular}{|r|l|}
 	\hline
 Minimalny & 2.300s \\
@@ -370,31 +549,40 @@ Minimalny & 2.300s \\
 Maksymalny & 4.600s \\
   \hline
 \end{tabular}
-\caption{Œrednie Czasy odpowiedzi}
+
 \end{table}
 
-Nadal jednak nie jest to zadowalaj¹cy wynik. Po przeprowadzeniu analizy tego co siê dzieje po stronie serwera okaza³o siê , ¿e ponad 50 procent czasu wywo³ywania us³ug jest poœwiecane na generowanie raportów dla profilera NHibernate po wy³aczeniu profilera.
+Jak widaæ zmiany te poprawi³y lekko œrednie czasy odpowiedzi. Nadal jednak nie jest to wynik spe³niaj¹cy za³o¿enia projektowe.
+
+\subsubsection{Analiza dzia³ania us³ug sieciowych}
+\begin{figure}[H]
+\centering
+ \includegraphics[width=14cm]{/Tests/rhinosoptimization.jpg}
+\caption{Wynik programu profiluj¹cego - aplikacja udostêpniaj¹ca us³ugi sieciowe}
+\end{figure}
+
+Po przeprowadzeniu analizy generowanych zapytañ przyszed³ czas na zbadanie dzia³ania serwera udostêpniaj¹cego us³ugi sieciowe. Analizy dzia³ania aplikacji wykaza³a, ¿e prawie 30 procent czasu wykorzystywanego przez serwer  marnowane jest na generowanie raportów dla aplikacji \textbf{NHProf}. Rysunek powy¿ej wyraŸnie pokazuje, ¿e bardzo du¿o czasu zajmuje generowanie logów przez bibliotekê log4net. Logi te s¹ wykorzystywane przez profile \textbf{NHiberante-a} do generowania raportów.
 
 \begin{table}[h]
 \centering
-\begin{tabular}{|r|l|}
+\caption{Œrednie czasy odpowiedzi - po wy³¹czeniu profilera}
+\begin{tabular}{|l|l|}
 	\hline
 Minimalny & 1.014s \\
 Œredni & 1.198s \\
 Maksymalny & 1.701s \\
   \hline
 \end{tabular}
-\caption{Œrednie Czasy odpowiedzi}
+
 \end{table}
 
-Widaæ teraz , ¿e Profile NHibernate-a dodawa³ praktycznie 2 sekundy czasu odpowiedzi. Bardzo wa¿ne jest by go wy³¹czyæ na serwerze produkcyjnym.
+Wy³¹czenie profilera znacznie poprawi³o œrednie czasy odpowiedzi zbli¿aj¹c je do oczekiwanego wyniku zgodnego z przyjêtymi za³o¿eniami
 
-Profiler aplikacji wykaza³ , ¿e po stronie klienta 90 procent czasu poœwiecamy na generowanie zapytania i oczekiwanie odpowiedzi od us³ugi sieciowej. W zwi¹zku z tym pozost¹³a nam jeszcez jedna opcja , która mozliwe ze poprawi czasy odpowiedzi. Mianowicie cachowanie zapytan do uslug sieciowych. Zapytanie poniewaz jest zwykla wiadomoscia protokolu HTTP moze byc cachowane normalnymi mechanizmy jakimi cachujemy np generowanie stron.
-
-Ustawimy cachowanie uslugi pobierajacecj liste kursow tak by wygasalo po 60 sekundach.  
+Analiza dzia³ania aplikacji po stronie klienta wykaza³a, ¿e wiêkszoœæ czasu poœwiêca on na generowanie oraz oczekiwanie na odpowiedŸ zapytania wysy³ane do serwera us³ug sieciowych. W zwi¹zku z tym du¿y zysk w czasach odpowiedzi uzyskamy po uruchomieniu mechanizmu cachowania zapytañ. Wiadomoœci wysy³ane do serwera us³ug sieciowych s¹ zwyk³ymi wiadomoœciami u¿ywanymi w protokole \textbf{HTTP}, wiêc mo¿emy uruchomiæ standardowy mechanizm dostêpny na platformie Asp.Net. Cachowanie zosta³o ustawione tak, by trzymaæ dane zapytania przez 60 sekund. Jest to wystarczaj¹cy czas by jednoczeœnie zapewniæ zwiêkszony czas odpowiedzi serwera oraz dostarczaæ œwie¿e dane do klienta.  
 
 \begin{table}[h]
 \centering
+\caption{Œrednie czasy odpowiedzi - po wy³¹czeniu profilera i po w³¹czeniu z mechanizmem cachowania zapytañ}
 \begin{tabular}{|r|l|}
 	\hline
 Minimalny & 405ms \\
@@ -402,22 +590,163 @@ Minimalny & 405ms \\
 Maksymalny & 656ms \\
   \hline
 \end{tabular}
-\caption{Œrednie Czasy odpowiedzi}
+
 \end{table}
 
-W³¹czenie cachowania zapytañ WCF-owych przynios³o ca³kiem spory zysk czasowy. 
+W³¹czenie mechanizmu cachowania zapytañ pozwoli³o zredukowaæ œredni czas odpowiedzi serwera do akceptowalnego poziomu, spe³niaj¹cego za³o¿enia projektowe.
+\newpage{}
+\section{Ocena wp³ywu konfiguracji roz³o¿enia us³ug sieciowych na czas odpowiedzi}
 
-Procedura profilowania oraz poprawiania generacji tego konkretnego widoku by³a bardzo owocna. Z pocz¹tkoweog czasu generowania równego 3 s zrobi³o siê nie ca³e 0.5 s.
+W tym teœcie przeprowadzona zostanie analiza ró¿nicy czasu odpowiedzi us³ug sieciowych w zale¿noœci od konfiguracji serwerów udostêpniaj¹cych us³ugi.
 
-\newpage{}
-\subsection{Badanie czasu odpowiedzi us³ug sieciowych}
-\newpage{}
-\subsection{Testy konfiguracji roz³o¿enia us³ug sieciowych}
-\newpage{}
+\subsubsection{Scenariusz testowy}
+Scenariusz testowy zak³ada uruchomienie symulacji tworz¹cej 10 u¿ytkowników, wysy³aj¹cych jednoczeœnie zapytania do serwera. Zostan¹ zbadane czasy odpowiedzi. Wykorzystana zostanie aplikacja \textbf{WCAT}.\newline
+
+Rozpatrzone zostan¹ dwa przypadki konfiguracji.
+
+\subsubsection{Lokalny serwer us³ug sieciowych}
+
+\begin{figure}[H]
+\centering
+ \includegraphics{/Tests/configloca.jpg}
+\caption{Uproszczony schemat lokalnej konfiguracji}
+\end{figure}
+
+W tej konfiguracji aplikacja webowa znajduje siê na tym samym serwerze, co aplikacja udostêpniaj¹ca bazê danych za pomoc¹ mechanizmu us³ug sieciowych.
+
+\subsubsection{Zdalny serwer us³ug sieciowych}
+
+\begin{figure}[H]
+\centering
+\includegraphics{/Tests/configremote.jpg}
+\caption{Uproszczony schemat zdalnej konfiguracji}
+\end{figure}
+
+W tej konfiguracji baza danych wystawiona jest na zewnêtrznym serwerze hostowanym przez firmê \textbf{www.webio.pl}.
+
+\paragraph{}
+\begin{table}[]
+\centering
+\caption{Porównanie czasów odpowiedzi}
+\begin{tabular}{|r|c|l|}
+	\hline
+& Lokalny & Zdalny\\
+	\hline
+Minimalny&15ms & 62ms \\
+Œredni &53ms& 217ms \\
+Maksymalny&265ms & 1794ms \\
+  \hline
+\end{tabular}
+
+\end{table}
+
+Otrzymane œrednie czasy odpowiedzi wskazuj¹ wyraŸnie, ¿e serwer bazy danych wystawiony zdalnie wprowadza dodatkowe opóŸnienie w komunikacji klient serwer. Œredni czas odpowiedzi jest prawie cztero krotnie wiêkszy w porównaniu do przypadku u¿ywaj¹cego konfiguracji lokalnej. Spowodowane jest to przede wszystkim koniecznoœci¹ oczekiwania na transfer danych z i do zdalnego serwera. 
+
+\section{Ocena wydajnoœci mechanizmu przekierowania na zapasowy serwer us³ug sieciowych}
+
+By zaprezentowaæ korzyœci wynikaj¹ce z architektury opartej na us³ugach sieciowych. Stworzony zosta³ mechanizm pozwalaj¹cy podmieniæ serwer us³ug sieciowych w zale¿noœci od poziomu obci¹¿enia g³ównego serwera.
+\begin{figure}[H]
+\centering
+ \includegraphics{/Tests/loadbalancer.jpg}
+\caption{Uproszczony schemat mechanizmu zmiany serwera}
+\end{figure}
+
+\subsubsection{Scenariusz testowy}
+
+Procedura testowa zak³ada zasymulowanie jednoczesnej aktywnoœci 50 u¿ytkowników wysy³aj¹cych zapytania do serwera \textbf{WWW}. G³ówny serwer zosta³ wystawiony na zdalnym serwerze, natomiast serwer zapasowy znajduje siê w przestrzeni lokalnej.\newline
+
+W teœcie tym przeanalizujemy trzy konfiguracje:
+\begin{itemize}
+	\item Wy³¹czony mechanizm przekierowania, 
+	\item Przekierowanie: parametr 150ms, oznaczaj¹cy przekierowanie na zapasowy serwer po przekroczeniu czasu oczekiwania 150ms,
+	\item Przekierowanie: parametr 100ms, oznaczaj¹cy przekierowanie na zapasowy serwer po przekroczeniu czasu oczekiwania 100ms.
+\end{itemize}
+
+
+\subsubsection{Analiza dzia³ania aplikacji z wy³¹czonym mechanizmem przekierowania}
+\paragraph{}
+\begin{table}[h]
+\centering
+\caption{Wy³¹czony mechanizm - œrednie czasy odpowiedzi}
+\begin{tabular}{|r|r|r|}
+	\hline
+Minimalny&515ms\\
+Œredni &1141ms\\
+Maksymalny&4134ms\\
+  \hline
+\end{tabular}
+
+\end{table}
+
+Podstawowa implementacja wygenerowa³a doœæ znaczne czasy odpowiedzi. Test ten bêdzie punktem odniesienia w analizie zysków, b¹dŸ ewentualnych strat, po zastosowaniu mechanizmu przekierowania.
+
+\subsubsection{Analiza dzia³ania aplikacji z w³¹czonym mechanizmem przekierowania - 150ms}
+
+\begin{table}[h]
+\centering
+\caption{Przekierowanie: parametr 150ms - œrednie czasy odpowiedzi}
+\begin{tabular}{|l|l|l|}
+	\hline
+Minimalny&421ms\\
+Œredni &759ms\\
+Maksymalny&4041ms\\
+Procent przekierowanych&\\
+po³¹czeñ&24\\
+  \hline
+\end{tabular}
+\end{table}
+
+Widaæ lekk¹ poprawê po uruchomieniu mechanizmu przekierowania. Ustawienie parametru przekierowania na 150ms spowodowa³o, ¿e prawie 25 procent zapytañ zosta³o skierowanych na serwer zapasowy, zmniejszaj¹c obci¹¿enie serwera g³ównego.
+
+\subsubsection{Analiza dzia³ania aplikacji z w³¹czonym mechanizmem przekierowania - 100ms}
+\paragraph{}
+\begin{table}[h]
+\centering
+\caption{Przekierowanie: parametr 100ms - œrednie czasy odpowiedzi}
+\begin{tabular}{|l|l|l|}
+	\hline
+Minimalny&265ms\\
+Œredni &580ms\\
+Maksymalny&2026ms\\
+Procent przekierowanych&\\
+po³¹czeñ&54\\
+  \hline
+\end{tabular}
+
+\end{table}
+
+Po ustawieniu parametru przekierowania na 100ms mo¿na zauwa¿yæ znaczn¹ poprawê w czasie odpowiedzi serwera. Ponad 50 procent po³¹czeñ zosta³o skierowanych na serwer zapasowy. Mo¿na powiedzieæ, ¿e wykorzystanie serwerów zosta³o roz³o¿one równomiernie.
+
 \newpage{}
 \section{Wnioski z testów i badañ}
+
+\paragraph{}
+Wspó³czesna in¿ynieria oprogramowania jest bardzo podzielona w zakresie podejœæ do sposobu prowadzenia projektów. Wiod¹c¹ metodyk¹, najczêœciej stosowan¹ przy du¿ych i œrednich projektach jest bardzo dobrze znana i opisana w literaturze metodyka \textbf{"Waterfall"} \cite{Gorski}, coraz czêœciej jednak mo¿na us³yszeæ o rodzinie metodyk zrzeszonych w ramach ruchu \textbf{''Extreme Programming''}, które staj¹ siê bardzo popularne w œrodowisku ma³ych firm. Mimo wielu ró¿nic metody te nadal posiadaj¹ jeden sta³y i niezmienny element, koniecznoœæ przeprowadzania testów aplikacji. Testy przeprowadzone w tym rozdziale równie¿ pokaza³y tê zale¿noœæ. Aplikacja mo¿e siê dobrze prezentowaæ, spe³niaæ wymagania funkcjonalne jednak¿e dopiero przeprowadzenie testów symuluj¹cych scenariusze realnego u¿ytkowania pokazuj¹ czy produkt nadaje siê do u¿ytku, czy wymaga wielu poprawek nim zawita na serwer produkcyjny.\newline
+
+Pierwszym podstawowym testem jest analiza funkcjonalna aplikacji. Test ten ma na celu potwierdzenie czy stworzony produkt spe³nia oczekiwania klienta ustalone w zatwierdzonym projekcie. Jest to procedura najczêœciej przeprowadzana przez dzia³ wyznaczony specjalnie do tego celu. Jednak¿e z doœwiadczenia wiem, ¿e czêsto praca ta wykonywana jest przez osobê pisz¹c¹ kod w celu zweryfikowania wprowadzonych modyfikacji. Nie inaczej by³o tym razem. Testy funkcjonalne wybranych modu³ów aplikacji wykaza³y, ¿e spe³niaj¹ one wyznaczone wymagania. Podczas przeprowadzania testów nie wydarzy³o siê nic nieoczekiwanego. Owszem w trakcie trwania procesu implementacji aplikacji testy te by³y przeprowadzane w sposób ci¹g³y. Miêdzy innymi dlatego, ostateczna weryfikacja dzia³ania aplikacja nie wykaza³a ¿adnych powa¿niejszych b³êdów. Podczas tworzenia projektu do testowania fragmentów kodu najbardziej nara¿onych na pomy³ki i b³êdy zosta³ u¿yty nowoczesny mechanizm testów jednostkowych, wspomaganych mockowaniem zale¿noœci. Testy te przeprowadzane by³y po ka¿dej wiêkszej zmianie kodu, gdy pojawi³ siê jakiœ problem b¹dŸ b³¹d, który by³ szybko eliminowany. Szybka weryfikacja kodu jest ostatnio bardzo popularna w œrodowisku programistów popieraj¹cych ruch \textbf{Extreme programming}. W szybkim wykrywaniu b³êdów nie bez znaczenia by³ tak¿e fakt zaimplementowania rozbudowanego mechanizmu generuj¹cego logi aplikacji, pozwalaj¹cego obserwowaæ zachowanie produktu. Typowa sesja programistyczna wygl¹da³a tak, ¿e na jednym ekranie monitora modyfikowano kod, natomiast na drugim ekranie monitora obserwowane by³y logi z dzia³ania aplikacji, oraz z przeprowadzanych testów jednostkowych. Wdro¿enie tych mechanizmów okaza³o siê bardzo dobr¹ inwestycj¹.\newline
+
+W dalszej czêœci, procedurze testowania zosta³ poddany mechanizm zabezpieczeñ neutralizuj¹cy próby wstrzykniêcia niepo¿¹danych skryptów. By³ to wa¿ny test poniewa¿ czêœæ edytorów tekstowych wykorzystuje rozbudowany mechanizm pozwalaj¹cy sk³adaæ tekst przy u¿yciu z góry ustalonego jêzyka znaczników. Dodatkowo, poniewa¿ stworzona platforma tworzona by³a pod k¹tem u¿ytkowników chc¹cych poszerzaæ wiedzê z zakresu in¿ynierii oprogramowania, bardzo istotn¹ funkcjonalnoœci¹ by³a mo¿liwoœæ umieszczenia fragmentów kodu na generowanej stronie \textbf{WWW}. Standardowe mechanizmy zabezpieczaj¹ce, dostêpne na platformie \textbf{.Net}, okaza³y siê nie wystarczaj¹ce. Przeprowadzony test wykaza³ lukê w systemie, która zosta³a naprawiona. Weryfikacja na tym etapie wdra¿ania aplikacji oszczêdzi³a wielu problemów i kosztów, które pojawi³yby siê po wystawieniu aplikacji na serwerze produkcyjnym.\newline
+
+\newpage{}
+
+\paragraph{}
+Kolejnym przetestowanym mechanizmem by³a zaimplementowana obs³uga bazy danych, wykorzystuj¹ca mechanizm mapowania obiektowo-relacyjnego przy u¿yciu framework-a \textbf{NHibernate}. W analizie tej istotn¹ rolê odegra³o narzêdzie \textbf{NHProf}, które pozwoli³o szybko wyznaczyæ krytyczne fragmenty kodu, powoduj¹ce najwiêcej problemów. Analiza generowanych zapytañ wykaza³a problemy wydajnoœciowe, wynikaj¹ce z b³êdnie skonfigurowanych mapowañ, oraz mechanizmów wspomagaj¹cych proces pobierania danych takich jak póŸna inicjalizacja. Po wykryciu problemów podjêto próbê naprawienia b³êdów. Dziêki wprowadzeniu poprawek uda³o siê znacz¹co zmniejszyæ miêdzy innymi: liczbê generowanych zapytañ, iloœæ pobieranych danych oraz czas wykonywania zapytania. W analizowanych przypadkach (generowanie listy dostêpnych kursów), uda³o siê na przyk³ad zredukowaæ czas potrzebny na wykonanie jednego zapytania z \textbf{1.608s} na \textbf{300ms} oraz czterokrotnie ograniczyæ iloœæ pobieranych encji. Jest to znacz¹cy zysk odczuwalny po stronie u¿ytkownika, korzystaj¹cego z aplikacji. Przeprowadzone badania i testy pokaza³y jak bardzo wa¿ny jest stopieñ zaznajomienia i doœwiadczenia projektanta/programisty z dan¹ technologi¹. Osoba dopiero co poznaj¹ca tak z³o¿on¹ technologiê jak \textbf{NHibernate} jest skazana na pope³nienie b³êdów, dlatego te¿ proces profilowania aplikacji pod k¹tem dostêpu do bazy danych jest krytycznym elementem wytwarzania aplikacji.\newline
+
+Po przeprowadzeniu testów funkcjonalnych oraz konfiguracji mapowania obiektowo relacyjnego, wykonane zosta³y testy wydajnoœciowe sprawdzaj¹ce dzia³anie aplikacji w symulowanym œrodowisku, udaj¹cym rzeczywiste wykorzystanie aplikacji. Zgodnie z za³o¿eniami projektowymi za³o¿ono dostêp do aplikacji dla 100 u¿ytkowników równoczeœnie otrzymuj¹cych odpowiedŸ od serwera w czasie nie wiêkszym od 1 sekundy. Wstêpne testy symulowane za pomoc¹ narzêdzia \textbf{WCAT - Web Capacity Analysis Tool} pokaza³y, ¿e aplikacja w warunkach zbli¿onych do rzeczywistego u¿ytkowania dzia³a bardzo wolno i nie spe³nia za³o¿eñ projektowych. Wykonanie analizy zachowania aplikacji po stronie klienta i serwera, przy pomocy narzêdzia \textbf{Ants Performance Profile},  pozwoli³o wyznaczyæ najmniej wydajne fragmenty kodu, powoduj¹ce zastój w dzia³aniu aplikacji. Przeprowadzenie takiej analizy pozwoli³o wyznaczyæ czêœci systemu, których poprawienie przyniesie podczas wdra¿ania systemu najwiêkszy zysk czasowy. Optymalizacja we wczesnych fazach projektu czêsto jest nietrafiona i przynosi niewielkie zyski poniewa¿ nie znamy jeszcze wszystkich interakcji jakie bêd¹ zachodzi³y w systemie. Projekty informatyczne s¹ ci¹gle modyfikowane, zmieniane, dlatego te¿ nie bez powodu \textbf{Donald Knuth} mawia³, ¿e \textbf{"Przedwczesna optymalizacja jest Ÿród³em wszelkiego z³a"}. Wprowadzenie poprawek w wyznaczonych miejscach poprawi³o dzia³anie aplikacji do zadowalaj¹cego poziomu, spe³niaj¹cego przyjête za³o¿enia.\newline
+
+Nastêpnie w rozdziale przeprowadzono badanie potwierdzaj¹ce, ¿e korzystanie ze zdalnego serwera bazy danych jest kosztowniejszym rozwi¹zaniem ni¿ serwer lokalny. \newline
+
+Ostatnim testem, który zostanie omówiony bêdzie analiza dzia³ania mechanizmu Load balancingu prezentuj¹cego jedno z proponowanych zastosowañ us³ug sieciowych. Testy te wykaza³y, ¿e dziêki odseparowaniu warstwy bazy danych za fasad¹ us³ug sieciowych mo¿na stworzyæ rozwi¹zania poprawiaj¹ce skalowalnoœæ aplikacji. W zaimplementowanym mechanizmie kluczow¹ rolê odgrywa algorytm decyzyjny, który w przyjêtym rozwi¹zaniu jest doœæ prosty, gdy¿ polega na przekierowaniu ¿¹dania na zapasowy serwer us³ug, gdy czas odpowiedzi serwera g³ównego na dane zapytanie przekroczy ustalony limit. Mimo tej prostoty otrzymane wyniki s¹ zadowalaj¹ce i wyraŸnie pokazuj¹, ¿e takie rozwi¹zanie poprawia czasy odpowiedzi serwera.
+
 \newpage{}
 
 \chapter{Podsumowanie}
+\paragraph{}
+Celem pracy by³o zaprojektowanie oraz zaimplementowanie serwisu webowego, wspieraj¹cego zdalne procesy dydaktyczne, a tak¿e zapoznanie siê ze wspó³czesnymi narzêdziami i rozwi¹zaniami stosowanymi w projektach internetowych. Cel pracy zosta³ zrealizowany. Przeanalizowano cechy dobrego systemu zdalnego nauczania na podstawie, których stworzono projekt oraz jego implementacjê. W trakcie tworzenia rozwi¹zania zastosowano nowoczesne techniki oraz rozwi¹zania dostêpne na rynku. Przeprowadzone testy wykaza³y koniecznoœæ wprowadzeniu wielu poprawek, które ostatecznie spowodowa³y, ¿e aplikacja spe³nia za³o¿one wymaganie zapewniaj¹ce 100 u¿ytkownikom czas odpowiedzi serwera us³ug nie wiêkszy od 1 sekundy. Taki wynik osi¹gniêto g³ównie dziêki przeprowadzeniu testów profiluj¹cych, za pomoc¹ których uda³o siê wykryæ najkosztowniejsze fragmenty kodu. Realizacja badañ wydajnoœciowych sta³a siê mo¿liwa dziêki zapoznaniu siê z aplikacj¹ \textbf{Ants Performance Profile}, która pozwala uproœciæ proces profilowania.\newline
+
+W pracy przeanalizowano równie¿ mechanizm mapowania obiektowo relacyjnego oraz frameowrk \textbf{NHibernate}, realizuj¹c w ten sposób dostêp do bazy danych. Podejœcie to przynios³o znaczne korzyœci, szczególnie w trakcie trwania procesu implementacyjnego, znacznie go upraszczaj¹c. Podczas profilowania aplikacji okaza³o siê jednak, ¿e kluczem do optymalnego dzia³ania aplikacji wykorzystuj¹cej ORM jest odpowiednia konfiguracja mapowañ i mechanizmów takich jak cachowanie pobieranych danych, czy póŸna inicjalizacja. Zapoznano siê z narzêdziem \textbf{NHProf}, które zosta³o u¿yte do wyznaczenia i wprowadzenia poprawek w konfiguracji \textbf{NHibernate-a.}\newline
+
+W ramach testów opracowanej aplikacji wykorzsytano testy jednotskowe oraz mechanizm mockowania zale¿noœci. Zaznajomiono siê z bibliotek¹ \textbf{NUnit}. Zastosowanie mechanizmu testów jednostkowych przy wsparciu biblioteki \textbf{RhinoMocks} przynios³o znaczne korzyœci zmniejszaj¹c iloœæ b³êdów i zwiêkszaj¹c stopieñ ich wykrywalnoœci. Aplikacja pokryta jest ³¹cznie ponad 130 testami jednostkowymi, pozwalaj¹cymi szybko zweryfikowaæ dzia³anie poszczególnych mechanizmów. Niestety jak siê okaza³o d¹¿enie do ca³kowitego pokrycia aplikacji testami jednostkowymi by³o b³êdnym za³o¿eniem, które zosta³o szybko obalone przez koniecznoœæ czêstych i ¿mudnych modyfikacji aplikacji. Idealnie testami jednostkowymi powinno pokrywaæ siê fragmenty kodu najbardziej podatne na wyst¹pienie nieoczekiwanych b³êdów. Pisanie testów jednostkowych okaza³o siê przydatne, ale i ¿mudne.\newline
+
 \newpage{}
-\newpage{}
+Stworzone rozwi¹zanie jest fundamentem na bazie, którego mo¿na tworzyæ systemy posiadaj¹ce bardziej rozbudowane mechanizmy wspieraj¹ce procesy dydaktyczne. Zastosowanie architektury \textbf{MVC}, daje mo¿liwoœæ stosunkowo ''bezbolesnego'' procesu modyfikowania platformy. Rozwój serwisu powinien iœæ w kierunku implementowania wiêkszej iloœci funkcjonalnoœci cechuj¹cych systemy klasy \textbf{LMS}. Posiadaj¹c ju¿ prosty system klasy \textbf{CMS}, to w³aœnie funkcjonalnoœci takie jak miêdzy innymi wspomaganie nauczania poprzez wspieranie dzia³alnoœci dydaktycznej u¿ytkownika przez system agentowy, pozwol¹ zwiêkszyæ atrakcyjnoœæ platformy. Równie¿ warto by by³o zaimplementowaæ bardziej rozbudowane mechanizmy zachêcaj¹ce do zwiêkszonej interakcji pomiêdzy u¿ytkownikami aplikacji. Procesy spo³eczne oraz interakcje wewn¹trz grupy tematycznej, wystêpuj¹ce w standardowym, stacjonarnym przekazie wiedzy, s¹ bardzo wa¿ne i wp³ywaj¹ korzystnie na efektywnoœæ procesów nauczania. Dlatego istotn¹ funkcjonalnoœæ stanowi³by chocia¿by interaktywny video-chat, b¹dŸ wirtualna tablica, pozwalaj¹ca komunikowaæ siê wielu u¿ytkownikom jednoczeœnie.\newline

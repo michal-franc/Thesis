@@ -1,0 +1,88 @@
+\select@language {polish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Podstawowe funkcje systemu klasy CMS}}{10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Podstawowe funkcje systemu klasy LMS}}{11}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Uproszczony Schemat formatu JSON}}{12}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Uproszczony schemat formatu XML}}{13}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Por\'ownanie standard\'ow (JSON , XML)}}{14}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Przyk\IeC {\l }adowa wiadomo\'s\'c SOAP}}{15}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Przyk\IeC {\l }adowa wiadomo\'s\'c zwrotna}}{16}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Por\'ownanie protoko\IeC {\l }\'ow Rest / Soap \cite {RESTVSSOAP}}}{17}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Przyk\IeC {\l }adowa wiadomo\'s\'c zwrotna protoko\IeC {\l }u REST}}{18}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Uproszczona koncepcja wzorca MVC}}{19}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Framework WCF}}{21}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Framework WCF}}{21}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces ORM obs\IeC {\l }uguj\k acy baz\k e danych}}{22}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Rysunek przedstawiaj\k acy proces mapowania.}}{23}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagram CDM cz. 1}}{31}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagram CDM cz. 2}}{32}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagram PDM cz. 1}}{33}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagram PDM cz. 2}}{34}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Schemat proponowanego rozwi\k azania}}{35}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Diagram sekwencji generowania strony WWW}}{36}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Diagram sekwencji logowania do aplikacji}}{36}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagram sekwencji procesu nauczania}}{37}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Rozdzielenie mechanizmu logowania na dwie bazy danych}}{38}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagram klasy DataAccess}}{40}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Mechanizm dost\k epu do bazy przy u\.zyciu klasy DataAccess}}{41}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Klasa Repository oraz QueryObject}}{41}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Klasa QueryCourseByName opakowuj\k aca zapytanie j\k ezyka HQL}}{42}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Skomplikowane zapytanie HQL}}{42}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Przyk\IeC {\l }ad przekszta\IeC {\l }cenia do formatu XML}}{43}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Przyk\IeC {\l }ad przekszta\IeC {\l }cenia do formatu JSON}}{43}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Graficzne przedstawienie procesu przetwarzania danych}}{44}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Przekszta\IeC {\l }canie obiekt\'ow typu ViewModel}}{45}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Ustawienia us\IeC {\l }ugi po stronie serwera}}{45}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Ustawienia bindingu po stronie klienta}}{46}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Ustawienia endpointu po stronie klienta}}{46}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Ustawienia endpointu po stronie klienta korzystaj\k acego z API}}{47}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Przyk\IeC {\l }adowy log z programu Sentinel \cite {SENTINEL}}}{49}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Przyk\IeC {\l }adowy alert}}{49}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Prosty test jednostkowy bazy danych}}{50}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Test jednostkowy z baz\k a danych w pami\k eci}}{51}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Test jednostkowy kontrolera bez zewn\k etrznych zasob\'ow}}{52}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Test kontrolera z zewn\k etrznymi zasobami}}{52}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Test kontrolera przy wykorzystaniu mocka}}{53}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Przyk\IeC {\l }adowy kod testu z mockiem}}{53}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Proces mapowania relacyjngo-obiektowego}}{54}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Przyk\IeC {\l }adowe mapowanie klasy Kurs}}{55}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Widok logowania}}{56}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Widok strony g\IeC {\l }\'ownej}}{56}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Widok kursu}}{57}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Widok materia\IeC {\l }u nauczania}}{57}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Widok testu}}{58}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Widok edycji testu}}{58}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Panel edycji kursu}}{59}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Lista materia\IeC {\l }\'ow nauczania}}{60}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Baza danych przed dodaniem materia\IeC {\l }u}}{60}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Baza danych po dodaniu materia\IeC {\l }u}}{61}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Nowy element na li\'scie}}{61}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Panel edycji materia\IeC {\l }u nauczania}}{61}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Test formatowania tekstu}}{62}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Alert informuj\k acy o poprawnym zapisie danych}}{62}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Baza danych po dodaniu opisu}}{62}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Alert informuj\k acy o poprawnym stworzeniu nowej sekcji}}{63}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Tabela zawieraj\k aca rekordy sekcji przed dodaniem}}{63}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Tabela zawieraj\k aca rekordy sekcji po dodaniu nowej sekcji}}{63}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Przyk\IeC {\l }adowe wstrzykni\k ecie skryptu do edytora tekstowego}}{65}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Przyk\IeC {\l }ad testowego skryptu}}{66}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Udany atak typu script injection}}{66}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces G\IeC {\l }\'owny widok aplikacji NHProf.}}{67}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Przyk\IeC {\l }adowy widok prezentuj\k acy wynik profilowania.}}{68}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Zawarto\'s\'c pliku script.txt}}{71}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Zawarto\'s\'c pliku distribution.txt}}{71}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Zawarto\'s\'c pliku config.txt}}{72}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces WCAT ekran kontrolera}}{72}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces WCAT ekran klienta}}{73}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Statystyka dzia\IeC {\l }ania aplikacja otrzymana w programie Ants Performance Profiler}}{73}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Wynik programu profiluj\k acego - po poprawce}}{74}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Wynik programu profiluj\k acego - aplikacja udost\k epniaj\k aca us\IeC {\l }ugi sieciowe}}{75}
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Uproszczony schemat lokalnej konfiguracji}}{77}
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Uproszczony schemat zdalnej konfiguracji}}{77}
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Uproszczony schemat mechanizmu zmiany serwera}}{78}
+\addvspace {10\p@ }

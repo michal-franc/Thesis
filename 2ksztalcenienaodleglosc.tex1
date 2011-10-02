@@ -4,98 +4,100 @@
 \paragraph{}
 Nie ma jednoznacznej definicji w pe³ni okreœlaj¹cej problem zdalnego nauczania. W literaturze mo¿na znaleŸæ wiele zwrotów próbuj¹cych jednoznacznie okreœliæ to zagadnienie.\newline
 
-\textsl{Terminy czêsto u¿ywane w kontekœcie zdalnego nauczania to e-nauczanie, nauczanie internetowe ,
-nauczanie rozproszone, nauczanie sieciowe, tele-nauczanie, wirtualne nauczanie, nauczanie wspomagane komputerowo, nauczanie webowe, oraz nauczanie na odleg³oœæ}. \cite{TeoriaPraktykaELearningu}\newline
+\textsl{Terminy czêsto u¿ywane w kontekœcie zdalnego nauczania to e-nauczanie, nauczanie internetowe,
+nauczanie rozproszone, nauczanie sieciowe, tele-nauczanie, wirtualne nauczanie, nauczanie wspomagane komputerowo, nauczanie webowe, oraz nauczanie na odleg³oœæ} \cite{TeoriaPraktykaELearningu}.\newline
 
-W wielu opracowaniach naukowych termin ten sprowadza siê do postaci \textbf{"Kszta³cenie na odleg³oœæ"} , w niniejszej pracy bêdê pos³ugiwa³ siê tym terminem.\newline
+W wielu opracowaniach naukowych termin ten sprowadza siê do postaci \textbf{"Kszta³cenie na odleg³oœæ"}, w niniejszej pracy bêdê pos³ugiwa³ siê tym terminem.\newline
 
-Wszystkie zwroty ³¹czy jedn¹ wspólna cecha. Zak³adaj¹ one , ¿e podstaw¹ kszta³cenia na odleg³oœæ jest niebezpoœredni proces uczenia siê. Tzn proces w którym osoba ucz¹ca siê nie przebywa w bezpoœrednim kontakcie z nauczycielem. Interesant taki korzysta z dostêpnych zasobów zdalnie. Najczêœciej za pomoc¹ komputera. Jest to nowoczesny sposób przekazywania wiedzy , który staje siê bardzo popularny na œwiecie. Wiele uczelni edukacyjnych oraz firm konsultingowych wdra¿a takie systemy.\newline
-
- Alan Clarke w swojej ksi¹¿ce s³usznie zauwa¿a ¿e : 
- \textsl{" E - learning ... Stanowi swoist¹ rewolucjê , której skutki s¹ czêsto porównywalne do wp³ywu , który wczeœniej na kszta³cenie wywar³y wynalezienie druku i masowa produkcja ksi¹¿ek ..."} \cite{AClark}
-
+Wszystkie definicje ³¹czy jedna wspólna cecha. Zak³adaj¹ one, ¿e podstaw¹ kszta³cenia na odleg³oœæ jest niebezpoœredni proces uczenia siê. Tzn proces, w którym osoba ucz¹ca siê nie przebywa w bezpoœrednim kontakcie z nauczycielem. Interesant taki korzysta z dostêpnych zasobów zdalnie, najczêœciej za pomoc¹ komputera. Jest to nowoczesny sposób przekazywania wiedzy, który staje siê bardzo popularny na œwiecie. Wiele uczelni edukacyjnych oraz firm konsultingowych wdra¿a takie systemy. Alan Clarke w swojej ksi¹¿ce s³usznie zauwa¿a, ¿e \cite{AClark}:\newline
+ 
+\textsl{E - learning ... Stanowi swoist¹ rewolucjê, której skutki s¹ czêsto porównywalne do wp³ywu , który wczeœniej na kszta³cenie wywar³y wynalezienie druku i masowa produkcja ksi¹¿ek.}
 \paragraph{}
-
-Do kszta³cenia na odleg³oœæ mo¿emy zaliczyæ zarówno proces samego nauczania jak i proces wspomagania b¹dŸ wzbogacania nauczania. Do dzia³añ wspomagaj¹cych mo¿emy zaliczyæ przede wszystkim. Sposób prezentacji materia³ów oraz sposób dostarczania kolejnych materia³ów bazuj¹c na wynikach ucz¹cego siê. Za³o¿enia te nie s¹ czêœci¹ tej pracy dyplomowej. W niniejszej pracy skupimy siê na stworzeniu platformy  posiadaj¹cej mechanizmy wspieraj¹ce proces zdalnego nauczania zarówno od strony ucz¹cego siê jak i nauczyciela odpowiedzialnego za tworzenie i nadzorowanie procesu nauczania.\newline
-
-
-
+Do kszta³cenia na odleg³oœæ mo¿emy zaliczyæ zarówno proces samego nauczania jak i proces wspomagania, b¹dŸ wzbogacania mechanizmów dydaktycznych. Do dzia³añ wspomagaj¹cych mo¿emy zaliczyæ przede wszystkim sposób prezentacji materia³ów oraz sposób dostarczania kolejnych materia³ów, bazuj¹c na wynikach ucz¹cego siê. Za³o¿enia te nie s¹ czêœci¹ tej pracy dyplomowej. W niniejszej pracy skupimy siê na stworzeniu platformy  posiadaj¹cej mechanizmy wspieraj¹ce proces zdalnego nauczania, zarówno od strony ucz¹cego siê, jak i nauczyciela odpowiedzialnego za tworzenie i nadzorowanie procesu nauczania.\newline
 \section{Korzyœci p³yn¹ce z u¿ywania systemów kszta³cenia na odleg³oœæ}
 \paragraph{}
-Proces kszta³cenia do 19 wieku odbywa³ siê w charakterze bezpoœredniego kontaktu , najczêœciej w specjalnie wydzielonej do tego sali, pomiêdzy nauczycielem oraz uczniami. Rewolucja informatyczna oraz coraz wiêksza znajomoœæ technologii informatycznych wœród spo³eczeñstwa spowodowa³y , ¿e pod koniec 20 wieku wzros³o zainteresowanie systemami kszta³cenia na odleg³oœæ. Kszta³cenie na odleg³oœæ posiada wiele cech pozytywnych w porównaniu do starego systemu i podejœcia do nauczania\newline
+Proces kszta³cenia do 19 wieku odbywa³ siê w charakterze bezpoœredniego kontaktu w specjalnie wydzielonej do tego celu sali. Rewolucja informatyczna oraz coraz wiêksza znajomoœæ technologii informatycznych wœród spo³eczeñstwa spowodowa³y, ¿e pod koniec 20 wieku wzros³o zainteresowanie systemami kszta³cenia na odleg³oœæ. Kszta³cenie na odleg³oœæ posiada wiele cech pozytywnych w porównaniu do starego systemu i podejœcia do nauczania\newline
 
 Alan Clark \cite{AClark} wymienia wiele korzyœci p³yn¹cych z zastosowania e-learningu.
-Zwraca uwagê m.in na:
+Zwraca uwagê m.in. na:
 \begin{itemize}
-    \item dostêpnoœæ materia³ów. Przewa¿nie otrzymujemy ca³odobowy dostêp do interesuj¹cych nas materia³ów.
-	\item asynchroniczny charakter procesu kszta³cenia tzn. ucz¹cy sam decyduje kiedy  chce korzystaæ z materia³ów.
-	\item swoboda wyboru miejsca , czasu oraz têpa uczenia siê.
-	\item u³atwiony proces dystrybucji materia³ów oraz informacji
-	\item u³atwienie komunikacji z osobami z ca³ego œwiata 
+   \item dostêpnoœæ materia³ów; przewa¿nie otrzymujemy ca³odobowy dostêp do interesuj¹cych nas materia³ów,
+	\item asynchroniczny charakter procesu kszta³cenia tzn. ucz¹cy sam decyduje kiedy  chce korzystaæ z materia³ów,
+	\item swoboda wyboru miejsca, czasu oraz têpa uczenia siê,
+	\item u³atwiony proces dystrybucji materia³ów oraz informacji,
+	\item u³atwienie komunikacji z osobami z ca³ego œwiata.
 \end{itemize}
 
 Józef Bednarek \cite{BednarekLubina} zwraca równie¿ uwagê na zwiêkszon¹ efektywnoœæ procesu nauczania. Poprzez zwiêkszony przedzia³ zrozumienia tematu oraz koniecznoœæ wiêkszego zaanga¿owania ucz¹cych siê. Wa¿nym aspektem przemawiaj¹cym na korzyœæ kszta³cenia na odleg³oœæ jest równie¿ znaczna oszczêdnoœæ czasu i zasobów poprzez u³atwiony dostêp do nauczyciela oraz materia³u dydaktycznego.
 
 \section{Ograniczenia kszta³cenia na odleg³oœæ}
 
-Ka¿de rozwi¹zanie posiada negatywne cechy . Podobnie jest w przypadku zagadnienia kszta³cenia na odleg³oœæ .Do najwa¿niejszych problemów zwi¹zanych z wdra¿aniem kszta³cenia na odleg³oœæ mo¿emy zaliczyæ.
+Ka¿de rozwi¹zanie posiada tak¿e i negatywne cechy. Podobnie jest w przypadku zagadnienia kszta³cenia na odleg³oœæ. Do najwa¿niejszych problemów zwi¹zanych z wdra¿aniem kszta³cenia na odleg³oœæ mo¿emy zaliczyæ:
 
 \begin{itemize}
-    \item koniecznoœæ przeszkolenia personelu dydaktycznego oraz uczniów.
-	 \item wdro¿enie kosztownego systemu informatycznego obs³uguj¹cego proces nauczania.
-	 \item wymagana wiêksze zaanga¿owanie i samodzielna inicjatywa od ucz¹cego siê.
-	 \item koniecznoœæ dopasowania obecnego materia³u dydaktycznego do nowych standardów.
-	 \item brak typowych dla bezpoœredniego procesu nauczania mechanizmów interakcji spo³ecznych mog¹cych jedynie zajœæ w momencie gdy nauczyciel oraz uczniowie s¹ w bezpoœrednim kontakcie.
+    \item koniecznoœæ przeszkolenia personelu dydaktycznego oraz uczniów,
+	 \item wdro¿enie kosztownego systemu informatycznego obs³uguj¹cego proces nauczania,
+	 \item wymagane wiêksze zaanga¿owanie i samodzielna inicjatywa od ucz¹cego siê,
+	 \item koniecznoœæ dopasowania obecnego materia³u dydaktycznego do nowych standardów,
+	 \item brak typowych dla bezpoœredniego procesu nauczania mechanizmów interakcji spo³ecznych mog¹cych jedynie zajœæ w momencie, gdy nauczyciel oraz uczniowie s¹ w bezpoœrednim kontakcie,
 	 \item anonimowoœæ nauczyciela.
 \end{itemize}
 
 
 \section{Klasyfikacja systemów kszta³cenia na odleg³oœæ}
 
-A. Clark  \cite{AClark}  klasyfikuje systemu E-learnignowe  w obrêbie dwóch podstawowych klas.
+A. Clark  \cite{AClark}  klasyfikuje systemy E-learnignowe  w obrêbie dwóch podstawowych klas:
 \begin{itemize}
-\item Systemy do zarz¹dzania kursami(CMS)
-\item Systemy wspomagaj¹ce proces nauczania (LMS)
+\item Systemy do zarz¹dzania kursami(CMS),
+\item Systemy wspomagaj¹ce proces nauczania (LMS).
 \end{itemize}
 
 \subsection{Systemy do zarz¹dzania kursami(CMS)}
 
+\begin{figure}[H]
 \begin{center}
 	\includegraphics{CMS.jpg}
 \end{center}
+\caption{Podstawowe funkcje systemu klasy CMS}
+\end{figure}
 
-\begin{center}
-	Rys.1 Podstawowe funkcje systemu klasy CMS
-\end{center}
-
-Systemy klasy CMS (Content Management System) s¹ to aplikacjami dostarczaj¹cymi funkcji pozwalaj¹cych zarz¹dzaæ materia³ami wspomagaj¹cymi proces nauczania , poprzez dostarczanie funkcji u³atwiaj¹cych tworzenie oraz udostêpnianie  nowych materia³ów.  W systemach takich mo¿emy wyszczególniæ kilka podstawowych funkcji
+Systemy klasy CMS (Content Management System) s¹ aplikacjami dostarczaj¹cymi funkcji pozwalaj¹cych zarz¹dzaæ materia³ami wspomagaj¹cymi proces nauczania, poprzez dostarczanie funkcji u³atwiaj¹cych tworzenie oraz udostêpnianie  nowych materia³ów.  W systemach takich mo¿emy wyszczególniæ kilka podstawowych funkcji:
 
 \begin{itemize}
-\item katalogowanie dostêpnych materia³ów dydaktycznych
-\item system administracji pozwalaj¹cy zarz¹dzaæ procesem udostêpniania materia³ów
-\item mechanizmy wspomagaj¹ce proces tworzenia oraz publikowania nowych materia³ów
+\item katalogowanie dostêpnych materia³ów dydaktycznych,
+\item system administracji pozwalaj¹cy zarz¹dzaæ procesem udostêpniania materia³ów,
+\item mechanizmy wspomagaj¹ce proces tworzenia oraz publikowania nowych materia³ów.
 \end{itemize}
 
 Systemy takie zazwyczaj sprowadzaj¹ siê do postaci katalogów udostêpniaj¹cych materia³y.
 \newpage{}
 \subsection{Systemy wspomagaj¹ce proces nauczania (LMS)}
 
+\begin{figure}[H]
 \begin{center}
 	\includegraphics{LMS.jpg}
 \end{center}
-\begin{center}
-	Rys.2 Podstawowe funkcje systemu klasy LMS
-\end{center}
+\caption{Podstawowe funkcje systemu klasy LMS}
+\end{figure}
 
-Systemy LMS s¹ bardziej wyspecjalizowanymi systemami wspomagaj¹cymi proces nauczania. Poprzez dostarczanie niektórych funkcjonalnoœci takich jak:
+
+Systemy LMS s¹ bardziej wyspecjalizowanymi systemami wspomagaj¹cymi proces nauczania poprzez dostarczanie funkcjonalnoœci takich jak:
 
 \begin{itemize}
-\item modu³ testów pozwalaj¹cych zdalnie ewaluowaæ umiejêtnoœci kursanta
-\item modu³ ocen pozwalaj¹cy dokumentowaæ postêp oraz wyniki kursanta
-\item modu³ wspomagaj¹cy kolaboracjê oraz komunikacjê pomiêdzy kursantami i nauczycielami
-\item modu³ statystyk oraz raportów pozwalaj¹cych ewaluowaæ skutecznoœæ procesu kszta³cenia 
-\item modu³ autonomicznego agenta  podaj¹cego np sugestie kursantowi kieruj¹c oraz dostosowuj¹c jego tok nauczania
+\item modu³ testów pozwalaj¹cych zdalnie ewaluowaæ umiejêtnoœci kursanta,
+\item modu³ ocen pozwalaj¹cy dokumentowaæ postêp oraz wyniki kursanta,
+\item modu³ wspomagaj¹cy kolaboracjê oraz komunikacjê pomiêdzy kursantami i nauczycielami,
+\item modu³ statystyk oraz raportów pozwalaj¹cych ewaluowaæ skutecznoœæ procesu kszta³cenia,
+\item modu³ autonomicznego agenta, podaj¹cego np sugestie kursantowi, i w ten sposób kieruj¹c oraz dostosowuj¹c jego tok nauczania do potrzeb.
 \end{itemize}
 
 
-W niniejszej pracy stworzony zostanie system ³¹cz¹cy cechy obu systemów.
+W niniejszej pracy stworzony zostanie system ³¹cz¹cy wybrane cechy obu systemów, tj. charakteryzuj¹ce siê nastêpuj¹cymi w³asnoœciami:
+\begin{itemize}
+\item katalogowanie dostêpnych materia³ów dydaktycznych,
+\item system administracji pozwalaj¹cy zarz¹dzaæ procesem udostêpniania materia³ów,
+\item mechanizmy wspomagaj¹ce proces tworzenia oraz publikowania nowych materia³ów.
+\item modu³ testów 
+\item modu³ ocen
+\end{itemize}
+
